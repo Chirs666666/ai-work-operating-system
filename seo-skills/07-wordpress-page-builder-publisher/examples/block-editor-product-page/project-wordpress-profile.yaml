@@ -1,0 +1,24 @@
+project_id: gls-example
+environment: STAGING
+wordpress:
+  version: "6.x"
+  theme: project-theme
+  child_theme: project-child
+  seo_plugin: Rank Math
+builder:
+  build_mode: BLOCK_EDITOR
+  gutenberg: AVAILABLE
+  greenshift: AVAILABLE
+  elementor: NOT_PROVIDED
+  elementor_pro: NOT_PROVIDED
+design_system:
+  fonts: project-global-fonts
+  colors: project-global-colors
+  container_widths: project-global-widths
+  spacing: project-spacing-scale
+  radius: project-radius-scale
+  breakpoints: project-breakpoints
+reusable_assets: [hero-product-01]
+dependencies: [greenshift]
+profile_status: CURRENT
+observed_at: "2026-09-14T00:00:00Z"

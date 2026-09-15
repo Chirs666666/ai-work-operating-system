@@ -1,0 +1,6 @@
+state: TECHNICAL_BLOCKED
+primary_cause: TECHNICAL
+confidence: HIGH
+evidence_refs:
+- INDEX
+reasoning: Index health invalidates content-first diagnosis.

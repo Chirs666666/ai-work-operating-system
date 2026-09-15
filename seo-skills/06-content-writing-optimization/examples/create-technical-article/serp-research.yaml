@@ -1,0 +1,20 @@
+market: US
+language: en
+collected_at: '2026-09-14'
+baseline:
+- Leading fictional SERP set explains the basic definition and a simplified calculation.
+recurring_questions:
+- Which variables change the result?
+- How do I validate the calculation?
+observed_formats:
+- definition
+- formula explanation
+- FAQ
+competitor_observations:
+- id: OBS-001
+  finding: Most observed fictional pages stop at the simplified calculation and give
+    little validation guidance.
+  use: coverage observation only
+limitations:
+- Example uses fictional SERP observations for package demonstration; it is not real
+  market research.

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "live_change_requested": {
+      "type": "boolean"
+    },
+    "risky_change": {
+      "type": "boolean"
+    },
+    "backup_ready": {
+      "type": "boolean"
+    },
+    "rollback_ready": {
+      "type": "boolean"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "approval_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "change_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pre_change_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "live_change_requested",
+    "risky_change",
+    "backup_ready",
+    "rollback_ready",
+    "approval_required",
+    "approval_status",
+    "change_scope",
+    "pre_change_checks"
+  ],
+  "additionalProperties": false
+}

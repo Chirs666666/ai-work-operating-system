@@ -1,0 +1,2 @@
+# Repetition Control
+Check semantic repetition within sections, across sections, and across product pages when comparison data exists. Synonym substitution is not information gain. Repeated claims should be consolidated or given a distinct buyer-decision purpose.

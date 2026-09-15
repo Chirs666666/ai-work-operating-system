@@ -1,0 +1,14 @@
+applicable: true
+reason: EXISTING_INFORMATIONAL_CONTENT
+performance_data_available: true
+works:
+- Definition section still matches intent and remains useful.
+stale:
+- Validation explanation uses an older fictional internal note.
+missing:
+- Boundary-condition checklist is missing.
+unsupported: []
+preserve:
+- Existing definition section
+recommended_mode: REFRESH
+confidence: HIGH

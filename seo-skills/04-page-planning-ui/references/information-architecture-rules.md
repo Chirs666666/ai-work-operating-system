@@ -1,0 +1,2 @@
+# Information Architecture Rules
+Order sections by Search Journey + Buyer Journey + Conversion Journey. Default reasoning sequence: Understand → Evaluate → Verify → Compare → Reduce Risk → Convert. Move technical evidence earlier when evaluation intent requires it. Do not substitute repeated CTAs for decision-support information. Section states: REQUIRED, RECOMMENDED, CONDITIONAL, OPTIONAL, EXCLUDED.

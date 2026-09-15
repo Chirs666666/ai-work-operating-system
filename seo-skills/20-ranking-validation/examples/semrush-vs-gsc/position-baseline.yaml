@@ -1,0 +1,13 @@
+observations:
+- provider: GSC
+  metric: AVERAGE_POSITION
+  value: 18.4
+  date_range: 2026-09-01/2026-09-14
+  market: US
+  device: null
+- provider: SEMRUSH
+  metric: RANK_POSITION
+  value: 12
+  date_range: '2026-09-14'
+  market: US
+  device: null

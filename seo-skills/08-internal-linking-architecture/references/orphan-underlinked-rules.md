@@ -1,0 +1,2 @@
+# Orphan and Underlinked Rules
+`ORPHAN_PAGE` means no valid crawlable HTML internal entry path. XML sitemap presence alone is not an internal HTML link. Breadcrumb/navigation-only access means NOT orphan but may be `UNDERLINKED_PAGE`. Underlinked assessment considers incoming count, relationship coverage, source quality, commercial priority and user-journey coverage; there is no universal numeric threshold.

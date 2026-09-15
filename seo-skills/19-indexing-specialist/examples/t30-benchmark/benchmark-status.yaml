@@ -1,0 +1,6 @@
+benchmark_type: CONFIGURABLE_BENCHMARK
+milestone: T+30
+target: At least one relevant query/ranking
+observed: 1 relevant query
+status: MET
+guarantee: false

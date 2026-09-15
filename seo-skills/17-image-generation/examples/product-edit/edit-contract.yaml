@@ -1,0 +1,13 @@
+source_asset_id: IMG-001
+preserve:
+- product geometry
+- interfaces
+- logo placement
+modify:
+- clarity
+remove: []
+add: []
+prohibited_changes:
+- new product features
+- invented labels
+factual_interpretation_risk: LOW

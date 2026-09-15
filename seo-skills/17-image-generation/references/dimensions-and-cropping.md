@@ -1,0 +1,2 @@
+# Dimensions and Cropping
+Dimensions are explicit. Common presets include 1280×720 and 1900×550, but project requirements win. Cropping should preserve the focal subject and leave intended text-safe areas where required.

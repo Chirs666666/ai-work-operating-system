@@ -1,0 +1,6 @@
+handoffs:
+- opportunity_id: O13
+  target_skill: 12-technical-seo-audit-fix
+  reason: Traffic decline correlates with a newly detected canonical/indexability
+    problem.
+  blocking: true

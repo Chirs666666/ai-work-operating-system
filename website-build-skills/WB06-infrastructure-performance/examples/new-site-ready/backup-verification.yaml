@@ -1,0 +1,8 @@
+last_backup_success: true
+backup_evidence:
+- backup job success
+restore_method_known: true
+restore_tested: true
+restore_evidence:
+- staging restore test
+state: VERIFIED

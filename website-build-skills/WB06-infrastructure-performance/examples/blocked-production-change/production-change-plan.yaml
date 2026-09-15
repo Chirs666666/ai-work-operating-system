@@ -1,0 +1,10 @@
+changes:
+- change_id: P1
+  domain: DNS
+  environment: PRODUCTION
+  action: cutover
+  risk: CRITICAL
+  backup_required: true
+  rollback_required: true
+  approval_id: A1
+  status: WAITING_APPROVAL

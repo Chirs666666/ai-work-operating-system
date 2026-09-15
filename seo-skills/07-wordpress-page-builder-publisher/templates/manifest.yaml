@@ -1,0 +1,6 @@
+skill: wordpress-page-builder-publisher
+version: 1.0.0
+run_id: example-run
+mode: CREATE_DRAFT
+build_mode: BLOCK_EDITOR
+created_at: "2026-09-14T00:00:00Z"

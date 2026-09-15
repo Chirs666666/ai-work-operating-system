@@ -1,0 +1,2 @@
+# Action Routing
+03 keyword demand; 06 informational content; 08 internal linking; 09 metadata; 10 commercial page; 11 backlinks; 12 technical SEO; 19 index/ranking; 21 speed; 24 GEO; 25 ownership/cannibalization.

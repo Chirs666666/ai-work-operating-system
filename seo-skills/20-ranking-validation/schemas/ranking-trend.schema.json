@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "previous_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "windows_comparable": {
+      "type": "boolean"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "trend": {
+      "enum": [
+        "IMPROVING",
+        "STABLE",
+        "DECLINING",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INSUFFICIENT"
+      ]
+    }
+  },
+  "required": [
+    "previous_window",
+    "current_window",
+    "windows_comparable",
+    "provider",
+    "trend",
+    "confidence"
+  ],
+  "additionalProperties": false
+}

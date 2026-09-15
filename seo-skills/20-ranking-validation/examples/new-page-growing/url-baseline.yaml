@@ -1,0 +1,5 @@
+url: https://example.com/new/
+index_status: INDEXED
+indexed_or_first_seen_at: '2026-09-09'
+index_evidence_ref: GSC-I
+days_since_index: 5

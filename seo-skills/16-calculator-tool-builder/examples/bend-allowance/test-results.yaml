@@ -1,0 +1,8 @@
+results:
+- test_id: BA-KNOWN-1
+  status: PASS
+  actual:
+    bend_allowance: 94.2477796077
+    unit: mm
+  notes: []
+overall_status: PASS

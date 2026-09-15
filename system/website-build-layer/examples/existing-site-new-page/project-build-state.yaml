@@ -1,0 +1,18 @@
+project_id: P2
+site: example.com
+environment: PRODUCTION_CANDIDATE
+build_mode: NEW_PAGE_BUILD
+skill_states:
+  WB01: REUSE
+  WB02: REUSE
+  WB03: REUSE
+  WB04: PASS
+  WB05: REUSE
+  WB06: REUSE
+  WB07: PASS
+  WB08: WAITING_APPROVAL
+current_gate: deployment-approval
+blockers: []
+warnings: []
+next_actions:
+- WB08

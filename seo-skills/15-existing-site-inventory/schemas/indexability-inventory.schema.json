@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "INDEXABLE",
+              "NOINDEX",
+              "ROBOTS_BLOCKED",
+              "REDIRECTED",
+              "ERROR",
+              "CANONICALIZED_AWAY",
+              "UNKNOWN"
+            ]
+          },
+          "intended_state": {
+            "enum": [
+              "INDEX",
+              "NOINDEX",
+              "UNKNOWN"
+            ]
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "url",
+          "state",
+          "intended_state",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

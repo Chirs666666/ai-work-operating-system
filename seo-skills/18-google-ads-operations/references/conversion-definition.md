@@ -1,0 +1,2 @@
+# Conversion Definition
+Primary conversions should represent commercial value such as RFQ/contact/qualified lead/consultation. Secondary actions may include catalog downloads or contact interactions. Pageviews/scrolls should not become primary bidding conversions merely because they are measurable.

@@ -1,0 +1,10 @@
+page_id: "7301"
+g07: WAITING_APPROVAL
+connection_status: CONNECTED
+task_goal: PUBLISH
+draft_ready: true
+high_impact_action: true
+approval_status: PENDING
+post_write_readback_complete: false
+done: false
+handoff: Await explicit publish approval; after approval, publish then perform post-publish read-back.

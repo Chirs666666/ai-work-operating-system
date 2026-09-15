@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target_skill": {
+            "enum": [
+              "03-product-keyword-research",
+              "25-keyword-page-mapping",
+              "04-page-planning-ui",
+              "06-content-writing-optimization",
+              "09-seo-metadata",
+              "17-image-generation",
+              "07-wordpress-page-builder-publisher",
+              "19-index-ranking-validation",
+              "13-site-data-analysis"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "blocking": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "target_skill",
+          "reason",
+          "blocking"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

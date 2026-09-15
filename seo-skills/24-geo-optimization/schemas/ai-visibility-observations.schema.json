@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "observations": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "observation_id": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "query_id": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "NOT_TESTED",
+              "NO_OBSERVATION",
+              "BRAND_MENTIONED",
+              "PRODUCT_MENTIONED",
+              "SOURCE_CITED",
+              "RECOMMENDED",
+              "COMPETITOR_DOMINANT",
+              "INCONSISTENT",
+              "UNKNOWN"
+            ]
+          },
+          "brand": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "citation_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "competitors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "observation_id",
+          "platform",
+          "query_id",
+          "observed_at",
+          "status",
+          "brand",
+          "citation_source",
+          "competitors"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "overall_status": {
+      "enum": [
+        "NOT_TESTED",
+        "NO_OBSERVATION",
+        "BRAND_MENTIONED",
+        "PRODUCT_MENTIONED",
+        "SOURCE_CITED",
+        "RECOMMENDED",
+        "COMPETITOR_DOMINANT",
+        "INCONSISTENT",
+        "UNKNOWN"
+      ]
+    },
+    "success_claimed": {
+      "type": "boolean"
+    },
+    "seo_value_claimed_absent": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "observations",
+    "overall_status",
+    "success_claimed",
+    "seo_value_claimed_absent"
+  ],
+  "additionalProperties": false
+}

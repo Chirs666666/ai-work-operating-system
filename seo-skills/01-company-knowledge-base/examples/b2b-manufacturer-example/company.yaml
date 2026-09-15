@@ -1,0 +1,23 @@
+company_id: example-precision
+identity:
+  legal_name: Example Precision Automation Ltd. (fictional)
+  brand_names:
+  - Example Precision
+  company_type: fictional B2B manufacturer
+  founded_date: '2019'
+business_scope:
+- fictional automation equipment manufacturing
+locations:
+- Example City (fictional)
+industries:
+- metal fabrication
+capabilities:
+- robotic handling cell integration
+certifications: []
+facts:
+- fact_id: F-001
+  field: company_type
+  value: fictional B2B manufacturer
+  evidence_refs:
+  - EV-001
+  status: verified_for_example

@@ -1,0 +1,2 @@
+# Semrush and Ahrefs Analysis
+Use Semrush Organic Research, Position Tracking, Keyword Gap, Traffic Analytics, Backlink Analytics, Site Audit summaries, and Ahrefs keyword/backlink/top-page data as provider-specific signals. DR/UR/AS/estimated traffic are not interchangeable and do not replace GSC/GA4.

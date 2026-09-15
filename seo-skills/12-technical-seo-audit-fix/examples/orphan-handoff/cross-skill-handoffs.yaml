@@ -1,0 +1,5 @@
+handoffs:
+- issue_id: ORPHAN-01
+  target_skill: 08-internal-linking-architecture
+  reason: Page lacks a crawlable internal entry; 08 decides semantic placement.
+  blocking: false

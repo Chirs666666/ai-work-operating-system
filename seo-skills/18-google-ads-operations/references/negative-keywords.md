@@ -1,0 +1,2 @@
+# Negative Keywords
+Review actual business intent before exclusion. Candidate terms such as jobs, salary, training, free, manual, used or DIY are not automatic negatives. Bulk live changes require approval.

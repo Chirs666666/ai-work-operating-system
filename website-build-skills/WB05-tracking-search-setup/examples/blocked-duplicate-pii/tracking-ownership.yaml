@@ -1,0 +1,8 @@
+capabilities:
+- capability: GA4
+  primary_owner: GTM
+  active_paths:
+  - GTM
+  - WordPress plugin
+  conflict: true
+  resolution: null

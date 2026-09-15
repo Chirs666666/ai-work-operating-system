@@ -1,0 +1,6 @@
+wp_admin_access: UNKNOWN
+hosting_access: UNKNOWN
+sftp_ssh_access: UNKNOWN
+change_risk: LOW
+execution_allowed: false
+blockers: []

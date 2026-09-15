@@ -1,0 +1,15 @@
+production_urls:
+- https://example.com/
+- https://example.com/contact/
+new_urls:
+- https://example.com/
+changed_urls: []
+removed_urls: []
+sitemap_ref: https://example.com/sitemap.xml
+robots_state: indexable
+canonical_state: verified
+redirect_state: verified
+gsc_state: connected
+bing_state: connected
+indexnow_state: received
+launch_timestamp: '2026-09-15T00:00:00Z'

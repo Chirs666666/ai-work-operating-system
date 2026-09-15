@@ -1,0 +1,4 @@
+handoffs:
+- target_skill: 25-keyword-page-mapping
+  reason: Target query is not aligning with intended URL; validate ownership/cannibalization.
+  blocking: false

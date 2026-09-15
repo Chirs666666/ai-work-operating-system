@@ -1,0 +1,7 @@
+pages:
+- url: /tube-bending-guide/
+  page_id: '44'
+  page_type: GUIDE
+  status: INDEXABLE
+  ownership_status: CONFIRMED
+  traffic: UNKNOWN

@@ -1,0 +1,14 @@
+audience: B2B engineer or technical buyer
+reader_problem: A basic explanation is available, but the reader needs to know when
+  it is insufficient.
+content_promise: Explain the concept, its variables, its limits, and a practical validation
+  sequence.
+buyer_decision_value:
+- Know which inputs to verify.
+- Know when validation is required.
+- Prepare better technical information for a supplier.
+evidence_plan:
+- Trace material technical statements to SRC-001/SRC-002.
+conversion_role: INFORMATIONAL
+strategy_notes:
+- Do not turn the fictional evidence into a real-world universal claim.

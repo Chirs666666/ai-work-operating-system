@@ -1,0 +1,13 @@
+keywords:
+- id: kw-001
+  keyword: collaborative welding robot
+  discovery: USER_DATA
+  demand_status: VERIFIED
+- id: kw-002
+  keyword: cobot welding cell
+  discovery: PUBLIC_RESEARCH
+  demand_status: OBSERVED
+- id: kw-003
+  keyword: cobot welding for small batch fabrication
+  discovery: PUBLIC_RESEARCH
+  demand_status: UNVERIFIED

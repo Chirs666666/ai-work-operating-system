@@ -1,0 +1,6 @@
+items:
+- prospect_id: P1
+  target_url: https://example.com/cnc-machining/
+  anchor_type: BRAND
+  anchor_text: Example CNC
+  editorial_note: Natural company reference; no forced exact-match keyword.

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "GENERATE",
+        "EDIT",
+        "ENHANCE",
+        "RESIZE",
+        "CROP",
+        "BACKGROUND_REPLACE",
+        "COLOR_VARIATION",
+        "DIAGRAM",
+        "PROCESS_VISUAL",
+        "PRODUCT_VISUAL",
+        "ARTICLE_HERO",
+        "BANNER",
+        "THUMBNAIL",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "image_type": {
+      "enum": [
+        "PRODUCT_PHOTO",
+        "PRODUCT_RENDER",
+        "FACTORY_SCENE",
+        "PROCESS_IMAGE",
+        "TECHNICAL_DIAGRAM",
+        "COMPARISON_VISUAL",
+        "DATA_VISUAL",
+        "ARTICLE_HERO",
+        "BLOG_INLINE",
+        "CATEGORY_BANNER",
+        "HOMEPAGE_BANNER",
+        "CASE_STUDY_IMAGE",
+        "CALCULATOR_VISUAL",
+        "ICON_ILLUSTRATION",
+        "OTHER"
+      ]
+    },
+    "truth_class": {
+      "enum": [
+        "SOURCE_PRESERVED",
+        "SOURCE_DERIVED",
+        "CONCEPTUAL",
+        "VERIFIED_TECHNICAL",
+        "UNKNOWN"
+      ]
+    },
+    "g17": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

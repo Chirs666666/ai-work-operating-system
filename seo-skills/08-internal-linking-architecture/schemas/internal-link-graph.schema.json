@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "graph_operation",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "graph_operation": {
+      "enum": [
+        "FULL_BUILD",
+        "FULL_REFRESH",
+        "INCREMENTAL_UPDATE",
+        "REUSE"
+      ]
+    },
+    "nodes": {
+      "type": "array"
+    },
+    "edges": {
+      "type": "array"
+    },
+    "observed_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

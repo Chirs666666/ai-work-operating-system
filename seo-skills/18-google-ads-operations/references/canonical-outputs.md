@@ -1,0 +1,2 @@
+# Canonical Outputs
+24 outputs: manifest, ads-brief, source-register, account-readiness, conversion-map, tracking-readiness, market-targeting, keyword-plan, negative-keyword-plan, landing-page-map, campaign-architecture, ad-group-plan, bidding-strategy, budget-plan, ad-copy, ad-assets, prelaunch-qa, search-term-review, performance-review, optimization-plan, experiment-plan, change-control, cross-skill-handoffs, closeout.

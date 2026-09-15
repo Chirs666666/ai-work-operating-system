@@ -1,0 +1,8 @@
+mode: REWRITE_PAGE
+final_action: REWRITE
+g10: WAITING_APPROVAL
+warnings: []
+blockers: []
+approval_pending: true
+downstream_handoffs:
+- 07-wordpress-page-builder-publisher

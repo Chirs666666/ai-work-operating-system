@@ -1,0 +1,12 @@
+forms:
+- form_id: contact
+  purpose: General inquiry
+  fields:
+  - name
+  - email
+  - message
+  success_state: Show confirmation
+  error_state: Show actionable error
+  delivery_owner: site email/CRM
+  privacy_consent_decision: REQUIRED
+  scope: GLOBAL

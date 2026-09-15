@@ -1,0 +1,15 @@
+primary_intent: INFORMATIONAL
+searcher_goal: Understand the technical concept, its limits, and how to validate it
+  before making an engineering decision.
+knowledge_level: INTERMEDIATE
+buyer_stage: SOLUTION_RESEARCH
+required_questions:
+- What is the concept?
+- Which variables matter?
+- When does a simplified method fail?
+- How should results be validated?
+excluded_topics: []
+evidence_ids:
+- SRC-001
+- SRC-002
+confidence: HIGH

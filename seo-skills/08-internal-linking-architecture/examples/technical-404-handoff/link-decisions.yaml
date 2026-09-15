@@ -1,0 +1,16 @@
+decisions:
+- link_id: IL-404
+  source_url: /guide/robotic-welding/
+  target_url: /old-product/
+  dimensions:
+    semantic_relevance: HIGH
+    page_relationship: RELATED_CONTENT
+    user_journey_value: HIGH
+    target_page_priority: HIGH
+    link_gap: HIGH
+    source_page_value: MEDIUM
+    placement_quality: HIGH
+  priority: REJECT
+  action: NO_ACTION
+  reason: 404 target cannot be used as a normal new SEO target.
+  evidence: []

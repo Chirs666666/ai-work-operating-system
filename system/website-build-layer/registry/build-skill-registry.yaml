@@ -1,0 +1,74 @@
+version: 1.0.0
+skills:
+- skill_id: WB01
+  package: WB01-site-architecture-builder
+  capability: site_architecture
+  primary_output: architecture
+  owner: WB01
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB02
+  package: WB02-wordpress-foundation-setup
+  capability: wordpress_foundation
+  primary_output: foundation
+  owner: WB02
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB03
+  package: WB03-global-components-builder
+  capability: global_components
+  primary_output: components
+  owner: WB03
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB04
+  package: WB04-website-page-assembly
+  capability: page_assembly
+  primary_output: page_spec
+  owner: WB04
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB05
+  package: WB05-tracking-search-setup
+  capability: tracking_search
+  primary_output: tracking_evidence
+  owner: WB05
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB06
+  package: WB06-infrastructure-performance
+  capability: infrastructure
+  primary_output: infrastructure_evidence
+  owner: WB06
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB07
+  package: WB07-pre-launch-qa
+  capability: prelaunch_qa
+  primary_output: launch_gate
+  owner: WB07
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY
+- skill_id: WB08
+  package: WB08-deployment-launch
+  capability: deployment_launch
+  primary_output: production_launch
+  owner: WB08
+  actions:
+  - RUN
+  - REUSE
+  - VERIFY

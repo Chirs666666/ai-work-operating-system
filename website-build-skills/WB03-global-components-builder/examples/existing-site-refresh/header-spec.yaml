@@ -1,0 +1,7 @@
+component_id: header
+logo_destination: /
+navigation_component_id: primary-nav
+cta_ids:
+- quote
+utility_items: []
+responsive_status: PASS

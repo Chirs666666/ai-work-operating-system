@@ -1,0 +1,11 @@
+project_id: P1
+goal: build and launch site with SEO
+site: example.com
+environment: PRODUCTION
+state: DONE
+current_gate: post-launch
+blockers: []
+warnings: []
+next_actions:
+- '19'
+- '20'

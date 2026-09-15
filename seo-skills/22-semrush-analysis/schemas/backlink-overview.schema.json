@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "authority_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "referring_domains": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "backlinks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "authority_score",
+    "referring_domains",
+    "backlinks",
+    "notes"
+  ],
+  "additionalProperties": false
+}

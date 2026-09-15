@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability": {
+            "type": "string"
+          },
+          "primary_owner": {
+            "type": "string"
+          },
+          "active_paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conflict": {
+            "type": "boolean"
+          },
+          "resolution": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "capability",
+          "primary_owner",
+          "active_paths",
+          "conflict",
+          "resolution"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "capabilities"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

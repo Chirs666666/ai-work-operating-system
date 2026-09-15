@@ -1,0 +1,9 @@
+failures:
+- failure_id: F1
+  failed_gate: WB07
+  responsible_skill: WB04
+  affected_artifacts:
+  - page-spec
+  dependent_tasks:
+  - WB08
+  state: OPEN

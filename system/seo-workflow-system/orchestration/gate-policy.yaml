@@ -1,0 +1,8 @@
+states:
+- PASS
+- WARN
+- FAIL
+- BLOCK
+- REUSE
+- WAITING_APPROVAL
+rule: downstream PASS cannot ignore critical upstream failure

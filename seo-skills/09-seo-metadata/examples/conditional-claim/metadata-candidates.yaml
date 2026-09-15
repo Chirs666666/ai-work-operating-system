@@ -1,0 +1,14 @@
+decision_context: GENERATE
+candidates:
+- candidate_id: META-C01
+  seo_title: Precision CNC Machining for Qualified Parts
+  meta_description: CNC machining with tolerances down to ±0.01 mm on qualified parts,
+    subject to geometry, material and process requirements.
+  claim_ids:
+  - C2
+- candidate_id: META-C02
+  seo_title: CNC Machining for Tight-Tolerance Components
+  meta_description: Discuss tight-tolerance CNC parts with engineering support; qualified
+    parts may reach ±0.01 mm depending on requirements.
+  claim_ids:
+  - C2

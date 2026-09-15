@@ -1,0 +1,6 @@
+items:
+- competitor: Competitor A
+  source_url: https://publisher.example/article
+  prospect_id: P5
+  requalified: true
+  status: QUALIFIED

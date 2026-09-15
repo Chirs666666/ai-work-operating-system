@@ -1,0 +1,23 @@
+mode: CREATE
+status: WARN
+gate: WARN
+summary: Fictional example truth base is usable for general content but lacks maximum
+  reach for a detailed product specification page.
+files_written:
+- manifest.yaml
+- company.yaml
+- products.yaml
+- evidence-register.yaml
+- knowledge-gaps.yaml
+- claims-policy.yaml
+- closeout.yaml
+unresolved_conflicts: []
+open_gaps:
+- GAP-001
+downstream_ready:
+- general_blog
+- basic_company_page
+downstream_blocked:
+- detailed_product_specification_page
+next_action: Obtain an approved engineering source for maximum_reach before producing
+  the detailed specification page.

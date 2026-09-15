@@ -1,0 +1,10 @@
+owner: 07-wordpress-page-builder-publisher
+source_page:
+  url: /blog/how-robotic-welding-works/
+  page_id: '182'
+changes:
+- link_id: IL-001
+  action: ADD_NEW
+  target_url: /collaborative-welding-robot/
+  approval_required: false
+verification_required: true

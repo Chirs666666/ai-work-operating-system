@@ -1,0 +1,9 @@
+mode: PRODUCTION
+checks:
+  claim_evidence: PASS
+  keyword_naturalness: PASS
+  repetition: PASS
+  cta_alignment: PASS
+  style_readability: PASS
+  blueprint_slots: PASS
+issues: []

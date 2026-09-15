@@ -1,0 +1,5 @@
+items:
+- url: https://example.com/page/
+  signals:
+  - CANONICAL_CONFLICT
+  - SITEMAP_MISMATCH

@@ -1,0 +1,9 @@
+requirements:
+- section_id: hero
+  type: PRODUCT_OR_APPLICATION
+  aspect_ratio: '16:9'
+  priority: HIGH
+- section_id: applications
+  type: APPLICATION
+  aspect_ratio: '16:9'
+  priority: MEDIUM

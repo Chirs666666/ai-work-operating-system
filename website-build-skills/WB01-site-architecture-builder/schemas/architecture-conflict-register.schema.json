@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "conflict_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "DUPLICATE_URL",
+              "DUPLICATE_INTENT",
+              "OWNERSHIP_OVERRIDE",
+              "PARENTAGE",
+              "TAXONOMY_OVERLAP",
+              "ORPHAN",
+              "LIVE_EQUITY_RISK",
+              "NAVIGATION_OVERLOAD",
+              "OTHER"
+            ]
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "BLOCKING"
+            ]
+          },
+          "affected_page_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "responsible_skill": {
+            "type": "string"
+          },
+          "resolution_state": {
+            "type": "string",
+            "enum": [
+              "OPEN",
+              "RETURNED",
+              "RESOLVED",
+              "ACCEPTED_RISK"
+            ]
+          }
+        },
+        "required": [
+          "conflict_id",
+          "type",
+          "severity",
+          "affected_page_ids",
+          "description",
+          "responsible_skill",
+          "resolution_state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "conflicts"
+  ],
+  "additionalProperties": false
+}

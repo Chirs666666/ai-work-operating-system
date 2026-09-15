@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "configured_canonical": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "canonical_status": {
+            "enum": [
+              "ALIGNED",
+              "MISSING",
+              "CONFLICTING",
+              "NON_200_TARGET",
+              "UNKNOWN"
+            ]
+          },
+          "ownership_status": {
+            "enum": [
+              "VERIFIED",
+              "UNKNOWN",
+              "CONFLICTING"
+            ]
+          },
+          "recommended_action": {
+            "enum": [
+              "KEEP",
+              "ADD_SELF",
+              "CHANGE_TARGET",
+              "REMOVE",
+              "BLOCK_FOR_OWNERSHIP",
+              "INVESTIGATE"
+            ]
+          }
+        },
+        "required": [
+          "issue_id",
+          "url",
+          "canonical_status",
+          "ownership_status",
+          "recommended_action"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

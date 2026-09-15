@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "15-existing-site-inventory"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "FULL_INVENTORY",
+        "URL_INVENTORY",
+        "PERFORMANCE_ENRICHMENT",
+        "ASSET_CLASSIFICATION",
+        "ACTION_CLASSIFICATION",
+        "REFRESH",
+        "VERIFY"
+      ]
+    },
+    "source_methods": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "USER_DATA",
+          "API_DATA",
+          "PUBLIC_RESEARCH"
+        ]
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

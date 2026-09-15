@@ -1,0 +1,6 @@
+gaps:
+- competitor: competitor.example
+  gap: Competitor covers a relevant product subcategory not mapped on target site.
+  relevance: HIGH
+  evidence_refs:
+  - SEMRUSH-COMP

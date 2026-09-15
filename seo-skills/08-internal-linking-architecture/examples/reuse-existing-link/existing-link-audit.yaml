@@ -1,0 +1,5 @@
+links:
+- source_url: /guide/robotic-welding/
+  target_url: /collaborative-welding-robot/
+  action: REUSE_EXISTING
+  anchor_text: collaborative welding robot

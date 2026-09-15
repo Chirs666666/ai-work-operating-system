@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "BOTTLENECK_CONFIRMED",
+        "BOTTLENECK_SUSPECTED",
+        "NO_EVIDENCE",
+        "UNKNOWN"
+      ]
+    },
+    "observed_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "root_causes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "observed_value",
+    "unit",
+    "root_causes",
+    "evidence_refs",
+    "notes"
+  ],
+  "additionalProperties": false
+}

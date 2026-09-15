@@ -1,0 +1,5 @@
+handoffs:
+- opportunity_id: O4
+  target_skill: 25-keyword-page-mapping
+  reason: Wrong-page signal requires URL ownership review.
+  blocking: true

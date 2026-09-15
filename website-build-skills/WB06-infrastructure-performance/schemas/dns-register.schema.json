@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "current_value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "desired_value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ttl": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "UNCHANGED",
+              "CHANGE_PLANNED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "record_id",
+          "type",
+          "name",
+          "current_value",
+          "desired_value",
+          "ttl",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

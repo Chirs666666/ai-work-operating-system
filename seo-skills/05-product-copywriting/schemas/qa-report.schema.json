@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "mode",
+    "checks",
+    "issues"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "DRAFT",
+        "PRODUCTION"
+      ]
+    },
+    "checks": {
+      "type": "object"
+    },
+    "issues": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Qa Report"
+}

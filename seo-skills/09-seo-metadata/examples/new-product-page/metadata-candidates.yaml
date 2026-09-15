@@ -1,0 +1,14 @@
+decision_context: GENERATE
+candidates:
+- candidate_id: META-C01
+  seo_title: 5-Axis CNC Machining Services for Complex Parts
+  meta_description: Precision 5-axis CNC machining for complex parts, backed by verified
+    manufacturing capabilities and engineering support.
+  claim_ids:
+  - C1
+- candidate_id: META-C02
+  seo_title: Complex Parts with 5-Axis CNC Machining
+  meta_description: Explore 5-axis CNC machining for complex components with evidence-backed
+    capabilities and practical production support.
+  claim_ids:
+  - C1

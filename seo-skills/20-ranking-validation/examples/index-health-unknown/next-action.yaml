@@ -1,0 +1,4 @@
+action: RECHECK_INDEX
+route_skill: 19-indexing-specialist
+reason: Index health is not established.
+recheck_after: null

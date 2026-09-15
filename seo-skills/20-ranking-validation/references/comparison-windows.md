@@ -1,0 +1,2 @@
+# Comparison Windows
+Trend claims require comparable windows and equivalent segmentation when practical. If seasonality, market/device filters or window lengths differ materially, downgrade confidence or mark UNKNOWN.

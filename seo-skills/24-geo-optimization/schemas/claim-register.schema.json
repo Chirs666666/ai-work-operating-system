@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "claim_type": {
+            "enum": [
+              "FACT",
+              "SPECIFICATION",
+              "CASE_RESULT",
+              "COMPARISON",
+              "OPINION",
+              "ESTIMATE",
+              "MARKETING_CLAIM",
+              "UNKNOWN"
+            ]
+          },
+          "material": {
+            "type": "boolean"
+          },
+          "requires_evidence": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "claim_id",
+          "text",
+          "claim_type",
+          "material",
+          "requires_evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "claims"
+  ],
+  "additionalProperties": false
+}

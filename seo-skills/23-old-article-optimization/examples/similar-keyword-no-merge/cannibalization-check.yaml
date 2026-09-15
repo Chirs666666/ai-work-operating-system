@@ -1,0 +1,7 @@
+status: NOT_CONFIRMED
+intent_overlap: MEDIUM
+query_overlap: MEDIUM
+url_switching: false
+ownership_confirmed: false
+evidence_refs:
+- MAP

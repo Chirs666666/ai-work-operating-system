@@ -1,0 +1,18 @@
+project_id: P1
+site: example.com
+environment: PRODUCTION_CANDIDATE
+build_mode: NEW_SITE_BUILD
+skill_states:
+  WB01: PASS
+  WB02: PASS
+  WB03: PASS
+  WB04: PASS
+  WB05: PASS
+  WB06: PASS
+  WB07: PASS
+  WB08: DONE
+current_gate: launch
+blockers: []
+warnings: []
+next_actions:
+- '19'

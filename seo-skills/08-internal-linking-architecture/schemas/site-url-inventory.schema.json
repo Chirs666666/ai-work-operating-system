@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "pages"
+  ],
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url"
+        ],
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "page_id": {
+            "type": "string"
+          },
+          "page_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "ownership_status": {
+            "type": "string"
+          },
+          "traffic": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "const": "UNKNOWN"
+              }
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

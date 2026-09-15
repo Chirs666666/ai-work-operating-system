@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "verified": {
+      "type": "boolean"
+    },
+    "verification_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "FAILED",
+        "UNKNOWN",
+        "NOT_REQUIRED"
+      ]
+    }
+  },
+  "required": [
+    "verified",
+    "verification_method",
+    "evidence",
+    "state"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "GEO_AUDIT",
+        "ENTITY_AUDIT",
+        "CLAIM_EVIDENCE_AUDIT",
+        "CITATION_READINESS",
+        "AI_VISIBILITY",
+        "OPTIMIZATION_PLAN",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g24": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g24",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

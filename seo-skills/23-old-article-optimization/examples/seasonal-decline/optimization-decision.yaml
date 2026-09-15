@@ -1,0 +1,6 @@
+action: MONITOR
+evidence_refs:
+- E1
+reason: Do not rewrite solely for seasonal demand decline.
+merge_or_url_change: false
+ownership_confirmation_required: false

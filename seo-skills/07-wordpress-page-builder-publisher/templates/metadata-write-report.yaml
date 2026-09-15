@@ -1,0 +1,9 @@
+page_id: "123"
+report_type: METADATA
+items:
+  - item_id: seo-title
+    source_artifact: 09-seo-metadata
+    requested_value: Example SEO Title
+    persisted_value: Example SEO Title
+    verified: true
+    notes: read-back confirmed

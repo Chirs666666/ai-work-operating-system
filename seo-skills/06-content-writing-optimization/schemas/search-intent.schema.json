@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "search-intent",
+  "type": "object",
+  "required": [
+    "primary_intent",
+    "searcher_goal",
+    "knowledge_level",
+    "buyer_stage",
+    "required_questions",
+    "excluded_topics",
+    "evidence_ids",
+    "confidence"
+  ],
+  "properties": {
+    "primary_intent": {
+      "type": "string"
+    },
+    "searcher_goal": {
+      "type": "string"
+    },
+    "knowledge_level": {
+      "type": "string"
+    },
+    "buyer_stage": {
+      "type": "string"
+    },
+    "required_questions": {
+      "type": "array"
+    },
+    "excluded_topics": {
+      "type": "array"
+    },
+    "evidence_ids": {
+      "type": "array"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

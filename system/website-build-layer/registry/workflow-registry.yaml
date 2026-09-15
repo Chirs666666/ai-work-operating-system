@@ -1,0 +1,14 @@
+version: 1.0.0
+workflows:
+- workflow_id: NEW_SITE_BUILD
+  file: workflows/new-site-build.yaml
+- workflow_id: EXISTING_SITE_REBUILD
+  file: workflows/existing-site-rebuild.yaml
+- workflow_id: NEW_PAGE_BUILD
+  file: workflows/new-page-build.yaml
+- workflow_id: SITE_EXPANSION
+  file: workflows/site-expansion.yaml
+- workflow_id: MIGRATION_LAUNCH
+  file: workflows/migration-launch.yaml
+- workflow_id: BUILD_FIX_RELAUNCH
+  file: workflows/build-fix-relaunch.yaml

@@ -1,0 +1,7 @@
+primary_editor: GUTENBERG
+secondary_editors: []
+mixed_builder_rationale: null
+pattern_strategy:
+- global patterns
+- synced patterns
+compatibility_status: PASS

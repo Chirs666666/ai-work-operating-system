@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "MISSING",
+        "WEAK",
+        "MISALIGNED",
+        "DUPLICATE",
+        "PERFORMANCE_OPPORTUNITY",
+        "OWNERSHIP_CONFLICT",
+        "INSUFFICIENT_DATA"
+      ]
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action": {
+      "enum": [
+        "KEEP",
+        "OPTIMIZE",
+        "REWRITE",
+        "TEST",
+        "REUSE",
+        "INSUFFICIENT_DATA",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    }
+  },
+  "required": [
+    "state",
+    "issues",
+    "action"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,5 @@
+container_id: GTM-EXAMPLE
+enabled: true
+state: VERIFIED
+evidence:
+- container detected

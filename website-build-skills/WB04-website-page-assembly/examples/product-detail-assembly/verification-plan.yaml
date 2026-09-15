@@ -1,0 +1,6 @@
+checks:
+- check_id: V1
+  description: Required upstream artifacts bound
+  status: PASS
+  evidence:
+  - upstream-artifact-register.yaml

@@ -1,0 +1,7 @@
+conflicts:
+- topic: bend allowance
+  candidate_urls:
+  - /bend-allowance/
+  - /blog/bend-allowance-guide/
+  state: CONFLICTING
+handoff_owner: 25-keyword-page-mapping

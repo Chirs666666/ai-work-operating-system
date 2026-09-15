@@ -1,0 +1,6 @@
+provider: managed host
+runtime: PHP
+region: configured
+state: VERIFIED
+evidence:
+- runtime inspection

@@ -1,0 +1,19 @@
+metrics:
+- keyword_id: kw-001
+  search_volume: 1300
+  cpc: 4.2
+  kd: 38
+  provider: Fictional Keyword Export
+  market: United States
+  language: English
+  collected_at: '2026-09-14'
+  source_method: USER_DATA
+- keyword_id: kw-002
+  search_volume: null
+  cpc: null
+  kd: null
+  provider: null
+  market: United States
+  language: English
+  collected_at: '2026-09-14'
+  source_method: PUBLIC_RESEARCH

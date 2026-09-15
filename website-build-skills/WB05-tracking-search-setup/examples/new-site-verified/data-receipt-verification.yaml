@@ -1,0 +1,7 @@
+events:
+- event_name: quote_request
+  received: true
+  destination: GA4
+  receipt_evidence:
+  - DebugView/Realtime
+  state: VERIFIED

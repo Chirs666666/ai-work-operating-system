@@ -1,0 +1,2 @@
+# Canonical Outputs
+22 outputs: manifest, calculator-brief, source-register, formula-evidence, formula-contract, variable-spec, unit-system, assumptions-boundaries, edge-case-register, test-vectors, test-results, calculation-engine-contract, error-handling-contract, frontend-contract, explanatory-content-contract, seo-page-requirements, security-safety-review, change-control, cross-skill-handoffs, implementation-handoff, verification-report, closeout.

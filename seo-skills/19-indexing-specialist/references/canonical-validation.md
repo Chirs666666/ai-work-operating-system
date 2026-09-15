@@ -1,0 +1,2 @@
+# Canonical Validation
+Compare declared canonical, observed/selected canonical evidence and intended URL. INDEXED_CANONICAL_OTHER requires diagnosis and cannot be silently called healthy for the requested URL.

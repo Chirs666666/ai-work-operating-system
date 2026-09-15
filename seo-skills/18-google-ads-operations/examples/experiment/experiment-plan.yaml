@@ -1,0 +1,9 @@
+hypothesis: A more application-specific ad message may improve qualified conversion
+  rate.
+variable: ad message
+primary_metric: qualified conversion rate
+guardrails:
+- Do not introduce unsupported claims
+stop_criteria:
+- Stop if tracking breaks
+live_delivery_change: true

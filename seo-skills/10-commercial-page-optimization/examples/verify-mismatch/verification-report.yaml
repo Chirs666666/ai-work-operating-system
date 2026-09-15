@@ -1,0 +1,7 @@
+overall: MISMATCH
+checked_elements:
+- H1
+- capability section
+- CTA
+mismatches:
+- CTA does not match approved contract

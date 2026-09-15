@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page",
+    "sections"
+  ],
+  "properties": {
+    "page": {
+      "type": "object"
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sections": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Product Copy"
+}

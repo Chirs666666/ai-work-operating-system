@@ -1,0 +1,19 @@
+title: 'Fictional Process Allowance: Calculation Limits and Validation'
+dek: A fictional technical example showing evidence-aware informational writing.
+sections:
+- id: SEC-01
+  heading: What the concept means
+  body: This example separates a useful estimate from a production-confirmed value.
+    The distinction matters because the input assumptions determine what the estimate
+    can support.
+- id: SEC-02
+  heading: Variables and boundary conditions
+  body: Check the declared inputs before relying on the result. If a relevant variable
+    changes, treat the earlier result as an estimate that needs review rather than
+    a universal constant.
+- id: SEC-03
+  heading: How to validate the result
+  body: Record the inputs, calculate the estimate, compare it with the defined validation
+    method, and document any correction before production use.
+cta: Prepare the relevant inputs and validation requirements before requesting an
+  engineering review.

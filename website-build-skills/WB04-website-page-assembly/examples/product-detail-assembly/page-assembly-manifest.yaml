@@ -1,0 +1,15 @@
+page_id: P-ROBOT
+page_type: PRODUCT_DETAIL
+section_ids:
+- hero
+- specs
+global_component_ids:
+- header
+- footer
+claims:
+- claim_id: CL1
+  section_id: specs
+  text_ref: 05/product-copy.md#specs
+  evidence_ref: 01/company-facts.yaml
+  support_status: SUPPORTED
+assembly_status: DRAFT_BUILD_READY

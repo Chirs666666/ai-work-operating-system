@@ -1,0 +1,5 @@
+mode: DOMAIN_ANALYSIS
+g22: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers: []

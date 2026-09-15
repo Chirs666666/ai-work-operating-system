@@ -1,0 +1,6 @@
+mode: CLAIM_EVIDENCE_AUDIT
+g24: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers:
+- Material claim lacks supporting evidence

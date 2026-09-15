@@ -1,0 +1,4 @@
+action: MONITOR
+route_skill: null
+reason: Relevant visibility is still growing.
+recheck_after: project-configured interval

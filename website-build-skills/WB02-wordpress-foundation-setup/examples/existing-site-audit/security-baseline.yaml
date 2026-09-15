@@ -1,0 +1,9 @@
+update_policy:
+- controlled updates
+login_hardening:
+- strong authentication policy
+security_capability_owner: hosting/security layer
+firewall_owner: hosting/security layer
+production_change_required: false
+verification_status: PARTIAL
+notes: []

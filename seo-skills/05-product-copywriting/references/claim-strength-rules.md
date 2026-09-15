@@ -1,0 +1,2 @@
+# Claim Strength Rules
+C1 VERIFIED_FACT: direct approved fact. C2 SUPPORTED_INTERPRETATION: conservative explanation supported by evidence. C3 CONDITIONAL_BENEFIT: potential outcome with explicit conditions. C4 UNSUPPORTED_MARKETING_CLAIM: unsupported certainty/superlative/outcome; prohibited in publishable PRODUCTION copy. Terms such as best, #1, industry-leading, guaranteed ROI, zero defects, 100% safe, maintenance-free, perfect quality are risk signals, not mechanical bans.

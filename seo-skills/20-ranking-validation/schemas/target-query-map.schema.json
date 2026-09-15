@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "targets": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target_query": {
+            "type": "string"
+          },
+          "best_match_class": {
+            "enum": [
+              "TARGET_MATCH",
+              "SEMANTIC_MATCH",
+              "RELATED_QUERY",
+              "UNRELATED_QUERY",
+              "BRAND_QUERY",
+              "UNKNOWN"
+            ]
+          },
+          "observed_queries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "DETECTED",
+              "NOT_DETECTED",
+              "NO_DATA"
+            ]
+          }
+        },
+        "required": [
+          "target_query",
+          "best_match_class",
+          "observed_queries",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "targets"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+claims:
+- claim_id: C1
+  text: ±0.02 mm repeatability
+  claim_type: SPECIFICATION
+  material: true
+  requires_evidence: true

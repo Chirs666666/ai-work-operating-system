@@ -1,0 +1,2 @@
+# Frontend Contract
+Specify inputs, labels, unit selectors, Calculate/Reset behavior, result fields, warnings/errors, formula disclosure, accessibility, keyboard behavior, mobile responsiveness and result-copy behavior where useful. 16 owns calculator interaction requirements, not the full page visual system.

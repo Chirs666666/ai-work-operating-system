@@ -1,0 +1,14 @@
+risk_class: HIGH_IMPACT_LIVE_REWRITE
+approval_required: true
+before:
+  scope: existing full page
+after:
+  scope: approved rewrite
+why: Current page fails core intent and offer clarity
+evidence:
+- diagnosis
+- 01 truth
+preserved_elements:
+- verified customer proof
+expected_effect: Better alignment with intended commercial query and buyer path
+risk: High-impact live content change

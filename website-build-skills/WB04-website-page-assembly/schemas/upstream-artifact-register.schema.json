@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "skill_owner": {
+            "type": "string"
+          },
+          "artifact_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "AVAILABLE",
+              "REUSE",
+              "MISSING",
+              "UNKNOWN",
+              "BLOCKED"
+            ]
+          }
+        },
+        "required": [
+          "artifact_id",
+          "skill_owner",
+          "artifact_ref",
+          "role",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "artifacts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,9 @@
+formulas:
+- formula_id: formula-x
+  formula_state: CONFLICTING
+  evidence_refs:
+  - SRC-X-1
+  - SRC-X-2
+  conflict_notes:
+  - Sources define different correction terms.
+  production_allowed: false

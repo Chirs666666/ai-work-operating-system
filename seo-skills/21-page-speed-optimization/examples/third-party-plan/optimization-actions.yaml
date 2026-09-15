@@ -1,0 +1,7 @@
+actions:
+- action: Test delayed chat widget loading
+  target: chat script
+  expected_effect: Reduce main-thread contention
+  risk: HIGH
+  live_change: false
+  status: PROPOSED

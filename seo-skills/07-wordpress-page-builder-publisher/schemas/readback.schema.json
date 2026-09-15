@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "readback_id",
+    "page_id",
+    "status",
+    "build_mode",
+    "sections",
+    "metadata",
+    "links",
+    "media",
+    "read_at"
+  ],
+  "properties": {
+    "readback_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "build_mode": {
+      "enum": [
+        "BLOCK_EDITOR",
+        "ELEMENTOR"
+      ]
+    },
+    "revision": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "section_id",
+          "component_id"
+        ],
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "component_id": {
+            "type": "string"
+          },
+          "content": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "links": {
+      "type": "array"
+    },
+    "media": {
+      "type": "array"
+    },
+    "read_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

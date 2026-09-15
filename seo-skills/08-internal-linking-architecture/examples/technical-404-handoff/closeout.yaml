@@ -1,0 +1,9 @@
+g08_status: WARN
+warnings:
+- 404 target rejected from link plan.
+blockers: []
+handoffs:
+- 12-technical-seo-audit-fix
+generated_artifacts:
+- technical-link-issues.yaml
+- link-decisions.yaml

@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platform": {
+            "type": "string"
+          },
+          "property_verified": {
+            "type": "boolean"
+          },
+          "submission_state": {
+            "type": "string",
+            "enum": [
+              "NOT_CONFIGURED",
+              "CONFIGURED",
+              "VERIFIED",
+              "SUBMITTED",
+              "RECEIVED",
+              "FAILED",
+              "UNKNOWN"
+            ]
+          },
+          "indexed_claim": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "platform",
+          "property_verified",
+          "submission_state",
+          "indexed_claim",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "platforms"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

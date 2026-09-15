@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "topic": {
+      "type": "string"
+    },
+    "strength": {
+      "enum": [
+        "STRONG",
+        "MODERATE",
+        "WEAK",
+        "UNKNOWN"
+      ]
+    },
+    "supported": {
+      "type": "boolean"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "brand",
+    "topic",
+    "strength",
+    "supported",
+    "evidence_refs"
+  ],
+  "additionalProperties": false
+}

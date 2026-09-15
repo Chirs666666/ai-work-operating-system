@@ -1,0 +1,7 @@
+mode: UPDATE
+g06: REUSE
+rationale: Diagnosis found no material content defect or justified improvement; preserve
+  what works.
+handoffs:
+- 19-index-ranking-validation
+open_gaps: []

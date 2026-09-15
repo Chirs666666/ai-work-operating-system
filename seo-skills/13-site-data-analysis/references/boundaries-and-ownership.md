@@ -1,0 +1,2 @@
+# Boundaries and Ownership
+13 owns analytics, diagnosis, opportunity detection, prioritization and cross-source validation. Downstream skills execute changes. 25 owns URL ownership; 12 technical SEO; 09 metadata; 08 internal linking; 06/10 content; 11 backlinks; 21 speed; 19 index/ranking lifecycle.

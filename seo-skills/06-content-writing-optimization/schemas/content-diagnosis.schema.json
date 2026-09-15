@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "content-diagnosis",
+  "type": "object",
+  "required": [
+    "applicable",
+    "reason",
+    "performance_data_available",
+    "works",
+    "stale",
+    "missing",
+    "unsupported",
+    "preserve",
+    "recommended_mode",
+    "confidence"
+  ],
+  "properties": {
+    "applicable": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "performance_data_available": {
+      "type": "boolean"
+    },
+    "works": {
+      "type": "array"
+    },
+    "stale": {
+      "type": "array"
+    },
+    "missing": {
+      "type": "array"
+    },
+    "unsupported": {
+      "type": "array"
+    },
+    "preserve": {
+      "type": "array"
+    },
+    "recommended_mode": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

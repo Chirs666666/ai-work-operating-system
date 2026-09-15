@@ -1,0 +1,2 @@
+# Canonical Outputs
+21 outputs: manifest, analysis-brief, source-register, source-quality, period-definition, site-kpi-summary, search-performance, landing-page-performance, query-performance, query-page-matrix, conversion-engagement, keyword-visibility, competitor-visibility, backlink-trend-context, anomaly-register, diagnosis-register, opportunity-register, priority-action-plan, cross-skill-handoffs, monitoring-plan, closeout.

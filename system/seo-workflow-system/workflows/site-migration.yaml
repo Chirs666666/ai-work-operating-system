@@ -1,0 +1,52 @@
+workflow_id: SITE_MIGRATION
+version: 1.1.0
+steps:
+- step: 1
+  node: '15'
+  default_action: VERIFY
+  critical: false
+- step: 2
+  node: WB01
+  default_action: RUN
+  critical: false
+- step: 3
+  node: WB02
+  default_action: RUN
+  critical: false
+- step: 4
+  node: WB05
+  default_action: RUN
+  critical: false
+- step: 5
+  node: WB06
+  default_action: RUN
+  critical: false
+- step: 6
+  node: '12'
+  default_action: VERIFY
+  critical: true
+- step: 7
+  node: '21'
+  default_action: VERIFY
+  critical: false
+- step: 8
+  node: WB07
+  default_action: RUN
+  critical: true
+- step: 9
+  node: WB08
+  default_action: RUN
+  critical: true
+- step: 10
+  node: '19'
+  default_action: VERIFY
+  critical: false
+- step: 11
+  node: '20'
+  default_action: VERIFY
+  critical: false
+rules:
+- discover before run
+- resolve alias 14 to 12
+- preserve ownership
+- production approval before WB08

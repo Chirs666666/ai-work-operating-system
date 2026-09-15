@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "drafts": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "send_authorized": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "subject",
+          "body",
+          "send_authorized"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "drafts"
+  ],
+  "additionalProperties": false
+}

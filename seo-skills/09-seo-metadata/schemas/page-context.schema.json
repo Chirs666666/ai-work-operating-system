@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "page_type": {
+      "type": "string"
+    },
+    "primary_topic": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ownership_status": {
+      "enum": [
+        "VERIFIED",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    },
+    "h1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "ownership_status"
+  ],
+  "additionalProperties": false
+}

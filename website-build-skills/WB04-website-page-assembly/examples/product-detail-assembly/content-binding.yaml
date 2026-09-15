@@ -1,0 +1,9 @@
+bindings:
+- section_id: hero
+  artifact_ref: 05/product-copy.md
+  binding_key: hero
+  status: BOUND
+- section_id: specs
+  artifact_ref: 05/product-copy.md
+  binding_key: specs
+  status: BOUND

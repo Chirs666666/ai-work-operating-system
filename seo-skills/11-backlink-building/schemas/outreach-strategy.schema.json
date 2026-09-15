@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "angle": {
+            "enum": [
+              "RESOURCE_VALUE",
+              "TECHNICAL_EXPERTISE",
+              "SUPPLIER_PROFILE",
+              "PARTNERSHIP",
+              "CASE_STUDY",
+              "BROKEN_LINK_HELP",
+              "UNLINKED_MENTION",
+              "GUEST_EXPERTISE",
+              "OTHER"
+            ]
+          },
+          "personalization_facts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ask": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "angle",
+          "personalization_facts",
+          "ask"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

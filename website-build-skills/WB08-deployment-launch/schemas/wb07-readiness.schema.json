@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "artifact_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "READY_FOR_LAUNCH_APPROVAL",
+        "BLOCKED",
+        "UNKNOWN"
+      ]
+    },
+    "ready": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "artifact_ref",
+    "state",
+    "ready",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

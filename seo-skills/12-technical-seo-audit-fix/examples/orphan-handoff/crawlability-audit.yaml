@@ -1,0 +1,6 @@
+items:
+- url: https://example.com/application/
+  crawlable_html_entry: 'NO'
+  depth: null
+  technical_state: WARNING
+  handoff_to_08: true

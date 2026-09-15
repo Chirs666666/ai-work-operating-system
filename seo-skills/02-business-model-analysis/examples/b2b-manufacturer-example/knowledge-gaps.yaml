@@ -1,0 +1,15 @@
+gaps:
+- field: revenue_model
+  status: UNKNOWN
+  impact: Does not block keyword research; limits pricing/business-model conclusions.
+source_conflicts:
+- field: primary_target_segment
+  status: SOURCE_CONFLICT
+  sources:
+  - method: USER_DATA
+    value: CNC job shops
+  - method: PUBLIC_RESEARCH
+    value: general manufacturing
+  selected_for_analysis: CNC job shops
+  reason: Current fictional inquiry evidence is selected for this project.
+  requires_verification: true

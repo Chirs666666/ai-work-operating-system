@@ -1,0 +1,4 @@
+pages:
+- url: https://example.com/blog/old-guide/
+  page_type: GUIDE
+  confidence: HIGH

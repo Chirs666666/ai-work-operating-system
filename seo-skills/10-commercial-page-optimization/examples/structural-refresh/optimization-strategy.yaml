@@ -1,0 +1,10 @@
+action: STRUCTURAL_REFRESH
+goal: Reorder sections around buyer decision flow.
+preserve_first: true
+change_scope:
+- section order
+- proof placement
+- CTA placement
+excluded_scope:
+- URL ownership
+- metadata

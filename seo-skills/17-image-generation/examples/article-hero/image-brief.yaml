@@ -1,0 +1,8 @@
+asset_id: hero-01
+purpose: Introduce an industrial tube bending article visually.
+page_role: article hero
+subject: CNC tube bending process
+source_required: false
+acceptance_criteria:
+- Industrial context
+- No unsupported dimensions or claims

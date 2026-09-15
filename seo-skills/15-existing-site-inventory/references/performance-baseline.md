@@ -1,0 +1,2 @@
+# Performance Baseline
+Preserve GSC, GA4 and provider-specific metrics separately. Track clicks, impressions, CTR, position, sessions, conversions, visibility and other available data with provenance. Provider estimates do not replace first-party analytics.

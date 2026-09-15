@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "primary_keyword",
+    "secondary_keywords",
+    "placements"
+  ],
+  "properties": {
+    "primary_keyword": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "secondary_keywords": {
+      "type": "array"
+    },
+    "placements": {
+      "type": "array"
+    },
+    "density_target": {
+      "type": "null"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Keyword Usage"
+}

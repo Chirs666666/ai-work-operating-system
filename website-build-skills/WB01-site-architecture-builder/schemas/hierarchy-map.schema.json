@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "parent_page_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "child_page_id": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "ROOT",
+              "PARENT_CHILD",
+              "COLLECTION_MEMBER",
+              "RESOURCE_MEMBER"
+            ]
+          }
+        },
+        "required": [
+          "parent_page_id",
+          "child_page_id",
+          "relationship"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "relationships"
+  ],
+  "additionalProperties": false
+}

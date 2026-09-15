@@ -1,0 +1,6 @@
+targets:
+- target_query: tube bending machine
+  best_match_class: RELATED_QUERY
+  observed_queries:
+  - cnc tube bender
+  status: NOT_DETECTED

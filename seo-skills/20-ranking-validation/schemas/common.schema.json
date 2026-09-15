@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "QUERY_VALIDATION",
+        "KEYWORD_VALIDATION",
+        "RANKING_CHECK",
+        "SERP_CHECK",
+        "TREND_REVIEW",
+        "GROWTH_REVIEW",
+        "DIAGNOSIS",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "state": {
+      "enum": [
+        "NO_DATA",
+        "NO_IMPRESSIONS",
+        "IMPRESSION_STARTED",
+        "QUERY_STARTED",
+        "RELATED_QUERY_STARTED",
+        "TARGET_QUERY_STARTED",
+        "RANKING_STARTED",
+        "KEYWORD_EXPANDING",
+        "RANKING_IMPROVING",
+        "RANKING_STABLE",
+        "RANKING_DECLINING",
+        "WRONG_INTENT",
+        "INSUFFICIENT_TIME",
+        "OPTIMIZATION_NEEDED"
+      ]
+    },
+    "match": {
+      "enum": [
+        "TARGET_MATCH",
+        "SEMANTIC_MATCH",
+        "RELATED_QUERY",
+        "UNRELATED_QUERY",
+        "BRAND_QUERY",
+        "UNKNOWN"
+      ]
+    },
+    "g20": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+decisions:
+- link_id: IL-001
+  source_url: /blog/how-robotic-welding-works/
+  target_url: /collaborative-welding-robot/
+  dimensions:
+    semantic_relevance: HIGH
+    page_relationship: COMMERCIAL_SUPPORT
+    user_journey_value: HIGH
+    target_page_priority: HIGH
+    link_gap: HIGH
+    source_page_value: MEDIUM
+    placement_quality: HIGH
+  priority: PRIORITY_HIGH
+  action: ADD_NEW
+  reason: Natural next step from educational content to relevant product.
+  evidence: []
+- link_id: IL-002
+  source_url: /collaborative-welding-robot/
+  target_url: /applications/automotive-welding/
+  dimensions:
+    semantic_relevance: HIGH
+    page_relationship: APPLICATION_RELATION
+    user_journey_value: HIGH
+    target_page_priority: HIGH
+    link_gap: HIGH
+    source_page_value: MEDIUM
+    placement_quality: HIGH
+  priority: PRIORITY_HIGH
+  action: ADD_NEW
+  reason: Product page supports relevant application journey.
+  evidence: []

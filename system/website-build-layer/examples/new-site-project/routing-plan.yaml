@@ -1,0 +1,13 @@
+tasks:
+- task_id: T1
+  skill: WB01
+  capability: site_architecture
+  action: RUN
+  artifact_id: null
+  rationale: new site
+- task_id: T2
+  skill: WB08
+  capability: deployment_launch
+  action: RUN
+  artifact_id: A7
+  rationale: approved launch

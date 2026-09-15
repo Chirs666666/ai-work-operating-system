@@ -1,0 +1,7 @@
+required: true
+verified: true
+checks:
+- known-good site restored
+state: VERIFIED
+evidence:
+- rollback smoke test

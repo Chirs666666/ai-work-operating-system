@@ -1,0 +1,10 @@
+page_id: "7301"
+g07: PASS
+connection_status: CONNECTED
+task_goal: PUBLISH
+draft_ready: true
+high_impact_action: true
+approval_status: APPROVED
+post_write_readback_complete: true
+done: true
+handoff: 19-index-ranking-validation

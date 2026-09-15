@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "12-technical-seo-audit-fix"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "FULL_AUDIT",
+        "TARGETED_AUDIT",
+        "BROKEN_LINK_AUDIT",
+        "REMEDIATION_PLAN",
+        "EXECUTE_SAFE_FIXES",
+        "VERIFY_FIXES"
+      ]
+    },
+    "source_methods": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "USER_DATA",
+          "API_DATA",
+          "PUBLIC_RESEARCH"
+        ]
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

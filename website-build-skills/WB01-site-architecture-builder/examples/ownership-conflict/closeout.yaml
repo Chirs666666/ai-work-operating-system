@@ -1,0 +1,8 @@
+gate: BLOCK
+architecture_state: BLOCKED
+ready_for_build: false
+warnings: []
+blockers:
+- Resolve ownership conflict with Skill 25.
+next_skills:
+- 25-keyword-page-mapping

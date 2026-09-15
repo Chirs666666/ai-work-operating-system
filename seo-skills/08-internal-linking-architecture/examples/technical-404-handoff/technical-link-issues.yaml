@@ -1,0 +1,6 @@
+issues:
+- source_url: /guide/robotic-welding/
+  target_url: /old-product/
+  status_code: 404
+  issue: BROKEN
+handoff_owner: 12-technical-seo-audit-fix

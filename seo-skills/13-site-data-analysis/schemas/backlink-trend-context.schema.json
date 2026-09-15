@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "type": "string"
+    },
+    "referring_domains": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "backlinks": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "change_class": {
+      "enum": [
+        "GROWTH",
+        "DECLINE",
+        "MIXED",
+        "STABLE",
+        "INSUFFICIENT_DATA",
+        "CONFLICTING_DATA"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "provider",
+    "referring_domains",
+    "backlinks",
+    "change_class"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,5 @@
+mappings:
+- claim_id: C1
+  evidence_ids:
+  - EV1
+  support_status: SUPPORTED

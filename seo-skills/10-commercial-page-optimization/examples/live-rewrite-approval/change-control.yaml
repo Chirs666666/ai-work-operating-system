@@ -1,0 +1,14 @@
+risk_class: HIGH_IMPACT_LIVE_REWRITE
+approval_required: true
+before:
+  h1: Old H1
+after:
+  h1: New H1
+why: Major intent/offer correction
+evidence:
+- diagnosis
+- performance baseline
+preserved_elements:
+- case proof
+expected_effect: Clearer buyer/search alignment
+risk: Could disturb established page performance

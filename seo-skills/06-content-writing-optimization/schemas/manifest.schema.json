@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "manifest",
+  "type": "object",
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "content_type",
+    "language",
+    "market",
+    "target_topic",
+    "upstream"
+  ],
+  "properties": {
+    "skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "REFRESH",
+        "REWRITE"
+      ]
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "market": {
+      "type": "string"
+    },
+    "target_topic": {
+      "type": "string"
+    },
+    "upstream": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

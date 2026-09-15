@@ -1,0 +1,5 @@
+handoffs:
+- opportunity_id: O14
+  target_skill: 06-content-writing-optimization
+  reason: Informational article lost query coverage and needs content diagnosis.
+  blocking: false

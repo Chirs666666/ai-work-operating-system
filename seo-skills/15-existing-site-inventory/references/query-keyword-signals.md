@@ -1,0 +1,2 @@
+# Query and Keyword Signals
+Record known queries/keywords, ranking URLs, impressions/clicks/position or provider visibility where sourced. These are signals for asset protection and handoff; 25 decides ownership.

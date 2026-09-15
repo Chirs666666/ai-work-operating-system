@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "standard_types",
+    "project_extensions"
+  ],
+  "properties": {
+    "standard_types": {
+      "type": "array"
+    },
+    "project_extensions": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

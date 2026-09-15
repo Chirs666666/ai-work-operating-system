@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "prospects": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dr": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "da": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "authority_score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "organic_traffic": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "prospect_id",
+          "domain",
+          "dr",
+          "da",
+          "authority_score",
+          "organic_traffic"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "prospects"
+  ],
+  "additionalProperties": false
+}

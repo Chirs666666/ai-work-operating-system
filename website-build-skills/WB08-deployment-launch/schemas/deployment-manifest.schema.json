@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "deployment_id": {
+      "type": "string"
+    },
+    "scope_id": {
+      "type": "string"
+    },
+    "release_version": {
+      "type": "string"
+    },
+    "risk": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "expected_downtime": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rollback_required": {
+      "type": "boolean"
+    },
+    "approval_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "deployment_id",
+    "scope_id",
+    "release_version",
+    "risk",
+    "expected_downtime",
+    "rollback_required",
+    "approval_id"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

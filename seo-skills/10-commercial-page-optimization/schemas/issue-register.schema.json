@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "issues": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "CONTENT",
+              "CONVERSION",
+              "OWNERSHIP",
+              "METADATA",
+              "INTERNAL_LINK",
+              "TECHNICAL_SEO",
+              "PAGE_SPEED",
+              "UI",
+              "EVIDENCE"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "owner_skill": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "issue_id",
+          "category",
+          "severity",
+          "owner_skill",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "issues"
+  ],
+  "additionalProperties": false
+}

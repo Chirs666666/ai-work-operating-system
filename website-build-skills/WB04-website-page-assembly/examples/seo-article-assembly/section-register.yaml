@@ -1,0 +1,8 @@
+sections:
+- section_id: body
+  section_type: ARTICLE_BODY
+  required: true
+  order: 1
+  source_owner: 06-content-writing-optimization
+  source_artifact: 06/article.md
+  status: BOUND

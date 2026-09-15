@@ -1,0 +1,5 @@
+goals:
+- goal_id: G1
+  business_goal: quote request
+  required: true
+  event_name: quote_request

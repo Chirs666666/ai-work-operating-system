@@ -1,0 +1,6 @@
+claims:
+- claim_id: C9
+  claim: 24-hour delivery
+  state: UNSUPPORTED
+  qualifier: null
+  source: null

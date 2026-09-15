@@ -1,0 +1,6 @@
+mode: FULL_AUDIT
+g12: WARN
+final_status: PARTIAL
+warnings: []
+blockers: []
+handoffs: []

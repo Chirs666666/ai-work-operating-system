@@ -1,0 +1,9 @@
+current_daily_budget: 50
+proposed_daily_budget: null
+currency: USD
+cpc: null
+cvr: null
+cpa: null
+metric_status: UNKNOWN
+assumptions: []
+live_change_requested: false

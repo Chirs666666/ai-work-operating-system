@@ -1,0 +1,9 @@
+skill: WB02-wordpress-foundation-setup
+version: 1.0.0
+mode: EXISTING_SITE
+site: prod.example.com
+project_id: WB02-BLOCK
+created_at: null
+upstream_artifacts:
+- WB01/site-scope.yaml
+- WB01/url-architecture.yaml

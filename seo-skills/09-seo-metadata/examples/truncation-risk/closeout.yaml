@@ -1,0 +1,8 @@
+mode: OPTIMIZE
+final_action: OPTIMIZE
+g09: WARN
+warnings:
+- META_TRUNCATION_RISK
+blockers: []
+downstream_handoff: 07-wordpress-page-builder-publisher
+approval_pending: false

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "alt_draft": {
+      "type": "string"
+    },
+    "caption_recommendation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "image_role": {
+      "type": "string"
+    },
+    "keyword_stuffing_avoided": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "filename",
+    "alt_draft",
+    "caption_recommendation",
+    "image_role",
+    "keyword_stuffing_avoided"
+  ],
+  "additionalProperties": false
+}

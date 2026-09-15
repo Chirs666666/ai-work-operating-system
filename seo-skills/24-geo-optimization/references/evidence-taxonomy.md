@@ -1,0 +1,2 @@
+# Evidence Taxonomy
+FIRST_PARTY, TEST_DATA, CASE, STANDARD, CERTIFICATE, AUTHORITATIVE_SOURCE, PUBLIC_SOURCE, NONE. Preserve conditions and applicability.

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          },
+          "semrush_intent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "page_intent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "alignment": {
+            "enum": [
+              "ALIGNED",
+              "PARTIAL",
+              "MISALIGNED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "keyword",
+          "semrush_intent",
+          "page_intent",
+          "alignment"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+keywords:
+- keyword: cnc machining
+  url: https://example.com/cnc/
+  position: 12
+  volume: 5000
+  kd: 70
+  intent: Commercial
+  estimated_traffic: 100

@@ -1,0 +1,2 @@
+# Page Type Rules
+Standard types: HOME, CATEGORY, PRODUCT, APPLICATION, INDUSTRY, SERVICE, CAPABILITY, BLOG, GUIDE, COMPARISON, FAQ, SUPPORT, CASE_STUDY, CALCULATOR_TOOL, LANDING_PAGE, OTHER. Projects may extend the registry. Decide using intent, SERP pattern, buyer stage, commercial intent, business context, site architecture, ranking URL and cannibalization risk. SERP pattern is evidence, not an automatic command.

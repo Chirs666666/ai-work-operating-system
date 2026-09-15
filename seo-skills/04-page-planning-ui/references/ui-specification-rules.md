@@ -1,0 +1,2 @@
+# UI Specification Rules
+Use platform-agnostic terms: two-column hero, 55/45 ratio, card grid, accordion, comparison table, sticky/inline CTA, content-width class, spacing scale, visual priority. DETAILED mode must be specific enough for Skill 07 to implement without re-deciding the design. Do not require an Elementor/GreenShift/Gutenberg widget unless the project explicitly mandates it.

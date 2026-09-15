@@ -1,0 +1,6 @@
+handoffs:
+- from_skill: WB08
+  to_skill: '19'
+  artifact_id: A7
+  purpose: actual indexing verification after launch
+  state: READY

@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "ASSEMBLE",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "site": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "upstream_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "site",
+    "project_id",
+    "page_id",
+    "upstream_artifacts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,7 @@
+rules:
+- 04 owns page planning; WB04 owns assembly
+- 07 owns WordPress execution; WB08 owns production deployment
+- 12 owns technical SEO; WB07 only consumes its evidence
+- 19 owns indexing
+- 20 owns ranking validation
+- 14 is alias to 12 and never directly routed

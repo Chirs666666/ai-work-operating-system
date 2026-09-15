@@ -1,0 +1,5 @@
+source_environment: STAGING
+target_environment: PRODUCTION
+production_url: https://example.com
+release_version: 1.0.0
+launch_window: approved window

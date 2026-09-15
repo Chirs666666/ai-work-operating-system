@@ -1,0 +1,9 @@
+conversions:
+- name: RFQ Submit
+  role: PRIMARY
+  business_value: Direct sales inquiry
+  used_for_bidding: true
+- name: Catalog Download
+  role: SECONDARY
+  business_value: Engagement signal
+  used_for_bidding: false

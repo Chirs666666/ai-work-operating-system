@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "conversions": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "PRIMARY",
+              "SECONDARY"
+            ]
+          },
+          "business_value": {
+            "type": "string"
+          },
+          "used_for_bidding": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "role",
+          "business_value",
+          "used_for_bidding"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "conversions"
+  ],
+  "additionalProperties": false
+}

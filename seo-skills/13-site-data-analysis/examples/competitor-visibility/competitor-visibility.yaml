@@ -1,0 +1,6 @@
+items:
+- competitor: Competitor A
+  provider: Semrush
+  visibility: 18.4
+  notes:
+  - Provider-specific visibility metric; not direct traffic

@@ -1,0 +1,6 @@
+formulas:
+- formula_id: mystery-formula
+  formula_state: UNKNOWN
+  evidence_refs: []
+  conflict_notes: []
+  production_allowed: false

@@ -1,0 +1,4 @@
+declared_canonical: https://example.com/a/
+selected_canonical: https://example.com/a/
+intended_canonical: https://example.com/a/
+alignment: PASS

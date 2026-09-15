@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "enum": [
+              "FIRST_PARTY",
+              "TEST_DATA",
+              "CASE",
+              "STANDARD",
+              "CERTIFICATE",
+              "AUTHORITATIVE_SOURCE",
+              "PUBLIC_SOURCE",
+              "NONE"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "evidence_id",
+          "evidence_type",
+          "source_ref",
+          "description",
+          "verified"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "evidence"
+  ],
+  "additionalProperties": false
+}

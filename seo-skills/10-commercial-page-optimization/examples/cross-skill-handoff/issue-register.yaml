@@ -1,0 +1,16 @@
+issues:
+- issue_id: M1
+  category: METADATA
+  severity: MEDIUM
+  owner_skill: 09-seo-metadata
+  description: Title intent mismatch
+- issue_id: L1
+  category: INTERNAL_LINK
+  severity: MEDIUM
+  owner_skill: 08-internal-linking-architecture
+  description: Core application page is underlinked
+- issue_id: T1
+  category: TECHNICAL_SEO
+  severity: HIGH
+  owner_skill: 12-technical-seo-audit-fix
+  description: Canonical conflict

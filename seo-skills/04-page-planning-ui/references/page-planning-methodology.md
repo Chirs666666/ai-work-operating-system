@@ -1,0 +1,2 @@
+# Page Planning Methodology
+Use the Hybrid Blueprint Model: confirmed page contract → page-type Base Blueprint → intent → buyer/business → proof → SERP/market → UX/conversion adaptation. Modes are NEW_PAGE, REDESIGN, STRUCTURAL_REFRESH. STANDARD is module-level planning; DETAILED is implementation-ready. Never treat a Base Blueprint as a fixed template.

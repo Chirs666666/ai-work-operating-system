@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "keyword-usage",
+  "type": "object",
+  "required": [
+    "primary_topic",
+    "secondary_terms",
+    "coverage_notes",
+    "density_target"
+  ],
+  "properties": {
+    "primary_topic": {
+      "type": "string"
+    },
+    "secondary_terms": {
+      "type": "array"
+    },
+    "coverage_notes": {
+      "type": "array"
+    },
+    "density_target": {
+      "type": [
+        "string",
+        "null",
+        "object",
+        "array"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

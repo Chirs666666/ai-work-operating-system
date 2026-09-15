@@ -1,0 +1,7 @@
+g08_status: WARN
+warnings:
+- Graph must be refreshed before final link decisions.
+blockers: []
+handoffs: []
+generated_artifacts:
+- graph-freshness.yaml

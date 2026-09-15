@@ -1,0 +1,8 @@
+mode: AUDIT_PAGE
+final_action: BLOCK_FOR_OWNERSHIP
+g09: BLOCK
+warnings: []
+blockers:
+- URL ownership conflict
+downstream_handoff: 25-keyword-page-mapping
+approval_pending: false

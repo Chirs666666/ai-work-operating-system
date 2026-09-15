@@ -1,0 +1,8 @@
+required: true
+scope:
+- database
+- files
+schedule: daily
+retention: 30 days
+storage: offsite
+restore_method: host restore

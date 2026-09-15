@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "level": {
+      "enum": [
+        "NONE",
+        "STANDARD",
+        "DEEP"
+      ]
+    },
+    "availability": {
+      "enum": [
+        "AVAILABLE",
+        "UNKNOWN"
+      ]
+    },
+    "dominant_intent": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "serp_rewrite_observed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "level",
+    "availability",
+    "patterns"
+  ],
+  "additionalProperties": false
+}

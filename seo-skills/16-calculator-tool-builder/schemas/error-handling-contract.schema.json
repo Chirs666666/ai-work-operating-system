@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "error_code": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "VALIDATION",
+              "DOMAIN",
+              "CALCULATION",
+              "UNIT",
+              "SYSTEM"
+            ]
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "user_message": {
+            "type": "string"
+          },
+          "blocks_calculation": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "error_code",
+          "category",
+          "trigger",
+          "user_message",
+          "blocks_calculation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "errors"
+  ],
+  "additionalProperties": false
+}

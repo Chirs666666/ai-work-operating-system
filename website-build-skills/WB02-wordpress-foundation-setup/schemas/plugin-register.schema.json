@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "plugin_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE",
+              "PLANNED",
+              "UNKNOWN"
+            ]
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "capability_owner": {
+            "type": "boolean"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "STAGING",
+              "PRODUCTION",
+              "BOTH",
+              "UNKNOWN"
+            ]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "PROVISIONAL",
+              "UNKNOWN"
+            ]
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "plugin_id",
+          "name",
+          "status",
+          "capabilities",
+          "capability_owner",
+          "environment",
+          "evidence_status",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "plugins"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,14 @@
+readback_id: rb-001
+page_id: "123"
+status: draft
+build_mode: BLOCK_EDITOR
+revision: rev-001
+sections:
+  - section_id: HERO_01
+    component_id: HERO_PRODUCT_01
+    content:
+      heading: Example product heading
+metadata: {}
+links: []
+media: []
+read_at: "2026-09-14T00:01:00Z"

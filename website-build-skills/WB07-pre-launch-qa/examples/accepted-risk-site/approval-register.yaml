@@ -1,0 +1,5 @@
+approvals:
+- approval_id: A1
+  type: RISK_ACCEPTANCE
+  state: APPROVED
+  evidence_ref: user-risk-approval

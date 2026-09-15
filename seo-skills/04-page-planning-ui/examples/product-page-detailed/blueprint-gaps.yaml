@@ -1,0 +1,7 @@
+gaps:
+- id: GAP-001
+  section_id: proof
+  severity: NON_CRITICAL
+  issue: Fictional example has no case-study asset.
+  action: Do not state a customer result until evidence is supplied.
+conflicts: []

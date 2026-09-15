@@ -1,0 +1,2 @@
+# Canonical Outputs
+24 outputs: manifest, performance-brief, source-register, test-environment, cwv-baseline, lab-baseline, ttfb-analysis, lcp-analysis, inp-analysis, cls-analysis, image-analysis, js-analysis, css-analysis, font-analysis, cache-analysis, third-party-analysis, bottleneck-register, priority-plan, backup-change-plan, optimization-actions, retest-results, before-after-report, cross-skill-handoffs, closeout.

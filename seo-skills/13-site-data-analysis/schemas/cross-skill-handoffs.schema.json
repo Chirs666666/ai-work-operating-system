@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "opportunity_id": {
+            "type": "string"
+          },
+          "target_skill": {
+            "enum": [
+              "03-product-keyword-research",
+              "06-content-writing-optimization",
+              "08-internal-linking-architecture",
+              "09-seo-metadata",
+              "10-commercial-page-optimization",
+              "11-backlink-building",
+              "12-technical-seo-audit-fix",
+              "19-index-ranking-validation",
+              "21-page-speed-optimization",
+              "24-geo-optimization",
+              "25-keyword-page-mapping"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "blocking": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "opportunity_id",
+          "target_skill",
+          "reason",
+          "blocking"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

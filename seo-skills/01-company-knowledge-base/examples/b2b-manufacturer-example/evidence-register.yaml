@@ -1,0 +1,71 @@
+evidence:
+- evidence_id: EV-001
+  entity:
+    type: product
+    id: exa-h20
+  claim:
+    field: nominal_payload
+    value: 20 kg
+  source:
+    source_id: SRC-001
+    name: Fictional approved engineering sheet
+    category: USER_PROVIDED
+    location: example page 1
+  evidence_level: E1
+  verification_status: verified_for_example
+  allowed_use:
+  - example_website
+  notes: Fictional example data only
+  last_verified: '2026-09-14'
+- evidence_id: EV-002
+  entity:
+    type: product
+    id: exa-h20
+  claim:
+    field: product_name
+    value: Example H20 Handling Cell
+  source:
+    source_id: SRC-002
+    name: Fictional official catalog
+    category: COMPANY_OFFICIAL
+    location: example page 2
+  evidence_level: E2
+  verification_status: verified_for_example
+  allowed_use:
+  - example_website
+  notes: Fictional example data only
+  last_verified: '2026-09-14'
+- evidence_id: EV-003
+  entity:
+    type: company
+    id: example-precision
+  claim:
+    field: market_reputation
+    value: widely used
+  source:
+    source_id: SRC-003
+    name: Fictional industry directory
+    category: EXTERNAL_SECONDARY
+    location: example listing
+  evidence_level: E4
+  verification_status: reported_only
+  allowed_use: []
+  notes: Secondary report; not promoted to company fact
+  last_verified: '2026-09-14'
+- evidence_id: EV-004
+  entity:
+    type: product
+    id: exa-h20
+  claim:
+    field: roi
+    value: guaranteed 6-month ROI
+  source:
+    source_id: SRC-004
+    name: No traceable source
+    category: UNKNOWN
+    location: null
+  evidence_level: E5
+  verification_status: unsupported
+  allowed_use: []
+  notes: Excluded from publishable claims
+  last_verified: null

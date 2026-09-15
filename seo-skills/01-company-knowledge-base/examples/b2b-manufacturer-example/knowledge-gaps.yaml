@@ -1,0 +1,17 @@
+gaps:
+- gap_id: GAP-001
+  entity:
+    type: product
+    id: exa-h20
+  missing_field: maximum_reach
+  why_needed: Required for a detailed specification page
+  needed_for:
+  - detailed_product_specification_page
+  severity: critical
+  blocking:
+  - detailed_product_specification_page
+  not_blocking:
+  - general_blog
+  required_source:
+  - approved engineering specification
+  status: open

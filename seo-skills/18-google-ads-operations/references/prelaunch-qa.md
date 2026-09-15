@@ -1,0 +1,2 @@
+# Prelaunch QA
+Check tracking, landing page, intent, match types, negatives, geo/language, budget, bidding, ad claims, assets, URLs/tracking parameters, mobile experience, policy risk and form functionality.

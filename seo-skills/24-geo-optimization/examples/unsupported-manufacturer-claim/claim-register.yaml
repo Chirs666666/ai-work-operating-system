@@ -1,0 +1,6 @@
+claims:
+- claim_id: C3
+  text: We manufacture every component in-house
+  claim_type: FACT
+  material: true
+  requires_evidence: true

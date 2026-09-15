@@ -1,0 +1,7 @@
+handoffs:
+- to_skill: 19-indexing-specialist
+  artifact: indexing-handoff.yaml
+  purpose: verify actual indexing
+  gate: PASS
+  notes:
+  - do not infer indexing

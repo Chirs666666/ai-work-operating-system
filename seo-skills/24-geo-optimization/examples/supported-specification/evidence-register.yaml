@@ -1,0 +1,6 @@
+evidence:
+- evidence_id: EV1
+  evidence_type: FIRST_PARTY
+  source_ref: SPEC
+  description: Product specification sheet
+  verified: true

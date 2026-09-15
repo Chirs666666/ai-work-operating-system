@@ -1,0 +1,4 @@
+skill: WB08-deployment-launch
+version: 1.0.0
+site: example.com
+deployment_id: DEP-002

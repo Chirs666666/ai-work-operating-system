@@ -1,0 +1,22 @@
+applicable: true
+changes:
+- section: Definition
+  action: PRESERVE
+  reason: Still accurate and useful for the confirmed intent.
+- section: Validation
+  action: UPDATE
+  reason: Refresh evidence and clarify the validation sequence.
+- section: Boundary conditions
+  action: ADD
+  reason: Closes a documented decision gap.
+- section: Old generic introduction
+  action: REWRITE
+  reason: Current introduction delays the direct answer.
+- section: Repeated summary
+  action: REMOVE
+  reason: Duplicates the conclusion without adding decision value.
+- section: Validation checklist
+  action: EXPAND
+  reason: Adds practical information gain.
+summary: Refresh preserves useful content while improving evidence, boundaries, and
+  decision value.

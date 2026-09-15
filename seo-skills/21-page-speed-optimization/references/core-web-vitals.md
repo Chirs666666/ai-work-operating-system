@@ -1,0 +1,2 @@
+# Core Web Vitals
+Treat LCP, INP and CLS as CWV. TTFB, FCP, TBT and Speed Index support diagnosis but are not interchangeable with CWV. Preserve provider thresholds/runtime interpretation instead of hardcoding stale policy.

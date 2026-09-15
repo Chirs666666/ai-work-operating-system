@@ -1,0 +1,27 @@
+pages:
+- page_id: home
+  url: /
+  class: CRITICAL
+  template_family: null
+  required: true
+  tested: true
+- page_id: contact
+  url: /contact/
+  class: CRITICAL
+  template_family: null
+  required: true
+  tested: true
+- page_id: '404'
+  url: /missing-test/
+  class: SYSTEM
+  template_family: null
+  required: true
+  tested: true
+- page_id: prod-sample
+  url: /products/sample/
+  class: TEMPLATE_SAMPLE
+  template_family: PRODUCT_DETAIL
+  required: true
+  tested: true
+critical_coverage_complete: true
+system_coverage_complete: true

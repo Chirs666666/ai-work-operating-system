@@ -1,0 +1,2 @@
+# Paid Placement and Risk
+Risk classes: SAFE_RESEARCH, STANDARD_OUTREACH, PAID_PLACEMENT, HIGH_RISK_LINK_SCHEME. Paid placement requires explicit approval and sourced price/currency when known. HIGH_RISK_LINK_SCHEME is REJECT/BLOCK: no PBN, link farm, automated spam, deceptive placement, or mass low-quality blast execution plan.

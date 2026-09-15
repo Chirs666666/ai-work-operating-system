@@ -1,0 +1,8 @@
+hosts:
+- host: staging.example.com
+  https_enabled: true
+  certificate_valid: true
+  auto_renew: ENABLED
+  state: VERIFIED
+  evidence:
+  - TLS check

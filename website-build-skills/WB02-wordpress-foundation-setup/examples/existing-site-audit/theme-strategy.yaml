@@ -1,0 +1,5 @@
+strategy: NEW_BLOCK_THEME
+theme_name: project-theme
+production_change_required: false
+compatibility_status: PASS
+notes: []

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action": {
+      "enum": [
+        "KEEP",
+        "MINOR_OPTIMIZE",
+        "SECTION_OPTIMIZE",
+        "STRUCTURAL_REFRESH",
+        "REWRITE",
+        "HOLD",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "goal": {
+      "type": "string"
+    },
+    "preserve_first": {
+      "type": "boolean"
+    },
+    "change_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "action",
+    "goal",
+    "preserve_first",
+    "change_scope",
+    "excluded_scope"
+  ],
+  "additionalProperties": false
+}

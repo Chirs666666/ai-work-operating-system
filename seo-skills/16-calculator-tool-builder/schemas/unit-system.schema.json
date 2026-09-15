@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "normalized_internal_system": {
+      "enum": [
+        "SI",
+        "IMPERIAL",
+        "MIXED_EXPLICIT",
+        "UNITLESS",
+        "OTHER"
+      ]
+    },
+    "conversions": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "conversion_id": {
+            "type": "string"
+          },
+          "from_unit": {
+            "type": "string"
+          },
+          "to_unit": {
+            "type": "string"
+          },
+          "expression": {
+            "type": "string"
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tested": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "conversion_id",
+          "from_unit",
+          "to_unit",
+          "expression",
+          "tested"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "normalized_internal_system",
+    "conversions"
+  ],
+  "additionalProperties": false
+}

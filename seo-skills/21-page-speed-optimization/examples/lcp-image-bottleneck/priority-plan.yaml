@@ -1,0 +1,8 @@
+items:
+- bottleneck_id: LCP-IMG
+  priority: P1
+  user_impact: HIGH
+  cwv_impact: HIGH
+  confidence: HIGH
+  implementation_cost: LOW
+  regression_risk: LOW

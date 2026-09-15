@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "PRIORITY_HIGH",
+              "PRIORITY_MEDIUM",
+              "PRIORITY_LOW",
+              "HOLD",
+              "REJECT"
+            ]
+          },
+          "state": {
+            "enum": [
+              "NOT_STARTED",
+              "READY",
+              "WAITING_APPROVAL",
+              "CONTACTED",
+              "REPLIED",
+              "NEGOTIATING",
+              "ACCEPTED",
+              "REJECTED",
+              "NO_RESPONSE",
+              "LIVE",
+              "LOST",
+              "UNKNOWN"
+            ]
+          },
+          "approval_required": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "priority",
+          "state",
+          "approval_required"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "dimensions": {
+            "type": "object",
+            "properties": {
+              "topical_relevance": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "audience_relevance": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "organic_legitimacy": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "editorial_quality": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "market_fit": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "placement_fit": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "target_page_fit": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "spam_risk": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "contactability": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              },
+              "relationship_duplication": {
+                "enum": [
+                  "PASS",
+                  "WARN",
+                  "FAIL",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            "required": [
+              "topical_relevance",
+              "audience_relevance",
+              "organic_legitimacy",
+              "editorial_quality",
+              "market_fit",
+              "placement_fit",
+              "target_page_fit",
+              "spam_risk",
+              "contactability",
+              "relationship_duplication"
+            ],
+            "additionalProperties": false
+          },
+          "outcome": {
+            "enum": [
+              "QUALIFIED_HIGH",
+              "QUALIFIED_MEDIUM",
+              "QUALIFIED_LOW",
+              "HOLD",
+              "REJECT"
+            ]
+          },
+          "priority": {
+            "enum": [
+              "PRIORITY_HIGH",
+              "PRIORITY_MEDIUM",
+              "PRIORITY_LOW",
+              "HOLD",
+              "REJECT"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "dimensions",
+          "outcome",
+          "priority",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

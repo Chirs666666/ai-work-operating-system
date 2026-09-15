@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "ACCOUNT_AUDIT",
+        "TRACKING_READINESS",
+        "CAMPAIGN_PLANNING",
+        "SEARCH_CAMPAIGN_BUILD",
+        "KEYWORD_EXPANSION",
+        "NEGATIVE_KEYWORD_REVIEW",
+        "AD_COPY_BUILD",
+        "LANDING_PAGE_REVIEW",
+        "PRE_LAUNCH_QA",
+        "SEARCH_TERM_REVIEW",
+        "BUDGET_PACING",
+        "PERFORMANCE_REVIEW",
+        "OPTIMIZATION",
+        "EXPERIMENT",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g18": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g18",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

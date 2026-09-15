@@ -1,0 +1,12 @@
+observations:
+- observation_id: O1
+  platform: Example AI
+  query_id: Q1
+  observed_at: '2026-09-14'
+  status: NO_OBSERVATION
+  brand: Example Robotics
+  citation_source: null
+  competitors: []
+overall_status: NO_OBSERVATION
+success_claimed: false
+seo_value_claimed_absent: false

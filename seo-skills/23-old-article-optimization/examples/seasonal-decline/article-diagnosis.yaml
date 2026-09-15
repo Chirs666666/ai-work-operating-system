@@ -1,0 +1,6 @@
+state: DECLINING
+primary_cause: SEASONALITY
+confidence: MEDIUM
+evidence_refs:
+- TREND
+reasoning: Demand is seasonal while ranking is stable.

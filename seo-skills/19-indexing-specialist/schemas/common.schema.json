@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "INDEX_CHECK",
+        "INDEXABILITY_AUDIT",
+        "SITEMAP_CHECK",
+        "DISCOVERY_CHECK",
+        "URL_INSPECTION",
+        "QUERY_VALIDATION",
+        "KEYWORD_VALIDATION",
+        "RANKING_CHECK",
+        "POST_PUBLISH_VERIFY",
+        "INDEXING_DIAGNOSIS",
+        "RANKING_DIAGNOSIS",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "index_status": {
+      "enum": [
+        "UNKNOWN",
+        "NOT_DISCOVERED",
+        "DISCOVERED_NOT_CRAWLED",
+        "CRAWLED_NOT_INDEXED",
+        "INDEXED",
+        "INDEXED_CANONICAL_OTHER",
+        "BLOCKED_ROBOTS",
+        "NOINDEX",
+        "REDIRECTED",
+        "SOFT_404",
+        "DUPLICATE",
+        "REMOVED",
+        "ERROR"
+      ]
+    },
+    "visibility": {
+      "enum": [
+        "NO_DATA",
+        "NO_IMPRESSIONS",
+        "IMPRESSION_DETECTED",
+        "QUERY_DETECTED",
+        "TARGET_QUERY_DETECTED",
+        "NON_TARGET_QUERY_DETECTED",
+        "RANKING_DETECTED",
+        "RANKING_IMPROVING",
+        "RANKING_DECLINING",
+        "CLICK_DETECTED"
+      ]
+    },
+    "query_match": {
+      "enum": [
+        "TARGET_MATCH",
+        "SEMANTIC_MATCH",
+        "RELATED_QUERY",
+        "UNRELATED_QUERY",
+        "BRAND_QUERY",
+        "UNKNOWN"
+      ]
+    },
+    "g19": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

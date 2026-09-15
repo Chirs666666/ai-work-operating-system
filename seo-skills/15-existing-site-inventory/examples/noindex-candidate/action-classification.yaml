@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/filter-page/
+  action: NOINDEX
+  confidence: MEDIUM
+  ownership_validation_required: false
+  approval_required: true
+  execution_allowed: false
+  reason: Low-value utility/filter page candidate; validate technical intent before
+    execution.

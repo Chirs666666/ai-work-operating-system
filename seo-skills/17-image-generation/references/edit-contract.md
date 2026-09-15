@@ -1,0 +1,2 @@
+# Edit Contract
+Record source asset, preserve, modify, remove, add, resize/crop and prohibited changes. Editing cannot begin without a usable source. Flag changes that could alter factual interpretation of a real product or facility.

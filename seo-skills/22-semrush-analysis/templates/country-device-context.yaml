@@ -1,0 +1,7 @@
+database: ''
+country: null
+device: null
+snapshot: null
+comparison_database: null
+comparison_device: null
+comparable: false

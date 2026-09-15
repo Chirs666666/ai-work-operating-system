@@ -1,0 +1,7 @@
+actions:
+- action: Delay/defer main bundle
+  target: live site
+  expected_effect: Reduce blocking/main-thread cost
+  risk: HIGH
+  live_change: true
+  status: WAITING_APPROVAL

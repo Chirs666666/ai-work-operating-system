@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "page_id": {
+            "type": "string"
+          },
+          "proposed_url": {
+            "type": "string"
+          },
+          "existing_live_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "NEW",
+              "RETAIN",
+              "PROPOSED_CHANGE",
+              "UNKNOWN"
+            ]
+          },
+          "live_change_approved": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "migration_rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "page_id",
+          "proposed_url",
+          "existing_live_url",
+          "change_type",
+          "live_change_approved",
+          "migration_rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "rules",
+    "urls"
+  ],
+  "additionalProperties": false
+}

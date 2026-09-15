@@ -1,0 +1,6 @@
+claims:
+- claim_id: C2
+  text: Best robot in the world
+  claim_type: MARKETING_CLAIM
+  material: true
+  requires_evidence: true

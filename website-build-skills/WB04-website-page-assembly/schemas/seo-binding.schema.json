@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "metadata_artifact_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title_bound": {
+      "type": "boolean"
+    },
+    "meta_description_bound": {
+      "type": "boolean"
+    },
+    "canonical_bound": {
+      "type": "boolean"
+    },
+    "required_for_page": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "NOT_REQUIRED",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "metadata_artifact_ref",
+    "title_bound",
+    "meta_description_bound",
+    "canonical_bound",
+    "required_for_page",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

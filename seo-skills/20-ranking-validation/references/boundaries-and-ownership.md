@@ -1,0 +1,2 @@
+# Boundaries
+19 validates index lifecycle. 20 validates post-index query/ranking understanding. 25 owns URL/keyword ownership. 06/10 own content changes; 08 internal links; 11 authority/backlinks; 13 broader analytics.

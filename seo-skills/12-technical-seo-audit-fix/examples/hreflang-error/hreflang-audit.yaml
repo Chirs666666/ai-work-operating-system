@@ -1,0 +1,5 @@
+items:
+- url: https://example.com/en/product/
+  status: MISSING_RETURN_LINK
+  details:
+  - German alternate does not return-reference the English URL.

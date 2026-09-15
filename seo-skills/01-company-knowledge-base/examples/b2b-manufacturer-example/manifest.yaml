@@ -1,0 +1,19 @@
+company_id: example-precision
+knowledge_version: 1.0.0
+created_at: '2026-09-14'
+updated_at: '2026-09-14'
+mode: CREATE
+sources:
+  total: 4
+  by_category:
+    USER_PROVIDED: 2
+    COMPANY_OFFICIAL: 1
+    EXTERNAL_SECONDARY: 1
+gate: WARN
+open_conflicts: 0
+critical_gaps: 1
+safe_for:
+- general_blog
+- basic_company_page
+blocked_for:
+- detailed_product_specification_page

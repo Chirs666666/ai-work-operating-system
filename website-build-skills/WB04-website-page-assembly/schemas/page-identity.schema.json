@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "wb01_artifact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resolved": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_page_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ownership_key": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "page_id",
+    "wb01_artifact",
+    "resolved",
+    "title",
+    "url",
+    "parent_page_id",
+    "ownership_key"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

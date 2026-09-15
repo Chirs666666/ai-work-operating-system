@@ -1,0 +1,16 @@
+checks:
+- dimension: Search Intent
+  state: PASS
+- dimension: Information Gain
+  state: PASS
+- dimension: Evidence
+  state: PASS
+- dimension: Company Claim Integrity
+  state: NOT_APPLICABLE
+- dimension: Readability
+  state: PASS
+- dimension: Citation Readiness
+  state: PASS
+overall: PASS
+critical_issues: []
+warnings: []

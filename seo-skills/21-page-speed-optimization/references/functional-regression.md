@@ -1,0 +1,2 @@
+# Functional Regression
+Performance success requires key functionality to still work: forms, menus, checkout/RFQ, analytics where required, visual layout and critical interactions. Faster but broken = FAIL.

@@ -1,0 +1,6 @@
+benchmark_type: CONFIGURABLE_BENCHMARK
+milestone: T+7
+target: Impressions >= 100
+observed: '82'
+status: NOT_MET
+guarantee: false

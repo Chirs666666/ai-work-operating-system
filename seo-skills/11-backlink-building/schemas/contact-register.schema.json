@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "contacts": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "contact_type": {
+            "enum": [
+              "PUBLIC_EMAIL",
+              "CONTACT_FORM",
+              "PUBLIC_SOCIAL",
+              "USER_PROVIDED",
+              "API_AUTHORIZED",
+              "UNKNOWN"
+            ]
+          },
+          "value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "public_or_authorized": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "contact_type",
+          "public_or_authorized"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "contacts"
+  ],
+  "additionalProperties": false
+}

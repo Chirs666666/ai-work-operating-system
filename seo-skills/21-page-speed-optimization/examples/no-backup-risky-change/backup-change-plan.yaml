@@ -1,0 +1,9 @@
+live_change_requested: true
+risky_change: true
+backup_ready: false
+rollback_ready: false
+approval_required: true
+approval_status: PENDING
+change_scope:
+- Remove unused CSS globally
+pre_change_checks: []

@@ -1,0 +1,2 @@
+# Image SEO
+Prepare descriptive filename, ALT draft, optional caption, image role, format and dimensions. ALT describes meaningful visual content in context; do not keyword-stuff or describe decorative detail unnecessarily.

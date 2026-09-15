@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "workflow_id": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "skill": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "RUN",
+              "REUSE",
+              "VERIFY",
+              "SKIP",
+              "DRAFT_ONLY"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "READY",
+              "RUNNING",
+              "WAITING_DEPENDENCY",
+              "WAITING_APPROVAL",
+              "PASS",
+              "WARN",
+              "BLOCKED",
+              "FAILED",
+              "REUSE",
+              "SKIPPED",
+              "DONE"
+            ]
+          }
+        },
+        "required": [
+          "task_id",
+          "skill",
+          "action",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "workflow_id",
+    "tasks"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

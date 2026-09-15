@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "target_intent": {
+      "type": "string"
+    },
+    "current_serp_intent": {
+      "type": "string"
+    },
+    "alignment": {
+      "enum": [
+        "ALIGNED",
+        "PARTIAL",
+        "MISALIGNED",
+        "UNKNOWN"
+      ]
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "target_intent",
+    "current_serp_intent",
+    "alignment",
+    "observed_at"
+  ],
+  "additionalProperties": false
+}

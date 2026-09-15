@@ -1,0 +1,12 @@
+primary_nav:
+- P-HOME
+- P-PROD
+- P-APP
+- P-RES
+- P-CON
+secondary_nav: []
+footer_nav: []
+utility_nav: []
+sitemap_equals_primary_nav: false
+notes:
+- Product detail pages are contextual, not all in primary nav.

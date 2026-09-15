@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_name": {
+            "type": "string"
+          },
+          "received": {
+            "type": "boolean"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "receipt_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "NOT_CONFIGURED",
+              "CONFIGURED",
+              "INSTALLED",
+              "DETECTED",
+              "FIRING",
+              "RECEIVING_DATA",
+              "VERIFIED",
+              "WARN",
+              "FAILED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "event_name",
+          "received",
+          "destination",
+          "receipt_evidence",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "events"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "worked_example_required": {
+      "type": "boolean"
+    },
+    "limitations_required": {
+      "type": "boolean"
+    },
+    "faq_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoff_to_06": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "required_sections",
+    "worked_example_required",
+    "limitations_required",
+    "faq_topics",
+    "handoff_to_06"
+  ],
+  "additionalProperties": false
+}

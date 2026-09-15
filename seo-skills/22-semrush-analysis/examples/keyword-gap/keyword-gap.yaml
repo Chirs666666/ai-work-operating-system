@@ -1,0 +1,10 @@
+keywords:
+- keyword: cnc milling services
+  gap_type: MISSING
+  kd: 52
+  intent: Commercial
+  target_url: null
+  decision: MAP_OWNERSHIP
+  decision_basis:
+  - Relevant commercial intent
+  - No target URL assigned yet

@@ -1,0 +1,9 @@
+checks:
+- check_id: noindex
+  target: production candidate
+  severity: BLOCK
+  result: BLOCK
+  evidence:
+  - sitewide noindex detected
+  defect_id: D1
+overall: BLOCK

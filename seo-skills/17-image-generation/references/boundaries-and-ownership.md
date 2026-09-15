@@ -1,0 +1,2 @@
+# Boundaries and Ownership
+04 defines broader page visual architecture; 05/06 supply product/article context; 16 supplies calculator visual requirements; 17 owns image production contracts and visual QA; 07 uploads/inserts approved assets and applies final ALT; 09 owns page metadata.

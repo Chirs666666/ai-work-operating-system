@@ -1,0 +1,9 @@
+page_id: "123"
+report_type: INTERNAL_LINK
+items:
+  - item_id: link-001
+    source_artifact: 08-internal-linking
+    requested_value: /contact/
+    persisted_value: /contact/
+    verified: true
+    notes: read-back confirmed

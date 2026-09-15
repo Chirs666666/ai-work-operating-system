@@ -1,0 +1,13 @@
+page_id: P-ROBOT
+page_type: PRODUCT_DETAIL
+section_ids:
+- hero
+global_component_ids:
+- header
+claims:
+- claim_id: BAD
+  section_id: hero
+  text_ref: draft#claim
+  evidence_ref: null
+  support_status: UNSUPPORTED
+assembly_status: BLOCKED

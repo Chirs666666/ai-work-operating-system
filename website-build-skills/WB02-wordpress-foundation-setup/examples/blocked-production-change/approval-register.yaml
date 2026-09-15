@@ -1,0 +1,7 @@
+approvals:
+- approval_id: A1
+  action: PERMALINK_CHANGE
+  environment: PRODUCTION
+  state: PENDING
+  approved_by: null
+  evidence_ref: null

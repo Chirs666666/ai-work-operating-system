@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "breakpoints_source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component_id": {
+            "type": "string"
+          },
+          "breakpoint": {
+            "type": "string"
+          },
+          "behavior": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "component_id",
+          "breakpoint",
+          "behavior"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "breakpoints_source",
+    "rules",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

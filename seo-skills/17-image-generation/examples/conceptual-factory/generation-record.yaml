@@ -1,0 +1,6 @@
+generated: true
+generator: image generation model
+asset_reference: generated-factory-01
+truth_class: CONCEPTUAL
+generation_notes:
+- Illustrative industrial setting only.

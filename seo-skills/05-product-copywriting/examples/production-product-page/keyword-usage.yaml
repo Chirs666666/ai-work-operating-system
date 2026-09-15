@@ -1,0 +1,11 @@
+primary_keyword: automated welding system
+secondary_keywords:
+- 25 kg welding automation
+placements:
+- keyword: automated welding system
+  slot_id: hero_h1
+  role: PRIMARY
+- keyword: 25 kg welding automation
+  slot_id: hero_support
+  role: SECONDARY
+density_target: null

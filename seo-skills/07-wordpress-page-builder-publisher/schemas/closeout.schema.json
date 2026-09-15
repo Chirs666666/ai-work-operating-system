@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page_id",
+    "g07",
+    "connection_status",
+    "task_goal",
+    "draft_ready",
+    "high_impact_action",
+    "post_write_readback_complete",
+    "handoff"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "g07": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "WAITING_APPROVAL",
+        "REUSE"
+      ]
+    },
+    "connection_status": {
+      "enum": [
+        "CONNECTED",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "AUTH_FAILED"
+      ]
+    },
+    "task_goal": {
+      "enum": [
+        "DRAFT",
+        "VERIFY",
+        "PUBLISH",
+        "LIVE_UPDATE",
+        "DELETE",
+        "BULK_CHANGE"
+      ]
+    },
+    "draft_ready": {
+      "type": "boolean"
+    },
+    "high_impact_action": {
+      "type": "boolean"
+    },
+    "approval_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "post_write_readback_complete": {
+      "type": "boolean"
+    },
+    "done": {
+      "type": "boolean"
+    },
+    "handoff": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,11 @@
+prospects:
+- prospect_id: P4
+  domain: relevant-example.com
+  url: null
+  country: null
+  dr: null
+  da: null
+  authority_score: null
+  organic_traffic: null
+  source_ids:
+  - S2

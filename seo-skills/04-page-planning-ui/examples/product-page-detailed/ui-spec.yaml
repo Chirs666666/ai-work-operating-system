@@ -1,0 +1,23 @@
+design_direction: technical-b2b-clear
+sections:
+- section_id: hero
+  component: product_hero
+  visual_priority: HIGH
+- section_id: product-value
+  component: content_section
+  visual_priority: MEDIUM
+- section_id: technical-specifications
+  component: content_section
+  visual_priority: MEDIUM
+- section_id: applications
+  component: content_section
+  visual_priority: MEDIUM
+- section_id: proof
+  component: content_section
+  visual_priority: MEDIUM
+- section_id: faq
+  component: content_section
+  visual_priority: MEDIUM
+- section_id: final-cta
+  component: content_section
+  visual_priority: MEDIUM

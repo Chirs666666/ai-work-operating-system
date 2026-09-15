@@ -1,0 +1,35 @@
+version: 1.1.0
+preserved_v1_workflows:
+- workflow_id: new-product-page
+  source: seo-workflow-system-v1.0.0
+- workflow_id: new-seo-article
+  source: seo-workflow-system-v1.0.0
+- workflow_id: old-article-optimization
+  source: seo-workflow-system-v1.0.0
+- workflow_id: commercial-page-optimization
+  source: seo-workflow-system-v1.0.0
+- workflow_id: new-site-seo
+  source: seo-workflow-system-v1.0.0
+- workflow_id: technical-seo-recovery
+  source: seo-workflow-system-v1.0.0
+- workflow_id: backlink-building
+  source: seo-workflow-system-v1.0.0
+- workflow_id: page-speed
+  source: seo-workflow-system-v1.0.0
+- workflow_id: indexing-ranking-recovery
+  source: seo-workflow-system-v1.0.0
+- workflow_id: geo-optimization
+  source: seo-workflow-system-v1.0.0
+cross_layer_workflows:
+- workflow_id: FULL_NEW_SITE
+  file: workflows/full-new-site.yaml
+- workflow_id: EXISTING_SITE_REBUILD
+  file: workflows/existing-site-rebuild.yaml
+- workflow_id: NEW_PRODUCT_PAGE_BUILD
+  file: workflows/new-product-page-build.yaml
+- workflow_id: NEW_SEO_ARTICLE_PUBLISH
+  file: workflows/new-seo-article-publish.yaml
+- workflow_id: SITE_MIGRATION
+  file: workflows/site-migration.yaml
+- workflow_id: POST_LAUNCH_GROWTH
+  file: workflows/post-launch-growth.yaml

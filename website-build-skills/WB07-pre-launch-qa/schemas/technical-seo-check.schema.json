@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_id": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "INFO",
+              "WARN",
+              "FAIL",
+              "BLOCK"
+            ]
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "PASS",
+              "WARN",
+              "FAIL",
+              "BLOCK",
+              "ACCEPTED_RISK",
+              "UNKNOWN"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "defect_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "check_id",
+          "target",
+          "severity",
+          "result",
+          "evidence",
+          "defect_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "overall": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "ACCEPTED_RISK",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "checks",
+    "overall"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

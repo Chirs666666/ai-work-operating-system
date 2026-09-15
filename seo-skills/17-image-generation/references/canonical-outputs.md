@@ -1,0 +1,2 @@
+# Canonical Outputs
+23 outputs: manifest, image-brief, source-register, truth-boundary, image-type, dimension-spec, prompt-contract, edit-contract, technical-fact-register, composition-spec, brand-style-spec, generation-record, edit-record, technical-accuracy-review, visual-quality-review, text-data-review, image-seo, accessibility-review, asset-export-spec, cross-skill-handoffs, change-control, verification-report, closeout.

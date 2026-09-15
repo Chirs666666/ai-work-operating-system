@@ -1,0 +1,9 @@
+items:
+- source_id: GSC
+  status: VERIFIED
+  notes:
+  - First-party search data
+- source_id: SEMRUSH
+  status: CONFLICTING
+  notes:
+  - Estimated visibility declined while GSC clicks grew

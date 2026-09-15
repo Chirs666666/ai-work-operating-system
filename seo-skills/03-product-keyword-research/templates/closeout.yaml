@@ -1,0 +1,7 @@
+gate: G03
+status: BLOCK
+summary: Research not completed.
+downstream_ready_for: []
+warnings: []
+blocked_by:
+- NOT_PROVIDED

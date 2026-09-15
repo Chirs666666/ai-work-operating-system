@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "22-semrush-analysis"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "DOMAIN_ANALYSIS",
+        "URL_ANALYSIS",
+        "ORGANIC_RESEARCH",
+        "POSITION_CHANGES",
+        "TOP_PAGES",
+        "KEYWORD_GAP",
+        "COMPETITOR_ANALYSIS",
+        "BACKLINK_ANALYSIS",
+        "BACKLINK_GAP",
+        "TRAFFIC_TREND",
+        "SERP_FEATURES",
+        "INTENT_ANALYSIS",
+        "OPPORTUNITY_REVIEW",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

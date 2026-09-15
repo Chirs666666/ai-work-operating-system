@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scope_type": {
+      "enum": [
+        "SITEWIDE",
+        "URL_SET",
+        "ISSUE_CLASS",
+        "BROKEN_LINKS_ONLY"
+      ]
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issue_classes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "BROKEN_INTERNAL_LINK",
+          "BROKEN_EXTERNAL_LINK",
+          "HTTP_4XX",
+          "HTTP_5XX",
+          "REDIRECT_CHAIN",
+          "REDIRECT_LOOP",
+          "HTTP_TO_HTTPS_INCONSISTENCY",
+          "CANONICAL_MISSING",
+          "CANONICAL_SELF_INCONSISTENT",
+          "CANONICAL_CONFLICT",
+          "CANONICAL_TO_NON_200",
+          "NOINDEX_UNEXPECTED",
+          "X_ROBOTS_CONFLICT",
+          "ROBOTS_BLOCKED",
+          "ROBOTS_SITEMAP_MISMATCH",
+          "SITEMAP_URL_NON_200",
+          "SITEMAP_NONCANONICAL_URL",
+          "SITEMAP_NOINDEX_URL",
+          "SITEMAP_MISSING_IMPORTANT_URL",
+          "CRAWL_DEPTH_WARNING",
+          "ORPHAN_TECHNICAL_SIGNAL",
+          "DUPLICATE_URL_VARIANT",
+          "PARAMETER_URL_RISK",
+          "TRAILING_SLASH_INCONSISTENCY",
+          "WWW_NONWWW_INCONSISTENCY",
+          "HREFLANG_INVALID",
+          "HREFLANG_RETURN_LINK_MISSING",
+          "HREFLANG_CANONICAL_CONFLICT",
+          "STRUCTURED_DATA_ERROR",
+          "STRUCTURED_DATA_WARNING",
+          "MIXED_CONTENT_URL_REFERENCE",
+          "OTHER_TECHNICAL"
+        ]
+      }
+    },
+    "environment": {
+      "enum": [
+        "PRODUCTION",
+        "STAGING",
+        "DRAFT",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "scope_type",
+    "urls",
+    "issue_classes",
+    "environment"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "page_type": {
+      "type": "string",
+      "enum": [
+        "HOME",
+        "ABOUT",
+        "PRODUCT_CATEGORY",
+        "PRODUCT_DETAIL",
+        "SERVICE",
+        "APPLICATION",
+        "INDUSTRY",
+        "RESOURCE_HUB",
+        "ARTICLE",
+        "CONTACT",
+        "CUSTOM"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "VALIDATED",
+        "UNKNOWN",
+        "CONFLICT"
+      ]
+    }
+  },
+  "required": [
+    "page_type",
+    "source",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

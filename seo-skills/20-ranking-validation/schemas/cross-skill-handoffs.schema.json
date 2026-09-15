@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target_skill": {
+            "enum": [
+              "19-indexing-specialist",
+              "25-keyword-page-mapping",
+              "06-content-writing-optimization",
+              "10-commercial-page-optimization",
+              "08-internal-linking-architecture",
+              "11-backlink-building",
+              "13-site-data-analysis"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "target_skill",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

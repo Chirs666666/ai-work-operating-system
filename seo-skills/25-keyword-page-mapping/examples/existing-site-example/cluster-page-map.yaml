@@ -1,0 +1,9 @@
+mappings:
+- cluster_id: cl-001
+  cluster: collaborative welding robot
+  dominant_intent: COMMERCIAL
+  page_type: PRODUCT
+  primary_url: /collaborative-welding-robot/
+  url_state: EXISTING
+  action: UPDATE
+  confidence: HIGH

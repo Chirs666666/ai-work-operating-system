@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "referring_domains": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "backlinks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "has_equity": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "protected_url": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "referring_domains",
+    "backlinks",
+    "has_equity",
+    "protected_url",
+    "notes"
+  ],
+  "additionalProperties": false
+}

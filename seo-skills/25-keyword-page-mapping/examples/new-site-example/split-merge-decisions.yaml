@@ -1,0 +1,9 @@
+decisions:
+- source_clusters:
+  - cl-001
+  - cl-002
+  decision: SPLIT
+  reason:
+  - dominant intent differs
+  - buyer task differs
+  confidence: MEDIUM

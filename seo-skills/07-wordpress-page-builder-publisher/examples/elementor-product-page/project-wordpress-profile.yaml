@@ -1,0 +1,24 @@
+project_id: elementor-example
+environment: STAGING
+wordpress:
+  version: "6.x"
+  theme: hello-elementor
+  child_theme: NOT_PROVIDED
+  seo_plugin: Rank Math
+builder:
+  build_mode: ELEMENTOR
+  gutenberg: AVAILABLE
+  greenshift: NOT_PROVIDED
+  elementor: AVAILABLE
+  elementor_pro: AVAILABLE
+design_system:
+  fonts: Elementor Global Fonts
+  colors: Elementor Global Colors
+  container_widths: Elementor Site Settings
+  spacing: project-spacing-scale
+  radius: project-radius-scale
+  breakpoints: Elementor breakpoints
+reusable_assets: [hero-product-el-01]
+dependencies: [elementor]
+profile_status: CURRENT
+observed_at: "2026-09-14T00:00:00Z"

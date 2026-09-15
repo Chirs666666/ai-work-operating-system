@@ -1,0 +1,6 @@
+bindings:
+- section_id: hero
+  asset_id: hero-1
+  artifact_ref: 17/hero-image.webp
+  alt_text_owner: 09/17
+  status: BOUND

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "GROWING",
+        "STABLE",
+        "DECLINING",
+        "STAGNANT",
+        "OUTDATED",
+        "THIN",
+        "INTENT_MISMATCH",
+        "KEYWORD_DRIFT",
+        "CANNIBALIZED",
+        "CTR_WEAK",
+        "AUTHORITY_WEAK",
+        "CONVERSION_WEAK",
+        "TECHNICAL_BLOCKED",
+        "INSUFFICIENT_DATA"
+      ]
+    },
+    "primary_cause": {
+      "enum": [
+        "NONE",
+        "CONTENT",
+        "FRESHNESS",
+        "INTENT",
+        "OWNERSHIP",
+        "CTR",
+        "AUTHORITY",
+        "TECHNICAL",
+        "SEASONALITY",
+        "DEMAND",
+        "COMPETITION",
+        "INSUFFICIENT_DATA",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INSUFFICIENT"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reasoning": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "state",
+    "primary_cause",
+    "confidence",
+    "evidence_refs",
+    "reasoning"
+  ],
+  "additionalProperties": false
+}

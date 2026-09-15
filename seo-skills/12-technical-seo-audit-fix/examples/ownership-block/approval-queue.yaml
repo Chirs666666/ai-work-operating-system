@@ -1,0 +1,5 @@
+items:
+- issue_id: RD-03
+  risk_class: URL_OWNERSHIP_CHANGE
+  reason: Redirect target would change page ownership before 25 resolves the conflict.
+  approval_status: PENDING

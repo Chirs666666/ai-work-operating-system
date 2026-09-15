@@ -1,0 +1,10 @@
+changes:
+- change_id: C-PERM
+  action: PERMALINK_CHANGE
+  environment: PRODUCTION
+  risk: HIGH
+  requires_approval: true
+  approval_id: A1
+  requires_backup: true
+  rollback_plan: null
+  status: BLOCKED

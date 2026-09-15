@@ -1,0 +1,9 @@
+patterns:
+- pattern_id: trust
+  purpose: Reusable trust block
+  parameters:
+  - heading
+  - items
+  hardcoded_page_specific_content: false
+  scope: GLOBAL
+  owner: WB03

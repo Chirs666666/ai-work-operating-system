@@ -1,0 +1,13 @@
+checks:
+- area: compression
+  configured: true
+  evidence:
+  - response header
+  state: VERIFIED
+- area: page cache
+  configured: true
+  evidence:
+  - cache header
+  state: VERIFIED
+measured_performance_claim: false
+overall: PASS

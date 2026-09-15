@@ -1,0 +1,29 @@
+sections:
+- id: hero
+  requirement: REQUIRED
+  purpose: Support the buyer's hero decision need.
+  journey_stage: UNDERSTAND
+- id: product-value
+  requirement: RECOMMENDED
+  purpose: Support the buyer's product value decision need.
+  journey_stage: EVALUATE
+- id: technical-specifications
+  requirement: REQUIRED
+  purpose: Support the buyer's technical specifications decision need.
+  journey_stage: VERIFY
+- id: applications
+  requirement: RECOMMENDED
+  purpose: Support the buyer's applications decision need.
+  journey_stage: EVALUATE
+- id: proof
+  requirement: CONDITIONAL
+  purpose: Support the buyer's proof decision need.
+  journey_stage: VERIFY
+- id: faq
+  requirement: OPTIONAL
+  purpose: Support the buyer's faq decision need.
+  journey_stage: REDUCE_RISK
+- id: final-cta
+  requirement: REQUIRED
+  purpose: Support the buyer's final cta decision need.
+  journey_stage: CONVERT

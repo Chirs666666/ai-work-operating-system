@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "cta_state": {
+      "enum": [
+        "PRIMARY_CTA_CLEAR",
+        "PRIMARY_CTA_WEAK",
+        "CTA_MISSING",
+        "CTA_MISMATCH",
+        "UNKNOWN"
+      ]
+    },
+    "primary_cta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "friction_points": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "cta_state",
+    "friction_points",
+    "recommendations"
+  ],
+  "additionalProperties": false
+}

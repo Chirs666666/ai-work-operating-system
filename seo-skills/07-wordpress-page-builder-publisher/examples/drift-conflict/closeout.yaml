@@ -1,0 +1,10 @@
+page_id: "7201"
+g07: BLOCK
+connection_status: CONNECTED
+task_goal: DRAFT
+draft_ready: false
+high_impact_action: false
+approval_status: NOT_REQUIRED
+post_write_readback_complete: true
+done: false
+handoff: Reconcile overlapping manual edit before overwrite.

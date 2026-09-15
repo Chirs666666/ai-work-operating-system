@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "skill": {
+            "type": "string"
+          },
+          "capability": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "RUN",
+              "REUSE",
+              "VERIFY",
+              "SKIP",
+              "DRAFT_ONLY"
+            ]
+          },
+          "artifact_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "task_id",
+          "skill",
+          "capability",
+          "action",
+          "artifact_id",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "tasks"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

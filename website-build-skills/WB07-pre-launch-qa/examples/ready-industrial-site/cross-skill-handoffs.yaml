@@ -1,0 +1,7 @@
+handoffs:
+- to_skill: WB08-deployment-launch
+  artifact: launch-gate.yaml
+  purpose: request separate launch approval and deploy only after approval
+  gate: PASS
+  notes:
+  - QA is not launch approval

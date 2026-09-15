@@ -1,0 +1,12 @@
+checks:
+- check: WB07 ready
+  required: true
+  status: PASS
+  evidence:
+  - WB07
+- check: rollback ready
+  required: true
+  status: PASS
+  evidence:
+  - rollback plan
+ready: true

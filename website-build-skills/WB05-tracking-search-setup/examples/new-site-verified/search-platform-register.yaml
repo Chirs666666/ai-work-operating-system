@@ -1,0 +1,20 @@
+platforms:
+- platform: GSC
+  property_verified: true
+  submission_state: SUBMITTED
+  indexed_claim: false
+  evidence:
+  - verified
+  - sitemap submitted
+- platform: BING
+  property_verified: true
+  submission_state: SUBMITTED
+  indexed_claim: false
+  evidence:
+  - verified
+- platform: INDEXNOW
+  property_verified: false
+  submission_state: RECEIVED
+  indexed_claim: false
+  evidence:
+  - received

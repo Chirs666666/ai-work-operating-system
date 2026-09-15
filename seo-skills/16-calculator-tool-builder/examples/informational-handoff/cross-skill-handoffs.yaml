@@ -1,0 +1,4 @@
+handoffs:
+- target_skill: 06-content-writing-optimization
+  reason: Write extended explanatory guidance around the validated calculator.
+  blocking: false

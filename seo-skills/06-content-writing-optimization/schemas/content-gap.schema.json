@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "content-gap",
+  "type": "object",
+  "required": [
+    "content_gaps",
+    "decision_gaps",
+    "evidence_gaps"
+  ],
+  "properties": {
+    "content_gaps": {
+      "type": "array"
+    },
+    "decision_gaps": {
+      "type": "array"
+    },
+    "evidence_gaps": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

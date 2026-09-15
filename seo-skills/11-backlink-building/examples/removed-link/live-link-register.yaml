@@ -1,0 +1,9 @@
+links:
+- prospect_id: P8
+  source_url: https://publisher.example/old-resource
+  target_url: https://example.com/guide/
+  anchor_text: null
+  rel_attribute: UNKNOWN
+  placement: RESOURCE_LIST
+  status: REMOVED
+  checked_at: '2026-09-14'

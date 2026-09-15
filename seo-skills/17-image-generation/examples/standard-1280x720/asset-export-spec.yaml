@@ -1,0 +1,6 @@
+filename: standard-1280x720.webp
+width_px: 1280
+height_px: 720
+format: WEBP
+quality_target: web optimized
+wordpress_role: blog inline

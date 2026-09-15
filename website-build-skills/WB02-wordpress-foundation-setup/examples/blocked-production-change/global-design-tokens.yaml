@@ -1,0 +1,26 @@
+font_strategy:
+- system/webfont policy
+type_scale:
+- H1
+- H2
+- H3
+- body
+spacing_scale:
+- xs
+- sm
+- md
+- lg
+- xl
+container_widths:
+- content
+- wide
+semantic_colors:
+- text
+- surface
+- brand
+- accent
+breakpoints:
+- mobile
+- tablet
+- desktop
+token_status: VALIDATED

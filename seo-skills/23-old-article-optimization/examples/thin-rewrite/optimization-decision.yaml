@@ -1,0 +1,6 @@
+action: REWRITE
+evidence_refs:
+- E1
+reason: Substantive content failure is supported.
+merge_or_url_change: false
+ownership_confirmation_required: false

@@ -1,0 +1,6 @@
+targets:
+- target_query: cnc machining supplier
+  observed_matches:
+  - cnc machining supplier
+  best_match_class: TARGET_MATCH
+  status: DETECTED

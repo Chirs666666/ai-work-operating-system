@@ -1,0 +1,12 @@
+actions:
+- target_url: /collaborative-welding-robot/
+  action: UPDATE
+  reason: Protect stronger relevant existing asset.
+- target_url: /cobot-welding/
+  action: MERGE
+  destination_url: /collaborative-welding-robot/
+  reason: High multi-signal overlap; merge is recommendation-only.
+- target_url: /cobot-welding/
+  action: REDIRECT
+  destination_url: /collaborative-welding-robot/
+  reason: Only after approved consolidation.

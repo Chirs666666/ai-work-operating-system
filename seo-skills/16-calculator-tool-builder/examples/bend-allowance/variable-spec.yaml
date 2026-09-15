@@ -1,0 +1,48 @@
+variables:
+- variable_id: radius
+  role: INPUT
+  label: Centerline Radius
+  symbol: R
+  description: Centerline bend radius
+  quantity_type: length
+  base_unit: mm
+  accepted_units:
+  - mm
+  - in
+  required: true
+  default_value: null
+  default_justification: null
+  minimum: 0
+  maximum: null
+  ui_input_type: number
+- variable_id: angle_deg
+  role: INPUT
+  label: Bend Angle
+  symbol: θ
+  description: Bend angle in degrees
+  quantity_type: angle
+  base_unit: deg
+  accepted_units:
+  - deg
+  required: true
+  default_value: null
+  default_justification: null
+  minimum: 0
+  maximum: 360
+  ui_input_type: number
+- variable_id: bend_allowance
+  role: OUTPUT
+  label: Bend Allowance
+  symbol: BA
+  description: Ideal centerline arc length
+  quantity_type: length
+  base_unit: mm
+  accepted_units:
+  - mm
+  - in
+  required: true
+  default_value: null
+  default_justification: null
+  minimum: 0
+  maximum: null
+  ui_input_type: null

@@ -1,0 +1,45 @@
+blueprint:
+  page_type: SERVICE
+  version: 1.0.0
+  principle: adaptable_starting_point
+  default_sections:
+  - id: hero
+    requirement: REQUIRED
+    purpose: Address the hero decision need.
+    journey_stage: UNDERSTAND
+  - id: service-scope
+    requirement: RECOMMENDED
+    purpose: Address the service scope decision need.
+    journey_stage: UNDERSTAND
+  - id: buyer-problems
+    requirement: RECOMMENDED
+    purpose: Address the buyer problems decision need.
+    journey_stage: EVALUATE
+  - id: process
+    requirement: RECOMMENDED
+    purpose: Address the process decision need.
+    journey_stage: VERIFY
+  - id: deliverables
+    requirement: RECOMMENDED
+    purpose: Address the deliverables decision need.
+    journey_stage: VERIFY
+  - id: requirements
+    requirement: CONDITIONAL
+    purpose: Address the requirements decision need.
+    journey_stage: COMPARE
+  - id: proof
+    requirement: CONDITIONAL
+    purpose: Address the proof decision need.
+    journey_stage: REDUCE_RISK
+  - id: faq
+    requirement: CONDITIONAL
+    purpose: Address the faq decision need.
+    journey_stage: REDUCE_RISK
+  - id: cta
+    requirement: REQUIRED
+    purpose: Address the cta decision need.
+    journey_stage: CONVERT
+  adaptation_notes:
+  - Reorder or omit sections when intent, buyer evidence, proof availability, or information
+    gain supports the change.
+  - Do not fabricate missing proof or force competitor section patterns.

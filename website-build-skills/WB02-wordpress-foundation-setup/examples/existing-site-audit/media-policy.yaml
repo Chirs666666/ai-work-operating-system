@@ -1,0 +1,10 @@
+preferred_formats:
+- WebP
+- AVIF where supported
+max_upload_width: 2560px default review threshold
+compression_strategy:
+- lossy/lossless by asset class
+responsive_images_required: true
+filename_policy:
+- descriptive lowercase names
+notes: []

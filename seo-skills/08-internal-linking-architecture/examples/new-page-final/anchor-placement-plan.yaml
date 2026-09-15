@@ -1,0 +1,16 @@
+links:
+- link_id: IL-001
+  source_url: /blog/how-robotic-welding-works/
+  target_url: /collaborative-welding-robot/
+  action: ADD_NEW
+  priority: PRIORITY_HIGH
+  relationship:
+    type: COMMERCIAL_SUPPORT
+  anchor:
+    preferred_text: collaborative robots for welding
+    anchor_type: PARTIAL_DESCRIPTIVE
+  placement:
+    section: Choosing a Welding Automation System
+    section_id: choosing-automation
+    placement_type: BODY_CONTEXTUAL
+  execution_owner: 07-wordpress-page-builder-publisher

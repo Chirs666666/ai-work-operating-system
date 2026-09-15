@@ -1,0 +1,10 @@
+skill: WB01-site-architecture-builder
+version: 1.0.0
+mode: REBUILD
+site: legacy.example.com
+project_id: EX-REBUILD
+created_at: null
+source_artifacts:
+- 01-company-knowledge
+- 03-keyword-research
+- 25-keyword-page-mapping

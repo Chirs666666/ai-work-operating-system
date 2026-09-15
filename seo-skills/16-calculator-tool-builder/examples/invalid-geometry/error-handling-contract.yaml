@@ -1,0 +1,6 @@
+errors:
+- error_code: INVALID_GEOMETRY
+  category: DOMAIN
+  trigger: Required geometry is non-positive or impossible.
+  user_message: Check the geometry inputs before calculating.
+  blocks_calculation: true

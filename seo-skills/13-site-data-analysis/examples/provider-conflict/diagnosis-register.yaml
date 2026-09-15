@@ -1,0 +1,9 @@
+items:
+- diagnosis_id: D7
+  observation: Third-party visibility estimate and first-party clicks move in opposite
+    directions.
+  potential_cause: Provider methodology/query-set divergence
+  confidence: SUPPORTED
+  evidence:
+  - GSC growth
+  - Semrush estimated decline

@@ -1,0 +1,12 @@
+skill: 06-content-writing-optimization
+version: 1.0.0
+mode: CREATE
+content_type: TECHNICAL_ARTICLE
+language: en
+market: NOT_PROVIDED
+target_topic: NOT_PROVIDED
+upstream:
+  company_truth: NOT_PROVIDED
+  business_context: NOT_PROVIDED
+  keyword_research: NOT_PROVIDED
+  page_ownership: NOT_PROVIDED

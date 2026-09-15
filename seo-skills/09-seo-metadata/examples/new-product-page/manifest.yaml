@@ -1,0 +1,6 @@
+skill: 09-seo-metadata
+version: 1.0.0
+mode: GENERATE
+source_methods:
+- USER_DATA
+- PUBLIC_RESEARCH

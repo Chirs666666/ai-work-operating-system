@@ -1,0 +1,45 @@
+blueprint:
+  page_type: GUIDE
+  version: 1.0.0
+  principle: adaptable_starting_point
+  default_sections:
+  - id: answer-first
+    requirement: REQUIRED
+    purpose: Address the answer first decision need.
+    journey_stage: UNDERSTAND
+  - id: concept
+    requirement: RECOMMENDED
+    purpose: Address the concept decision need.
+    journey_stage: UNDERSTAND
+  - id: decision-factors
+    requirement: RECOMMENDED
+    purpose: Address the decision factors decision need.
+    journey_stage: EVALUATE
+  - id: method
+    requirement: RECOMMENDED
+    purpose: Address the method decision need.
+    journey_stage: VERIFY
+  - id: examples
+    requirement: RECOMMENDED
+    purpose: Address the examples decision need.
+    journey_stage: VERIFY
+  - id: common-errors
+    requirement: CONDITIONAL
+    purpose: Address the common errors decision need.
+    journey_stage: COMPARE
+  - id: selection-guidance
+    requirement: CONDITIONAL
+    purpose: Address the selection guidance decision need.
+    journey_stage: REDUCE_RISK
+  - id: faq
+    requirement: CONDITIONAL
+    purpose: Address the faq decision need.
+    journey_stage: REDUCE_RISK
+  - id: related-solutions
+    requirement: REQUIRED
+    purpose: Address the related solutions decision need.
+    journey_stage: CONVERT
+  adaptation_notes:
+  - Reorder or omit sections when intent, buyer evidence, proof availability, or information
+    gain supports the change.
+  - Do not fabricate missing proof or force competitor section patterns.

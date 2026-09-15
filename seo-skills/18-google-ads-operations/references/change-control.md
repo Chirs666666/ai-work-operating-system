@@ -1,0 +1,2 @@
+# Change Control
+High-impact live actions require explicit approval: enable/pause, publish, budget/bid, targeting, conversions, bulk negatives, Auto-Apply and deletion. Preserve before/after values and actor/approval evidence.

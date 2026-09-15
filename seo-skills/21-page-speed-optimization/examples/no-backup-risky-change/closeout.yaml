@@ -1,0 +1,6 @@
+mode: PRE_CHANGE_CHECK
+g21: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers:
+- Risky change lacks backup/rollback

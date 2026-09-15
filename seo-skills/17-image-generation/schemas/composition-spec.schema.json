@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "focal_subject": {
+      "type": "string"
+    },
+    "subject_position": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "camera_or_view": {
+      "type": "string"
+    },
+    "negative_space": {
+      "type": "string"
+    },
+    "avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "focal_subject",
+    "subject_position",
+    "background",
+    "camera_or_view",
+    "negative_space",
+    "avoid"
+  ],
+  "additionalProperties": false
+}

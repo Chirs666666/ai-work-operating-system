@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "page_role": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "source_required": {
+      "type": "boolean"
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "asset_id",
+    "purpose",
+    "page_role",
+    "subject",
+    "source_required",
+    "acceptance_criteria"
+  ],
+  "additionalProperties": false
+}

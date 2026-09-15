@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "skill",
+    "version",
+    "run_id",
+    "mode",
+    "build_mode",
+    "created_at"
+  ],
+  "properties": {
+    "skill": {
+      "const": "wordpress-page-builder-publisher"
+    },
+    "version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "CREATE_DRAFT",
+        "UPDATE_DRAFT",
+        "REBUILD_DRAFT",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "build_mode": {
+      "enum": [
+        "BLOCK_EDITOR",
+        "ELEMENTOR"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

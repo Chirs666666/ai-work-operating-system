@@ -1,0 +1,2 @@
+# Backup and Change Control
+Risky live changes require backup/rollback path, change scope, expected impact, owner, approval and post-change checks. No backup/change plan means not ready for destructive optimization.

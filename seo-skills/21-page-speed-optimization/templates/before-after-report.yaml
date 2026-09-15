@@ -1,0 +1,10 @@
+baseline_available: false
+same_url: false
+same_test_type: false
+same_device_profile: false
+comparable_location_network: false
+comparable: false
+lab_result: UNKNOWN
+field_result: UNKNOWN
+functionality_status: NOT_TESTED
+overall_verdict: INCONCLUSIVE

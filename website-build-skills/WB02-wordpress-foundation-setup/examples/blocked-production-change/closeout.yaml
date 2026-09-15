@@ -1,0 +1,9 @@
+gate: BLOCK
+foundation_state: BLOCKED
+ready_for_components: false
+warnings: []
+blockers:
+- No staging
+- No backup/rollback
+- Approval pending
+next_skills: []

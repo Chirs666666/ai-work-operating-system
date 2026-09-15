@@ -1,0 +1,2 @@
+# Tool Routing
+Capabilities: search_console, web_analytics, seo_visibility, backlink_data, keyword_metrics, competitor_data, CRM/lead data, website_crawl. Providers may include GSC, GA4, Semrush, Ahrefs, DataForSEO, Bing Webmaster Tools. Secrets remain runtime-only.

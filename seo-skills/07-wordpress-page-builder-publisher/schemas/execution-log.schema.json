@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page_id",
+    "connection_status",
+    "operations"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "connection_status": {
+      "enum": [
+        "CONNECTED",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "AUTH_FAILED"
+      ]
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "operation_id",
+          "action",
+          "write_performed",
+          "result_status"
+        ],
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "write_performed": {
+            "type": "boolean"
+          },
+          "result_status": {
+            "enum": [
+              "SUCCESS",
+              "FAILED",
+              "SKIPPED"
+            ]
+          },
+          "channel": {
+            "type": "string"
+          },
+          "readback_id": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

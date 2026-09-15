@@ -1,0 +1,9 @@
+qa_state: QA_IN_PROGRESS
+block_count: 0
+fail_count: 0
+warn_count: 0
+accepted_risk_count: 0
+ready_for_launch_approval: false
+user_launch_approved: false
+deployed: false
+evidence: []

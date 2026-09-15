@@ -1,0 +1,7 @@
+items:
+- issue_id: CA-01
+  url: https://example.com/product-a/
+  configured_canonical: https://example.com/product-b/
+  canonical_status: CONFLICTING
+  ownership_status: UNKNOWN
+  recommended_action: BLOCK_FOR_OWNERSHIP

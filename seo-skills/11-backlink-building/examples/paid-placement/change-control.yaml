@@ -1,0 +1,4 @@
+risk_class: PAID_PLACEMENT
+approval_required: true
+execution_allowed: false
+reason: Explicit user approval required before purchase

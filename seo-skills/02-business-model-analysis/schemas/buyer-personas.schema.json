@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "enum": [
+            "USER_DATA",
+            "API_DATA",
+            "PUBLIC_RESEARCH"
+          ]
+        },
+        "source_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "collected_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "market": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "method"
+      ]
+    },
+    "analysis_type": {
+      "enum": [
+        "FACT",
+        "EVIDENCE",
+        "INFERENCE",
+        "HYPOTHESIS",
+        "UNKNOWN"
+      ]
+    },
+    "level": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "properties": {
+    "buyer_roles": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "buyer_roles"
+  ],
+  "additionalProperties": true
+}

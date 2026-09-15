@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "campaigns": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "market": {
+            "type": "string"
+          },
+          "product_family": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "EXISTING",
+              "PROPOSED"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "market",
+          "product_family",
+          "objective",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "campaigns"
+  ],
+  "additionalProperties": false
+}

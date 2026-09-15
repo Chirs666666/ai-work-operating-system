@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "target_skill": {
+            "enum": [
+              "25-keyword-page-mapping",
+              "10-commercial-page-optimization",
+              "06-content-writing-optimization",
+              "09-seo-metadata",
+              "08-internal-linking-architecture",
+              "11-backlink-building",
+              "12-technical-seo-audit-fix",
+              "13-site-data-analysis",
+              "19-index-ranking-validation",
+              "21-page-speed-optimization",
+              "24-geo-optimization",
+              "07-wordpress-page-builder-publisher"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "blocking": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "url",
+          "target_skill",
+          "reason",
+          "blocking"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

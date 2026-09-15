@@ -1,0 +1,14 @@
+project_id: P3
+site: example.com
+environment: PRODUCTION_CANDIDATE
+build_mode: BUILD_FIX_AND_RELAUNCH
+skill_states:
+  WB07: BLOCKED
+  WB08: WAITING_DEPENDENCY
+current_gate: WB07
+blockers:
+- form defect
+warnings: []
+next_actions:
+- WB04
+- WB07

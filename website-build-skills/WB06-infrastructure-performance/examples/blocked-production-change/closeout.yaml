@@ -1,0 +1,11 @@
+gate: BLOCK
+infrastructure_ready: false
+ready_for_speed_validation: false
+ready_for_prelaunch: false
+warnings: []
+blockers:
+- Production environment separation unknown
+- Rollback not ready
+- Approval pending
+next_skills:
+- WB06-infrastructure-performance

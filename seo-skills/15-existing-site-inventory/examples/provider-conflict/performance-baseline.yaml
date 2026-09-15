@@ -1,0 +1,11 @@
+items:
+- url: https://example.com/page/
+  gsc_clicks: 250
+  gsc_impressions: 8200
+  gsc_ctr: 0.0305
+  gsc_position: 9.2
+  ga4_sessions: 310
+  ga4_conversions: 5
+  provider_estimated_traffic: 90
+  provider: Semrush
+  period: 2026-08

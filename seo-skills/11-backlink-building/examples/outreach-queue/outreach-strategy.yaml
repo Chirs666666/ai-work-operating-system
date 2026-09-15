@@ -1,0 +1,6 @@
+items:
+- prospect_id: P1
+  angle: TECHNICAL_EXPERTISE
+  personalization_facts:
+  - Publisher maintains a machining resources section
+  ask: Consider the technical guide if it is useful to your readers.

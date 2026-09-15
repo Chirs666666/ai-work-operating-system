@@ -1,0 +1,7 @@
+results:
+- test_id: R-KNOWN-1
+  status: PASS
+  actual:
+    radius: 60
+  notes: []
+overall_status: PASS

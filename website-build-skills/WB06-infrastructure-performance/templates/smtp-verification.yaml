@@ -1,0 +1,5 @@
+test_sent: false
+delivered: false
+destination_type: null
+delivery_evidence: []
+state: NOT_TESTED

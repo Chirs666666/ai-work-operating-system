@@ -1,0 +1,6 @@
+mappings:
+- entity: Collaborative Palletizing Robot
+  entity_type: PRODUCT
+  primary_page_id: P-ROBOT
+  supporting_page_ids:
+  - P-PROD

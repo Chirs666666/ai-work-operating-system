@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_market": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "url",
+    "published_at",
+    "target_market",
+    "target_device",
+    "target_queries"
+  ],
+  "additionalProperties": false
+}

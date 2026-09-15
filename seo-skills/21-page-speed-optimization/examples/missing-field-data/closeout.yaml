@@ -1,0 +1,6 @@
+mode: CWV_BASELINE
+g21: WARN
+final_status: PARTIAL
+warnings:
+- Field data unavailable; continue with lab diagnosis
+blockers: []

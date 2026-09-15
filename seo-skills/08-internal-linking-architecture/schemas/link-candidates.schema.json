@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "candidates"
+  ],
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_url",
+          "target_url"
+        ],
+        "properties": {
+          "source_url": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "relationship": {
+            "enum": [
+              "PARENT_CHILD",
+              "TOPIC_SUPPORT",
+              "COMMERCIAL_SUPPORT",
+              "APPLICATION_RELATION",
+              "PROOF_SUPPORT",
+              "DEEPER_LEARNING",
+              "CONVERSION_PATH",
+              "RELATED_CONTENT",
+              "SIBLING_COMPARISON"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

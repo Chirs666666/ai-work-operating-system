@@ -1,0 +1,2 @@
+# Diagnosis and Causality
+Observed change classes: GROWTH, DECLINE, MIXED, STABLE, INSUFFICIENT_DATA, CONFLICTING_DATA. Cause confidence: CONFIRMED, SUPPORTED, PLAUSIBLE, UNVERIFIED, REJECTED. Never state causality from correlation alone.

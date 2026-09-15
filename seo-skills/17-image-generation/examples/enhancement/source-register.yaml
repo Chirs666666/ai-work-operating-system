@@ -1,0 +1,6 @@
+sources:
+- source_id: IMG-ENH
+  source_type: USER_IMAGE
+  method: USER_DATA
+  reference: low-resolution source
+  notes: []

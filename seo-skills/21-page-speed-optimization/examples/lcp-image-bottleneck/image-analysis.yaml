@@ -1,0 +1,7 @@
+status: ISSUE_FOUND
+findings:
+- Hero image is 1.8 MB
+- Above-fold image is lazy-loaded
+estimated_impact: HIGH
+evidence_refs:
+- IMG-1

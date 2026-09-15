@@ -1,0 +1,9 @@
+keywords:
+- keyword: high precision cnc machining
+  gap_type: MISSING
+  kd: 78
+  intent: Commercial
+  target_url: null
+  decision: RESEARCH
+  decision_basis:
+  - KD is high but relevance and business value require broader evaluation

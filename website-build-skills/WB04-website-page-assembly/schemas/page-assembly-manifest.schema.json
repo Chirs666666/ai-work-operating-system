@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "page_type": {
+      "type": "string",
+      "enum": [
+        "HOME",
+        "ABOUT",
+        "PRODUCT_CATEGORY",
+        "PRODUCT_DETAIL",
+        "SERVICE",
+        "APPLICATION",
+        "INDUSTRY",
+        "RESOURCE_HUB",
+        "ARTICLE",
+        "CONTACT",
+        "CUSTOM"
+      ]
+    },
+    "section_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "global_component_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "section_id": {
+            "type": "string"
+          },
+          "text_ref": {
+            "type": "string"
+          },
+          "evidence_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "support_status": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "PARTIAL",
+              "UNSUPPORTED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "claim_id",
+          "section_id",
+          "text_ref",
+          "evidence_ref",
+          "support_status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "assembly_status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "ASSEMBLING",
+        "CONFLICT",
+        "BLOCKED",
+        "REUSE",
+        "ASSEMBLY_READY",
+        "DRAFT_BUILD_READY"
+      ]
+    }
+  },
+  "required": [
+    "page_id",
+    "page_type",
+    "section_ids",
+    "global_component_ids",
+    "claims",
+    "assembly_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,7 @@
+relationships:
+- subject_id: E1
+  predicate: manufactures
+  object_id: E2
+  supported: true
+  evidence_refs:
+  - SRC1

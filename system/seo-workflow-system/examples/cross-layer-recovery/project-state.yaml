@@ -1,0 +1,12 @@
+project_id: P3
+goal: build and launch site with SEO
+site: example.com
+environment: PRODUCTION
+state: BLOCKED
+current_gate: WB07
+blockers:
+- canonical defect
+warnings: []
+next_actions:
+- '12'
+- WB07

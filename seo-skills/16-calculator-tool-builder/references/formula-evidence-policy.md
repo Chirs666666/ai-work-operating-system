@@ -1,0 +1,2 @@
+# Formula Evidence Policy
+Formula states: VERIFIED, CONDITIONALLY_VERIFIED, CONFLICTING, UNSUPPORTED, UNKNOWN. Production requires VERIFIED or CONDITIONALLY_VERIFIED with limitations. Record each formula/constant source separately. Unsupported, conflicting or unknown formulas may be explored in DRAFT but must be blocked from authoritative production output.

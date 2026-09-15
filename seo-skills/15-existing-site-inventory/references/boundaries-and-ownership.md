@@ -1,0 +1,2 @@
+# Boundaries and Ownership
+15 inventories and classifies existing assets. 25 owns final URL/topic ownership and cannibalization decisions. 06/10 own content optimization; 08 internal links; 09 metadata; 11 backlinks; 12 technical SEO; 13 deep analysis; 19 index/ranking lifecycle; 21 speed; 24 GEO; 07 later execution.

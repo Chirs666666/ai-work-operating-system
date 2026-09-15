@@ -1,0 +1,2 @@
+# Competitor Backlink Policy
+Competitor backlinks are discovery evidence only. Requalify domain, current page, relevance, legitimacy, placement type, target fit, contact path, and current link status. A competitor link is never an automatic target.

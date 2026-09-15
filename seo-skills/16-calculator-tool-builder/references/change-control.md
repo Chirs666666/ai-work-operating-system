@@ -1,0 +1,2 @@
+# Change Control
+Changes to formulas, constants, conversion logic, input interpretation, rounding, precision, assumptions, invalid conditions or result meaning trigger revalidation. Production changes should retain previous-version reference and test evidence. 16 does not directly publish.

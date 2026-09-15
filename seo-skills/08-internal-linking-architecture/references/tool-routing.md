@@ -1,0 +1,2 @@
+# Tool Routing
+Source methods: `USER_DATA`, `API_DATA`, `PUBLIC_RESEARCH`. Evidence states: `VERIFIED`, `OBSERVED`, `INFERRED`, `UNKNOWN`, `CONFLICTING`. Route by capability: `website_crawl`, `sitemap_read`, `wordpress_read`, `search_console`, `web_analytics`, `backlink_data`, `keyword_metrics`, `public_page_research`. Missing GSC/GA4 normally degrades with WARN rather than blocking semantic/structural analysis.

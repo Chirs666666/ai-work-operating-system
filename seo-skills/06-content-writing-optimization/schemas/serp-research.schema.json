@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "serp-research",
+  "type": "object",
+  "required": [
+    "market",
+    "language",
+    "collected_at",
+    "baseline",
+    "recurring_questions",
+    "observed_formats",
+    "competitor_observations",
+    "limitations"
+  ],
+  "properties": {
+    "market": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "collected_at": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": "array"
+    },
+    "recurring_questions": {
+      "type": "array"
+    },
+    "observed_formats": {
+      "type": "array"
+    },
+    "competitor_observations": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

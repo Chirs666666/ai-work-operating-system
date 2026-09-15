@@ -1,0 +1,9 @@
+project_id: ''
+goal: ''
+site: ''
+environment: ''
+state: PENDING
+current_gate: null
+blockers: []
+warnings: []
+next_actions: []

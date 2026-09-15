@@ -1,0 +1,20 @@
+observations:
+- observation_id: O1
+  platform: AI-A
+  query_id: Q1
+  observed_at: '2026-09-01'
+  status: SOURCE_CITED
+  brand: Example Robotics
+  citation_source: example.com
+  competitors: []
+- observation_id: O2
+  platform: AI-A
+  query_id: Q1
+  observed_at: '2026-09-14'
+  status: SOURCE_CITED
+  brand: Example Robotics
+  citation_source: example.com
+  competitors: []
+overall_status: SOURCE_CITED
+success_claimed: false
+seo_value_claimed_absent: false

@@ -1,0 +1,2 @@
+# Authority Metrics
+DR, DA, Authority Score, organic traffic and keyword counts may be recorded with provider/source/date/market. Provider metrics are not interchangeable facts. Missing values remain null/UNKNOWN. Do not reject solely on one authority metric.

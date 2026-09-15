@@ -1,0 +1,16 @@
+products:
+- product_id: null
+  preferred_name:
+    en: null
+  aliases: []
+  family: null
+  category: []
+  models: []
+  applications: []
+  supported_processes: []
+  materials: []
+  specs: {}
+  options: []
+  boundaries: []
+  evidence_refs: []
+  unknown_fields: []

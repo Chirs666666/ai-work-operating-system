@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "links": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "anchor_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rel_attribute": {
+            "enum": [
+              "FOLLOW",
+              "NOFOLLOW",
+              "SPONSORED",
+              "UGC",
+              "UNKNOWN"
+            ]
+          },
+          "placement": {
+            "enum": [
+              "EDITORIAL_BODY",
+              "RESOURCE_LIST",
+              "COMPANY_PROFILE",
+              "AUTHOR_BIO",
+              "DIRECTORY_ENTRY",
+              "PARTNER_PAGE",
+              "OTHER"
+            ]
+          },
+          "status": {
+            "enum": [
+              "LIVE_VERIFIED",
+              "LIVE_WITH_WARNINGS",
+              "NOT_FOUND",
+              "BROKEN",
+              "REMOVED",
+              "UNKNOWN"
+            ]
+          },
+          "checked_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "prospect_id",
+          "source_url",
+          "target_url",
+          "rel_attribute",
+          "placement",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "links"
+  ],
+  "additionalProperties": false
+}

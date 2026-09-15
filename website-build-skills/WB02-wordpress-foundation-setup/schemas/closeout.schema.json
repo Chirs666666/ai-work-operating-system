@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "gate": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "foundation_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "READY",
+        "CONFLICT",
+        "BLOCKED",
+        "REUSE",
+        "READY_FOR_COMPONENTS"
+      ]
+    },
+    "ready_for_components": {
+      "type": "boolean"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "gate",
+    "foundation_state",
+    "ready_for_components",
+    "warnings",
+    "blockers",
+    "next_skills"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

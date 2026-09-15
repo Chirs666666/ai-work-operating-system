@@ -1,0 +1,6 @@
+foundation_ref: WB02/global-design-tokens.yaml
+component_ref: WB03/responsive-rules.yaml
+section_rules:
+- section_id: hero
+  rule: stack on narrow screens
+status: PASS

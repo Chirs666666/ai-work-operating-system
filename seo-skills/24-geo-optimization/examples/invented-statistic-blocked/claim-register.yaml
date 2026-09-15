@@ -1,0 +1,6 @@
+claims:
+- claim_id: C4
+  text: 99.9% of factories prefer this product
+  claim_type: FACT
+  material: true
+  requires_evidence: true

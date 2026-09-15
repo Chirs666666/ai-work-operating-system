@@ -1,0 +1,40 @@
+breakpoints:
+- DESKTOP
+- TABLET
+- MOBILE
+sections:
+- section_id: hero
+  desktop: TWO_COLUMN
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: product-value
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: technical-specifications
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: applications
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: proof
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: faq
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.
+- section_id: final-cta
+  desktop: CONTENT_GRID
+  tablet: ADAPTIVE
+  mobile: STACKED
+  keyboard_notes: Interactive controls must be keyboard operable.

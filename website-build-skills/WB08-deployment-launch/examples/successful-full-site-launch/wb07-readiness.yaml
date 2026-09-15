@@ -1,0 +1,5 @@
+artifact_ref: WB07/launch-gate.yaml
+state: READY_FOR_LAUNCH_APPROVAL
+ready: true
+evidence:
+- WB07 gate

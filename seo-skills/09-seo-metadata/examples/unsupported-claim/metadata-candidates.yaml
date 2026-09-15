@@ -1,0 +1,11 @@
+decision_context: GENERATE
+candidates:
+- candidate_id: META-C01
+  seo_title: 24-Hour CNC Delivery
+  meta_description: Get CNC parts delivered in 24 hours.
+  claim_ids:
+  - C9
+- candidate_id: META-C02
+  seo_title: CNC Machining Services
+  meta_description: CNC machining services for production parts.
+  claim_ids: []

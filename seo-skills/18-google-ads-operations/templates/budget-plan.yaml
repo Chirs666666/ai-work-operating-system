@@ -1,0 +1,9 @@
+current_daily_budget: null
+proposed_daily_budget: null
+currency: null
+cpc: null
+cvr: null
+cpa: null
+metric_status: UNKNOWN
+assumptions: []
+live_change_requested: false

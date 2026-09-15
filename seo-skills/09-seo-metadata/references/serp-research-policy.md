@@ -1,0 +1,2 @@
+# SERP Research Policy
+Levels: NONE, STANDARD, DEEP. STANDARD observes dominant intent, page type, common expression and title patterns. DEEP is preferred for core commercial pages, important new pages, major rewrites, ambiguous intent, performance opportunities, or unclear competitive SERPs. Batch audits prioritize before deep research. Unavailable evidence is UNKNOWN. Extract patterns; do not copy competitor titles.

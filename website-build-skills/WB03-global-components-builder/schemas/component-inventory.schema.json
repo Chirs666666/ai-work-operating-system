@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "GLOBAL",
+              "CONDITIONAL_GLOBAL",
+              "SYSTEM"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "source_of_truth": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "VALIDATED",
+              "CONFLICT",
+              "BLOCKED",
+              "REUSE"
+            ]
+          }
+        },
+        "required": [
+          "component_id",
+          "type",
+          "scope",
+          "owner",
+          "source_of_truth",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "components"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

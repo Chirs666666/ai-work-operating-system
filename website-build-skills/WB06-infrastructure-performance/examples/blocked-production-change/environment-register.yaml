@@ -1,0 +1,5 @@
+environment: PRODUCTION
+site_url: https://example.com
+hosting_ref: hosting-baseline.yaml
+separation_verified: false
+evidence: []

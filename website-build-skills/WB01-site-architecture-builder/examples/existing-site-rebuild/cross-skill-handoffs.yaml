@@ -1,0 +1,11 @@
+handoffs:
+- to_skill: 04-page-planning-ui
+  artifact: page-inventory.yaml
+  purpose: plan page sections
+  gate: PASS
+  notes: []
+- to_skill: WB02-wordpress-foundation-setup
+  artifact: site-scope.yaml
+  purpose: foundation requirements
+  gate: PASS
+  notes: []

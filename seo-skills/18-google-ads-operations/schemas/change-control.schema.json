@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action_type": {
+      "enum": [
+        "NONE",
+        "ENABLE",
+        "PAUSE",
+        "PUBLISH_AD",
+        "BUDGET_CHANGE",
+        "BID_CHANGE",
+        "TARGETING_CHANGE",
+        "CONVERSION_CHANGE",
+        "BULK_NEGATIVE",
+        "AUTO_APPLY",
+        "DELETE",
+        "EXPERIMENT_LAUNCH",
+        "OTHER"
+      ]
+    },
+    "live_change": {
+      "type": "boolean"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "approval_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "execute_allowed": {
+      "type": "boolean"
+    },
+    "before_value": {},
+    "after_value": {}
+  },
+  "required": [
+    "action_type",
+    "live_change",
+    "approval_required",
+    "approval_status",
+    "execute_allowed",
+    "before_value",
+    "after_value"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "taxonomies": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "taxonomy_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "applies_to_families": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "indexability_recommendation": {
+            "type": "string",
+            "enum": [
+              "INDEX",
+              "NOINDEX_CANDIDATE",
+              "CASE_BY_CASE",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "taxonomy_id",
+          "name",
+          "applies_to_families",
+          "purpose",
+          "indexability_recommendation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "taxonomies"
+  ],
+  "additionalProperties": false
+}

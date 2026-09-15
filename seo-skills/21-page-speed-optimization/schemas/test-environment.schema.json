@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "test_type": {
+      "type": "string"
+    },
+    "device_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "network_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "browser": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "test_type",
+    "device_profile",
+    "location",
+    "network_profile",
+    "browser",
+    "run_id"
+  ],
+  "additionalProperties": false
+}

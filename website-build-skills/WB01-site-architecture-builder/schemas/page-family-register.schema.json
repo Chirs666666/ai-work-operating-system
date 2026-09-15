@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "families": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "family_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "family_type": {
+            "type": "string",
+            "enum": [
+              "HOME",
+              "ABOUT",
+              "CATEGORY",
+              "PRODUCT",
+              "SERVICE",
+              "APPLICATION",
+              "RESOURCE_HUB",
+              "ARTICLE",
+              "CONTACT",
+              "LEGAL",
+              "UTILITY",
+              "CUSTOM"
+            ]
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "custom_rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "family_id",
+          "name",
+          "family_type",
+          "purpose",
+          "custom_rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "families"
+  ],
+  "additionalProperties": false
+}

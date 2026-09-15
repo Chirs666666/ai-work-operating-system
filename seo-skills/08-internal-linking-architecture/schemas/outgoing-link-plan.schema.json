@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "direction",
+    "links"
+  ],
+  "properties": {
+    "direction": {
+      "const": "OUTGOING"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "link_id",
+          "source_url",
+          "target_url",
+          "priority"
+        ],
+        "properties": {
+          "link_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "PRIORITY_HIGH",
+              "PRIORITY_MEDIUM",
+              "PRIORITY_LOW",
+              "REJECT"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

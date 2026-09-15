@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "23-old-article-optimization"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "AUDIT",
+        "DECLINE_DIAGNOSIS",
+        "REFRESH_REVIEW",
+        "RECOVERY_REVIEW",
+        "CANNIBALIZATION_REVIEW",
+        "OPTIMIZATION_BRIEF",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

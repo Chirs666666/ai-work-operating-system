@@ -1,0 +1,8 @@
+data_available: true
+queries:
+- query: target keyword
+  class: TARGET
+  impressions: null
+  clicks: null
+  position: null
+  provider: SEMRUSH

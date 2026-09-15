@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "USER_DATA",
+              "UPSTREAM_SKILL",
+              "LIVE_SITE",
+              "PUBLIC_RESEARCH",
+              "UNKNOWN"
+            ]
+          },
+          "reference": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          },
+          "freshness": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "VALID",
+              "STALE",
+              "UNKNOWN",
+              "CONFLICTING"
+            ]
+          }
+        },
+        "required": [
+          "source_id",
+          "source_type",
+          "reference",
+          "provenance",
+          "freshness",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sources"
+  ],
+  "additionalProperties": false
+}

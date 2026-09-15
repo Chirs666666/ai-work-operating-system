@@ -1,0 +1,17 @@
+registry_scope: PROJECT
+project_id: gls-example
+components:
+  - component_id: HERO_PRODUCT_01
+    component_type: PRODUCT_HERO
+    purpose: verified two-column product hero
+    state: VERIFIED
+    required_slots: [heading, repeatability, primary_cta, hero_image]
+    optional_slots: [contextual_link]
+    layout_constraints:
+      desktop: two_column
+      mobile: stacked
+    builder: BLOCK_EDITOR
+    engine: GREENSHIFT
+    implementation: hero-product-01
+    dependencies: [greenshift]
+    verification_evidence: [desktop-qa, tablet-qa, mobile-qa]

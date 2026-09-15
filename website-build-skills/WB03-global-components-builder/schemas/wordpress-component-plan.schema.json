@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "implementation_primitive": {
+      "type": "string",
+      "enum": [
+        "BLOCK_PATTERN",
+        "TEMPLATE_PART",
+        "NAVIGATION_BLOCK",
+        "FORM_BLOCK",
+        "CUSTOM_BLOCK",
+        "PLUGIN_COMPONENT",
+        "OTHER",
+        "UNKNOWN"
+      ]
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "component_id": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "STAGING",
+              "PRODUCTION"
+            ]
+          },
+          "action": {
+            "type": "string"
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "requires_approval": {
+            "type": "boolean"
+          },
+          "approval_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "WAITING_APPROVAL",
+              "APPROVED",
+              "BLOCKED",
+              "DONE",
+              "SKIPPED"
+            ]
+          }
+        },
+        "required": [
+          "change_id",
+          "component_id",
+          "environment",
+          "action",
+          "risk",
+          "requires_approval",
+          "approval_id",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "implementation_primitive",
+    "changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

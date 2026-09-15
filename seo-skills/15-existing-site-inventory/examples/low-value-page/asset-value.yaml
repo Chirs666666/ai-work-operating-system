@@ -1,0 +1,6 @@
+items:
+- url: https://example.com/old-thin-page/
+  asset_class: LOW_VALUE
+  business_value: LOW
+  evidence:
+  - No validated visibility, conversion or backlink value in supplied data

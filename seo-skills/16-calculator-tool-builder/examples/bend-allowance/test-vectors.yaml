@@ -1,0 +1,13 @@
+tests:
+- test_id: BA-KNOWN-1
+  test_type: KNOWN_ANSWER
+  formula_id: ba-arc-length
+  inputs:
+    radius: 60
+    angle_deg: 90
+    unit: mm
+  expected:
+    bend_allowance: 94.2477796077
+    unit: mm
+  tolerance: 1.0e-08
+  source_ref: SRC-BA-1

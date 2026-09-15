@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "risk_class": {
+      "enum": [
+        "LOW_RISK_CONTENT_CHANGE",
+        "MEDIUM_SCOPE_PAGE_CHANGE",
+        "HIGH_IMPACT_LIVE_REWRITE",
+        "OWNERSHIP_OR_URL_RISK"
+      ]
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "before": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "after": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "why": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preserved_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_effect": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "risk_class",
+    "approval_required"
+  ],
+  "additionalProperties": false
+}

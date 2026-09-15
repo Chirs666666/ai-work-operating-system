@@ -1,0 +1,21 @@
+formulas:
+- formula_id: mass-volume-density
+  name: Mass from volume and density
+  expression_or_algorithm: mass = volume * density
+  formula_state: CONDITIONALLY_VERIFIED
+  input_ids:
+  - volume
+  - density
+  output_ids:
+  - mass
+  evidence_refs:
+  - SRC-W-1
+  assumptions:
+  - Density value supplied is applicable to the material condition.
+  limitations:
+  - Accuracy depends directly on density input.
+  invalid_conditions:
+  - volume < 0
+  - density <= 0
+  rounding_rule: display only
+  precision_rule: full precision internally

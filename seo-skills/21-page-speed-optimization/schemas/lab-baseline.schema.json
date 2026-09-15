@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "performance_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "lcp": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "tbt": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cls": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fcp": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "speed_index": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "performance_score",
+    "lcp",
+    "tbt",
+    "cls",
+    "fcp",
+    "speed_index",
+    "source_ref"
+  ],
+  "additionalProperties": false
+}

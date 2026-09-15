@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "cases": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "case_id": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "expected_behavior": {
+            "enum": [
+              "ERROR",
+              "WARNING",
+              "CALCULATE",
+              "BLOCK"
+            ]
+          },
+          "message": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "case_id",
+          "condition",
+          "expected_behavior"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "cases"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,26 @@
+page:
+  page_id: NEW
+  page_type: PRODUCT
+  build_mode: BLOCK_EDITOR
+  target_status: draft
+  source_builder: NOT_PROVIDED
+  target_slug: example-product
+sections:
+  - section_id: HERO_01
+    component:
+      type: PRODUCT_HERO
+      component_id: HERO_PRODUCT_01
+      state: VERIFIED
+    content:
+      heading:
+        value: Example product heading
+        source: 05-product-copywriting
+    assets: {}
+    links: {}
+    layout:
+      desktop: two_column
+      tablet: two_column
+      mobile: stacked
+provenance:
+  - path: sections.HERO_01.content.heading
+    source: 05-product-copywriting

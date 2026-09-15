@@ -1,0 +1,10 @@
+mode: CREATE
+status: BLOCK
+gate: BLOCK
+summary: null
+files_written: []
+unresolved_conflicts: []
+open_gaps: []
+downstream_ready: []
+downstream_blocked: []
+next_action: null

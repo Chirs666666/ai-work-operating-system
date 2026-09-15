@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_skill": {
+            "type": "string"
+          },
+          "to_skill": {
+            "type": "string"
+          },
+          "artifact_id": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "READY",
+              "PASS",
+              "WARN",
+              "BLOCKED",
+              "REUSE"
+            ]
+          }
+        },
+        "required": [
+          "from_skill",
+          "to_skill",
+          "artifact_id",
+          "purpose",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

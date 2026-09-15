@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "index_status": {
+      "enum": [
+        "INDEXED",
+        "INDEX_UNKNOWN",
+        "NOT_INDEXED",
+        "OTHER"
+      ]
+    },
+    "indexed_or_first_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "index_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "days_since_index": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "index_status",
+    "indexed_or_first_seen_at",
+    "index_evidence_ref",
+    "days_since_index"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+gate: G04
+status: WARN
+rationale: Detailed blueprint is usable; a non-critical proof asset is missing and
+  unsupported customer-result claims are prohibited.
+allowed_handoffs:
+- 05-product-copywriting
+- 17-image-generation
+- 07-wordpress-draft
+blocked_handoffs: []
+warnings:
+- Do not use unsupported customer-result claims.
+return_to: []

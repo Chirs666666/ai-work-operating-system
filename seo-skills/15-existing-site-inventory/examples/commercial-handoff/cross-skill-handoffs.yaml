@@ -1,0 +1,5 @@
+handoffs:
+- url: https://example.com/product/
+  target_skill: 10-commercial-page-optimization
+  reason: Existing commercial product page requires optimization diagnosis.
+  blocking: false

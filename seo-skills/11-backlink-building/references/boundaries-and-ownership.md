@@ -1,0 +1,2 @@
+# Boundaries and Ownership
+11 owns backlink campaign strategy, external prospect decisions, outreach planning, and link verification. 25 owns target URL ownership; 06/10 content; 08 internal links; 09 metadata; 12 technical SEO; 13 performance analysis. Detect out-of-scope issues and hand them off.

@@ -1,0 +1,5 @@
+meaningful_image: true
+alt_required: true
+alt_redundant_with_adjacent_text: false
+status: PASS
+notes: []

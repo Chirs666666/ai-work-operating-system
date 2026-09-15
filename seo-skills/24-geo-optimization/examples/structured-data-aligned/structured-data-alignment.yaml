@@ -1,0 +1,7 @@
+schema_present: true
+page_aligned: true
+types:
+- Organization
+- Product
+guarantees_ai_citation: false
+findings: []

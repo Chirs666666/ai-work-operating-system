@@ -1,0 +1,5 @@
+handoffs:
+- issue_id: OWN-01
+  target_skill: 25-keyword-page-mapping
+  reason: Two commercial URLs compete for the same primary intent.
+  blocking: true

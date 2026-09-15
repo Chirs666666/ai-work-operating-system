@@ -1,0 +1,6 @@
+action: EXPAND
+evidence_refs:
+- E1
+reason: Material topic gaps exist without requiring full replacement.
+merge_or_url_change: false
+ownership_confirmation_required: false

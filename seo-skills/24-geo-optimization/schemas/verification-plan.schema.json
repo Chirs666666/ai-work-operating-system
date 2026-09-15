@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "seo_assets_preserved": {
+      "type": "boolean"
+    },
+    "claims_reverified": {
+      "type": "boolean"
+    },
+    "query_set_retest": {
+      "type": "boolean"
+    },
+    "retest_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "seo_assets_preserved",
+    "claims_reverified",
+    "query_set_retest",
+    "retest_window",
+    "notes"
+  ],
+  "additionalProperties": false
+}

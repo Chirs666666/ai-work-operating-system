@@ -1,0 +1,5 @@
+width_px: 1900
+height_px: 550
+aspect_ratio: '190:55'
+crop_allowed: true
+text_safe_area_required: true

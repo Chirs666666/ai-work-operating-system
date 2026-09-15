@@ -1,0 +1,8 @@
+checks:
+- check_id: form
+  area: contact form
+  critical: true
+  result: BLOCK
+  evidence:
+  - submission failed
+overall: BLOCK

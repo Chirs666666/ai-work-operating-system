@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "clicks": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "impressions": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "ctr": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "average_position": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "change_class": {
+      "enum": [
+        "GROWTH",
+        "DECLINE",
+        "MIXED",
+        "STABLE",
+        "INSUFFICIENT_DATA",
+        "CONFLICTING_DATA"
+      ]
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "clicks",
+    "impressions",
+    "ctr",
+    "average_position",
+    "change_class"
+  ],
+  "additionalProperties": false
+}

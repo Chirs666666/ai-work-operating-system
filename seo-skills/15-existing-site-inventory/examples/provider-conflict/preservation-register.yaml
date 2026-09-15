@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/page/
+  preservation_risk: HIGH
+  ranking_value: true
+  traffic_value: true
+  conversion_value: true
+  backlink_value: false
+  notes:
+  - First-party data shows value despite lower third-party traffic estimate.

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "authorized": {
+            "type": "boolean"
+          },
+          "environment": {
+            "enum": [
+              "STAGING",
+              "DRAFT",
+              "PRODUCTION",
+              "UNKNOWN"
+            ]
+          },
+          "execution_allowed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "issue_id",
+          "action",
+          "authorized",
+          "environment",
+          "execution_allowed"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

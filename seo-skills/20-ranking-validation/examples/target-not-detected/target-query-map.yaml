@@ -1,0 +1,5 @@
+targets:
+- target_query: 5 axis cnc machining
+  best_match_class: UNKNOWN
+  observed_queries: []
+  status: NOT_DETECTED

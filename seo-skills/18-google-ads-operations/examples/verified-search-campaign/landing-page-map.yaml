@@ -1,0 +1,5 @@
+mappings:
+- intent: collaborative welding robot supplier
+  landing_page: /collaborative-welding-robot/
+  alignment: PASS
+  notes: []

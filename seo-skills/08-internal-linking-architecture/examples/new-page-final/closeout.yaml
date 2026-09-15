@@ -1,0 +1,11 @@
+g08_status: PASS
+warnings: []
+blockers: []
+handoffs:
+- 07-wordpress-page-builder-publisher
+generated_artifacts:
+- link-decisions.yaml
+- outgoing-link-plan.yaml
+- incoming-link-opportunities.yaml
+- anchor-placement-plan.yaml
+- execution-handoff.yaml

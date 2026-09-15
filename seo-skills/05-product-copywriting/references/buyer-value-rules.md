@@ -1,0 +1,2 @@
+# Buyer Value Rules
+Derive value through Feature → Function → Buyer Requirement → Operational/Engineering/Purchasing Value. Do not turn a safety feature into complete safety, precision into perfect quality, or speed into guaranteed ROI. Buyer value must be conservative and decision-useful.

@@ -1,0 +1,9 @@
+checks:
+- check_id: prod
+  area: production site
+  critical: true
+  result: PASS
+  evidence:
+  - production verification
+overall: PASS
+production_verified: true

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page_id",
+    "qa_type",
+    "status",
+    "checks"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "qa_type": {
+      "enum": [
+        "STRUCTURE",
+        "VISUAL",
+        "RESPONSIVE",
+        "CONTENT_INTEGRITY"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "check_id",
+          "severity",
+          "expected",
+          "actual",
+          "status"
+        ],
+        "properties": {
+          "check_id": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "INFO",
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "expected": {},
+          "actual": {},
+          "status": {
+            "enum": [
+              "PASS",
+              "WARN",
+              "FAIL",
+              "BLOCK"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,8 @@
+release_state: BLOCKED
+target_executor: NONE
+formula_contract_complete: false
+tests_passed: false
+frontend_contract_complete: false
+production_formula_allowed: false
+implementation_notes:
+- Formula evidence is missing.

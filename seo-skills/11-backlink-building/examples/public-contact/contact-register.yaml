@@ -1,0 +1,6 @@
+contacts:
+- prospect_id: P1
+  contact_type: PUBLIC_EMAIL
+  value: editor@industry-example.org
+  source: Public contact page
+  public_or_authorized: true

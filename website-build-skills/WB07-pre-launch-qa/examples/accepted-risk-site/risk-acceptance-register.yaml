@@ -1,0 +1,7 @@
+risks:
+- risk_id: R1
+  defect_id: D1
+  severity: FAIL
+  state: ACCEPTED
+  approval_id: A1
+  evidence_ref: user-risk-approval

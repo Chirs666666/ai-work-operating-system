@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/resource/
+  preservation_risk: HIGH
+  ranking_value: false
+  traffic_value: false
+  conversion_value: false
+  backlink_value: true
+  notes:
+  - Existing external link equity must be considered before URL changes.

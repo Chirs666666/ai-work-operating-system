@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "component_id": {
+      "type": "string"
+    },
+    "source_wb01": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alignment": {
+      "type": "string",
+      "enum": [
+        "ALIGNED",
+        "PARTIAL",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "component_id",
+    "source_wb01",
+    "alignment",
+    "destinations",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,6 @@
+mode: EDIT
+g17: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers:
+- Source image is required for this edit.

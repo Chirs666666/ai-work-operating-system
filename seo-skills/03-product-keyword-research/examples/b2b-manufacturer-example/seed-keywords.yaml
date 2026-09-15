@@ -1,0 +1,7 @@
+seeds:
+- keyword: collaborative welding robot
+  source_method: USER_DATA
+  source_name: Fictional product/market brief
+- keyword: cobot welding cell
+  source_method: PUBLIC_RESEARCH
+  source_name: Fictional SERP observation

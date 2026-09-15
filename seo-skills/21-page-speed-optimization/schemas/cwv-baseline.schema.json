@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "field_data_available": {
+      "type": "boolean"
+    },
+    "lcp": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "GOOD",
+            "NEEDS_IMPROVEMENT",
+            "POOR",
+            "UNKNOWN"
+          ]
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "source_ref"
+      ],
+      "additionalProperties": false
+    },
+    "inp": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "GOOD",
+            "NEEDS_IMPROVEMENT",
+            "POOR",
+            "UNKNOWN"
+          ]
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "source_ref"
+      ],
+      "additionalProperties": false
+    },
+    "cls": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "GOOD",
+            "NEEDS_IMPROVEMENT",
+            "POOR",
+            "UNKNOWN"
+          ]
+        },
+        "source_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "source_ref"
+      ],
+      "additionalProperties": false
+    },
+    "field_cwv_status": {
+      "enum": [
+        "GOOD",
+        "NEEDS_IMPROVEMENT",
+        "POOR",
+        "UNKNOWN"
+      ]
+    },
+    "source_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "field_data_available",
+    "lcp",
+    "inp",
+    "cls",
+    "field_cwv_status",
+    "source_window"
+  ],
+  "additionalProperties": false
+}

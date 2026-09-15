@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "20-ranking-validation"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "QUERY_VALIDATION",
+        "KEYWORD_VALIDATION",
+        "RANKING_CHECK",
+        "SERP_CHECK",
+        "TREND_REVIEW",
+        "GROWTH_REVIEW",
+        "DIAGNOSIS",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

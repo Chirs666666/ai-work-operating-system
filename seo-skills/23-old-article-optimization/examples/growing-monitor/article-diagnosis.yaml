@@ -1,0 +1,6 @@
+state: GROWING
+primary_cause: NONE
+confidence: HIGH
+evidence_refs:
+- GSC
+reasoning: Relevant queries and visibility are growing.

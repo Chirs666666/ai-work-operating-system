@@ -1,0 +1,16 @@
+decisions:
+- link_id: IL-R1
+  source_url: /guide/robotic-welding/
+  target_url: /collaborative-welding-robot/
+  dimensions:
+    semantic_relevance: HIGH
+    page_relationship: COMMERCIAL_SUPPORT
+    user_journey_value: HIGH
+    target_page_priority: HIGH
+    link_gap: LOW
+    source_page_value: MEDIUM
+    placement_quality: HIGH
+  priority: PRIORITY_HIGH
+  action: REUSE_EXISTING
+  reason: Existing contextual link is already strong.
+  evidence: []

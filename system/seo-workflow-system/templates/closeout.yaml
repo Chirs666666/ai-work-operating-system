@@ -1,0 +1,9 @@
+gate: WARN
+project_state: PENDING
+production_state: NOT_DEPLOYED
+indexing_claimed: false
+ranking_claimed: false
+unknown_metrics_preserved: true
+blockers: []
+warnings: []
+next_nodes: []

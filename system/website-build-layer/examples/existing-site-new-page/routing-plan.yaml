@@ -1,0 +1,19 @@
+tasks:
+- task_id: R1
+  skill: WB01
+  capability: site_architecture
+  action: REUSE
+  artifact_id: A1
+  rationale: valid site architecture
+- task_id: R4
+  skill: WB04
+  capability: page_assembly
+  action: RUN
+  artifact_id: null
+  rationale: new product page
+- task_id: R8
+  skill: WB08
+  capability: deployment_launch
+  action: DRAFT_ONLY
+  artifact_id: A7
+  rationale: await production approval

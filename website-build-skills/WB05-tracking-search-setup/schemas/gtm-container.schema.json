@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "container_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_CONFIGURED",
+        "CONFIGURED",
+        "INSTALLED",
+        "DETECTED",
+        "FIRING",
+        "RECEIVING_DATA",
+        "VERIFIED",
+        "WARN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "container_id",
+    "enabled",
+    "state",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

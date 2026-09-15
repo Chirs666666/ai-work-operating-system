@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "wb01_navigation_artifact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "wb01_hierarchy_artifact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alignment": {
+      "type": "string",
+      "enum": [
+        "ALIGNED",
+        "PARTIAL",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "wb01_navigation_artifact",
+    "wb01_hierarchy_artifact",
+    "alignment",
+    "conflicts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

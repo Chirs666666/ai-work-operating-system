@@ -1,0 +1,8 @@
+records:
+- record_id: www
+  type: CNAME
+  name: www
+  current_value: origin.example
+  desired_value: origin.example
+  ttl: '300'
+  status: UNCHANGED

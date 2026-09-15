@@ -1,0 +1,6 @@
+checks:
+- check_id: V1
+  description: Gate consistency
+  status: PASS
+  evidence:
+  - launch-gate.yaml

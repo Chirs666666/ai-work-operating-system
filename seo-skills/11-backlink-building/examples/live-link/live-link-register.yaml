@@ -1,0 +1,9 @@
+links:
+- prospect_id: P1
+  source_url: https://industry-example.org/resources/cnc
+  target_url: https://example.com/cnc-machining/
+  anchor_text: Example CNC machining guide
+  rel_attribute: FOLLOW
+  placement: EDITORIAL_BODY
+  status: LIVE_VERIFIED
+  checked_at: '2026-09-14'

@@ -1,0 +1,2 @@
+# Contact Data
+Use public business contacts, user-provided contacts, or API/connector-authorized data. Preserve source and collection method. Do not infer private email addresses from name/domain patterns.

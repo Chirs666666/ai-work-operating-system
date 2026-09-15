@@ -1,0 +1,9 @@
+components:
+- component_id: header
+  wb03_artifact_ref: WB03/header-spec.yaml
+  reference_mode: REFERENCE
+  status: BOUND
+- component_id: footer
+  wb03_artifact_ref: WB03/footer-spec.yaml
+  reference_mode: REFERENCE
+  status: BOUND

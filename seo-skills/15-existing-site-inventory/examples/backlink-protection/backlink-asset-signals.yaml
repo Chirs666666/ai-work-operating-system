@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/resource/
+  provider: Ahrefs
+  backlinks: 42
+  referring_domains: 18
+  authority_metric: 41
+  metric_name: UR
+  notes:
+  - Provider-specific observation

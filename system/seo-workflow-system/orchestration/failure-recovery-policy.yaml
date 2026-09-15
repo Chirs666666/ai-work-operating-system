@@ -1,0 +1,5 @@
+rules:
+- route to responsible owner
+- block only affected dependents
+- rerun affected gate
+- resume nearest valid checkpoint

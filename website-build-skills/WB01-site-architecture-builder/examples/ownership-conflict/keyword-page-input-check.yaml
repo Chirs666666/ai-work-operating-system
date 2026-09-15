@@ -1,0 +1,7 @@
+skill_25_available: true
+ownership_artifact: 25-keyword-page-mapping
+alignment_status: CONFLICT
+unresolved_ownership_keys:
+- collaborative palletizing robot
+notes:
+- WB01 detected a structural mismatch and returned it to Skill 25.

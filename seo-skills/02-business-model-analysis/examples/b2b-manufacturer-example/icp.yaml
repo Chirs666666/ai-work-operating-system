@@ -1,0 +1,12 @@
+icps:
+- id: icp-cnc
+  segment: small-to-mid-size CNC job shops
+  classification: INFERENCE
+  fit_criteria:
+  - repetitive machine loading
+  - documented need to reduce unattended gaps
+  disqualifiers:
+  - process requires unsupported payload
+  source:
+    method: USER_DATA
+    source_name: Fictional inquiry summary

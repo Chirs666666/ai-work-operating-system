@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "USER_DATA",
+            "API_DATA",
+            "PUBLIC_RESEARCH"
+          ]
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "collected_at": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "page_ref": {
+      "type": "object",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "page_id": {
+          "type": "string"
+        },
+        "page_type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "g08": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "PRIORITY_HIGH",
+        "PRIORITY_MEDIUM",
+        "PRIORITY_LOW",
+        "REJECT"
+      ]
+    },
+    "relationship": {
+      "enum": [
+        "PARENT_CHILD",
+        "TOPIC_SUPPORT",
+        "COMMERCIAL_SUPPORT",
+        "APPLICATION_RELATION",
+        "PROOF_SUPPORT",
+        "DEEPER_LEARNING",
+        "CONVERSION_PATH",
+        "RELATED_CONTENT",
+        "SIBLING_COMPARISON"
+      ]
+    },
+    "anchor_type": {
+      "enum": [
+        "EXACT_DESCRIPTIVE",
+        "PARTIAL_DESCRIPTIVE",
+        "ENTITY_PRODUCT",
+        "CONTEXTUAL",
+        "ACTION"
+      ]
+    },
+    "placement_type": {
+      "enum": [
+        "BODY_CONTEXTUAL",
+        "NAVIGATION",
+        "BREADCRUMB",
+        "RELATED_CONTENT",
+        "CTA",
+        "TABLE",
+        "FAQ",
+        "CARD",
+        "FOOTER"
+      ]
+    },
+    "evidence_state": {
+      "enum": [
+        "VERIFIED",
+        "OBSERVED",
+        "INFERRED",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    }
+  }
+}

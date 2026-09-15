@@ -1,0 +1,11 @@
+conflicts:
+- keyword_id: kw-001
+  metric: search_volume
+  status: CONFLICTING
+  observations:
+  - provider: Fictional Keyword Export
+    value: 1300
+  - provider: Fictional API Provider
+    value: 1000
+  selected_project_value: 1300
+  selection_reason: User-provided project export selected for this fictional example.

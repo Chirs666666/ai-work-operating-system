@@ -1,0 +1,8 @@
+property_id: https://example.com/
+required: true
+verified: true
+sitemap_submitted: true
+state: SUBMITTED
+evidence:
+- property verified
+- sitemap submitted

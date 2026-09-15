@@ -1,0 +1,8 @@
+enabled: false
+provider: null
+owner: null
+proxy_mode: null
+origin_ref: null
+cache_role: null
+state: NOT_CONFIGURED
+evidence: []

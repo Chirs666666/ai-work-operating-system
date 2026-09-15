@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "support_status": {
+            "enum": [
+              "SUPPORTED",
+              "PARTIAL",
+              "UNSUPPORTED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "claim_id",
+          "evidence_ids",
+          "support_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mappings"
+  ],
+  "additionalProperties": false
+}

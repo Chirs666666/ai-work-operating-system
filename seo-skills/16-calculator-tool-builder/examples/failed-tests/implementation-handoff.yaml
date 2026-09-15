@@ -1,0 +1,8 @@
+release_state: BLOCKED
+target_executor: NONE
+formula_contract_complete: true
+tests_passed: false
+frontend_contract_complete: true
+production_formula_allowed: true
+implementation_notes:
+- Tests must pass before implementation handoff.

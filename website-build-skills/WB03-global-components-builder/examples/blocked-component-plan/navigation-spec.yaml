@@ -1,0 +1,9 @@
+component_id: primary-nav
+source_wb01: WB01/navigation-map.yaml
+alignment: ALIGNED
+destinations:
+- /products/
+- /applications/
+- /resources/
+- /contact/
+notes: []

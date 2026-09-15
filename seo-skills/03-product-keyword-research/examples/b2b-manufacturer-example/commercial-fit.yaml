@@ -1,0 +1,11 @@
+evaluations:
+- keyword_id: kw-001
+  product_fit: HIGH
+  buyer_relevance: HIGH
+  commercial_relevance: HIGH
+  evidence_strength: HIGH
+- keyword_id: kw-003
+  product_fit: MEDIUM
+  buyer_relevance: MEDIUM
+  commercial_relevance: MEDIUM
+  evidence_strength: LOW

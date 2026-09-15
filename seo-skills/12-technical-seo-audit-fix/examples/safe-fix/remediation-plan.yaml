@@ -1,0 +1,10 @@
+items:
+- issue_id: BL-03
+  action: UPDATE_TARGET
+  scope:
+  - staging page /draft/
+  confidence: HIGH
+  risk_class: SAFE_REVERSIBLE_FIX
+  approval_required: false
+  rollback: Restore previous draft link target
+  verification_method: Read back staging page and fetch replacement URL

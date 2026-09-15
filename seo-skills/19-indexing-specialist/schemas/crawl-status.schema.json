@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "UNKNOWN",
+        "NOT_DISCOVERED",
+        "DISCOVERED_NOT_CRAWLED",
+        "CRAWLED"
+      ]
+    },
+    "last_crawl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "last_crawl",
+    "source_ref"
+  ],
+  "additionalProperties": false
+}

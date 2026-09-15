@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "goal": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "business_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "architecture_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "VALIDATED",
+        "CONFLICT",
+        "BLOCKED",
+        "REUSE",
+        "READY_FOR_BUILD"
+      ]
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "goal",
+    "audience",
+    "markets",
+    "business_scope",
+    "architecture_state",
+    "constraints",
+    "success_criteria"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+direction: INCOMING
+links:
+- link_id: IL-001
+  source_url: /blog/how-robotic-welding-works/
+  target_url: /collaborative-welding-robot/
+  priority: PRIORITY_HIGH

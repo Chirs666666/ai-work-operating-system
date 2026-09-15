@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target_skill": {
+            "enum": [
+              "03-product-keyword-research",
+              "06-content-writing-optimization",
+              "10-commercial-page-optimization",
+              "11-backlink-building",
+              "13-site-data-analysis",
+              "20-ranking-validation",
+              "25-keyword-page-mapping"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "target_skill",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

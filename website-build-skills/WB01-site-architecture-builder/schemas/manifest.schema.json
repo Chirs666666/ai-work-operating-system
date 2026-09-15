@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "NEW_SITE",
+        "REBUILD",
+        "EXPANSION",
+        "MIGRATION_PLANNING",
+        "ARCHITECTURE_AUDIT",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "site": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "site",
+    "project_id",
+    "created_at",
+    "source_artifacts"
+  ],
+  "additionalProperties": false
+}

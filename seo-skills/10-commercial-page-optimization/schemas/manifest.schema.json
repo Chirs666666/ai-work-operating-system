@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "10-commercial-page-optimization"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "AUDIT_PAGE",
+        "OPTIMIZE_PAGE",
+        "REFRESH_PAGE",
+        "REWRITE_PAGE",
+        "BATCH_AUDIT",
+        "VERIFY"
+      ]
+    },
+    "source_methods": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "USER_DATA",
+          "API_DATA",
+          "PUBLIC_RESEARCH"
+        ]
+      }
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

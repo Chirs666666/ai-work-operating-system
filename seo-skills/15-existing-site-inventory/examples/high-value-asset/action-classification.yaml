@@ -1,0 +1,8 @@
+items:
+- url: https://example.com/core-product/
+  action: KEEP
+  confidence: HIGH
+  ownership_validation_required: false
+  approval_required: false
+  execution_allowed: false
+  reason: High-value existing asset; optimize only after preserving working signals.

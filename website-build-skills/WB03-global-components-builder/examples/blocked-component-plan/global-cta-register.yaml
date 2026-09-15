@@ -1,0 +1,7 @@
+ctas:
+- cta_id: quote
+  label: Request a Quote
+  action_type: LINK
+  destination: /contact/
+  scope: GLOBAL
+  owner: WB03

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "urls": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "status": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "indexability_intent": {
+            "enum": [
+              "INDEX",
+              "NOINDEX",
+              "UNKNOWN"
+            ]
+          },
+          "canonical": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownership": {
+            "enum": [
+              "VERIFIED",
+              "UNKNOWN",
+              "CONFLICTING"
+            ]
+          }
+        },
+        "required": [
+          "url",
+          "status",
+          "indexability_intent",
+          "ownership"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "urls"
+  ],
+  "additionalProperties": false
+}

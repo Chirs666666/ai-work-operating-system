@@ -1,0 +1,21 @@
+artifacts:
+- artifact_id: plan
+  skill_owner: 04-page-planning-ui
+  artifact_ref: 04/article-plan.yaml
+  role: section plan
+  status: AVAILABLE
+- artifact_id: copy
+  skill_owner: 06-content-writing-optimization
+  artifact_ref: 06/article.md
+  role: article content
+  status: AVAILABLE
+- artifact_id: seo
+  skill_owner: 09-seo-metadata
+  artifact_ref: 09/metadata.yaml
+  role: SEO metadata
+  status: AVAILABLE
+- artifact_id: components
+  skill_owner: WB03-global-components-builder
+  artifact_ref: WB03/component-inventory.yaml
+  role: global components
+  status: AVAILABLE

@@ -1,0 +1,2 @@
+# Candidate Generation
+Candidate pools: parent/child; same cluster; related cluster; product/service; application/industry; supporting guide/blog; proof/case; conversion pages; existing graph neighbors; high-priority underlinked pages. Reject self-links, unresolved ownership, obsolete targets, weak relationships, unnatural placements, and targets conflicting with 25. Avoid brute-force all-pairs as the default V1 approach.

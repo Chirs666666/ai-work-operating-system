@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "clusters"
+  ],
+  "properties": {
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cluster",
+          "state"
+        ],
+        "properties": {
+          "cluster": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "STRONG",
+              "ADEQUATE",
+              "WEAK",
+              "FRAGMENTED",
+              "UNKNOWN"
+            ]
+          },
+          "issues": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

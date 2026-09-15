@@ -1,0 +1,6 @@
+gate: WARN
+qa_state: QA_IN_PROGRESS
+ready_for_wb08: false
+warnings: []
+blockers: []
+next_skills: []

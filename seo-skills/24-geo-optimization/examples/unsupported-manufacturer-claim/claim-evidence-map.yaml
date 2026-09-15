@@ -1,0 +1,4 @@
+mappings:
+- claim_id: C3
+  evidence_ids: []
+  support_status: UNSUPPORTED

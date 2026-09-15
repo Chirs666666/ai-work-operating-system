@@ -1,0 +1,9 @@
+gate: G05
+status: WARN
+rationale: DRAFT copy is usable for internal review; a non-critical customer-result
+  proof gap remains.
+allowed_handoffs:
+- internal-review
+blocked_handoffs:
+- production-publishable-copy
+return_to: []

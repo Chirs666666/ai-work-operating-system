@@ -1,0 +1,5 @@
+recommended_strategy: INSUFFICIENT_DATA
+tracking_status: TRACKING_PARTIAL
+conversion_history: NONE
+rationale: Tracking/history are insufficient for a conversion-based recommendation.
+live_change_requested: false

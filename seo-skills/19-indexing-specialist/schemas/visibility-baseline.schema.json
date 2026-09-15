@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "data_available": {
+      "type": "boolean"
+    },
+    "impressions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "query_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "average_position": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "data_available",
+    "impressions",
+    "clicks",
+    "query_count",
+    "average_position",
+    "source_ref"
+  ],
+  "additionalProperties": false
+}

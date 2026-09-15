@@ -1,0 +1,5 @@
+target_environment: PRODUCTION_CANDIDATE
+site_url: https://staging.example.com
+build_ref: 07/build-result.yaml
+scope_notes:
+- launch candidate

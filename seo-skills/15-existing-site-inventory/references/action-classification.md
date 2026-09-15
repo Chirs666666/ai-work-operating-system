@@ -1,0 +1,2 @@
+# Action Classification
+KEEP, UPDATE, REWRITE, MERGE, REDIRECT, NOINDEX, REMOVE, REASSIGN, HOLD. MERGE/REDIRECT/REASSIGN need 25. REMOVE/NOINDEX need approval and technical validation. HOLD when evidence is insufficient.

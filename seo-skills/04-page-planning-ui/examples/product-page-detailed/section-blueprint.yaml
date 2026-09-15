@@ -1,0 +1,155 @@
+sections:
+- id: hero
+  requirement: REQUIRED
+  purpose: Support the buyer's hero decision need.
+  journey_stage: UNDERSTAND
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: false
+    status: AVAILABLE
+  cta:
+    role: NONE
+  visual:
+    role: PRODUCT_OR_PROCESS
+  layout:
+    desktop: TWO_COLUMN_55_45
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: product-value
+  requirement: RECOMMENDED
+  purpose: Support the buyer's product value decision need.
+  journey_stage: EVALUATE
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: false
+    status: AVAILABLE
+  cta:
+    role: NONE
+  visual:
+    role: SUPPORTING
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: technical-specifications
+  requirement: REQUIRED
+  purpose: Support the buyer's technical specifications decision need.
+  journey_stage: VERIFY
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: true
+    status: AVAILABLE
+  cta:
+    role: NONE
+  visual:
+    role: SUPPORTING
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: applications
+  requirement: RECOMMENDED
+  purpose: Support the buyer's applications decision need.
+  journey_stage: EVALUATE
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: false
+    status: AVAILABLE
+  cta:
+    role: NONE
+  visual:
+    role: PRODUCT_OR_PROCESS
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: proof
+  requirement: CONDITIONAL
+  purpose: Support the buyer's proof decision need.
+  journey_stage: VERIFY
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: true
+    status: MISSING
+  cta:
+    role: NONE
+  visual:
+    role: SUPPORTING
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: faq
+  requirement: OPTIONAL
+  purpose: Support the buyer's faq decision need.
+  journey_stage: REDUCE_RISK
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: false
+    status: AVAILABLE
+  cta:
+    role: NONE
+  visual:
+    role: SUPPORTING
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder
+- id: final-cta
+  requirement: REQUIRED
+  purpose: Support the buyer's final cta decision need.
+  journey_stage: CONVERT
+  content_slots:
+  - heading
+  - supporting_text
+  proof:
+    required: false
+    status: AVAILABLE
+  cta:
+    role: PRIMARY
+  visual:
+    role: SUPPORTING
+  layout:
+    desktop: CONTENT_GRID
+    tablet: ADAPTIVE_GRID
+    mobile: STACKED
+  owners:
+    copy: 05-product-copywriting
+    image: 17-image-generation
+    build: 07-wordpress-page-builder

@@ -1,0 +1,25 @@
+inputs:
+- diameter
+- wall_thickness
+- bend_radius
+unit_selectors:
+- length_unit
+actions:
+- Calculate
+- Reset
+results:
+- result
+states:
+- idle
+- calculating
+- valid
+- warning
+- error
+accessibility_requirements:
+- Visible labels
+- Keyboard support
+- Errors associated with fields
+responsive_requirements:
+- No horizontal overflow on mobile
+- Inputs remain readable at narrow widths
+formula_disclosure: true

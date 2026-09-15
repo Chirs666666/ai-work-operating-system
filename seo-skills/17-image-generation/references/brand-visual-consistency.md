@@ -1,0 +1,2 @@
+# Brand Visual Consistency
+Record approved brand colors, finish preferences, background style, lighting, visual density and prohibited brand elements. Consistency should not override factual product appearance.

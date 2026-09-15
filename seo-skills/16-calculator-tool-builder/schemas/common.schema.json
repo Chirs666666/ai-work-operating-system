@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "OPPORTUNITY_ASSESSMENT",
+        "FORMULA_DESIGN",
+        "BUILD_SPEC",
+        "VALIDATE",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g16": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "formula_state": {
+      "enum": [
+        "VERIFIED",
+        "CONDITIONALLY_VERIFIED",
+        "CONFLICTING",
+        "UNSUPPORTED",
+        "UNKNOWN"
+      ]
+    },
+    "test_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "UNKNOWN"
+      ]
+    },
+    "release_state": {
+      "enum": [
+        "DRAFT",
+        "READY_FOR_IMPLEMENTATION",
+        "BLOCKED",
+        "REUSE",
+        "VERIFIED"
+      ]
+    }
+  }
+}

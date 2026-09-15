@@ -1,0 +1,2 @@
+# Prompt Contract
+Specify subject, purpose, composition, view/camera, environment, material/finish, permitted transformations, prohibited changes, text/data constraints, truth class, dimensions and aspect ratio. Do not hide factual requirements inside vague style language.

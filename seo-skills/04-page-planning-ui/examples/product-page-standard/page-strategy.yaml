@@ -1,0 +1,9 @@
+page_goal: Help a fictional manufacturing buyer evaluate product fit without unsupported
+  claims.
+primary_audience:
+- Manufacturing Engineer
+- Production Manager
+commercial_goal: REQUEST_QUOTE
+planning_rationale:
+- Example-only scenario.
+- Prioritize technical evaluation before conversion.

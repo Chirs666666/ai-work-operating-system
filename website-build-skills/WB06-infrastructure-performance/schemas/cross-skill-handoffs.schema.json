@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "to_skill": {
+            "type": "string"
+          },
+          "artifact": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "gate": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "WARN",
+              "BLOCK",
+              "REUSE"
+            ]
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "to_skill",
+          "artifact",
+          "purpose",
+          "gate",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

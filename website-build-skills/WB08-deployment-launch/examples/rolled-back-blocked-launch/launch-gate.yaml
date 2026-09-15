@@ -1,0 +1,5 @@
+state: ROLLBACK_VERIFIED
+launch_verified: false
+handoff_to_19_ready: false
+evidence:
+- rollback verified

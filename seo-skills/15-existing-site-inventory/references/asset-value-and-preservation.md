@@ -1,0 +1,2 @@
+# Asset Value and Preservation
+Asset classes: CRITICAL_ASSET, HIGH_VALUE, MEDIUM_VALUE, LOW_VALUE, UNKNOWN. Evaluate ranking, traffic, conversion, links, business importance, topical coverage, trust/evidence, internal support and historical stability. High existing value raises preservation risk.

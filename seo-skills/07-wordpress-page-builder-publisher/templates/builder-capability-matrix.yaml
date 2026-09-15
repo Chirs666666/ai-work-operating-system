@@ -1,0 +1,14 @@
+project_id: example-project
+capabilities:
+  - name: wordpress_environment_read
+    status: UNAVAILABLE
+    channel: UNKNOWN
+    notes: capability not yet resolved
+  - name: wordpress_draft_create
+    status: UNAVAILABLE
+    channel: UNKNOWN
+    notes: capability not yet resolved
+  - name: browser_render
+    status: UNAVAILABLE
+    channel: UNKNOWN
+    notes: capability not yet resolved

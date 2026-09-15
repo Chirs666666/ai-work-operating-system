@@ -1,0 +1,5 @@
+handoffs:
+- url: https://example.com/blog/old-guide/
+  target_skill: 06-content-writing-optimization
+  reason: Existing informational guide requires refresh/optimization.
+  blocking: false

@@ -1,0 +1,9 @@
+serp_baseline:
+- Definition and simplified method are already covered.
+planned_gains:
+- Add a boundary-condition checklist.
+- Add a validation workflow.
+- Separate estimate from production-confirmed value.
+company_experience: []
+assessment: Meaningful gain comes from decision rules and validation guidance, not
+  extra length.

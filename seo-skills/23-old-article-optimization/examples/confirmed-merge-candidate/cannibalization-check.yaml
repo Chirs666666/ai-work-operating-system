@@ -1,0 +1,8 @@
+status: CONFIRMED
+intent_overlap: HIGH
+query_overlap: HIGH
+url_switching: true
+ownership_confirmed: true
+evidence_refs:
+- GSC
+- MAP

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "FULL_AUDIT",
+        "TARGETED_AUDIT",
+        "BROKEN_LINK_AUDIT",
+        "REMEDIATION_PLAN",
+        "EXECUTE_SAFE_FIXES",
+        "VERIFY_FIXES"
+      ]
+    },
+    "g12": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g12",
+    "final_status",
+    "warnings",
+    "blockers",
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,3 @@
+handoffs:
+- target_skill: 25-keyword-page-mapping
+  reason: Resolve keyword-to-URL ownership before creating or rewriting.

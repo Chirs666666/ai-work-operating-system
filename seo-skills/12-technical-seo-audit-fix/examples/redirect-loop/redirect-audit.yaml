@@ -1,0 +1,9 @@
+redirects:
+- issue_id: RD-02
+  source_url: https://example.com/a
+  hops:
+  - https://example.com/b
+  - https://example.com/a
+  loop: true
+  recommended_action: INVESTIGATE
+  ownership_status: VERIFIED

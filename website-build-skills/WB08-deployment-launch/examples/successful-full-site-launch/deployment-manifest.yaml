@@ -1,0 +1,7 @@
+deployment_id: DEP-001
+scope_id: S1
+release_version: 1.0.0
+risk: HIGH
+expected_downtime: minimal
+rollback_required: true
+approval_id: A1

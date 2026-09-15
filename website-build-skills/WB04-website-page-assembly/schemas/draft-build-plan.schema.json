@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "target_environment": {
+      "type": "string",
+      "enum": [
+        "LOCAL",
+        "STAGING",
+        "PRODUCTION"
+      ]
+    },
+    "execution_skill": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "DRAFT_ONLY",
+        "PUBLISH"
+      ]
+    },
+    "requires_approval": {
+      "type": "boolean"
+    },
+    "approval_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "WAITING_APPROVAL",
+        "APPROVED",
+        "BLOCKED",
+        "DONE"
+      ]
+    }
+  },
+  "required": [
+    "target_environment",
+    "execution_skill",
+    "mode",
+    "requires_approval",
+    "approval_id",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

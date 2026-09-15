@@ -1,0 +1,23 @@
+urls:
+- raw_url: http://www.example.com/product
+  normalized_url: https://example.com/product/
+  protocol: http
+  host: www.example.com
+  path: /product
+  query: null
+  fragment: null
+  status: 301
+  canonical_url: https://example.com/product/
+  redirect_target: https://example.com/product/
+  variant_group: VG1
+- raw_url: https://example.com/product/
+  normalized_url: https://example.com/product/
+  protocol: https
+  host: example.com
+  path: /product/
+  query: null
+  fragment: null
+  status: 200
+  canonical_url: https://example.com/product/
+  redirect_target: null
+  variant_group: VG1

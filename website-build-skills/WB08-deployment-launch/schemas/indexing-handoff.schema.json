@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "to_skill": {
+      "type": "string"
+    },
+    "submission_state": {
+      "type": "string",
+      "enum": [
+        "NOT_SUBMITTED",
+        "SUBMITTED",
+        "RECEIVED",
+        "UNKNOWN"
+      ]
+    },
+    "indexing_state": {
+      "type": "string",
+      "enum": [
+        "NOT_CLAIMED",
+        "UNKNOWN"
+      ]
+    },
+    "ranking_state": {
+      "type": "string",
+      "enum": [
+        "NOT_CLAIMED",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "to_skill",
+    "submission_state",
+    "indexing_state",
+    "ranking_state",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

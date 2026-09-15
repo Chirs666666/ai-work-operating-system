@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "width_px": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "height_px": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "format": {
+      "enum": [
+        "WEBP",
+        "AVIF",
+        "JPEG",
+        "PNG",
+        "SVG",
+        "OTHER"
+      ]
+    },
+    "quality_target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "wordpress_role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "filename",
+    "width_px",
+    "height_px",
+    "format",
+    "quality_target",
+    "wordpress_role"
+  ],
+  "additionalProperties": false
+}

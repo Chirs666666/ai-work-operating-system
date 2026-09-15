@@ -1,0 +1,7 @@
+capabilities:
+- capability: GA4
+  primary_owner: GTM
+  active_paths:
+  - GTM
+  conflict: false
+  resolution: null

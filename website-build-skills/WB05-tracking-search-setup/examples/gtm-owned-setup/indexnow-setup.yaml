@@ -1,0 +1,5 @@
+enabled: true
+submission_state: RECEIVED
+indexed_claim: false
+evidence:
+- submission received

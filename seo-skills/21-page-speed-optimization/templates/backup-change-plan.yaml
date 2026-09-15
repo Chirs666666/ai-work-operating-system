@@ -1,0 +1,8 @@
+live_change_requested: false
+risky_change: false
+backup_ready: false
+rollback_ready: false
+approval_required: false
+approval_status: NOT_REQUIRED
+change_scope: []
+pre_change_checks: []

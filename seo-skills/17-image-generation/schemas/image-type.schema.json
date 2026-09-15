@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "image_type": {
+      "enum": [
+        "PRODUCT_PHOTO",
+        "PRODUCT_RENDER",
+        "FACTORY_SCENE",
+        "PROCESS_IMAGE",
+        "TECHNICAL_DIAGRAM",
+        "COMPARISON_VISUAL",
+        "DATA_VISUAL",
+        "ARTICLE_HERO",
+        "BLOG_INLINE",
+        "CATEGORY_BANNER",
+        "HOMEPAGE_BANNER",
+        "CASE_STUDY_IMAGE",
+        "CALCULATOR_VISUAL",
+        "ICON_ILLUSTRATION",
+        "OTHER"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "image_type",
+    "reason"
+  ],
+  "additionalProperties": false
+}

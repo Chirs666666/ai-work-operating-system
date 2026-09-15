@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "missing_pages": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "suggested_title": {
+            "type": "string"
+          },
+          "family_type": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "P0",
+              "P1",
+              "P2",
+              "P3"
+            ]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED",
+              "PROVISIONAL",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "suggested_title",
+          "family_type",
+          "reason",
+          "priority",
+          "evidence_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "missing_pages"
+  ],
+  "additionalProperties": false
+}

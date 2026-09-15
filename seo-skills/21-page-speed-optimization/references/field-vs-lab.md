@@ -1,0 +1,2 @@
+# Field vs Lab
+Field data represents real-user distributions and can lag after changes. Lab data is controlled/synthetic and useful for diagnosis. Do not use a high Lighthouse score to claim field CWV PASS.

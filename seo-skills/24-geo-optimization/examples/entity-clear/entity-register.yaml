@@ -1,0 +1,13 @@
+entities:
+- entity_id: E1
+  name: Example Robotics
+  type: COMPANY
+  supported: true
+  evidence_refs:
+  - SRC1
+- entity_id: E2
+  name: Collaborative Welding Robot
+  type: PRODUCT
+  supported: true
+  evidence_refs:
+  - SRC1

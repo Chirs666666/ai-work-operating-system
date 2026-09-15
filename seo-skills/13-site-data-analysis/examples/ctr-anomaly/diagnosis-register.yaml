@@ -1,0 +1,7 @@
+items:
+- diagnosis_id: D3
+  observation: Impressions remained stable while clicks fell and position stayed similar.
+  potential_cause: CTR/SERP mix issue
+  confidence: PLAUSIBLE
+  evidence:
+  - GSC period comparison

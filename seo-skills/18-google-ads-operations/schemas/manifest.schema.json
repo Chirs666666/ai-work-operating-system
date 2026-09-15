@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "18-google-ads-operations"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "ACCOUNT_AUDIT",
+        "TRACKING_READINESS",
+        "CAMPAIGN_PLANNING",
+        "SEARCH_CAMPAIGN_BUILD",
+        "KEYWORD_EXPANSION",
+        "NEGATIVE_KEYWORD_REVIEW",
+        "AD_COPY_BUILD",
+        "LANDING_PAGE_REVIEW",
+        "PRE_LAUNCH_QA",
+        "SEARCH_TERM_REVIEW",
+        "BUDGET_PACING",
+        "PERFORMANCE_REVIEW",
+        "OPTIMIZATION",
+        "EXPERIMENT",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

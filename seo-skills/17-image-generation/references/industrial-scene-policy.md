@@ -1,0 +1,2 @@
+# Industrial Scene Policy
+Generated factory, welding, CNC, robot and process scenes are conceptual unless derived from documented source imagery/facts. Do not present generated scenes as a customer's site, a specific factory line or proof of installed equipment.

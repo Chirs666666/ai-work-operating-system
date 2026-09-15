@@ -1,0 +1,9 @@
+competitors:
+- name: Example Alternative Robotics (fictional)
+  type: ALTERNATIVE_SOLUTION
+  classification: EVIDENCE
+  observed_positioning: general-purpose robot package
+  source:
+    method: PUBLIC_RESEARCH
+    source_name: Fictional competitor website
+    url: https://example.invalid/competitor

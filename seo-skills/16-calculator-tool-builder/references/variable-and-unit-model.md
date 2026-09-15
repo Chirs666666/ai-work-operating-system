@@ -1,0 +1,2 @@
+# Variable and Unit Model
+Every variable needs id, label, symbol, description, quantity_type, base_unit, accepted_units, required flag, validation and UI input type. Normalize units at a defined boundary. Dimensional values and unitless ratios must remain distinct. Conversion constants require tests.

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "content-strategy",
+  "type": "object",
+  "required": [
+    "audience",
+    "reader_problem",
+    "content_promise",
+    "buyer_decision_value",
+    "evidence_plan",
+    "conversion_role",
+    "strategy_notes"
+  ],
+  "properties": {
+    "audience": {
+      "type": "string"
+    },
+    "reader_problem": {
+      "type": "string"
+    },
+    "content_promise": {
+      "type": "string"
+    },
+    "buyer_decision_value": {
+      "type": "array"
+    },
+    "evidence_plan": {
+      "type": "array"
+    },
+    "conversion_role": {
+      "type": "string"
+    },
+    "strategy_notes": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

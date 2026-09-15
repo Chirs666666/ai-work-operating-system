@@ -1,0 +1,7 @@
+action_type: NONE
+live_change: false
+approval_required: false
+approval_status: NOT_REQUIRED
+execute_allowed: false
+before_value: null
+after_value: null

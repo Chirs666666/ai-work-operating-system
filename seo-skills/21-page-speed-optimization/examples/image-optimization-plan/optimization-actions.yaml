@@ -1,0 +1,7 @@
+actions:
+- action: Create correctly sized modern-format hero image
+  target: LCP hero
+  expected_effect: Reduce transfer and decode time
+  risk: LOW
+  live_change: false
+  status: PROPOSED

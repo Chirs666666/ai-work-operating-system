@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "conflicts",
+    "handoff_owner"
+  ],
+  "properties": {
+    "conflicts": {
+      "type": "array"
+    },
+    "handoff_owner": {
+      "const": "25-keyword-page-mapping"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "state": {
+      "enum": [
+        "NO_DATA",
+        "NO_IMPRESSIONS",
+        "IMPRESSION_STARTED",
+        "QUERY_STARTED",
+        "RELATED_QUERY_STARTED",
+        "TARGET_QUERY_STARTED",
+        "RANKING_STARTED",
+        "KEYWORD_EXPANDING",
+        "RANKING_IMPROVING",
+        "RANKING_STABLE",
+        "RANKING_DECLINING",
+        "WRONG_INTENT",
+        "INSUFFICIENT_TIME",
+        "OPTIMIZATION_NEEDED"
+      ]
+    },
+    "target_query_detected": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "relevant_query_growth": {
+      "enum": [
+        "GROWING",
+        "STABLE",
+        "DECLINING",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "ranking_established": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INSUFFICIENT"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "state",
+    "target_query_detected",
+    "relevant_query_growth",
+    "ranking_established",
+    "confidence",
+    "summary"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "keywords": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          },
+          "gap_type": {
+            "enum": [
+              "MISSING",
+              "WEAK",
+              "STRONG",
+              "UNTAPPED",
+              "UNIQUE",
+              "UNKNOWN"
+            ]
+          },
+          "kd": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "intent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision": {
+            "enum": [
+              "RESEARCH",
+              "CREATE",
+              "OPTIMIZE",
+              "MAP_OWNERSHIP",
+              "IGNORE",
+              "UNKNOWN"
+            ]
+          },
+          "decision_basis": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "keyword",
+          "gap_type",
+          "kd",
+          "intent",
+          "target_url",
+          "decision",
+          "decision_basis"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "keywords"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+checks:
+- control: HTTPS
+  status: PASS
+  owner: infrastructure
+  evidence:
+  - TLS check
+- control: least privilege
+  status: PASS
+  owner: site admin
+  evidence:
+  - role review
+overall: PASS

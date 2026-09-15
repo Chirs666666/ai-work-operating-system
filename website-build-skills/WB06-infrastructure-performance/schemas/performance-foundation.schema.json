@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "area": {
+            "type": "string"
+          },
+          "configured": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "NOT_CONFIGURED",
+              "CONFIGURED",
+              "DETECTED",
+              "READY",
+              "VERIFIED",
+              "WARN",
+              "FAILED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "area",
+          "configured",
+          "evidence",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "measured_performance_claim": {
+      "type": "boolean"
+    },
+    "overall": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "checks",
+    "measured_performance_claim",
+    "overall"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

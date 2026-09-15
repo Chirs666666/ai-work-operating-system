@@ -1,0 +1,6 @@
+parameters:
+- event_name: quote_request
+  parameter: email
+  classification: PII
+  allowed: true
+overall: FAIL

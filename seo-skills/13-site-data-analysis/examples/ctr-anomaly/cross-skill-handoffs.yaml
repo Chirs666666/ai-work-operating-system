@@ -1,0 +1,5 @@
+handoffs:
+- opportunity_id: O3
+  target_skill: 09-seo-metadata
+  reason: Review title/meta and SERP presentation after validating query mix.
+  blocking: false

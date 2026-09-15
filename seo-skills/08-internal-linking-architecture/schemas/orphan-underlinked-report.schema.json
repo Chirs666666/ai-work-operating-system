@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "pages"
+  ],
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "classification"
+        ],
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "classification": {
+            "enum": [
+              "ORPHAN_PAGE",
+              "UNDERLINKED_PAGE",
+              "NOT_ORPHAN",
+              "HEALTHY"
+            ]
+          },
+          "html_internal_entries": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sitemap_present": {
+            "type": "boolean"
+          },
+          "breadcrumb_present": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

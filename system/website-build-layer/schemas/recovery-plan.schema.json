@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "failure_id": {
+            "type": "string"
+          },
+          "correction_skill": {
+            "type": "string"
+          },
+          "rerun_gate": {
+            "type": "string"
+          },
+          "resume_checkpoint": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "RUNNING",
+              "VERIFIED",
+              "BLOCKED"
+            ]
+          }
+        },
+        "required": [
+          "failure_id",
+          "correction_skill",
+          "rerun_gate",
+          "resume_checkpoint",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

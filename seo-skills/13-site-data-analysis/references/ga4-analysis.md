@@ -1,0 +1,2 @@
+# GA4 Analysis
+Analyze sessions/users, engaged sessions, engagement rate, landing pages, channel/source and configured key events/conversions. Do not infer lead quality or revenue without business evidence.

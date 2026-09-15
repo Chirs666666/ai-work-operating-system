@@ -1,0 +1,9 @@
+skill: 03-product-keyword-research
+version: 1.0.0
+mode: CREATE
+market: United States
+language: English
+generated_at: '2026-09-14'
+source_methods:
+- USER_DATA
+- PUBLIC_RESEARCH

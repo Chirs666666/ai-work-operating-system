@@ -1,0 +1,9 @@
+page_id: NEW
+compatibility_outcome: COMPATIBLE
+matches:
+  - section_id: HERO_01
+    component_type: PRODUCT_HERO
+    component_id: HERO_PRODUCT_01
+    component_state: VERIFIED
+    match_status: MATCHED
+    notes: exact verified project component

@@ -1,0 +1,7 @@
+gate: WARN
+infrastructure_ready: false
+ready_for_speed_validation: false
+ready_for_prelaunch: false
+warnings: []
+blockers: []
+next_skills: []

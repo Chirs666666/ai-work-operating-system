@@ -1,0 +1,15 @@
+gates:
+- gate_id: G7
+  owner: WB07
+  required_dependencies:
+  - D1
+  state: PASS
+  evidence:
+  - WB07 launch gate
+- gate_id: G8
+  owner: WB08
+  required_dependencies:
+  - D2
+  state: PASS
+  evidence:
+  - production verified

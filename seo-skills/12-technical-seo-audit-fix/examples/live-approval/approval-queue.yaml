@@ -1,0 +1,5 @@
+items:
+- issue_id: RD-04
+  risk_class: URL_OWNERSHIP_CHANGE
+  reason: Live redirect changes URL behavior/ownership.
+  approval_status: PENDING

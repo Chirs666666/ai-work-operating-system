@@ -1,0 +1,6 @@
+status: ISSUE_FOUND
+findings:
+- Inline content image lacks width/height attributes
+estimated_impact: HIGH
+evidence_refs:
+- CLS-1

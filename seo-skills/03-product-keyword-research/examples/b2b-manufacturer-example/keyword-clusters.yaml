@@ -1,0 +1,19 @@
+clusters:
+- cluster_id: cl-001
+  label: collaborative welding robot solutions
+  keyword_ids:
+  - kw-001
+  - kw-002
+  basis:
+  - semantic similarity
+  - commercial intent
+  final_url: null
+  page_ownership_decided: false
+- cluster_id: cl-002
+  label: small batch cobot welding
+  keyword_ids:
+  - kw-003
+  basis:
+  - use case
+  final_url: null
+  page_ownership_decided: false

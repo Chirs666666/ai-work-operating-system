@@ -1,0 +1,2 @@
+# Claim-Evidence Policy
+Material factual/specification/manufacturer/certification claims need supporting evidence. Unsupported marketing superlatives should be removed/reframed, not invented into facts.

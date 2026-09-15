@@ -1,0 +1,22 @@
+journey_model:
+- UNDERSTAND
+- EVALUATE
+- VERIFY
+- COMPARE
+- REDUCE_RISK
+- CONVERT
+sections:
+- id: hero
+  order: 1
+- id: product-value
+  order: 2
+- id: technical-specifications
+  order: 3
+- id: applications
+  order: 4
+- id: proof
+  order: 5
+- id: faq
+  order: 6
+- id: final-cta
+  order: 7

@@ -1,0 +1,9 @@
+cases:
+- case_id: EDGE-GEO-1
+  condition: sagitta <= 0
+  expected_behavior: ERROR
+  message: Sagitta must be greater than zero.
+- case_id: EDGE-GEO-2
+  condition: chord <= 0
+  expected_behavior: ERROR
+  message: Chord must be greater than zero.

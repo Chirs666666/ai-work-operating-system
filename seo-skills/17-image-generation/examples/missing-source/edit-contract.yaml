@@ -1,0 +1,9 @@
+source_asset_id: null
+preserve:
+- product subject
+modify:
+- color
+remove: []
+add: []
+prohibited_changes: []
+factual_interpretation_risk: MEDIUM

@@ -1,0 +1,6 @@
+items:
+- url: https://example.com/duplicate/
+  ownership: CONFLICTING
+  readiness: NOT_READY
+  link_worthy_reason: null
+  handoff: 25-keyword-page-mapping

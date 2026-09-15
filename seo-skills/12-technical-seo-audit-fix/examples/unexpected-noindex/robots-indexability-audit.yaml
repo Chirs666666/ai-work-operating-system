@@ -1,0 +1,8 @@
+items:
+- issue_id: RB-01
+  url: https://example.com/core-product/
+  robots_txt: ALLOWED
+  meta_robots: NOINDEX
+  x_robots: UNKNOWN
+  intended_indexability: INDEX
+  status: CONFLICT

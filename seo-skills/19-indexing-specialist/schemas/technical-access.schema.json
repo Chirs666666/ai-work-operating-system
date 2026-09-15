@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "http_status": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "robots_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "redirect_target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "http_status",
+    "robots_allowed",
+    "redirect_target",
+    "status"
+  ],
+  "additionalProperties": false
+}

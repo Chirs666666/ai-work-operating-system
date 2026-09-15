@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "FULL_SITE",
+        "INCREMENTAL",
+        "PAGE_ONLY",
+        "CONFIG_ONLY",
+        "DNS_CUTOVER",
+        "MIGRATION",
+        "HOTFIX"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "strategy",
+    "rationale",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

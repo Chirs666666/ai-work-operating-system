@@ -1,0 +1,91 @@
+{
+  "type": "object",
+  "properties": {
+    "wordpress_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "php_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hosting_provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "environment": {
+      "type": "string",
+      "enum": [
+        "LOCAL",
+        "STAGING",
+        "PRODUCTION",
+        "UNKNOWN"
+      ]
+    },
+    "site_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "home_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "https_verified": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "evidence_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "PARTIAL",
+        "UNKNOWN"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "wordpress_version",
+    "php_version",
+    "hosting_provider",
+    "environment",
+    "site_url",
+    "home_url",
+    "language",
+    "timezone",
+    "https_verified",
+    "evidence_status",
+    "source_refs"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

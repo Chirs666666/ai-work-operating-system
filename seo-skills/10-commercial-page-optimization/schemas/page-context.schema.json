@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "page_type": {
+      "enum": [
+        "PRODUCT",
+        "CATEGORY",
+        "SERVICE",
+        "APPLICATION",
+        "INDUSTRY",
+        "CAPABILITY",
+        "LANDING_PAGE",
+        "HOME"
+      ]
+    },
+    "live_state": {
+      "enum": [
+        "DRAFT",
+        "LIVE",
+        "UNKNOWN"
+      ]
+    },
+    "primary_topic": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ownership_status": {
+      "enum": [
+        "VERIFIED",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "page_type",
+    "live_state",
+    "ownership_status"
+  ],
+  "additionalProperties": false
+}

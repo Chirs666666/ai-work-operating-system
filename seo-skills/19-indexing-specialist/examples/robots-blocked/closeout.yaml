@@ -1,0 +1,6 @@
+mode: INDEXING_DIAGNOSIS
+g19: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers:
+- BLOCKED_ROBOTS

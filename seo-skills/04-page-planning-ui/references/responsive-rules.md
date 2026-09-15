@@ -1,0 +1,2 @@
+# Responsive Rules
+For material sections define desktop, tablet, and mobile behavior: stacking order, content priority, table overflow/transformation, image behavior, CTA access, heading hierarchy, readable widths, and interaction/keyboard needs. Specifications may be accessibility-aware, but never claim WCAG compliance until the implemented page is actually tested.

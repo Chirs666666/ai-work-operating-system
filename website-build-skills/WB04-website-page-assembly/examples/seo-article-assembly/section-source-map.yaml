@@ -1,0 +1,5 @@
+mappings:
+- section_id: body
+  source_owner: 06-content-writing-optimization
+  source_artifact: 06/article.md
+  provenance_status: VERIFIED

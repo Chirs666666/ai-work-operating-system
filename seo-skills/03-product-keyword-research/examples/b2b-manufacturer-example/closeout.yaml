@@ -1,0 +1,9 @@
+gate: G03
+status: WARN
+summary: Core commercial cluster is ready for page mapping; one use-case term requires
+  demand validation.
+downstream_ready_for:
+- 25-keyword-page-mapping
+warnings:
+- kw-003 demand is UNVERIFIED.
+blocked_by: []

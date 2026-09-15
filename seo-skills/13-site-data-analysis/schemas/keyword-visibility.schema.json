@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "type": "string"
+    },
+    "estimated_keywords": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "visibility_change": {
+      "enum": [
+        "GROWTH",
+        "DECLINE",
+        "MIXED",
+        "STABLE",
+        "INSUFFICIENT_DATA",
+        "CONFLICTING_DATA"
+      ]
+    },
+    "provider_specific": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "provider",
+    "estimated_keywords",
+    "visibility_change",
+    "provider_specific"
+  ],
+  "additionalProperties": false
+}

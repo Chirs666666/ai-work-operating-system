@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "artifact_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommendations_bound": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "BOUND",
+        "NOT_REQUIRED",
+        "MISSING",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "artifact_ref",
+    "recommendations_bound",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

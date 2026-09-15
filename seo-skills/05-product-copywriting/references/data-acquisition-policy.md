@@ -1,0 +1,2 @@
+# Data Acquisition Policy
+Methods: USER_DATA, API_DATA, PUBLIC_RESEARCH. Preserve method, source name/provider/URL/time/market/language where available. Approved 01 truth normally controls product claims. Preserve source conflicts and route verification. Missing data stays UNKNOWN/NOT_PROVIDED; never substitute zero.

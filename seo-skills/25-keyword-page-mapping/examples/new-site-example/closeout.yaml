@@ -1,0 +1,8 @@
+gate: G25
+status: PASS
+summary: Commercial product cluster and distinct programming guide have clear planned
+  ownership.
+downstream_ready_for:
+- 04-page-planning-ui
+warnings: []
+blocked_by: []

@@ -1,0 +1,12 @@
+handoffs:
+- to_skill: WB07-pre-launch-qa
+  artifact: closeout.yaml
+  purpose: pre-launch measurement gate
+  gate: PASS
+  notes: []
+- to_skill: 19-indexing-specialist
+  artifact: search-platform-register.yaml
+  purpose: post-launch indexing context only
+  gate: PASS
+  notes:
+  - No indexing claim

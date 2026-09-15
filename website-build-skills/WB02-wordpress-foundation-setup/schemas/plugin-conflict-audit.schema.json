@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "conflict_id": {
+            "type": "string"
+          },
+          "capability": {
+            "type": "string"
+          },
+          "plugin_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "BLOCKING"
+            ]
+          },
+          "compatibility": {
+            "type": "string",
+            "enum": [
+              "COMPATIBLE",
+              "INCOMPATIBLE",
+              "UNKNOWN"
+            ]
+          },
+          "resolution": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "conflict_id",
+          "capability",
+          "plugin_ids",
+          "severity",
+          "compatibility",
+          "resolution"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    }
+  },
+  "required": [
+    "conflicts",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

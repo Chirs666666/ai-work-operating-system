@@ -1,0 +1,9 @@
+redirects:
+- issue_id: RD-01
+  source_url: https://example.com/a
+  hops:
+  - https://example.com/b
+  - https://example.com/c
+  loop: false
+  recommended_action: FLATTEN_CHAIN
+  ownership_status: VERIFIED

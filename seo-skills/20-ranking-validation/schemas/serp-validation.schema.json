@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "market": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dominant_intent": {
+      "enum": [
+        "COMMERCIAL",
+        "TRANSACTIONAL",
+        "INFORMATIONAL",
+        "NAVIGATIONAL",
+        "MIXED",
+        "UNKNOWN"
+      ]
+    },
+    "dominant_page_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_url_observed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "provider": {
+      "const": "GOOGLE_SERP"
+    }
+  },
+  "required": [
+    "query",
+    "observed_at",
+    "market",
+    "dominant_intent",
+    "dominant_page_types",
+    "target_url_observed",
+    "provider"
+  ],
+  "additionalProperties": false
+}

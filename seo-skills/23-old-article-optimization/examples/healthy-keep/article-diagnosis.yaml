@@ -1,0 +1,6 @@
+state: HEALTHY
+primary_cause: NONE
+confidence: HIGH
+evidence_refs:
+- GSC
+reasoning: Relevant visibility and intent remain healthy.

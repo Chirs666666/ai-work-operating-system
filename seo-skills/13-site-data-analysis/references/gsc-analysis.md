@@ -1,0 +1,2 @@
+# GSC Analysis
+Analyze clicks, impressions, CTR, average position, query/page/device/country/search type. No universal CTR/position threshold. Query×Page is central for wrong-page and cannibalization signals.

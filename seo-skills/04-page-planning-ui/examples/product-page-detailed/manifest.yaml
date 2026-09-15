@@ -1,0 +1,12 @@
+skill: 04-page-planning-ui
+version: 1.0.0
+planning_depth: DETAILED
+work_mode: REDESIGN
+source:
+  method: USER_DATA
+  source_name: fictional-example-data
+  provider: null
+  url: null
+  collected_at: '2026-09-14'
+  market: Example Market
+  language: en

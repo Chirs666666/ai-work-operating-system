@@ -1,0 +1,6 @@
+staging_available: 'YES'
+staging_required_for_current_plan: true
+isolated_from_indexing: 'YES'
+sync_strategy:
+- staging before production
+notes: []

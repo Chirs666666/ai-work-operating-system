@@ -1,0 +1,2 @@
+# Tool Routing
+Capabilities: sitemap_read, wordpress_read, website_crawl, search_console, web_analytics, seo_visibility, backlink_data, keyword_metrics, public_page_research. Providers are interchangeable only at capability level; metrics remain provider-specific. Credentials remain runtime-only.

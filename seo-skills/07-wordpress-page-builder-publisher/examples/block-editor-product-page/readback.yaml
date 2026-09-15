@@ -1,0 +1,25 @@
+readback_id: rb-block-001
+page_id: "7001"
+status: draft
+build_mode: BLOCK_EDITOR
+revision: rev-11
+sections:
+  - section_id: HERO_01
+    component_id: HERO_PRODUCT_01
+    content:
+      heading: Collaborative Welding Robot
+      repeatability: "±0.02 mm"
+      primary_cta: Request a Welding Review
+metadata:
+  seo_title: Collaborative Welding Robot | GLS
+  meta_description: Example approved metadata preserved from 09.
+links:
+  - anchor: welding robots
+    url: /welding-robots/
+  - anchor: Request a Welding Review
+    url: /contact/
+media:
+  - slot: hero_image
+    file: collaborative-welding-robot-hero.jpg
+    alt: Collaborative welding robot workcell
+read_at: "2026-09-14T00:03:00Z"

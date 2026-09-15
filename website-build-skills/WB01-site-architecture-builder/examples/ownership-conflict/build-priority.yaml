@@ -1,0 +1,15 @@
+items:
+- page_id: P-HOME
+  priority: P0
+  dependency_page_ids: []
+  reason: global structure
+- page_id: P-PROD
+  priority: P0
+  dependency_page_ids:
+  - P-HOME
+  reason: core commercial hierarchy
+- page_id: P-ROBOT
+  priority: P1
+  dependency_page_ids:
+  - P-PROD
+  reason: primary product conversion page

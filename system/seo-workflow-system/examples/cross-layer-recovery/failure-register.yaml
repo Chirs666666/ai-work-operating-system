@@ -1,0 +1,9 @@
+failures:
+- failure_id: F1
+  failed_gate: WB07
+  responsible_node: '12'
+  affected_artifacts:
+  - technical-seo
+  dependent_tasks:
+  - DEP
+  state: OPEN

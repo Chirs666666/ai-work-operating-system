@@ -1,0 +1,6 @@
+mode: CWV_BASELINE
+g21: WARN
+final_status: PARTIAL
+warnings:
+- Field LCP is poor despite strong lab score
+blockers: []

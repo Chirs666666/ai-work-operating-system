@@ -1,0 +1,17 @@
+mappings:
+- cluster_id: cl-001
+  cluster: collaborative welding robot
+  dominant_intent: COMMERCIAL
+  page_type: PRODUCT
+  primary_url: /collaborative-welding-robot/
+  url_state: PLANNED
+  action: CREATE
+  confidence: HIGH
+- cluster_id: cl-002
+  cluster: how to program a collaborative welding robot
+  dominant_intent: INFORMATIONAL
+  page_type: GUIDE
+  primary_url: /guides/program-collaborative-welding-robot/
+  url_state: PLANNED
+  action: CREATE
+  confidence: MEDIUM

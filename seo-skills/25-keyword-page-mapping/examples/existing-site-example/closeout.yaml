@@ -1,0 +1,10 @@
+gate: G25
+status: WARN
+summary: Safe ownership mapping is usable and protects the established primary URL;
+  destructive consolidation execution remains approval-gated.
+downstream_ready_for:
+- 10-commercial-page-optimization
+warnings:
+- MERGE/REDIRECT execution is WAITING_APPROVAL.
+blocked_by:
+- LIVE_CONSOLIDATION_APPROVAL

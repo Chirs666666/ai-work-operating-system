@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "required": {
+      "type": "boolean"
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_CONFIGURED",
+        "CONFIGURED",
+        "AUTHENTICATED",
+        "SENT",
+        "DELIVERED",
+        "VERIFIED",
+        "WARN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "secret_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "required",
+    "provider",
+    "state",
+    "secret_ref",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

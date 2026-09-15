@@ -1,0 +1,2 @@
+# Anomaly Detection
+Flag sudden click/impression/query/page/conversion/visibility/referring-domain/tracking changes. An anomaly is an observation, not a cause. Validate against source changes, seasonality and other evidence.

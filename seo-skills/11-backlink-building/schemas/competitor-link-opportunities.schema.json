@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "competitor": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "prospect_id": {
+            "type": "string"
+          },
+          "requalified": {
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "CANDIDATE",
+              "QUALIFIED",
+              "REJECTED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "competitor",
+          "source_url",
+          "prospect_id",
+          "requalified",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

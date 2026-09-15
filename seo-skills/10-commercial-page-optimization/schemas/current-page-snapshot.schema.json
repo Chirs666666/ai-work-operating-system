@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "h1": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "primary_cta": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "configured_metadata_present": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "sections"
+  ],
+  "additionalProperties": false
+}

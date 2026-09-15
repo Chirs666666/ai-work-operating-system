@@ -1,0 +1,14 @@
+page:
+  type: PRODUCT
+  url: /example-flex-welding-cell/
+  action: CREATE
+seo:
+  primary_keyword: example flexible welding cell
+  secondary_keywords:
+  - example automated welding cell
+intent:
+  search_intent: COMMERCIAL
+  buyer_stage: EVALUATION
+ownership:
+  source_skill: 25-keyword-page-mapping
+  status: CONFIRMED

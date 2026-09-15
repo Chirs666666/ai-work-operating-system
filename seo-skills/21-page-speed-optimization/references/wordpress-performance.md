@@ -1,0 +1,2 @@
+# WordPress Performance
+Inspect theme/page builder, plugins, cache/image plugins, fonts, third parties, database, hosting and CDN. Adding more optimization plugins is not a default fix and may increase conflicts.

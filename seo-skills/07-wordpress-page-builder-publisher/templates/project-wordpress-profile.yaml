@@ -1,0 +1,24 @@
+project_id: example-project
+environment: UNKNOWN
+wordpress:
+  version: UNKNOWN
+  theme: UNKNOWN
+  child_theme: NOT_PROVIDED
+  seo_plugin: UNKNOWN
+builder:
+  build_mode: BLOCK_EDITOR
+  gutenberg: UNKNOWN
+  greenshift: UNKNOWN
+  elementor: NOT_PROVIDED
+  elementor_pro: NOT_PROVIDED
+design_system:
+  fonts: UNKNOWN
+  colors: UNKNOWN
+  container_widths: UNKNOWN
+  spacing: UNKNOWN
+  radius: UNKNOWN
+  breakpoints: UNKNOWN
+reusable_assets: []
+dependencies: []
+profile_status: UNKNOWN
+observed_at: "2026-09-14T00:00:00Z"

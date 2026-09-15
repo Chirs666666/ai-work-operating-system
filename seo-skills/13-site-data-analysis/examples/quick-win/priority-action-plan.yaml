@@ -1,0 +1,5 @@
+items:
+- opportunity_id: O12
+  priority: P1_HIGH
+  action: Review SERP/query intent and metadata before changing page body.
+  owner_skill: 09-seo-metadata

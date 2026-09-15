@@ -1,0 +1,6 @@
+status: ISSUE_FOUND
+findings:
+- Chat widget blocks main thread during interaction
+estimated_impact: HIGH
+evidence_refs:
+- DEVTOOLS-1

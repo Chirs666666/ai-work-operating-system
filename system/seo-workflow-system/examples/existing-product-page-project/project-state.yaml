@@ -1,0 +1,10 @@
+project_id: P2
+goal: add product page
+site: example.com
+environment: PRODUCTION
+state: WAITING_APPROVAL
+current_gate: production-approval
+blockers: []
+warnings: []
+next_actions:
+- WB08

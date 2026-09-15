@@ -1,0 +1,12 @@
+tests:
+- test_id: EQ-1
+  test_type: CROSS_UNIT_EQUIVALENCE
+  formula_id: ba-arc-length
+  inputs:
+    radius_mm: 25.4
+    radius_in: 1
+    angle_deg: 90
+  expected:
+    equivalent: true
+  tolerance: 1.0e-10
+  source_ref: SRC-U-1

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "links"
+  ],
+  "properties": {
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "link_id",
+          "source_url",
+          "target_url",
+          "action",
+          "priority",
+          "relationship",
+          "anchor",
+          "placement",
+          "execution_owner"
+        ],
+        "properties": {
+          "link_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "action": {
+            "enum": [
+              "REUSE_EXISTING",
+              "IMPROVE_EXISTING",
+              "ADD_NEW",
+              "NO_ACTION"
+            ]
+          },
+          "priority": {
+            "enum": [
+              "PRIORITY_HIGH",
+              "PRIORITY_MEDIUM",
+              "PRIORITY_LOW",
+              "REJECT"
+            ]
+          },
+          "relationship": {
+            "type": "object",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "PARENT_CHILD",
+                  "TOPIC_SUPPORT",
+                  "COMMERCIAL_SUPPORT",
+                  "APPLICATION_RELATION",
+                  "PROOF_SUPPORT",
+                  "DEEPER_LEARNING",
+                  "CONVERSION_PATH",
+                  "RELATED_CONTENT",
+                  "SIBLING_COMPARISON"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "anchor": {
+            "type": "object",
+            "required": [
+              "preferred_text",
+              "anchor_type"
+            ],
+            "properties": {
+              "preferred_text": {
+                "type": "string"
+              },
+              "anchor_type": {
+                "enum": [
+                  "EXACT_DESCRIPTIVE",
+                  "PARTIAL_DESCRIPTIVE",
+                  "ENTITY_PRODUCT",
+                  "CONTEXTUAL",
+                  "ACTION"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "placement": {
+            "type": "object",
+            "required": [
+              "placement_type"
+            ],
+            "properties": {
+              "section": {
+                "type": "string"
+              },
+              "section_id": {
+                "type": "string"
+              },
+              "placement_type": {
+                "enum": [
+                  "BODY_CONTEXTUAL",
+                  "NAVIGATION",
+                  "BREADCRUMB",
+                  "RELATED_CONTENT",
+                  "CTA",
+                  "TABLE",
+                  "FAQ",
+                  "CARD",
+                  "FOOTER"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "execution_owner": {
+            "const": "07-wordpress-page-builder-publisher"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

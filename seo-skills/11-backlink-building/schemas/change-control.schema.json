@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "risk_class": {
+      "enum": [
+        "SAFE_RESEARCH",
+        "STANDARD_OUTREACH",
+        "PAID_PLACEMENT",
+        "HIGH_RISK_LINK_SCHEME"
+      ]
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "execution_allowed": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "risk_class",
+    "approval_required",
+    "execution_allowed",
+    "reason"
+  ],
+  "additionalProperties": false
+}

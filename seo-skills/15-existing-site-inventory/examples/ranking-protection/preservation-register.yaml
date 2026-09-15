@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/guide/
+  preservation_risk: HIGH
+  ranking_value: true
+  traffic_value: true
+  conversion_value: true
+  backlink_value: false
+  notes:
+  - Preserve ranking sections/URL unless evidence supports change.

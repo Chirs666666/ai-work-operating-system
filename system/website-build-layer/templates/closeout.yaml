@@ -1,0 +1,8 @@
+gate: WARN
+build_state: PENDING
+production_state: NOT_DEPLOYED
+indexing_claimed: false
+ranking_claimed: false
+blockers: []
+warnings: []
+next_skills: []

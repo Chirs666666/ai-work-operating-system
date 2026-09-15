@@ -1,0 +1,7 @@
+actions:
+- target_url: /collaborative-welding-robot/
+  action: CREATE
+  reason: One commercial cluster is consolidated into one planned product page.
+- target_url: /guides/program-collaborative-welding-robot/
+  action: CREATE
+  reason: Distinct informational task warrants a separate guide.

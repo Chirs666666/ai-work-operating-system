@@ -1,0 +1,5 @@
+handoffs:
+- opportunity_id: O5
+  target_skill: 25-keyword-page-mapping
+  reason: Potential cannibalization; 25 owns final URL decision.
+  blocking: true

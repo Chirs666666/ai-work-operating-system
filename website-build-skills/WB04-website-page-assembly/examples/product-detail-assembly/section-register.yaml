@@ -1,0 +1,15 @@
+sections:
+- section_id: hero
+  section_type: HERO
+  required: true
+  order: 1
+  source_owner: 05-product-copywriting
+  source_artifact: 05/product-copy.md
+  status: BOUND
+- section_id: specs
+  section_type: SPECIFICATIONS
+  required: true
+  order: 2
+  source_owner: 05-product-copywriting
+  source_artifact: 05/product-copy.md
+  status: BOUND

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "data_available": {
+      "type": "boolean"
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "class": {
+            "enum": [
+              "TARGET",
+              "RELATED",
+              "DRIFTED",
+              "UNRELATED",
+              "UNKNOWN"
+            ]
+          },
+          "impressions": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "clicks": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "position": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "provider": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query",
+          "class",
+          "impressions",
+          "clicks",
+          "position",
+          "provider"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "data_available",
+    "queries"
+  ],
+  "additionalProperties": false
+}

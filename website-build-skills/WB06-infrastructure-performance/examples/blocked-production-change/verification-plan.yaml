@@ -1,0 +1,8 @@
+checks:
+- check_id: V1
+  description: Infrastructure baseline verified
+  status: PASS
+  evidence:
+  - TLS
+  - SMTP
+  - backup

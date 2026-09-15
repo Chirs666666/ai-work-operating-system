@@ -1,0 +1,5 @@
+truth_class: VERIFIED_TECHNICAL
+documentary_evidence_claimed: false
+factual_constraints:
+- Only registered facts may be labeled.
+conceptual_disclosure_required: false

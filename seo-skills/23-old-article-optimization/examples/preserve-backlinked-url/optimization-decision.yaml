@@ -1,0 +1,6 @@
+action: KEEP
+evidence_refs:
+- E1
+reason: Protect externally linked URL.
+merge_or_url_change: false
+ownership_confirmation_required: false

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component_id": {
+            "type": "string"
+          },
+          "wb03_artifact_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reference_mode": {
+            "type": "string",
+            "enum": [
+              "REFERENCE",
+              "PAGE_LOCAL_COPY"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "BOUND",
+              "MISSING",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "component_id",
+          "wb03_artifact_ref",
+          "reference_mode",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "components"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

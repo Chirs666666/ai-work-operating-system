@@ -1,0 +1,5 @@
+claims:
+- claim_id: C1
+  text: 5-axis machining
+  state: SUPPORTED
+  qualifier: null

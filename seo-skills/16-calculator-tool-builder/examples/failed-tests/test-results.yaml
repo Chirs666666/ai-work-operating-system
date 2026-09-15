@@ -1,0 +1,8 @@
+results:
+- test_id: FAIL-1
+  status: FAIL
+  actual:
+    value: 9.8
+  notes:
+  - Expected 10.0
+overall_status: FAIL

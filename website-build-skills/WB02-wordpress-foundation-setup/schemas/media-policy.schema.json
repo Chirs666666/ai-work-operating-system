@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "preferred_formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "max_upload_width": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compression_strategy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsive_images_required": {
+      "type": "boolean"
+    },
+    "filename_policy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "preferred_formats",
+    "max_upload_width",
+    "compression_strategy",
+    "responsive_images_required",
+    "filename_policy",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

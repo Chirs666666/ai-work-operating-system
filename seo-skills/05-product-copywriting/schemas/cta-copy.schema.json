@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "primary_goal",
+    "ctas"
+  ],
+  "properties": {
+    "primary_goal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ctas": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Cta Copy"
+}

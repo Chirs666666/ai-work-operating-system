@@ -1,0 +1,14 @@
+workflow_id: NEW_PAGE_BUILD
+tasks:
+- task_id: R1
+  skill: WB01
+  action: REUSE
+  state: REUSE
+- task_id: R4
+  skill: WB04
+  action: RUN
+  state: PASS
+- task_id: R8
+  skill: WB08
+  action: DRAFT_ONLY
+  state: WAITING_APPROVAL

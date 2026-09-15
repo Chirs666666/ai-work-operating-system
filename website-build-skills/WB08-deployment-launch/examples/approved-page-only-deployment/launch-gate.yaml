@@ -1,0 +1,6 @@
+state: LAUNCH_VERIFIED
+launch_verified: true
+handoff_to_19_ready: true
+evidence:
+- smoke PASS
+- production verified

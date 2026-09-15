@@ -1,0 +1,2 @@
+# Boundaries
+21 owns performance diagnosis, prioritization and validation. 12 owns broader technical SEO. 17 can create optimized image assets. 07 owns WordPress publishing/page edits. Live hosting/CDN/plugin changes remain runtime/operator actions.

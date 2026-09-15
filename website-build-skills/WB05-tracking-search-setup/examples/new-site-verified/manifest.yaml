@@ -1,0 +1,5 @@
+skill: WB05-tracking-search-setup
+version: 1.0.0
+mode: SETUP
+site: example.com
+project_id: WB05-NEW

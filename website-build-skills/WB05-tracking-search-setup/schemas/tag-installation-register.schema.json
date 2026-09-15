@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tag_id": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "installation_path": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "LOCAL",
+              "STAGING",
+              "PRODUCTION"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "NOT_CONFIGURED",
+              "CONFIGURED",
+              "INSTALLED",
+              "DETECTED",
+              "FIRING",
+              "RECEIVING_DATA",
+              "VERIFIED",
+              "WARN",
+              "FAILED",
+              "UNKNOWN"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "tag_id",
+          "platform",
+          "installation_path",
+          "environment",
+          "state",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "tags"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

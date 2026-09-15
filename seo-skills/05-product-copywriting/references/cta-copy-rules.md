@@ -1,0 +1,2 @@
+# CTA Copy Rules
+Follow 04 CTA plan and 02 buyer stage. Evaluation may use Talk to an Engineer; configuration may use Discuss Your Application; purchase may use Request a Quote. Do not turn every CTA into an aggressive quote request.

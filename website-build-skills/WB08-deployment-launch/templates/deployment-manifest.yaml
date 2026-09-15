@@ -1,0 +1,7 @@
+deployment_id: ''
+scope_id: ''
+release_version: ''
+risk: LOW
+expected_downtime: null
+rollback_required: false
+approval_id: null

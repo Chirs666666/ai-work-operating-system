@@ -1,0 +1,7 @@
+required: true
+executed: true
+actions:
+- restore snapshot
+state: EXECUTED
+evidence:
+- restore log

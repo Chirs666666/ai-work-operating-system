@@ -1,0 +1,9 @@
+primary_goal: REQUEST_QUOTE
+secondary_goal: TALK_TO_ENGINEER
+ctas:
+- section_id: hero
+  role: SECONDARY
+  label_intent: Talk to an engineer
+- section_id: final-cta
+  role: PRIMARY
+  label_intent: Request a quote

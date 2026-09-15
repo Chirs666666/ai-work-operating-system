@@ -1,0 +1,6 @@
+required: true
+provider: transactional mail
+state: VERIFIED
+secret_ref: ENV:SMTP_CREDENTIAL
+evidence:
+- delivery test

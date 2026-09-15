@@ -1,0 +1,5 @@
+mode: PRE_LAUNCH_QA
+g18: WAITING_APPROVAL
+final_status: WAITING_APPROVAL
+warnings: []
+blockers: []

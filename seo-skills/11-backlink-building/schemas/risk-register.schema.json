@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "risk_class": {
+            "enum": [
+              "SAFE_RESEARCH",
+              "STANDARD_OUTREACH",
+              "PAID_PLACEMENT",
+              "HIGH_RISK_LINK_SCHEME"
+            ]
+          },
+          "decision": {
+            "enum": [
+              "ALLOW_RESEARCH",
+              "ALLOW_OUTREACH",
+              "WAITING_APPROVAL",
+              "REJECT"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "prospect_id",
+          "risk_class",
+          "decision",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

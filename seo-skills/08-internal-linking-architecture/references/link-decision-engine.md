@@ -1,0 +1,2 @@
+# Link Decision Engine
+Dimensions: **Semantic Relevance**, **Page Relationship**, **User Journey Value**, **Target Page Priority**, **Link Gap**, **Source Page Value**, **Placement Quality**. Values: `HIGH`, `MEDIUM`, `LOW`, `UNKNOWN`. Final priorities: `PRIORITY_HIGH`, `PRIORITY_MEDIUM`, `PRIORITY_LOW`, `REJECT`. Existing-link actions: `REUSE_EXISTING`, `IMPROVE_EXISTING`, `ADD_NEW`, `NO_ACTION`. LOW semantic relevance or LOW placement quality must not become PRIORITY_HIGH solely because commercial priority is HIGH. No fabricated 0–100 score.

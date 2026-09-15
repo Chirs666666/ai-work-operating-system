@@ -1,0 +1,8 @@
+gate: BLOCK
+qa_state: BLOCKED
+ready_for_wb08: false
+warnings: []
+blockers:
+- Production noindex
+next_skills:
+- 12-technical-seo-audit-fix

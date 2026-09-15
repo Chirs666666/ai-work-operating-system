@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "component_id": {
+      "type": "string"
+    },
+    "logo_destination": {
+      "type": "string"
+    },
+    "navigation_component_id": {
+      "type": "string"
+    },
+    "cta_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "utility_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsive_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "component_id",
+    "logo_destination",
+    "navigation_component_id",
+    "cta_ids",
+    "utility_items",
+    "responsive_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

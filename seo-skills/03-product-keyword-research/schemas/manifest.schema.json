@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "properties": {
+    "skill": {
+      "const": "03-product-keyword-research"
+    },
+    "mode": {
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "VERIFY",
+        "REFRESH",
+        "AUDIT"
+      ]
+    },
+    "source_methods": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "USER_DATA",
+          "API_DATA",
+          "PUBLIC_RESEARCH"
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

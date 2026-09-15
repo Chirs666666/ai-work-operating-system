@@ -1,0 +1,17 @@
+registry_scope: PROJECT
+project_id: elementor-example
+components:
+  - component_id: HERO_PRODUCT_EL_01
+    component_type: PRODUCT_HERO
+    purpose: verified two-container Elementor product hero
+    state: VERIFIED
+    required_slots: [heading, repeatability, primary_cta, hero_image]
+    optional_slots: [contextual_link]
+    layout_constraints:
+      desktop: two_column
+      mobile: stacked
+    builder: ELEMENTOR
+    engine: ELEMENTOR
+    implementation: template-hero-product-el-01
+    dependencies: [elementor]
+    verification_evidence: [desktop-qa, tablet-qa, mobile-qa]

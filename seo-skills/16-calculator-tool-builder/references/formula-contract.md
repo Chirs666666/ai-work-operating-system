@@ -1,0 +1,2 @@
+# Formula Contract
+A formula contract must define formula_id, name, expression_or_algorithm, inputs, outputs, dimensions, evidence_refs, assumptions, applicability, limitations, invalid_conditions, rounding, precision, and formula_state. Do not bury engineering assumptions in implementation code.

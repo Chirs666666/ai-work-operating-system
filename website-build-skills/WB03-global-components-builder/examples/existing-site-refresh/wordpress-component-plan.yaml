@@ -1,0 +1,10 @@
+implementation_primitive: TEMPLATE_PART
+changes:
+- change_id: C1
+  component_id: header
+  environment: STAGING
+  action: Create template part
+  risk: LOW
+  requires_approval: false
+  approval_id: null
+  status: PLANNED

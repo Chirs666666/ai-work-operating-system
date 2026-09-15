@@ -1,0 +1,2 @@
+# Image Optimization
+Audit dimensions, bytes, format, responsive sources, preload/fetch priority, lazy-loading placement and above-the-fold behavior. Above-fold LCP media should not be lazily loaded by default without evidence.

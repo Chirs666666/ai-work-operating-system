@@ -1,0 +1,9 @@
+checks:
+- check_id: browser
+  target: site
+  severity: FAIL
+  result: PASS
+  evidence:
+  - verified
+  defect_id: null
+overall: PASS

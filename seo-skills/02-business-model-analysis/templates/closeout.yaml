@@ -1,0 +1,7 @@
+gate: G02
+status: BLOCK
+summary: No analysis has been completed.
+downstream_ready_for: []
+warnings: []
+blocked_by:
+- NOT_PROVIDED

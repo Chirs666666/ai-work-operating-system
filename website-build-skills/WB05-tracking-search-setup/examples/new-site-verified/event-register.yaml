@@ -1,0 +1,8 @@
+events:
+- event_name: quote_request
+  business_meaning: qualified inquiry
+  trigger: successful quote form confirmation
+  parameters:
+  - form_type
+  owner: GTM
+  state: VERIFIED

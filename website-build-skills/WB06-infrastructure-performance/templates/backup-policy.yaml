@@ -1,0 +1,6 @@
+required: true
+scope: []
+schedule: null
+retention: null
+storage: null
+restore_method: null

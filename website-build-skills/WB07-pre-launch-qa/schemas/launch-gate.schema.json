@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "qa_state": {
+      "type": "string",
+      "enum": [
+        "QA_IN_PROGRESS",
+        "DEFECTS_FOUND",
+        "RETEST_REQUIRED",
+        "QA_PASSED",
+        "READY_FOR_LAUNCH_APPROVAL",
+        "BLOCKED"
+      ]
+    },
+    "block_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "fail_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "warn_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "accepted_risk_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "ready_for_launch_approval": {
+      "type": "boolean"
+    },
+    "user_launch_approved": {
+      "type": "boolean"
+    },
+    "deployed": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "qa_state",
+    "block_count",
+    "fail_count",
+    "warn_count",
+    "accepted_risk_count",
+    "ready_for_launch_approval",
+    "user_launch_approved",
+    "deployed",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

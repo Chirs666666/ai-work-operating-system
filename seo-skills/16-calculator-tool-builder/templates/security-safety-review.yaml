@@ -1,0 +1,5 @@
+unsafe_eval_used: false
+untrusted_formula_execution: false
+client_side_trust_only: false
+sensitive_data_required: false
+notes: []

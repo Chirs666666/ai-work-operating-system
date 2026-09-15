@@ -1,0 +1,9 @@
+ownership:
+- component_id: header
+  primary_owner: WB03
+  duplicate_owners: []
+  resolution: null
+- component_id: primary-nav
+  primary_owner: WB03
+  duplicate_owners: []
+  resolution: null

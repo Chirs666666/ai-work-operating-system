@@ -1,0 +1,9 @@
+tags:
+- tag_id: ga4
+  platform: GA4
+  installation_path: GTM
+  environment: STAGING
+  state: VERIFIED
+  evidence:
+  - detected
+  - receipt

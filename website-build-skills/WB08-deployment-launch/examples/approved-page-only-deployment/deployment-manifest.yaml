@@ -1,0 +1,7 @@
+deployment_id: DEP-002
+scope_id: S2
+release_version: 1.0.0
+risk: LOW
+expected_downtime: minimal
+rollback_required: true
+approval_id: A2

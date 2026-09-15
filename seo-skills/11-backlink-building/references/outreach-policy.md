@@ -1,0 +1,2 @@
+# Outreach Policy
+Angles: RESOURCE_VALUE, TECHNICAL_EXPERTISE, SUPPLIER_PROFILE, PARTNERSHIP, CASE_STUDY, BROKEN_LINK_HELP, UNLINKED_MENTION, GUEST_EXPERTISE, OTHER. Draft concise personalized outreach from observed facts. Never fabricate prior contact, readership, praise, familiarity, or relationship. 11 queues/drafts; it does not silently send.

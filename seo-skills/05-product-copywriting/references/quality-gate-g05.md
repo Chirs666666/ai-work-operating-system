@@ -1,0 +1,2 @@
+# G05 Product Copy Readiness
+PASS: supported PRODUCTION copy ready for appropriate downstream assembly. WARN: non-critical documented gaps, safe continuation. FAIL: material copy defects such as C4 claims, contradictions or severe repetition. BLOCK: critical truth/ownership/Blueprint/evidence missing. REUSE: existing copy still satisfies current requirements. DRAFT completion does not imply PRODUCTION PASS.

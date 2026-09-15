@@ -1,0 +1,6 @@
+items:
+- issue_id: CA-02
+  attempted: true
+  success_response: true
+  details: Canonical write endpoint returned success.
+  executed_at: '2026-09-14'

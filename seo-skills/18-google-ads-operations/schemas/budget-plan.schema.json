@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "current_daily_budget": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "proposed_daily_budget": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cpc": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cvr": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cpa": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "metric_status": {
+      "enum": [
+        "OBSERVED",
+        "MIXED",
+        "UNKNOWN"
+      ]
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "live_change_requested": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "current_daily_budget",
+    "proposed_daily_budget",
+    "currency",
+    "cpc",
+    "cvr",
+    "cpa",
+    "metric_status",
+    "assumptions",
+    "live_change_requested"
+  ],
+  "additionalProperties": false
+}

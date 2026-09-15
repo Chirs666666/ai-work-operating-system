@@ -1,0 +1,2 @@
+# Writing Style
+Answer the core question early. Use second person where natural, active voice, short clear sentences, simple international English for English B2B content, concrete technical explanation, explicit conditions/limitations, and tables only when useful. Avoid empty AI introductions, generic filler, mechanical parallelism, repeated conclusions, and unsupported absolutes. One run declares one target language unless localization is explicitly requested.

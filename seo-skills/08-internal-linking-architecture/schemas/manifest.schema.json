@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "maturity"
+  ],
+  "properties": {
+    "skill": {
+      "const": "08-internal-linking-architecture"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "NEW_PAGE_LINKING",
+        "EXISTING_SITE_OPTIMIZATION",
+        "VERIFY",
+        "REFRESH_GRAPH",
+        "REUSE"
+      ]
+    },
+    "maturity": {
+      "enum": [
+        "PRELIMINARY",
+        "FINAL"
+      ]
+    },
+    "sources": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

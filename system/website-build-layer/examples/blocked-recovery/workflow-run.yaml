@@ -1,0 +1,14 @@
+workflow_id: BUILD_FIX_AND_RELAUNCH
+tasks:
+- task_id: FIX
+  skill: WB04
+  action: RUN
+  state: READY
+- task_id: QA
+  skill: WB07
+  action: VERIFY
+  state: WAITING_DEPENDENCY
+- task_id: DEP
+  skill: WB08
+  action: SKIP
+  state: WAITING_DEPENDENCY

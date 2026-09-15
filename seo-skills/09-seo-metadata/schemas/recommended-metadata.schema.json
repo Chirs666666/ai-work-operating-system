@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "action": {
+      "enum": [
+        "KEEP",
+        "OPTIMIZE",
+        "REWRITE",
+        "TEST",
+        "REUSE",
+        "INSUFFICIENT_DATA",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "title_character_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "title_length_status": {
+      "enum": [
+        "TOO_SHORT",
+        "HEALTHY",
+        "TRUNCATION_RISK",
+        "UNKNOWN"
+      ]
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "meta_character_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "meta_length_status": {
+      "enum": [
+        "TOO_SHORT",
+        "HEALTHY",
+        "TRUNCATION_RISK",
+        "UNKNOWN"
+      ]
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "candidate_id",
+    "action",
+    "seo_title",
+    "title_character_count",
+    "title_length_status",
+    "meta_description",
+    "meta_character_count",
+    "meta_length_status"
+  ],
+  "additionalProperties": false
+}

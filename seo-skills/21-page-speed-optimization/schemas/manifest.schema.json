@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "21-page-speed-optimization"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "PERFORMANCE_AUDIT",
+        "CWV_BASELINE",
+        "LCP_DIAGNOSIS",
+        "INP_DIAGNOSIS",
+        "CLS_DIAGNOSIS",
+        "TTFB_DIAGNOSIS",
+        "IMAGE_AUDIT",
+        "JS_AUDIT",
+        "CSS_AUDIT",
+        "FONT_AUDIT",
+        "CACHE_AUDIT",
+        "THIRD_PARTY_AUDIT",
+        "OPTIMIZATION_PLAN",
+        "PRE_CHANGE_CHECK",
+        "POST_CHANGE_RETEST",
+        "BEFORE_AFTER_COMPARE",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

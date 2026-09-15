@@ -1,0 +1,19 @@
+sources:
+- id: SRC-001
+  method: USER_DATA
+  source_type: FICTIONAL_TECHNICAL_BRIEF
+  publisher: Example Engineering Team
+  provider: null
+  url: null
+  accessed_at: '2026-09-14'
+  supports:
+  - CLM-001
+- id: SRC-002
+  method: USER_DATA
+  source_type: FICTIONAL_VALIDATION_NOTE
+  publisher: Example Engineering Team
+  provider: null
+  url: null
+  accessed_at: '2026-09-14'
+  supports:
+  - CLM-002

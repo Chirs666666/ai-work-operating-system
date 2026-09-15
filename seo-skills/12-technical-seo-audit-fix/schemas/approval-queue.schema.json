@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "risk_class": {
+            "enum": [
+              "SAFE_READ_ONLY",
+              "SAFE_REVERSIBLE_FIX",
+              "LIVE_PAGE_TECHNICAL_CHANGE",
+              "SITEWIDE_CONFIGURATION_CHANGE",
+              "URL_OWNERSHIP_CHANGE",
+              "SERVER_OR_CDN_CHANGE"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "approval_status": {
+            "enum": [
+              "PENDING",
+              "APPROVED",
+              "REJECTED"
+            ]
+          }
+        },
+        "required": [
+          "issue_id",
+          "risk_class",
+          "reason",
+          "approval_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

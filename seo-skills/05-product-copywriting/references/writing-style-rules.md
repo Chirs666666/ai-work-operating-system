@@ -1,0 +1,2 @@
+# Writing Style Rules
+Default to simple international B2B English, second person where natural, active voice, short clear sentences, concrete nouns/verbs, technical specificity, scannable paragraphs, and evidence over adjectives. Shortness is a target, not an absolute word limit. Generic AI filler is a rewrite signal.

@@ -1,0 +1,6 @@
+items:
+- url: https://example.com/cnc-machining/
+  ownership: VERIFIED
+  readiness: READY
+  link_worthy_reason: Detailed manufacturing capability and technical guidance
+  handoff: null

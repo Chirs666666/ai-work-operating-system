@@ -1,0 +1,2 @@
+# Keyword Intent
+Assess paid-search relevance and commercial intent. BUY/QUOTE/SUPPLIER/MANUFACTURER/SYSTEM/PRICE/COST/APPLICATION can signal commercial intent, but context wins. Do not mechanically import the SEO universe.

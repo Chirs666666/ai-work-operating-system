@@ -1,0 +1,23 @@
+input_normalization:
+- Convert accepted length units to mm
+validation_sequence:
+- required
+- numeric
+- domain
+calculation_sequence:
+- normalize
+- validate
+- calculate
+- round-for-display
+result_shape:
+  value: number
+  unit: string
+  warnings: array
+error_shape:
+  code: string
+  field: string|null
+  message: string
+warning_shape:
+  code: string
+  message: string
+deterministic_rounding: true

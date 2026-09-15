@@ -1,0 +1,6 @@
+items:
+- issue_id: CA-02
+  state: NOT_FIXED
+  verification_method: Rendered source read-back
+  evidence:
+  - Rendered canonical still points to the previous URL.

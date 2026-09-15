@@ -1,0 +1,6 @@
+status: FAIL
+findings:
+- Missing selection criteria and verification workflow
+evidence_refs:
+- SERP
+- COMP

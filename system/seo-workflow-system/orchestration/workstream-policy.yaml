@@ -1,0 +1,9 @@
+workstreams:
+- SEO_WORKSTREAM
+- BUILD_WORKSTREAM
+- CONTENT_WORKSTREAM
+- TRACKING_WORKSTREAM
+- INFRASTRUCTURE_WORKSTREAM
+- LAUNCH_WORKSTREAM
+- POST_LAUNCH_WORKSTREAM
+rule: workstreams can progress independently subject to dependency gates

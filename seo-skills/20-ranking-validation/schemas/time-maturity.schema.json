@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "days_since_index": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "signal_growth": {
+      "enum": [
+        "GROWING",
+        "STABLE",
+        "DECLINING",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "maturity": {
+      "enum": [
+        "EARLY",
+        "DEVELOPING",
+        "MATURE",
+        "UNKNOWN"
+      ]
+    },
+    "wait_recommendation": {
+      "enum": [
+        "MONITOR",
+        "INTERVENE",
+        "INSUFFICIENT_DATA"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "days_since_index",
+    "signal_growth",
+    "maturity",
+    "wait_recommendation",
+    "reason"
+  ],
+  "additionalProperties": false
+}

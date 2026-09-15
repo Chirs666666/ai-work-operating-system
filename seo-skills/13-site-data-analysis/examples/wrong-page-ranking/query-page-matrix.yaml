@@ -1,0 +1,6 @@
+items:
+- query: collaborative welding robot
+  url: https://example.com/blog/welding-automation/
+  relationship: WRONG_PAGE_SIGNAL
+  evidence:
+  - Commercial product URL exists but blog receives most query impressions

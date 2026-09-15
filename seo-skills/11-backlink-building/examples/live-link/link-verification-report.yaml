@@ -1,0 +1,6 @@
+items:
+- prospect_id: P1
+  status: LIVE_VERIFIED
+  evidence:
+  - Observed crawlable anchor from source URL to approved target URL on 2026-09-14
+  warnings: []

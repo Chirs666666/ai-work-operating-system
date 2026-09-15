@@ -1,0 +1,15 @@
+cases:
+- cluster_id: cl-001
+  urls:
+  - /collaborative-welding-robot/
+  - /cobot-welding/
+  risk: HIGH
+  signals:
+    query_page_competition: HIGH
+    intent_overlap: HIGH
+    content_overlap: HIGH
+    ranking_url_switching: OBSERVED
+    distinct_buyer_purpose: LOW
+  outcome: MERGE_RECOMMENDED
+  reason: Multiple signals indicate competing ownership; keyword overlap alone is
+    not the basis.

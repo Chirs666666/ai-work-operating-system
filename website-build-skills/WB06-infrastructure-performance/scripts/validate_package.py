@@ -1,0 +1,11 @@
+from pathlib import Path
+import sys
+REQ={'root': ['SKILL.md', 'README.md', 'VERSION', 'CHANGELOG.md', 'ACCEPTANCE.md'], 'references': ['environment-policy.md', 'hosting-policy.md', 'dns-policy.md', 'tls-policy.md', 'cdn-policy.md', 'cache-policy.md', 'smtp-policy.md', 'backup-policy.md', 'rollback-policy.md', 'security-policy.md', 'secret-handling-policy.md', 'performance-foundation-policy.md', 'conflict-policy.md', 'change-control-policy.md', 'approval-policy.md', 'handoff-policy.md', 'verification-policy.md'], 'schemas': ['manifest.schema.json', 'environment-register.schema.json', 'hosting-baseline.schema.json', 'dns-register.schema.json', 'dns-change-plan.schema.json', 'ssl-tls-register.schema.json', 'cdn-register.schema.json', 'cache-layer-register.schema.json', 'cache-conflict-register.schema.json', 'smtp-register.schema.json', 'smtp-verification.schema.json', 'backup-policy.schema.json', 'backup-verification.schema.json', 'rollback-plan.schema.json', 'security-baseline.schema.json', 'secret-handling-check.schema.json', 'performance-foundation.schema.json', 'infrastructure-conflict-register.schema.json', 'production-change-plan.schema.json', 'approval-register.schema.json', 'verification-plan.schema.json', 'cross-skill-handoffs.schema.json', 'closeout.schema.json'], 'templates': ['manifest.yaml', 'environment-register.yaml', 'hosting-baseline.yaml', 'dns-register.yaml', 'dns-change-plan.yaml', 'ssl-tls-register.yaml', 'cdn-register.yaml', 'cache-layer-register.yaml', 'cache-conflict-register.yaml', 'smtp-register.yaml', 'smtp-verification.yaml', 'backup-policy.yaml', 'backup-verification.yaml', 'rollback-plan.yaml', 'security-baseline.yaml', 'secret-handling-check.yaml', 'performance-foundation.yaml', 'infrastructure-conflict-register.yaml', 'production-change-plan.yaml', 'approval-register.yaml', 'verification-plan.yaml', 'cross-skill-handoffs.yaml', 'closeout.yaml'], 'examples': ['new-site-ready', 'existing-site-audit', 'blocked-production-change']};r=Path(sys.argv[1]);e=[]
+for f in REQ['root']:
+ if not (r/f).exists():e.append('missing:'+f)
+for sec in ['references','schemas','templates']:
+ for f in REQ[sec]:
+  if not (r/sec/f).exists():e.append('missing '+sec+':'+f)
+for d in REQ['examples']:
+ if not (r/'examples'/d).is_dir():e.append('missing example:'+d)
+print('PACKAGE_ERRORS='+repr(e));raise SystemExit(1 if e else 0)

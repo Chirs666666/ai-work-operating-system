@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "conflict_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "BLOCKING"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "responsible_skill": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolution_state": {
+            "type": "string",
+            "enum": [
+              "OPEN",
+              "RETURNED",
+              "RESOLVED",
+              "ACCEPTED_RISK"
+            ]
+          }
+        },
+        "required": [
+          "conflict_id",
+          "type",
+          "severity",
+          "description",
+          "responsible_skill",
+          "resolution_state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "conflicts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

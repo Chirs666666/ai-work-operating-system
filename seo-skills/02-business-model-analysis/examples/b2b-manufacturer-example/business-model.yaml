@@ -1,0 +1,13 @@
+business_model:
+  analysis_status: INFERENCE
+  offer_type: industrial automation workcells
+  customer_model: B2B manufacturers
+  route_to_market: direct plus integrator opportunities
+  revenue_model: UNKNOWN
+  notes: Fictional demonstration only.
+observations:
+- type: FACT
+  statement: Example Automation Systems offers a compact machine-tending cell.
+  source:
+    method: USER_DATA
+    source_name: Fictional approved product sheet

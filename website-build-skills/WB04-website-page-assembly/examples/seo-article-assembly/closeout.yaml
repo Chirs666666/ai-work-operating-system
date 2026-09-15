@@ -1,0 +1,7 @@
+gate: PASS
+assembly_state: DRAFT_BUILD_READY
+ready_for_skill_07: true
+warnings: []
+blockers: []
+next_skills:
+- 07-wordpress-page-builder-publisher

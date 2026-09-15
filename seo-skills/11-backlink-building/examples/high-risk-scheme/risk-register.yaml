@@ -1,0 +1,5 @@
+items:
+- prospect_id: P7
+  risk_class: HIGH_RISK_LINK_SCHEME
+  decision: REJECT
+  reason: PBN / automated link scheme

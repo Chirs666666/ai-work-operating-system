@@ -1,0 +1,8 @@
+prospects:
+- domain: generic.example
+  authority_score: 80
+  relevance: LOW
+  quality_decision: REVIEW
+  decision_basis:
+  - Authority Score alone is insufficient
+  - Low topical relevance

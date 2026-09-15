@@ -1,0 +1,9 @@
+status: BOTTLENECK_CONFIRMED
+observed_value: 1800
+unit: ms
+root_causes:
+- HTML cache miss
+- Slow origin response
+evidence_refs:
+- SERVER-1
+notes: []

@@ -1,0 +1,12 @@
+skill: 06-content-writing-optimization
+version: 1.0.0
+mode: REFRESH
+content_type: TECHNICAL_ARTICLE
+language: en
+market: US
+target_topic: 'Fictional Process Allowance: Calculation Limits and Validation'
+upstream:
+  company_truth: NOT_PROVIDED
+  business_context: NOT_PROVIDED
+  keyword_research: NOT_PROVIDED
+  page_ownership: NOT_PROVIDED

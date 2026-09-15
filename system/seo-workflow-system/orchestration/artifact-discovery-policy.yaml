@@ -1,0 +1,8 @@
+reuse_requires:
+- scope_match
+- fresh
+- provenance_valid
+- assumptions_compatible
+- acceptable_prior_gate
+- artifact_ref
+unknown_rule: UNKNOWN/null never becomes zero

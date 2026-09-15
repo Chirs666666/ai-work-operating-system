@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "database": {
+      "type": "string"
+    },
+    "device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "snapshot": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "data_available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "database",
+    "device",
+    "snapshot",
+    "scope",
+    "data_available"
+  ],
+  "additionalProperties": false
+}

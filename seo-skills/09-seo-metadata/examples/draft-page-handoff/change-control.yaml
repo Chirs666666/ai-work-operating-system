@@ -1,0 +1,10 @@
+risk_class: SAFE_DRAFT_CHANGE
+approval_required: false
+before: null
+after:
+  seo_title: New Title
+why: New draft metadata
+evidence:
+- 25 ownership
+expected_effect: Clearer intent alignment
+risk: Low; draft only

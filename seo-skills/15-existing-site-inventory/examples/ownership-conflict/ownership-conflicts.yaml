@@ -1,0 +1,6 @@
+items:
+- url: https://example.com/cnc-machining/
+  conflict_type: MULTIPLE_RANKING_URLS
+  blocking: true
+  notes:
+  - Another URL ranks for the same commercial intent.

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "risk_class": {
+            "enum": [
+              "SAFE_READ_ONLY",
+              "SAFE_REVERSIBLE_FIX",
+              "LIVE_PAGE_TECHNICAL_CHANGE",
+              "SITEWIDE_CONFIGURATION_CHANGE",
+              "URL_OWNERSHIP_CHANGE",
+              "SERVER_OR_CDN_CHANGE"
+            ]
+          },
+          "approval_required": {
+            "type": "boolean"
+          },
+          "rollback": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verification_method": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "issue_id",
+          "action",
+          "scope",
+          "confidence",
+          "risk_class",
+          "approval_required",
+          "verification_method"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

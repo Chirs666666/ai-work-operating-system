@@ -1,0 +1,10 @@
+required: true
+created: true
+snapshot_id: SNAP-1
+scope:
+- database
+- files
+- config
+evidence:
+- snapshot confirmation
+verified: true

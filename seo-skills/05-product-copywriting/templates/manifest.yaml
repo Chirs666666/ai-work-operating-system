@@ -1,0 +1,15 @@
+skill: 05-product-copywriting
+version: 1.0.0
+mode: DRAFT
+page_type: PRODUCT
+source:
+  method: USER_DATA
+  source_name: null
+  provider: null
+  url: null
+  collected_at: null
+  market: null
+  language: null
+upstream:
+  G25: UNKNOWN
+  G04: UNKNOWN

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "GENERATE",
+        "AUDIT_PAGE",
+        "OPTIMIZE",
+        "PERFORMANCE_DIAGNOSIS",
+        "SITE_AUDIT",
+        "VERIFY"
+      ]
+    },
+    "final_action": {
+      "type": "string"
+    },
+    "g09": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "downstream_handoff": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_pending": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "mode",
+    "final_action",
+    "g09",
+    "warnings",
+    "blockers",
+    "approval_pending"
+  ],
+  "additionalProperties": false
+}

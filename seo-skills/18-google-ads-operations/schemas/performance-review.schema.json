@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "tracking_status": {
+      "enum": [
+        "TRACKING_UNVERIFIED",
+        "TRACKING_VERIFIED",
+        "TRACKING_PARTIAL",
+        "TRACKING_BROKEN"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "spend": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "conversions": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cpc": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cvr": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cpa": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INSUFFICIENT"
+      ]
+    }
+  },
+  "required": [
+    "tracking_status",
+    "clicks",
+    "spend",
+    "conversions",
+    "cpc",
+    "cvr",
+    "cpa",
+    "interpretation",
+    "confidence"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,2 @@
+# Boundaries and Ownership
+16 owns calculator logic specifications and validation. 03 owns keyword demand research. 25 owns final keyword/page/URL ownership. 04 owns broader page/UI architecture. 06 owns longer explanatory content when requested. 09 owns metadata. 07 executes approved WordPress implementation. 13 measures performance. 19 owns index/ranking lifecycle.

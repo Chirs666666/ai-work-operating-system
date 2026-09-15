@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "sections"
+  ],
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "requirement",
+          "purpose"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "requirement": {
+            "enum": [
+              "REQUIRED",
+              "RECOMMENDED",
+              "CONDITIONAL",
+              "OPTIONAL",
+              "EXCLUDED"
+            ]
+          },
+          "purpose": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "title": "Section Blueprint"
+}

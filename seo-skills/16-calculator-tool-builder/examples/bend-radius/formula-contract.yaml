@@ -1,0 +1,21 @@
+formulas:
+- formula_id: sagitta-radius
+  name: Radius from chord and sagitta
+  expression_or_algorithm: R = c^2/(8h) + h/2
+  formula_state: VERIFIED
+  input_ids:
+  - chord
+  - sagitta
+  output_ids:
+  - radius
+  evidence_refs:
+  - SRC-R-1
+  assumptions:
+  - Chord and sagitta describe the same circular arc.
+  limitations:
+  - Ideal circle geometry only.
+  invalid_conditions:
+  - chord <= 0
+  - sagitta <= 0
+  rounding_rule: display only
+  precision_rule: full precision internally

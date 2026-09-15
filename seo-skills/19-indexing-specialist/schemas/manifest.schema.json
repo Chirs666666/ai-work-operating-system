@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "19-indexing-specialist"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "INDEX_CHECK",
+        "INDEXABILITY_AUDIT",
+        "SITEMAP_CHECK",
+        "DISCOVERY_CHECK",
+        "URL_INSPECTION",
+        "QUERY_VALIDATION",
+        "KEYWORD_VALIDATION",
+        "RANKING_CHECK",
+        "POST_PUBLISH_VERIFY",
+        "INDEXING_DIAGNOSIS",
+        "RANKING_DIAGNOSIS",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+action: TECHNICAL_FIX
+evidence_refs:
+- E1
+reason: Resolve technical/index issue first.
+merge_or_url_change: false
+ownership_confirmation_required: false

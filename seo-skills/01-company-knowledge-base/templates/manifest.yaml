@@ -1,0 +1,13 @@
+company_id: null
+knowledge_version: 0.1.0
+created_at: null
+updated_at: null
+mode: CREATE
+sources:
+  total: 0
+  by_category: {}
+gate: BLOCK
+open_conflicts: 0
+critical_gaps: 0
+safe_for: []
+blocked_for: []

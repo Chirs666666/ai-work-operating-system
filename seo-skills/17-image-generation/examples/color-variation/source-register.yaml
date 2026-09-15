@@ -1,0 +1,6 @@
+sources:
+- source_id: IMG-COLOR
+  source_type: USER_IMAGE
+  method: USER_DATA
+  reference: source product image
+  notes: []

@@ -1,0 +1,6 @@
+gate: G05
+status: BLOCK
+rationale: Canonical blank template has no PRODUCT copy.
+allowed_handoffs: []
+blocked_handoffs: []
+return_to: []

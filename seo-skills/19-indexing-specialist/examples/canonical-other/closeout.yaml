@@ -1,0 +1,6 @@
+mode: INDEXING_DIAGNOSIS
+g19: WARN
+final_status: PARTIAL
+warnings:
+- INDEXED_CANONICAL_OTHER
+blockers: []

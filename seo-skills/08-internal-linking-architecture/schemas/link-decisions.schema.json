@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "decisions"
+  ],
+  "properties": {
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "link_id",
+          "source_url",
+          "target_url",
+          "dimensions",
+          "priority",
+          "action"
+        ],
+        "properties": {
+          "link_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "dimensions": {
+            "type": "object",
+            "required": [
+              "semantic_relevance",
+              "user_journey_value",
+              "target_page_priority",
+              "link_gap",
+              "source_page_value",
+              "placement_quality",
+              "page_relationship"
+            ],
+            "properties": {
+              "semantic_relevance": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "user_journey_value": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "target_page_priority": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "link_gap": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "source_page_value": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "placement_quality": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW",
+                  "UNKNOWN"
+                ]
+              },
+              "page_relationship": {
+                "enum": [
+                  "PARENT_CHILD",
+                  "TOPIC_SUPPORT",
+                  "COMMERCIAL_SUPPORT",
+                  "APPLICATION_RELATION",
+                  "PROOF_SUPPORT",
+                  "DEEPER_LEARNING",
+                  "CONVERSION_PATH",
+                  "RELATED_CONTENT",
+                  "SIBLING_COMPARISON"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "priority": {
+            "enum": [
+              "PRIORITY_HIGH",
+              "PRIORITY_MEDIUM",
+              "PRIORITY_LOW",
+              "REJECT"
+            ]
+          },
+          "action": {
+            "enum": [
+              "REUSE_EXISTING",
+              "IMPROVE_EXISTING",
+              "ADD_NEW",
+              "NO_ACTION"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+enabled: true
+provider: CDN
+owner: infrastructure
+proxy_mode: proxy
+origin_ref: hosting-baseline.yaml
+cache_role: edge
+state: VERIFIED
+evidence:
+- CDN response

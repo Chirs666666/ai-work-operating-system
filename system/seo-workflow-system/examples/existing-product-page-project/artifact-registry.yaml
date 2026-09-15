@@ -1,0 +1,36 @@
+artifacts:
+- artifact_id: A03
+  producer: '03'
+  producer_layer: SEO
+  artifact_type: keyword_research
+  project_id: P1
+  scope: site
+  page_id: null
+  url: null
+  version: '1'
+  fresh: true
+  provenance_valid: true
+  assumptions_compatible: true
+  prior_gate: PASS
+  evidence_state: VERIFIED
+  ref: 03/output
+  consumers:
+  - '25'
+  - '04'
+- artifact_id: AW7
+  producer: WB07
+  producer_layer: BUILD
+  artifact_type: launch_gate
+  project_id: P1
+  scope: site
+  page_id: null
+  url: null
+  version: '1'
+  fresh: true
+  provenance_valid: true
+  assumptions_compatible: true
+  prior_gate: PASS
+  evidence_state: VERIFIED
+  ref: WB07/launch-gate
+  consumers:
+  - WB08

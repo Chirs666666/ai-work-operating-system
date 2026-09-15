@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "ctas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cta_id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "action_type": {
+            "type": "string",
+            "enum": [
+              "LINK",
+              "FORM",
+              "EMAIL",
+              "PHONE",
+              "DOWNLOAD",
+              "OTHER"
+            ]
+          },
+          "destination": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "BOUND",
+              "MISSING",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "cta_id",
+          "source",
+          "action_type",
+          "destination",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "ctas"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

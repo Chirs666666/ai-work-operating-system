@@ -1,0 +1,7 @@
+dependencies:
+- dependency_id: D78
+  upstream: WB07
+  downstream: WB08
+  critical: true
+  state: PASS
+  artifact_id: AW7

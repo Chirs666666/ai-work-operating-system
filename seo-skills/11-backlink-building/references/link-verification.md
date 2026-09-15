@@ -1,0 +1,2 @@
+# Link Verification
+States: LIVE_VERIFIED, LIVE_WITH_WARNINGS, NOT_FOUND, BROKEN, REMOVED, UNKNOWN. Verify source URL, target URL, anchor, placement, observable rel attribute, HTTP/link availability, first-seen/last-checked, and warnings. Submission/acceptance is not a live backlink until verified.

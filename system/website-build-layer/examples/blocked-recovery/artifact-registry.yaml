@@ -1,0 +1,27 @@
+artifacts:
+- artifact_id: A1
+  producer: WB01
+  artifact_type: architecture
+  scope: site
+  version: '1'
+  fresh: true
+  provenance_valid: true
+  assumptions_compatible: true
+  prior_gate: PASS
+  ref: WB01/closeout.yaml
+  consumers:
+  - WB02
+  - WB03
+  - WB04
+- artifact_id: A7
+  producer: WB07
+  artifact_type: launch_gate
+  scope: site
+  version: '1'
+  fresh: true
+  provenance_valid: true
+  assumptions_compatible: true
+  prior_gate: PASS
+  ref: WB07/launch-gate.yaml
+  consumers:
+  - WB08

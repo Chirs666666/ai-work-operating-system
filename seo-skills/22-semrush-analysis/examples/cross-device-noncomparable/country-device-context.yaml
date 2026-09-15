@@ -1,0 +1,7 @@
+database: US
+country: US
+device: desktop
+snapshot: 2026-09
+comparison_database: US
+comparison_device: mobile
+comparable: false

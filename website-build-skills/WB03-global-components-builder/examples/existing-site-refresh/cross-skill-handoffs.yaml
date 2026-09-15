@@ -1,0 +1,6 @@
+handoffs:
+- to_skill: WB04-website-page-assembly
+  artifact: component-inventory.yaml
+  purpose: assemble pages with validated global components
+  gate: PASS
+  notes: []

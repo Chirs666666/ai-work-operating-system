@@ -1,0 +1,4 @@
+handoffs:
+- target_skill: 12-technical-seo-audit-fix
+  reason: Unexpected noindex/canonical/access issue requires technical repair.
+  blocking: true

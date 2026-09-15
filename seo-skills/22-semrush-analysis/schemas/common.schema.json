@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "DOMAIN_ANALYSIS",
+        "URL_ANALYSIS",
+        "ORGANIC_RESEARCH",
+        "POSITION_CHANGES",
+        "TOP_PAGES",
+        "KEYWORD_GAP",
+        "COMPETITOR_ANALYSIS",
+        "BACKLINK_ANALYSIS",
+        "BACKLINK_GAP",
+        "TRAFFIC_TREND",
+        "SERP_FEATURES",
+        "INTENT_ANALYSIS",
+        "OPPORTUNITY_REVIEW",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "gate": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

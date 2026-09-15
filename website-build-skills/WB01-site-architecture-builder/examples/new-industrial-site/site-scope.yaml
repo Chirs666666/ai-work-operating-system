@@ -1,0 +1,14 @@
+included_page_families:
+- HOME
+- CATEGORY
+- PRODUCT
+- APPLICATION
+- RESOURCE_HUB
+- CONTACT
+excluded_page_families: []
+languages:
+- en
+markets:
+- global
+build_phase: v1
+notes: []

@@ -1,0 +1,5 @@
+verified: true
+verification_method: DNS
+evidence:
+- ownership verified
+state: VERIFIED

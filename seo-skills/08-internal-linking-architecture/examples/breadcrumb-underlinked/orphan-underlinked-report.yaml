@@ -1,0 +1,6 @@
+pages:
+- url: /products/special-robot/
+  classification: UNDERLINKED_PAGE
+  html_internal_entries: 1
+  sitemap_present: true
+  breadcrumb_present: true

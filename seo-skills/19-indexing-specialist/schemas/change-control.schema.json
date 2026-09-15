@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "diagnostic_only": {
+      "type": "boolean"
+    },
+    "live_change_required": {
+      "type": "boolean"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "route_skill": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "diagnostic_only",
+    "live_change_required",
+    "approval_required",
+    "route_skill",
+    "notes"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "robots_txt": {
+            "enum": [
+              "ALLOWED",
+              "BLOCKED",
+              "UNKNOWN"
+            ]
+          },
+          "meta_robots": {
+            "enum": [
+              "INDEX",
+              "NOINDEX",
+              "UNKNOWN"
+            ]
+          },
+          "x_robots": {
+            "enum": [
+              "INDEX",
+              "NOINDEX",
+              "UNKNOWN"
+            ]
+          },
+          "intended_indexability": {
+            "enum": [
+              "INDEX",
+              "NOINDEX",
+              "UNKNOWN"
+            ]
+          },
+          "status": {
+            "enum": [
+              "ALIGNED",
+              "CONFLICT",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "issue_id",
+          "url",
+          "robots_txt",
+          "meta_robots",
+          "x_robots",
+          "intended_indexability",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

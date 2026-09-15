@@ -1,0 +1,9 @@
+gaps:
+- id: GAP-001
+  section_id: proof
+  slot_id: proof_copy
+  type: MISSING_EVIDENCE
+  severity: NON_CRITICAL
+  issue: No fictional customer-result evidence is supplied.
+  action: REQUEST_EVIDENCE or omit customer-result claim.
+conflicts: []

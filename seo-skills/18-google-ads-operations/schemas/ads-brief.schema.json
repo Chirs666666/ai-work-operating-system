@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "business_goal": {
+      "type": "string"
+    },
+    "product_service": {
+      "type": "string"
+    },
+    "market": {
+      "type": "string"
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_conversion": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "business_goal",
+    "product_service",
+    "market",
+    "currency",
+    "primary_conversion"
+  ],
+  "additionalProperties": false
+}

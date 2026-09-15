@@ -1,0 +1,2 @@
+# Target Page Readiness
+States: READY, READY_WITH_WARNINGS, NOT_READY, UNKNOWN. Validate ownership, intended indexability, credible link-worthy reason, evidence-backed claims, and page/intent fit. Do not force outreach to NOT_READY targets.

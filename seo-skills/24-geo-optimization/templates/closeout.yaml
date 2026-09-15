@@ -1,0 +1,5 @@
+mode: GEO_AUDIT
+g24: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers: []

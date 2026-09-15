@@ -1,0 +1,9 @@
+page_id: P-ARTICLE
+page_type: ARTICLE
+section_ids:
+- body
+global_component_ids:
+- header
+- footer
+claims: []
+assembly_status: DRAFT_BUILD_READY

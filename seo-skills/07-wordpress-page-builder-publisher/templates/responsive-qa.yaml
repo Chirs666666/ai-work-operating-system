@@ -1,0 +1,10 @@
+page_id: "123"
+qa_type: RESPONSIVE
+status: PASS
+checks:
+  - check_id: mobile-stacking
+    severity: MEDIUM
+    expected: stacked
+    actual: stacked
+    status: PASS
+    evidence: rendered mobile view

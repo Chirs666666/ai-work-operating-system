@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "owner": {
+      "const": "07-wordpress-page-builder-publisher"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "approved_action": {
+      "enum": [
+        "KEEP",
+        "MINOR_OPTIMIZE",
+        "SECTION_OPTIMIZE",
+        "STRUCTURAL_REFRESH",
+        "REWRITE",
+        "HOLD",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "verification_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "owner",
+    "approval_required",
+    "approved_action",
+    "verification_required"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+action_type: BUDGET_CHANGE
+live_change: true
+approval_required: true
+approval_status: PENDING
+execute_allowed: false
+before_value: 50
+after_value: 70

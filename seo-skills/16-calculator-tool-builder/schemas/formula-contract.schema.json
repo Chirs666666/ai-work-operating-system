@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "formulas": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "formula_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "expression_or_algorithm": {
+            "type": "string"
+          },
+          "formula_state": {
+            "enum": [
+              "VERIFIED",
+              "CONDITIONALLY_VERIFIED",
+              "CONFLICTING",
+              "UNSUPPORTED",
+              "UNKNOWN"
+            ]
+          },
+          "input_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "output_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "invalid_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rounding_rule": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "precision_rule": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "formula_id",
+          "name",
+          "expression_or_algorithm",
+          "formula_state",
+          "input_ids",
+          "output_ids",
+          "evidence_refs",
+          "assumptions",
+          "limitations",
+          "invalid_conditions"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formulas"
+  ],
+  "additionalProperties": false
+}

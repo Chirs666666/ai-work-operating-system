@@ -1,0 +1,2 @@
+# Test Strategy
+Production formulas require source-derived known-answer tests, invalid-input tests, boundaries, unit conversions and cross-unit equivalence where applicable. Test results: PASS, FAIL, BLOCKED, UNKNOWN. Failed tests block successful handoff. Record expected and actual values plus tolerance.

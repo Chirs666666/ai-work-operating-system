@@ -1,0 +1,4 @@
+items:
+- url: https://example.com/product/
+  signals:
+  - DUPLICATE_VARIANT

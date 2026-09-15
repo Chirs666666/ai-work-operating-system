@@ -1,0 +1,6 @@
+action: REPOSITION
+evidence_refs:
+- E1
+reason: SERP intent changed materially.
+merge_or_url_change: false
+ownership_confirmation_required: false

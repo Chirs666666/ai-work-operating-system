@@ -1,0 +1,2 @@
+# Truth and Evidence Boundary
+Truth classes: SOURCE_PRESERVED, SOURCE_DERIVED, CONCEPTUAL, VERIFIED_TECHNICAL, UNKNOWN. A generated visual is not documentary proof. Factual labels, dimensions, certifications and performance claims require approved evidence.

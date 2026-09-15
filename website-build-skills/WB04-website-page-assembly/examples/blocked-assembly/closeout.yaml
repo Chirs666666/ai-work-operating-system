@@ -1,0 +1,9 @@
+gate: BLOCK
+assembly_state: BLOCKED
+ready_for_skill_07: false
+warnings: []
+blockers:
+- Missing section source
+- Unsupported claim
+next_skills:
+- 05-product-copywriting

@@ -1,0 +1,8 @@
+release_state: REUSE
+target_executor: NONE
+formula_contract_complete: true
+tests_passed: true
+frontend_contract_complete: true
+production_formula_allowed: true
+implementation_notes:
+- Existing validated calculator contract remains fit for purpose.

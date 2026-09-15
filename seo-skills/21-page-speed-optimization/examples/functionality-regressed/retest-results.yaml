@@ -1,0 +1,6 @@
+retest_completed: true
+lab_retest_status: IMPROVED
+field_retest_status: NOT_AVAILABLE_YET
+functionality_status: FAIL
+notes:
+- RFQ form failed after JS delay

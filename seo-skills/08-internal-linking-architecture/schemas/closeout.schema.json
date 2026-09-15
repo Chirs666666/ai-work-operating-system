@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "g08_status",
+    "warnings",
+    "blockers",
+    "handoffs",
+    "generated_artifacts"
+  ],
+  "properties": {
+    "g08_status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array"
+    },
+    "blockers": {
+      "type": "array"
+    },
+    "handoffs": {
+      "type": "array"
+    },
+    "generated_artifacts": {
+      "type": "array"
+    },
+    "verification_result": {
+      "enum": [
+        "VERIFIED",
+        "PARTIAL",
+        "MISMATCH",
+        "MISSING",
+        "CONFLICT"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+requirements:
+- section_id: technical-specifications
+  required: true
+  accepted_types:
+  - SPECIFICATION
+  - TEST_DATA
+  status: AVAILABLE
+- section_id: proof
+  required: true
+  accepted_types:
+  - CASE_STUDY
+  - VIDEO
+  status: MISSING
+  actions:
+  - REQUEST_EVIDENCE
+  - REMOVE_UNSUPPORTED_CLAIM

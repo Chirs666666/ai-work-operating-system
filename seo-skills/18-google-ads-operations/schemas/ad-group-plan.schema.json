@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "ad_groups": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "campaign": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "intent_theme": {
+            "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "campaign",
+          "name",
+          "intent_theme",
+          "keywords"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "ad_groups"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+terms:
+- search_term: robotic palletizer manufacturer
+  relevance: HIGH
+  commercial_intent: HIGH
+  spend: 42
+  conversions: 1
+  action: ADD_AS_KEYWORD
+- search_term: robot welding jobs
+  relevance: LOW
+  commercial_intent: LOW
+  spend: 15
+  conversions: 0
+  action: ADD_NEGATIVE

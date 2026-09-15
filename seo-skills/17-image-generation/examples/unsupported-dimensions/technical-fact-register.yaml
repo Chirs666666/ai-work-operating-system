@@ -1,0 +1,6 @@
+facts:
+- fact_id: UNKNOWN-DIM
+  fact_type: DIMENSION
+  value: Unknown
+  evidence_ref: null
+  approved_for_image: false

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "target_skill": {
+            "enum": [
+              "01-company-knowledge-base",
+              "02-business-model-analysis",
+              "03-product-keyword-research",
+              "25-keyword-page-mapping",
+              "04-page-planning-ui",
+              "05-product-copywriting",
+              "06-content-writing-optimization",
+              "07-wordpress-page-builder-publisher",
+              "13-site-data-analysis"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "blocking": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "target_skill",
+          "reason",
+          "blocking"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

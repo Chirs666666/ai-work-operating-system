@@ -1,0 +1,68 @@
+slots:
+- id: hero_h1
+  section_id: hero
+  purpose: Identify the product.
+  text: Example FlexWeld 25 Automated Welding System
+  status: APPROVED
+  claim_ids: []
+- id: hero_support
+  section_id: hero
+  purpose: State primary fit/value.
+  text: Automate repeat welding tasks with a fictional 25 kg payload system designed
+    for programmable production workflows.
+  status: APPROVED
+  claim_ids:
+  - CLM-001
+  - CLM-003
+- id: value_intro
+  section_id: product-value
+  purpose: Connect capability to evaluation value.
+  text: You can use the declared payload, repeatability, and process limits to check
+    whether the system fits your part and production requirements.
+  status: APPROVED
+  claim_ids:
+  - CLM-001
+  - CLM-002
+- id: feature_repeatability
+  section_id: core-features
+  purpose: Explain repeatability.
+  text: ±0.03 mm repeatability helps you evaluate positioning consistency across repeated
+    cycles.
+  status: APPROVED
+  claim_ids:
+  - CLM-002
+- id: spec_intro
+  section_id: technical-specifications
+  purpose: Introduce verified specifications.
+  text: Review the verified example specifications before selecting a configuration.
+  status: APPROVED
+  claim_ids: []
+- id: applications_copy
+  section_id: applications
+  purpose: Explain conditional fit.
+  text: Use the system for compatible automated welding tasks when your part weight
+    and process requirements stay within the declared limits.
+  status: APPROVED
+  claim_ids:
+  - CLM-003
+- id: proof_copy
+  section_id: proof
+  purpose: Present available proof.
+  text: The example package includes approved specification evidence, internal test
+    evidence, and a process image for technical review.
+  status: APPROVED
+  claim_ids: []
+- id: faq_copy
+  section_id: faq
+  purpose: Answer a fit question.
+  text: Can it handle a 20 kg workpiece? The declared 25 kg payload is one qualification
+    input; final fit also depends on tooling and the complete application load.
+  status: APPROVED
+  claim_ids:
+  - CLM-001
+- id: final_cta
+  section_id: final-cta
+  purpose: Invite evaluation.
+  text: Discuss Your Application
+  status: APPROVED
+  claim_ids: []

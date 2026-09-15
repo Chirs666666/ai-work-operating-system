@@ -1,0 +1,13 @@
+priorities:
+- offer_id: mt-cell
+  segment_id: icp-cnc
+  dimensions:
+    buyer_relevance: HIGH
+    purchase_urgency: MEDIUM
+    business_value: MEDIUM
+    capability_fit: HIGH
+    differentiation_strength: UNKNOWN
+    evidence_strength: MEDIUM
+  overall: MEDIUM
+  rationale: Strong capability and buyer fit; differentiation evidence is not yet
+    established.

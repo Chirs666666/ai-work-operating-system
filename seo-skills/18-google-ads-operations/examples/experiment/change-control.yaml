@@ -1,0 +1,7 @@
+action_type: EXPERIMENT_LAUNCH
+live_change: true
+approval_required: true
+approval_status: PENDING
+execute_allowed: false
+before_value: null
+after_value: experiment draft

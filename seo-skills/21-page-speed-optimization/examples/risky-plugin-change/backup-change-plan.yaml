@@ -1,0 +1,10 @@
+live_change_requested: true
+risky_change: true
+backup_ready: true
+rollback_ready: true
+approval_required: true
+approval_status: PENDING
+change_scope:
+- Disable optimization plugin
+pre_change_checks:
+- Confirm staging/backup

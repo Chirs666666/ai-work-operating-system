@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "benchmark_type": {
+      "enum": [
+        "CONFIGURABLE_BENCHMARK"
+      ]
+    },
+    "milestone": {
+      "enum": [
+        "T+0",
+        "T+7",
+        "T+30",
+        "T+90",
+        "T+180",
+        "T+300",
+        "CUSTOM"
+      ]
+    },
+    "target": {
+      "type": "string"
+    },
+    "observed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "MET",
+        "NOT_MET",
+        "NO_DATA",
+        "NOT_DUE"
+      ]
+    },
+    "guarantee": {
+      "const": false
+    }
+  },
+  "required": [
+    "benchmark_type",
+    "milestone",
+    "target",
+    "observed",
+    "status",
+    "guarantee"
+  ],
+  "additionalProperties": false
+}

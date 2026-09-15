@@ -1,0 +1,17 @@
+claims:
+- id: CLM-001
+  type: EXTERNAL_FACT
+  text: In this fictional example, the simplified estimate changes when the input
+    variables change.
+  source_ids:
+  - SRC-001
+  confidence: HIGH
+  publishable: true
+- id: CLM-002
+  type: SUPPORTED_EXPLANATION
+  text: In this fictional example, a validation step is required before the estimate
+    is used as a production value.
+  source_ids:
+  - SRC-002
+  confidence: HIGH
+  publishable: true

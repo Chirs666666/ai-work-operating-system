@@ -1,0 +1,2 @@
+# Data Provenance
+Every source records method USER_DATA/API_DATA/PUBLIC_RESEARCH, provider, collection time, market/language where relevant, and filters. Missing values stay null/UNKNOWN. Do not silently merge incompatible sources.

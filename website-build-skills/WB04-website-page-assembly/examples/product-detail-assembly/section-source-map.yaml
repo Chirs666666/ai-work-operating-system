@@ -1,0 +1,9 @@
+mappings:
+- section_id: hero
+  source_owner: 05-product-copywriting
+  source_artifact: 05/product-copy.md
+  provenance_status: VERIFIED
+- section_id: specs
+  source_owner: 05-product-copywriting
+  source_artifact: 05/product-copy.md
+  provenance_status: VERIFIED

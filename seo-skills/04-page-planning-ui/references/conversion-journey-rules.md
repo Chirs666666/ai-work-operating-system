@@ -1,0 +1,2 @@
+# Conversion Journey Rules
+CTA strength follows buyer readiness. Early-stage pages may use learn/compare/download actions; evaluation pages may use talk-to-engineer/request-quote actions. Define one primary conversion goal and optional secondary goal. Repetition is allowed only when contextually useful; aggressive CTA density must not crowd out verification and risk-reduction content.

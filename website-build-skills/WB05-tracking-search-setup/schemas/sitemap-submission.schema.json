@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "sitemap_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "technical_owner": {
+      "type": "string"
+    },
+    "submitted": {
+      "type": "boolean"
+    },
+    "accepted": {
+      "type": "boolean"
+    },
+    "indexed_claim": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "sitemap_ref",
+    "technical_owner",
+    "submitted",
+    "accepted",
+    "indexed_claim",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

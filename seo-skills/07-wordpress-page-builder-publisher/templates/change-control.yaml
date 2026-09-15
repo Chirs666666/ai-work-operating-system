@@ -1,0 +1,11 @@
+operation: CREATE_DRAFT
+target_page_id: NEW
+current_status: new
+risk: LOW
+approval_required: false
+approval_status: NOT_REQUIRED
+approved_scope: []
+prior_revision: NOT_PROVIDED
+recovery_available: true
+drift_state: NO_MATERIAL_DRIFT
+change_diff: []

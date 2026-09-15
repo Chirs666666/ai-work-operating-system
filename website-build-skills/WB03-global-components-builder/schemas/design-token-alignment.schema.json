@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "wb02_artifact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alignment": {
+      "type": "string",
+      "enum": [
+        "ALIGNED",
+        "PARTIAL",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "wb02_artifact",
+    "alignment",
+    "conflicts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

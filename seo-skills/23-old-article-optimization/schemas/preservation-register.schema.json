@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "enum": [
+              "SECTION",
+              "URL",
+              "IMAGE",
+              "TABLE",
+              "EXAMPLE",
+              "DATA",
+              "INTERNAL_LINK",
+              "BACKLINK_EQUITY",
+              "CTA",
+              "OTHER"
+            ]
+          },
+          "decision": {
+            "enum": [
+              "KEEP",
+              "UPDATE",
+              "ADD",
+              "REMOVE",
+              "MERGE"
+            ]
+          },
+          "proven_equity": {
+            "type": "boolean"
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "asset",
+          "asset_type",
+          "decision",
+          "proven_equity",
+          "evidence_refs"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

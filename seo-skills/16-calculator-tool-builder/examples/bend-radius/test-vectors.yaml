@@ -1,0 +1,11 @@
+tests:
+- test_id: R-KNOWN-1
+  test_type: KNOWN_ANSWER
+  formula_id: sagitta-radius
+  inputs:
+    chord: 96
+    sagitta: 24
+  expected:
+    radius: 60
+  tolerance: 1.0e-10
+  source_ref: SRC-R-1

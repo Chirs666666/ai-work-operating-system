@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "defects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "defect_id": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "INFO",
+              "WARN",
+              "FAIL",
+              "BLOCK"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "OPEN",
+              "FIX_IN_PROGRESS",
+              "RETEST_REQUIRED",
+              "RESOLVED",
+              "ACCEPTED_RISK"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "template_level": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "defect_id",
+          "domain",
+          "target",
+          "severity",
+          "description",
+          "owner",
+          "state",
+          "evidence",
+          "template_level"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "defects"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

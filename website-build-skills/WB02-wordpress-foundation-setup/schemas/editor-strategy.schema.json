@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "primary_editor": {
+      "type": "string",
+      "enum": [
+        "GUTENBERG",
+        "ELEMENTOR",
+        "BRICKS",
+        "BEAVER_BUILDER",
+        "DIVI",
+        "CUSTOM",
+        "UNKNOWN"
+      ]
+    },
+    "secondary_editors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mixed_builder_rationale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pattern_strategy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compatibility_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "primary_editor",
+    "secondary_editors",
+    "mixed_builder_rationale",
+    "pattern_strategy",
+    "compatibility_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

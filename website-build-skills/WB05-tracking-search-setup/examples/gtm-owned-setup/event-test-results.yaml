@@ -1,0 +1,6 @@
+tests:
+- event_name: quote_request
+  triggered: true
+  firing_evidence:
+  - tag preview
+  status: PASS

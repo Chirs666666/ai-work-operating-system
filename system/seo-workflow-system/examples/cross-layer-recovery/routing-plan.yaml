@@ -1,0 +1,22 @@
+tasks:
+- task_id: FIX
+  node: '12'
+  capability: technical_seo
+  action: RUN
+  artifact_id: null
+  scope: site
+  rationale: fix canonical
+- task_id: RETEST
+  node: WB07
+  capability: prelaunch_qa
+  action: VERIFY
+  artifact_id: null
+  scope: site
+  rationale: targeted retest
+- task_id: DEP
+  node: WB08
+  capability: production_deployment
+  action: SKIP
+  artifact_id: null
+  scope: site
+  rationale: blocked

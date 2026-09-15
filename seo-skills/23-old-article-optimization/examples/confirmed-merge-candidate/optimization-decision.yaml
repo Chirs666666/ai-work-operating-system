@@ -1,0 +1,6 @@
+action: MERGE
+evidence_refs:
+- E1
+reason: Ownership conflict and URL switching are confirmed.
+merge_or_url_change: true
+ownership_confirmation_required: false

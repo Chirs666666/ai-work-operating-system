@@ -1,0 +1,19 @@
+relationships:
+- parent_page_id: null
+  child_page_id: P-HOME
+  relationship: ROOT
+- parent_page_id: P-HOME
+  child_page_id: P-PROD
+  relationship: PARENT_CHILD
+- parent_page_id: P-PROD
+  child_page_id: P-ROBOT
+  relationship: PARENT_CHILD
+- parent_page_id: P-HOME
+  child_page_id: P-APP
+  relationship: PARENT_CHILD
+- parent_page_id: P-HOME
+  child_page_id: P-RES
+  relationship: PARENT_CHILD
+- parent_page_id: P-HOME
+  child_page_id: P-CON
+  relationship: PARENT_CHILD

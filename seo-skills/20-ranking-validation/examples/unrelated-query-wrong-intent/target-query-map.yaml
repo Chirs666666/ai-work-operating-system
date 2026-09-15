@@ -1,0 +1,6 @@
+targets:
+- target_query: robotic palletizer manufacturer
+  best_match_class: UNRELATED_QUERY
+  observed_queries:
+  - how does palletizing work
+  status: NOT_DETECTED

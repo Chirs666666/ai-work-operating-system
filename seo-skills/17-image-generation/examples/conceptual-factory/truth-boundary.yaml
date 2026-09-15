@@ -1,0 +1,5 @@
+truth_class: CONCEPTUAL
+documentary_evidence_claimed: false
+factual_constraints:
+- Do not identify the scene as a real customer or company factory.
+conceptual_disclosure_required: true

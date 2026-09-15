@@ -1,0 +1,11 @@
+ads:
+- ad_id: A1
+  headlines:
+  - Collaborative Welding Robot
+  descriptions:
+  - Request a configuration review for your welding application.
+  landing_page: /collaborative-welding-robot/
+  claim_refs:
+  - PAGE-1
+  unsupported_claims: []
+  publish_requested: false

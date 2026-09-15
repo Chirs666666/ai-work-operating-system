@@ -1,0 +1,12 @@
+data_available: true
+url: https://example.com/cnc/
+date_range: 2026-09-01/2026-09-14
+market: US
+device: null
+queries:
+- query: cnc machining supplier
+  impressions: 120
+  clicks: 5
+  ctr: 0.0417
+  average_position: 14.2
+  match_class: TARGET_MATCH

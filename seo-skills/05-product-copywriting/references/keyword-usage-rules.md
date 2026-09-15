@@ -1,0 +1,2 @@
+# Keyword Usage Rules
+Use 03/25 keyword roles naturally. Primary terms belong in high-relevance copy when semantically appropriate; secondary/long-tail terms only where useful. Never force irrelevant keywords, change ownership, or optimize to a fixed keyword-density target.

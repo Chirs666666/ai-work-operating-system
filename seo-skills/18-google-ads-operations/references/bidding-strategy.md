@@ -1,0 +1,2 @@
+# Bidding Strategy
+Select bidding based on tracking quality, conversion volume/history, budget, query volume and objective. If evidence is insufficient, output INSUFFICIENT_DATA rather than inventing a recommendation.

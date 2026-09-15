@@ -1,0 +1,2 @@
+# Data Provenance
+Allowed methods: USER_DATA, API_DATA, PUBLIC_RESEARCH. Preserve source, provider, URL/document, publication/version where available, collected_at, market/language when relevant, and evidence scope. Conflicts must remain visible rather than silently reconciled.

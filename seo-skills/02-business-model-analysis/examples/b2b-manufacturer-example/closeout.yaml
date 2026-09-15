@@ -1,0 +1,10 @@
+gate: G02
+status: WARN
+summary: Commercial model is usable for initial keyword research and page planning;
+  differentiation and revenue model remain unresolved.
+downstream_ready_for:
+- 03-product-keyword-research
+- 04-page-planning-ui
+warnings:
+- Differentiation strength is UNKNOWN.
+blocked_by: []

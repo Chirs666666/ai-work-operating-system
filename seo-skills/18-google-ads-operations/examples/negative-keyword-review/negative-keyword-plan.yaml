@@ -1,0 +1,7 @@
+candidates:
+- term: jobs
+  reason: Observed employment intent unrelated to purchase
+  scope: CAMPAIGN
+  evidence:
+  - SEARCH_TERM_EXPORT
+  live_action_requested: false

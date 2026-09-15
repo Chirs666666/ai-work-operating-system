@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "target_environment": {
+      "type": "string",
+      "enum": [
+        "STAGING",
+        "PRODUCTION_CANDIDATE",
+        "UNKNOWN"
+      ]
+    },
+    "site_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "build_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scope_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "target_environment",
+    "site_url",
+    "build_ref",
+    "scope_notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

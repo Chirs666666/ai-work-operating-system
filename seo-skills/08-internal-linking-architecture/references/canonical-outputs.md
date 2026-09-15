@@ -1,0 +1,2 @@
+# Canonical Outputs
+The 18 outputs are: manifest.yaml; site-url-inventory.yaml; internal-link-graph.yaml; graph-freshness.yaml; page-relationship-map.yaml; existing-link-audit.yaml; link-candidates.yaml; link-decisions.yaml; outgoing-link-plan.yaml; incoming-link-opportunities.yaml; anchor-placement-plan.yaml; topic-cluster-health.yaml; orphan-underlinked-report.yaml; ownership-conflicts.yaml; technical-link-issues.yaml; change-control.yaml; execution-handoff.yaml; closeout.yaml. G08 states: `PASS`, `WARN`, `FAIL`, `BLOCK`, `REUSE`, `WAITING_APPROVAL`.

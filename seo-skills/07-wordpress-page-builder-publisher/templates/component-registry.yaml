@@ -1,0 +1,17 @@
+registry_scope: PROJECT
+project_id: example-project
+components:
+  - component_id: HERO_PRODUCT_01
+    component_type: PRODUCT_HERO
+    purpose: product hero with heading, benefits, CTA, and image
+    state: VERIFIED
+    required_slots: [heading, description, benefits, primary_cta, image]
+    optional_slots: []
+    layout_constraints:
+      desktop: two_column
+      mobile: stacked
+    builder: BLOCK_EDITOR
+    engine: GREENSHIFT
+    implementation: hero-product-01
+    dependencies: [greenshift]
+    verification_evidence: [project-visual-check]

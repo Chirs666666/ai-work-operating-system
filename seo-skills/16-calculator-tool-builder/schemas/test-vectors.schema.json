@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "tests": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "test_id": {
+            "type": "string"
+          },
+          "test_type": {
+            "enum": [
+              "KNOWN_ANSWER",
+              "UNIT_CONVERSION",
+              "BOUNDARY",
+              "INVALID_INPUT",
+              "CROSS_UNIT_EQUIVALENCE",
+              "REGRESSION"
+            ]
+          },
+          "formula_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inputs": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "expected": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "tolerance": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "source_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "test_id",
+          "test_type",
+          "inputs",
+          "expected"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "tests"
+  ],
+  "additionalProperties": false
+}

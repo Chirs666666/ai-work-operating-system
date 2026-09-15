@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page_id",
+    "operations"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "operation_id",
+          "section_id",
+          "action",
+          "execution_capability",
+          "risk",
+          "expected_result",
+          "approval_required"
+        ],
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          },
+          "section_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "execution_capability": {
+            "type": "string"
+          },
+          "risk": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH"
+            ]
+          },
+          "expected_result": {
+            "type": "string"
+          },
+          "approval_required": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,8 @@
+items:
+- url: https://example.com/merge-candidate/
+  action: MERGE
+  confidence: MEDIUM
+  ownership_validation_required: true
+  approval_required: true
+  execution_allowed: false
+  reason: Candidate only; ownership/target must be validated by 25.

@@ -1,0 +1,7 @@
+g08_status: REUSE
+warnings: []
+blockers: []
+handoffs: []
+generated_artifacts:
+- existing-link-audit.yaml
+- link-decisions.yaml

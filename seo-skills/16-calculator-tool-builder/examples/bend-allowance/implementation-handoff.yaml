@@ -1,0 +1,8 @@
+release_state: READY_FOR_IMPLEMENTATION
+target_executor: CODE_IMPLEMENTATION
+formula_contract_complete: true
+tests_passed: true
+frontend_contract_complete: true
+production_formula_allowed: true
+implementation_notes:
+- Display limitations near result.

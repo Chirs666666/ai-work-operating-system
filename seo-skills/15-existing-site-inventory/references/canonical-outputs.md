@@ -1,0 +1,2 @@
+# Canonical Outputs
+21 outputs: manifest, inventory-scope, source-register, url-discovery, url-normalization, page-classification, indexability-inventory, performance-baseline, query-keyword-signals, backlink-asset-signals, content-state, technical-signals, asset-value, preservation-register, action-classification, priority-queue, ownership-conflicts, cross-skill-handoffs, change-control, inventory-summary, closeout.

@@ -1,0 +1,7 @@
+checks:
+- check_id: V1
+  description: Upstream alignment
+  status: PASS
+  evidence:
+  - architecture-alignment.yaml
+  - design-token-alignment.yaml

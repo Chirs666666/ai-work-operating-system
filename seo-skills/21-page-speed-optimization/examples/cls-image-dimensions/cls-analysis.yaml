@@ -1,0 +1,8 @@
+status: BOTTLENECK_CONFIRMED
+observed_value: 0.22
+unit: score
+root_causes:
+- Image dimensions missing
+evidence_refs:
+- CLS-1
+notes: []

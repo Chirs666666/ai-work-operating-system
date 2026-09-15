@@ -1,0 +1,2 @@
+# Query Sets
+Use representative informational, comparison, selection, supplier/product and application questions. Repeated observations over time/platforms where available are more informative than one prompt.

@@ -1,0 +1,2 @@
+# Experiments
+Define hypothesis, single material variable when practical, success metric, guardrails, minimum evidence and stop criteria. Launching an experiment that changes live delivery requires approval.

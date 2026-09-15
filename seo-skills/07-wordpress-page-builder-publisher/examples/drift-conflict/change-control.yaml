@@ -1,0 +1,15 @@
+operation: UPDATE_DRAFT
+target_page_id: "7201"
+current_status: draft
+risk: MEDIUM
+approval_required: false
+approval_status: NOT_REQUIRED
+approved_scope: []
+prior_revision: rev-30
+recovery_available: true
+drift_state: CONFLICTING_DRIFT
+change_diff:
+  - path: HERO_01.content.heading
+    prior_verified: Collaborative Welding Robot
+    current_manual: Collaborative Welding Cobot System
+    intended: Collaborative Welding Robot

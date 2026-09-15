@@ -1,0 +1,13 @@
+components:
+- component_id: header
+  type: HEADER
+  scope: GLOBAL
+  owner: WB03
+  source_of_truth: header-spec.yaml
+  status: VALIDATED
+- component_id: primary-nav
+  type: NAVIGATION
+  scope: GLOBAL
+  owner: WB03
+  source_of_truth: navigation-spec.yaml
+  status: VALIDATED

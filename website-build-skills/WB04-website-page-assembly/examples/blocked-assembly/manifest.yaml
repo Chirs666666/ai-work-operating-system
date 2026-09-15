@@ -1,0 +1,15 @@
+skill: WB04-website-page-assembly
+version: 1.0.0
+mode: ASSEMBLE
+site: example.com
+project_id: WB04-BLOCK
+page_id: P-ROBOT
+upstream_artifacts:
+- WB01
+- WB02
+- WB03
+- '04'
+- '05'
+- 09
+- '17'
+- '24'

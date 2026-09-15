@@ -1,0 +1,14 @@
+incidents:
+- incident_id: I1
+  deployment_id: DEP-003
+  severity: CRITICAL
+  affected_scope:
+  - contact form
+  symptom: submission failure
+  owner: deployment owner
+  rollback_required: true
+  rollback_result: VERIFIED
+  root_cause: release defect
+  resolution: rolled back
+  verification:
+  - known-good restored

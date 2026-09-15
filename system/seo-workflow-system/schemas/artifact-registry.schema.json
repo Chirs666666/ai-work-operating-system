@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "properties": {
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "producer_layer": {
+            "type": "string",
+            "enum": [
+              "SEO",
+              "BUILD",
+              "ORCHESTRATION"
+            ]
+          },
+          "artifact_type": {
+            "type": "string"
+          },
+          "project_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "page_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "fresh": {
+            "type": "boolean"
+          },
+          "provenance_valid": {
+            "type": "boolean"
+          },
+          "assumptions_compatible": {
+            "type": "boolean"
+          },
+          "prior_gate": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "WARN",
+              "REUSE",
+              "FAIL",
+              "BLOCK",
+              "UNKNOWN"
+            ]
+          },
+          "evidence_state": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "PARTIAL",
+              "UNKNOWN"
+            ]
+          },
+          "ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "consumers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "artifact_id",
+          "producer",
+          "producer_layer",
+          "artifact_type",
+          "project_id",
+          "scope",
+          "page_id",
+          "url",
+          "version",
+          "fresh",
+          "provenance_valid",
+          "assumptions_compatible",
+          "prior_gate",
+          "evidence_state",
+          "ref",
+          "consumers"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "artifacts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

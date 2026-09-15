@@ -1,0 +1,2 @@
+# Boundaries
+07 publishes; 08 supports discovery; 12 owns technical repair; 13 owns broader analytics; 19 owns post-publish lifecycle validation; 25 owns keyword/page ownership; 06/10 own content/commercial optimization.

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "article",
+  "type": "object",
+  "required": [
+    "title",
+    "dek",
+    "sections",
+    "cta"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "dek": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array"
+    },
+    "cta": {
+      "type": [
+        "string",
+        "null",
+        "object",
+        "array"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

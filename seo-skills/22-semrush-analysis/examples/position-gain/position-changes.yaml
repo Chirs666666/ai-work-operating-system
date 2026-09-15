@@ -1,0 +1,7 @@
+changes:
+- keyword: tube bending machine
+  url: https://example.com/bender/
+  previous_position: 31
+  current_position: 16
+  change_type: GAINED
+  comparable: true

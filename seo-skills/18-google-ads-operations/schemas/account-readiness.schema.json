@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "billing_ready": {
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "policy_risk_reviewed": {
+      "type": "boolean"
+    },
+    "access_ready": {
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  },
+  "required": [
+    "billing_ready",
+    "policy_risk_reviewed",
+    "access_ready",
+    "status"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "edited": {
+      "type": "boolean"
+    },
+    "source_asset_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "asset_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "changes_applied": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_subject_preserved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "edited",
+    "source_asset_id",
+    "asset_reference",
+    "changes_applied",
+    "source_subject_preserved"
+  ],
+  "additionalProperties": false
+}

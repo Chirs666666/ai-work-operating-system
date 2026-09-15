@@ -1,0 +1,2 @@
+# Evidence Traceability
+Material claims reference upstream evidence IDs where available. Missing proof is MISSING/UNKNOWN and triggers REQUEST_EVIDENCE and/or REMOVE_UNSUPPORTED_CLAIM. Conflicts are preserved. Never invent specifications, certificates, tests, cases, testimonials, customer results, ROI, deployment time, or defect rates.

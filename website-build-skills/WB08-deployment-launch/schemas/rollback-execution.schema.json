@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "required": {
+      "type": "boolean"
+    },
+    "executed": {
+      "type": "boolean"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_REQUIRED",
+        "NOT_STARTED",
+        "ROLLING_BACK",
+        "EXECUTED",
+        "FAILED"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "required",
+    "executed",
+    "actions",
+    "state",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

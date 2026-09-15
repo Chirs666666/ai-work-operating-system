@@ -1,0 +1,8 @@
+g08_status: WARN
+warnings:
+- GSC unavailable; performance signals remain UNKNOWN; semantic/structural analysis
+  can continue.
+blockers: []
+handoffs: []
+generated_artifacts:
+- site-url-inventory.yaml

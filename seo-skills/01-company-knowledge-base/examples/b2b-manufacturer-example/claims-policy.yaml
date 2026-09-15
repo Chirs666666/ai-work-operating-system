@@ -1,0 +1,17 @@
+policy:
+  GREEN:
+    meaning: publishable when supported and allowed
+  YELLOW:
+    meaning: conditional; qualification/context required
+  RED:
+    meaning: do not publish without required approval/evidence
+claims:
+- claim_id: CL-001
+  text: Can reduce manual handling in the documented example workflow
+  classification: YELLOW
+  requirement: Use only with the documented workflow context; do not claim universal
+    labor savings.
+- claim_id: CL-002
+  text: Guaranteed 6-month ROI
+  classification: RED
+  requirement: Do not publish; unsupported E5 claim.

@@ -1,0 +1,5 @@
+width_px: 1280
+height_px: 720
+aspect_ratio: '16:9'
+crop_allowed: true
+text_safe_area_required: false

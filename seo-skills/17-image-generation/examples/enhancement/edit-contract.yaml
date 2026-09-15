@@ -1,0 +1,13 @@
+source_asset_id: IMG-ENH
+preserve:
+- all visible subject geometry
+modify:
+- clarity
+- noise
+- sharpness
+remove: []
+add: []
+prohibited_changes:
+- invented surface features
+- new text
+factual_interpretation_risk: LOW

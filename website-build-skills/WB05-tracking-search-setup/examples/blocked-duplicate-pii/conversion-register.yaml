@@ -1,0 +1,7 @@
+conversions:
+- conversion_id: C1
+  event_name: quote_request
+  business_goal: quote request
+  trigger_key: quote-success
+  is_key_event: true
+  owner: GA4

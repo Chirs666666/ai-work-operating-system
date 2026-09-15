@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "source_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_artifact": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "provenance_status": {
+            "type": "string",
+            "enum": [
+              "VERIFIED",
+              "PARTIAL",
+              "MISSING",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "section_id",
+          "source_owner",
+          "source_artifact",
+          "provenance_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mappings"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

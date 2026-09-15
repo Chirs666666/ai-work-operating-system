@@ -1,0 +1,8 @@
+mode: REFRESH
+g06: PASS
+rationale: Example satisfies the applicable informational-content lifecycle decision.
+handoffs:
+- 09-seo-metadata
+- 08-internal-linking
+- 07-wordpress-publishing
+open_gaps: []

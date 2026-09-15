@@ -1,0 +1,2 @@
+# Product Copywriting Methodology
+Use FACT → FEATURE → FUNCTION → BUYER REQUIREMENT → BUYER VALUE → CLAIM → EVIDENCE → FINAL COPY. Each step must stay proportional to approved facts. DRAFT may expose gaps; PRODUCTION requires stronger QA.

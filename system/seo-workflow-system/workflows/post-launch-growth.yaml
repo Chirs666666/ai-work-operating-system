@@ -1,0 +1,44 @@
+workflow_id: POST_LAUNCH_GROWTH
+version: 1.1.0
+steps:
+- step: 1
+  node: '19'
+  default_action: VERIFY
+  critical: false
+- step: 2
+  node: '20'
+  default_action: VERIFY
+  critical: false
+- step: 3
+  node: '13'
+  default_action: VERIFY
+  critical: false
+- step: 4
+  node: '22'
+  default_action: VERIFY
+  critical: false
+- step: 5
+  node: '23'
+  default_action: VERIFY
+  critical: false
+- step: 6
+  node: '10'
+  default_action: VERIFY
+  critical: false
+- step: 7
+  node: '06'
+  default_action: VERIFY
+  critical: false
+- step: 8
+  node: '11'
+  default_action: VERIFY
+  critical: false
+- step: 9
+  node: '24'
+  default_action: VERIFY
+  critical: false
+rules:
+- discover before run
+- resolve alias 14 to 12
+- preserve ownership
+- production approval before WB08

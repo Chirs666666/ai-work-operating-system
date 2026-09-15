@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "skill",
+    "version",
+    "planning_depth",
+    "work_mode",
+    "source"
+  ],
+  "properties": {
+    "skill": {
+      "const": "04-page-planning-ui"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "planning_depth": {
+      "enum": [
+        "STANDARD",
+        "DETAILED"
+      ]
+    },
+    "work_mode": {
+      "enum": [
+        "NEW_PAGE",
+        "REDESIGN",
+        "STRUCTURAL_REFRESH"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "USER_DATA",
+            "API_DATA",
+            "PUBLIC_RESEARCH"
+          ]
+        }
+      }
+    }
+  },
+  "title": "Manifest"
+}

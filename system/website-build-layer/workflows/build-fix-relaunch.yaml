@@ -1,0 +1,43 @@
+workflow_id: BUILD_FIX_RELAUNCH
+version: 1.0.0
+steps:
+- step: 1
+  skill: WB04
+  default_action: RUN
+  critical: true
+- step: 2
+  skill: '07'
+  default_action: VERIFY
+  critical: false
+- step: 3
+  skill: '12'
+  default_action: VERIFY
+  critical: true
+- step: 4
+  skill: WB05
+  default_action: RUN
+  critical: false
+- step: 5
+  skill: WB06
+  default_action: RUN
+  critical: false
+- step: 6
+  skill: '21'
+  default_action: VERIFY
+  critical: false
+- step: 7
+  skill: WB07
+  default_action: RUN
+  critical: true
+- step: 8
+  skill: WB08
+  default_action: RUN
+  critical: true
+- step: 9
+  skill: '19'
+  default_action: VERIFY
+  critical: false
+rules:
+- discover artifacts before execution
+- allow REUSE when reuse gate passes
+- WB08 requires WB07 readiness and approval

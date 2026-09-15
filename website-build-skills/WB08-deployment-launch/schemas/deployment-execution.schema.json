@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "started": {
+      "type": "boolean"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "scope_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actual_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_STARTED",
+        "DEPLOYING",
+        "DEPLOYED",
+        "FAILED",
+        "ROLLBACK_REQUIRED"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "started",
+    "completed",
+    "scope_id",
+    "actual_actions",
+    "state",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

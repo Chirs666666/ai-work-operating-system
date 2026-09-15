@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_present": {
+      "type": "boolean"
+    },
+    "page_aligned": {
+      "type": "boolean"
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "guarantees_ai_citation": {
+      "const": false
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_present",
+    "page_aligned",
+    "types",
+    "guarantees_ai_citation",
+    "findings"
+  ],
+  "additionalProperties": false
+}

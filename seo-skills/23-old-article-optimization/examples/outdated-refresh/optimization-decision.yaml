@@ -1,0 +1,6 @@
+action: REFRESH
+evidence_refs:
+- E1
+reason: Time-sensitive technical material is stale.
+merge_or_url_change: false
+ownership_confirmation_required: false

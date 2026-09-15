@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "prospects": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "authority_score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "relevance": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "quality_decision": {
+            "enum": [
+              "QUALIFY",
+              "REVIEW",
+              "REJECT",
+              "UNKNOWN"
+            ]
+          },
+          "decision_basis": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "domain",
+          "authority_score",
+          "relevance",
+          "quality_decision",
+          "decision_basis"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "prospects"
+  ],
+  "additionalProperties": false
+}

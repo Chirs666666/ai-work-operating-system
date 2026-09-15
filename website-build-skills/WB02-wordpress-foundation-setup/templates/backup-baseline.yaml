@@ -1,0 +1,6 @@
+backup_available: UNKNOWN
+last_backup_at: null
+restore_tested: UNKNOWN
+rollback_ready: false
+backup_owner: null
+notes: []

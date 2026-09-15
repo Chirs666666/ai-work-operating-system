@@ -1,0 +1,7 @@
+items:
+- failure_id: F1
+  correction_node: '12'
+  rerun_gate: WB07
+  resume_checkpoint: WB07
+  restart_entire_project: false
+  state: PLANNED

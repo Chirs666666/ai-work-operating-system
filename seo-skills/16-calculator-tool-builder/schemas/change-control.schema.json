@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "formula_changed": {
+      "type": "boolean"
+    },
+    "constants_changed": {
+      "type": "boolean"
+    },
+    "units_changed": {
+      "type": "boolean"
+    },
+    "assumptions_changed": {
+      "type": "boolean"
+    },
+    "result_interpretation_changed": {
+      "type": "boolean"
+    },
+    "revalidation_required": {
+      "type": "boolean"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "production_release_allowed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "formula_changed",
+    "constants_changed",
+    "units_changed",
+    "assumptions_changed",
+    "result_interpretation_changed",
+    "revalidation_required",
+    "approval_required",
+    "production_release_allowed"
+  ],
+  "additionalProperties": false
+}

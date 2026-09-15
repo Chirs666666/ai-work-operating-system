@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "conversions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "conversion_id": {
+            "type": "string"
+          },
+          "event_name": {
+            "type": "string"
+          },
+          "business_goal": {
+            "type": "string"
+          },
+          "trigger_key": {
+            "type": "string"
+          },
+          "is_key_event": {
+            "type": "boolean"
+          },
+          "owner": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "conversion_id",
+          "event_name",
+          "business_goal",
+          "trigger_key",
+          "is_key_event",
+          "owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "conversions"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

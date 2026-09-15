@@ -1,0 +1,14 @@
+applicable: true
+reason: EXISTING_INFORMATIONAL_CONTENT
+performance_data_available: true
+works:
+- Intent remains aligned.
+- Evidence is current in the fictional dataset.
+- Decision guidance remains differentiated.
+stale: []
+missing: []
+unsupported: []
+preserve:
+- All current sections
+recommended_mode: UPDATE
+confidence: HIGH

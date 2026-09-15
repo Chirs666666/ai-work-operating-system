@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "page_goal",
+    "primary_audience",
+    "planning_rationale"
+  ],
+  "properties": {
+    "page_goal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_audience": {
+      "type": "array"
+    },
+    "planning_rationale": {
+      "type": "array"
+    }
+  },
+  "title": "Page Strategy"
+}

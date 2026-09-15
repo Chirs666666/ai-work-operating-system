@@ -1,0 +1,5 @@
+handoffs:
+- url: https://example.com/filter-page/
+  target_skill: 12-technical-seo-audit-fix
+  reason: Validate indexability and implementation before noindex change.
+  blocking: true

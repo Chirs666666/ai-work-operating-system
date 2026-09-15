@@ -1,0 +1,8 @@
+items:
+- diagnosis_id: D6
+  observation: Conversions declined with broadly stable organic sessions.
+  potential_cause: Landing-page/offer or tracking-side issue
+  confidence: PLAUSIBLE
+  evidence:
+  - GA4 sessions stable
+  - Key events lower

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "tracking": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "landing_page": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "claims": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "targeting": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "budget_bidding": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "urls_forms": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "overall": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK"
+      ]
+    },
+    "launch_ready": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "tracking",
+    "landing_page",
+    "claims",
+    "targeting",
+    "budget_bidding",
+    "urls_forms",
+    "overall",
+    "launch_ready"
+  ],
+  "additionalProperties": false
+}

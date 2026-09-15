@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "baseline_preserved": {
+      "type": "boolean"
+    },
+    "recheck_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recheck_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner_skill": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "baseline_preserved",
+    "recheck_metrics",
+    "recheck_window",
+    "owner_skill"
+  ],
+  "additionalProperties": false
+}

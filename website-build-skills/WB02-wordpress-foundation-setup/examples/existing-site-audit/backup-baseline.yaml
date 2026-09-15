@@ -1,0 +1,7 @@
+backup_available: 'YES'
+last_backup_at: null
+restore_tested: UNKNOWN
+rollback_ready: true
+backup_owner: hosting/backup layer
+notes:
+- Rollback route defined before production work.

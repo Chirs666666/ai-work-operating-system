@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "hosts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "string"
+          },
+          "https_enabled": {
+            "type": "boolean"
+          },
+          "certificate_valid": {
+            "type": "boolean"
+          },
+          "auto_renew": {
+            "type": "string",
+            "enum": [
+              "ENABLED",
+              "DISABLED",
+              "UNKNOWN"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "NOT_CONFIGURED",
+              "CONFIGURED",
+              "DETECTED",
+              "READY",
+              "VERIFIED",
+              "WARN",
+              "FAILED",
+              "UNKNOWN"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "host",
+          "https_enabled",
+          "certificate_valid",
+          "auto_renew",
+          "state",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "hosts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,10 @@
+page_id: "123"
+qa_type: VISUAL
+status: PASS
+checks:
+  - check_id: desktop-layout
+    severity: MEDIUM
+    expected: two_column
+    actual: two_column
+    status: PASS
+    evidence: rendered desktop view

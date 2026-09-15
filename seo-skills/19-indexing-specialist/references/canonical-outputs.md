@@ -1,0 +1,2 @@
+# Canonical Outputs
+23 outputs: manifest, validation-brief, source-register, url-register, technical-access, indexability-check, sitemap-discovery, crawl-status, index-status, canonical-status, inspection-record, query-observations, target-query-map, ranking-observations, visibility-baseline, indexing-diagnosis, ranking-diagnosis, benchmark-status, action-plan, cross-skill-handoffs, change-control, verification-report, closeout.

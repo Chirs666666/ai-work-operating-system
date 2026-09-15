@@ -1,0 +1,5 @@
+mode: FULL_INVENTORY
+g15: WARN
+final_status: PARTIAL
+warnings: []
+blockers: []

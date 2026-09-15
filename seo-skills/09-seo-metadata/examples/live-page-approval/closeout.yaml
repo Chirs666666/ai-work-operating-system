@@ -1,0 +1,7 @@
+mode: OPTIMIZE
+final_action: TEST
+g09: WAITING_APPROVAL
+warnings: []
+blockers: []
+downstream_handoff: 07-wordpress-page-builder-publisher
+approval_pending: true

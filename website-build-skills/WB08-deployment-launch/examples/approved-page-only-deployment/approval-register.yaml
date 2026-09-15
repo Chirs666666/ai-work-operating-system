@@ -1,0 +1,6 @@
+approvals:
+- approval_id: A2
+  type: PRODUCTION_DEPLOYMENT
+  scope_id: S2
+  state: APPROVED
+  evidence_ref: explicit-user-approval

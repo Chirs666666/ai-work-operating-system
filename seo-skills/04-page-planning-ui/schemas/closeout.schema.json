@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "gate",
+    "status",
+    "rationale"
+  ],
+  "properties": {
+    "gate": {
+      "const": "G04"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    }
+  },
+  "title": "Closeout"
+}

@@ -1,0 +1,39 @@
+rules:
+- preserve live URLs unless approved migration rationale exists
+urls:
+- page_id: P-HOME
+  proposed_url: /
+  existing_live_url: /
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-PROD
+  proposed_url: /products/
+  existing_live_url: /products/
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-ROBOT
+  proposed_url: /products/collaborative-palletizing-robot/
+  existing_live_url: /products/collaborative-palletizing-robot/
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-APP
+  proposed_url: /applications/
+  existing_live_url: /applications/
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-RES
+  proposed_url: /resources/
+  existing_live_url: /resources/
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-CON
+  proposed_url: /contact/
+  existing_live_url: /contact/
+  change_type: RETAIN
+  live_change_approved: null
+  migration_rationale: null

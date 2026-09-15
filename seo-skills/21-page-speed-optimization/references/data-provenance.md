@@ -1,0 +1,2 @@
+# Data Provenance
+Record provider, test type, URL, device, location, network profile, date/time and whether data is FIELD_DATA, LAB_DATA, SERVER_NETWORK or FRONTEND evidence. Missing values are null/UNKNOWN, never fabricated.

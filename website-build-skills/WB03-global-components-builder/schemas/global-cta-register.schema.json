@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "ctas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cta_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "action_type": {
+            "type": "string",
+            "enum": [
+              "LINK",
+              "FORM",
+              "EMAIL",
+              "PHONE",
+              "DOWNLOAD",
+              "OTHER"
+            ]
+          },
+          "destination": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "GLOBAL",
+              "CONDITIONAL_GLOBAL"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cta_id",
+          "label",
+          "action_type",
+          "destination",
+          "scope",
+          "owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "ctas"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

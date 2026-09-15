@@ -1,0 +1,5 @@
+strategy: PAGE_ONLY
+rationale: approved product-page update
+steps:
+- publish approved page
+- verify page

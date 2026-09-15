@@ -1,0 +1,8 @@
+products:
+- id: mt-cell
+  name: MT-20 Machine Tending Cell
+  type: FACT
+  primary_use: CNC machine tending
+  source:
+    method: USER_DATA
+    source_name: Fictional approved product sheet

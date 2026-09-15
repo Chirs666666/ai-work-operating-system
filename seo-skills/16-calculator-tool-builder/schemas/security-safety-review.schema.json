@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "unsafe_eval_used": {
+      "type": "boolean"
+    },
+    "untrusted_formula_execution": {
+      "type": "boolean"
+    },
+    "client_side_trust_only": {
+      "type": "boolean"
+    },
+    "sensitive_data_required": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "unsafe_eval_used",
+    "untrusted_formula_execution",
+    "client_side_trust_only",
+    "sensitive_data_required",
+    "notes"
+  ],
+  "additionalProperties": false
+}

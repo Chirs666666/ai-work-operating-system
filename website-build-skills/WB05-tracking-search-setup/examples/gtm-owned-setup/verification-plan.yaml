@@ -1,0 +1,6 @@
+checks:
+- check_id: V1
+  description: GA4 receipt verified
+  status: PASS
+  evidence:
+  - data-receipt-verification.yaml

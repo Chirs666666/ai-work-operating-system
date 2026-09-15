@@ -1,0 +1,31 @@
+families:
+- family_id: F-HOME
+  name: Home
+  family_type: HOME
+  purpose: Primary company entry
+  custom_rationale: null
+- family_id: F-PROD
+  name: Products
+  family_type: CATEGORY
+  purpose: Product discovery
+  custom_rationale: null
+- family_id: F-PDP
+  name: Product Detail
+  family_type: PRODUCT
+  purpose: Product conversion
+  custom_rationale: null
+- family_id: F-APP
+  name: Applications
+  family_type: APPLICATION
+  purpose: Application discovery
+  custom_rationale: null
+- family_id: F-RES
+  name: Resources
+  family_type: RESOURCE_HUB
+  purpose: Educational content
+  custom_rationale: null
+- family_id: F-CON
+  name: Contact
+  family_type: CONTACT
+  purpose: Lead generation
+  custom_rationale: null

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "buildMode": {
+      "type": "string",
+      "enum": [
+        "BLOCK_EDITOR",
+        "ELEMENTOR"
+      ]
+    },
+    "componentState": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "AVAILABLE",
+        "CUSTOM_REQUIRED",
+        "DEPRECATED"
+      ]
+    },
+    "compatibilityOutcome": {
+      "type": "string",
+      "enum": [
+        "COMPATIBLE",
+        "PARTIAL",
+        "CUSTOM_COMPONENT_REQUIRED",
+        "CONFLICT",
+        "BLOCKED"
+      ]
+    },
+    "g07": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "WAITING_APPROVAL",
+        "REUSE"
+      ]
+    },
+    "connectionStatus": {
+      "type": "string",
+      "enum": [
+        "CONNECTED",
+        "PARTIAL",
+        "UNAVAILABLE",
+        "AUTH_FAILED"
+      ]
+    },
+    "nullState": {
+      "type": "string",
+      "enum": [
+        "UNKNOWN",
+        "NOT_PROVIDED",
+        "UNAVAILABLE"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "method",
+        "source_name"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "USER_DATA",
+            "API_DATA",
+            "PUBLIC_RESEARCH",
+            "UPSTREAM_ARTIFACT",
+            "WORDPRESS_READBACK"
+          ]
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "collected_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "market": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

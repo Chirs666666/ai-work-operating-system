@@ -1,0 +1,6 @@
+status: ISSUE_FOUND
+findings:
+- HTML requests consistently miss page cache
+estimated_impact: HIGH
+evidence_refs:
+- CACHE-1

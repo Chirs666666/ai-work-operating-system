@@ -1,0 +1,7 @@
+actions:
+- action: Review page cache configuration
+  target: WordPress cache layer
+  expected_effect: Reduce repeated origin work/TTFB
+  risk: MEDIUM
+  live_change: false
+  status: PROPOSED

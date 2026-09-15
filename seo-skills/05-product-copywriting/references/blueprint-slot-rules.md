@@ -1,0 +1,2 @@
+# Blueprint Slot Rules
+04 owns section existence/order/purpose, content slots, proof requirements and CTA plan. 05 fills requested PRODUCT-page slots. Do not add an unrequested FAQ or redesign the page. Unsafe/unfillable slots become explicit gaps and route back to the proper owner.

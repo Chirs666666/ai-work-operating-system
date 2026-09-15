@@ -1,0 +1,6 @@
+strategy: FULL_SITE
+rationale: initial launch
+steps:
+- deploy approved release
+- purge cache
+- verify

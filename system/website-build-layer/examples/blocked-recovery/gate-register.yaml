@@ -1,0 +1,7 @@
+gates:
+- gate_id: G7
+  owner: WB07
+  required_dependencies: []
+  state: BLOCK
+  evidence:
+  - form defect

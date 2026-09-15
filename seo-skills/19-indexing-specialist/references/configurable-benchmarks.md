@@ -1,0 +1,2 @@
+# Configurable Benchmarks
+Project milestones such as T+7 impressions, T+30 query/ranking, T+90/T+180/T+300 growth targets are configurable project benchmarks. They are not Google guarantees or universal SEO thresholds.

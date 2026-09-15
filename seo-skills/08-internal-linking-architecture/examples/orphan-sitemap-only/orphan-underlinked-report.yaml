@@ -1,0 +1,6 @@
+pages:
+- url: /isolated-guide/
+  classification: ORPHAN_PAGE
+  html_internal_entries: 0
+  sitemap_present: true
+  breadcrumb_present: false

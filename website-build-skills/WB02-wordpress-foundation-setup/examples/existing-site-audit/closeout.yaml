@@ -1,0 +1,8 @@
+gate: WARN
+foundation_state: READY
+ready_for_components: true
+warnings:
+- No staging environment; audit only.
+blockers: []
+next_skills:
+- WB03-global-components-builder

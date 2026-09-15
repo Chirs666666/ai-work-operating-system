@@ -1,0 +1,11 @@
+handoffs:
+- to_skill: WB03-global-components-builder
+  artifact: global-design-tokens.yaml
+  purpose: consume foundation tokens
+  gate: PASS
+  notes: []
+- to_skill: WB04-website-page-assembly
+  artifact: editor-strategy.yaml
+  purpose: consume editor/build constraints
+  gate: PASS
+  notes: []

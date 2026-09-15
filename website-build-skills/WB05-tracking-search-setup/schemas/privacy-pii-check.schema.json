@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "parameters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_name": {
+            "type": "string"
+          },
+          "parameter": {
+            "type": "string"
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "SAFE",
+              "PII",
+              "POTENTIAL_PII",
+              "UNKNOWN"
+            ]
+          },
+          "allowed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "event_name",
+          "parameter",
+          "classification",
+          "allowed"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "overall": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "parameters",
+    "overall"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

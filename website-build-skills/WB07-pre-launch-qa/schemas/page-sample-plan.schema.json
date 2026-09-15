@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page_id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "class": {
+            "type": "string",
+            "enum": [
+              "CRITICAL",
+              "SYSTEM",
+              "TEMPLATE_SAMPLE",
+              "OTHER"
+            ]
+          },
+          "template_family": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "tested": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "page_id",
+          "url",
+          "class",
+          "template_family",
+          "required",
+          "tested"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "critical_coverage_complete": {
+      "type": "boolean"
+    },
+    "system_coverage_complete": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "pages",
+    "critical_coverage_complete",
+    "system_coverage_complete"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

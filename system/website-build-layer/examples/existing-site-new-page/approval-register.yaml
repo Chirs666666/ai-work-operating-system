@@ -1,0 +1,11 @@
+approvals:
+- approval_id: AP2
+  requested_by_skill: WB08
+  action: PRODUCTION_DEPLOYMENT
+  scope: new-page
+  environment: PRODUCTION
+  risk: LOW
+  state: PENDING
+  evidence_ref: null
+  consumed_by:
+  - WB08

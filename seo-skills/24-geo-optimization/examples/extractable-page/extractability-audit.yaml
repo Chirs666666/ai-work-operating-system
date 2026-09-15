@@ -1,0 +1,5 @@
+status: PASS
+findings:
+- Specifications use clear labels and compact table structure.
+evidence_refs:
+- PAGE

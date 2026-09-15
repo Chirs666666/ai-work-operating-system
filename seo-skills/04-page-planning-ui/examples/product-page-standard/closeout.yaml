@@ -1,0 +1,10 @@
+gate: G04
+status: PASS
+rationale: STANDARD example is planning-ready.
+allowed_handoffs:
+- 05-product-copywriting
+- 17-image-generation
+- 07-wordpress-draft
+blocked_handoffs: []
+warnings: []
+return_to: []

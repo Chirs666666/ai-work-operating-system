@@ -1,0 +1,6 @@
+targets:
+- target_query: cnc machining supplier
+  observed_matches:
+  - what is cnc machining
+  best_match_class: UNRELATED_QUERY
+  status: NOT_DETECTED

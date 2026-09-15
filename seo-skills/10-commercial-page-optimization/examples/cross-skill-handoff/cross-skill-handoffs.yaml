@@ -1,0 +1,13 @@
+handoffs:
+- issue_id: M1
+  target_skill: 09-seo-metadata
+  reason: Metadata owner
+  blocking: false
+- issue_id: L1
+  target_skill: 08-internal-linking-architecture
+  reason: Internal-link owner
+  blocking: false
+- issue_id: T1
+  target_skill: 12-technical-seo-audit-fix
+  reason: Technical SEO owner
+  blocking: true

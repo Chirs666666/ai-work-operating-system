@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "last_backup_success": {
+      "type": "boolean"
+    },
+    "backup_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "restore_method_known": {
+      "type": "boolean"
+    },
+    "restore_tested": {
+      "type": "boolean"
+    },
+    "restore_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_CONFIGURED",
+        "CONFIGURED",
+        "BACKUP_CREATED",
+        "RESTORE_READY",
+        "VERIFIED",
+        "WARN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "last_backup_success",
+    "backup_evidence",
+    "restore_method_known",
+    "restore_tested",
+    "restore_evidence",
+    "state"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

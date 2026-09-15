@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill": {
+      "const": "24-geo-optimization"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "GEO_AUDIT",
+        "ENTITY_AUDIT",
+        "CLAIM_EVIDENCE_AUDIT",
+        "CITATION_READINESS",
+        "AI_VISIBILITY",
+        "OPTIMIZATION_PLAN",
+        "VERIFY",
+        "REUSE"
+      ]
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode"
+  ],
+  "additionalProperties": false
+}

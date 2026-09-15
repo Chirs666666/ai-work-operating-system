@@ -1,0 +1,2 @@
+# B2B Search Ads Strategy
+V1 prioritizes Search campaigns for industrial high-intent demand. Structure around market, product family and meaningful intent. Do not fragment low-volume campaigns without operational benefit.

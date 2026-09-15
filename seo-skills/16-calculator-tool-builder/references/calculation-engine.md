@@ -1,0 +1,2 @@
+# Calculation Engine
+The engine contract is framework-neutral. It must normalize inputs, validate deterministically, calculate, return structured results/errors/warnings, expose assumptions and preserve explicit rounding behavior. Keep computation separate from presentation when practical.

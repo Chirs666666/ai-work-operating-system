@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "page",
+    "seo",
+    "intent",
+    "ownership"
+  ],
+  "properties": {
+    "page": {
+      "type": "object"
+    },
+    "seo": {
+      "type": "object"
+    },
+    "intent": {
+      "type": "object"
+    },
+    "ownership": {
+      "type": "object"
+    }
+  },
+  "title": "Page Contract"
+}

@@ -1,0 +1,7 @@
+g08_status: WARN
+warnings:
+- Page is reachable by breadcrumb but relationship coverage is weak.
+blockers: []
+handoffs: []
+generated_artifacts:
+- orphan-underlinked-report.yaml

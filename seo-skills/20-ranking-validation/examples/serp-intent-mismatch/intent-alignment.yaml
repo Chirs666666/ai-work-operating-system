@@ -1,0 +1,5 @@
+target_intent: commercial
+observed_query_intent: informational
+serp_intent: informational
+alignment: FAIL
+reason: Target commercial page conflicts with observed/SERP intent.

@@ -1,0 +1,2 @@
+# Prospect Discovery
+Sources: USER_DATA, API_DATA, PUBLIC_RESEARCH. Discover through competitor backlinks, search, relevant directories/resources, associations, manufacturers/suppliers, project listings, editorial publications, unlinked mentions, broken-link opportunities, partners, and case-study contexts. Discovery is not qualification.

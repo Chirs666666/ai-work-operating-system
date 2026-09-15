@@ -1,0 +1,5 @@
+handoffs:
+- opportunity_id: O15
+  target_skill: 10-commercial-page-optimization
+  reason: Commercial landing page has stable traffic but weak conversion performance.
+  blocking: false

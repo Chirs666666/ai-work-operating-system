@@ -1,0 +1,2 @@
+# Retest Comparability
+Before/after claims require same URL, same test type, same device profile and comparable location/network/window when applicable. Non-comparable runs may be shown but cannot prove improvement.

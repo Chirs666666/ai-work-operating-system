@@ -1,0 +1,9 @@
+page_id: "123"
+report_type: ASSET
+items:
+  - item_id: hero-image
+    source_artifact: 17-image-generation
+    requested_value: approved-hero.jpg
+    persisted_value: approved-hero.jpg
+    verified: true
+    notes: media binding confirmed

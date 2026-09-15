@@ -1,0 +1,8 @@
+items:
+- diagnosis_id: D1
+  observation: Organic clicks and impressions both increased in equivalent periods.
+  potential_cause: Broader search visibility
+  confidence: SUPPORTED
+  evidence:
+  - GSC clicks +18%
+  - GSC impressions +24%

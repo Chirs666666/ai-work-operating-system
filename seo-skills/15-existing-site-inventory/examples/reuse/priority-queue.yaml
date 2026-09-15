@@ -1,0 +1,5 @@
+items:
+- url: https://example.com/stable-page/
+  priority: REUSE
+  action: KEEP
+  reason: Preserve and reuse current asset.

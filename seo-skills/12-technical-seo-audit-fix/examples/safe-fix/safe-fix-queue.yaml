@@ -1,0 +1,6 @@
+items:
+- issue_id: BL-03
+  action: Correct a broken link in a staging draft
+  authorized: true
+  environment: STAGING
+  execution_allowed: true

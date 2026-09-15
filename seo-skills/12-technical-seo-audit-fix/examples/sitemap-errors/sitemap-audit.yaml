@@ -1,0 +1,8 @@
+sitemaps:
+- sitemap_url: https://example.com/sitemap.xml
+  fetchable: true
+  parseable: true
+  issues:
+  - SITEMAP_URL_NON_200
+  - SITEMAP_NOINDEX_URL
+  - SITEMAP_NONCANONICAL_URL

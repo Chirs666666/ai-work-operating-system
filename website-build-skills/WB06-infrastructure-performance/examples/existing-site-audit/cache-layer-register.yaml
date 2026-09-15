@@ -1,0 +1,15 @@
+layers:
+- layer_id: edge
+  layer_type: CDN
+  owner: CDN
+  active: true
+  purpose: edge cache
+  purge_method: provider purge
+  compatibility_ref: cache plan
+- layer_id: page
+  layer_type: PAGE
+  owner: hosting
+  active: true
+  purpose: page cache
+  purge_method: host purge
+  compatibility_ref: cache plan

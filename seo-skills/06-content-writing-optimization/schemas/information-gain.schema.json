@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "information-gain",
+  "type": "object",
+  "required": [
+    "serp_baseline",
+    "planned_gains",
+    "company_experience",
+    "assessment"
+  ],
+  "properties": {
+    "serp_baseline": {
+      "type": "array"
+    },
+    "planned_gains": {
+      "type": "array"
+    },
+    "company_experience": {
+      "type": "array"
+    },
+    "assessment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

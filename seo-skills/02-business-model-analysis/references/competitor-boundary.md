@@ -1,0 +1,2 @@
+# Commercial Competitor Boundary
+In scope: competitor/alternative type, portfolio, target segment, public value proposition, positioning, purchase reason, substitute solution, and evidence-backed differentiation opportunity. Out of scope: Keyword Gap, keyword difficulty, ranking keywords, SERP SEO strength, DR/DA, backlink gap, SEO content gap. Prefer official/primary sources for competitor observations.

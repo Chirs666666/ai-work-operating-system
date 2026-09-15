@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "ALIGNED",
+        "PARTIALLY_ALIGNED",
+        "MISALIGNED",
+        "MISSING",
+        "UNKNOWN"
+      ]
+    },
+    "action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "execution_allowed": {
+      "type": "boolean"
+    },
+    "content_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "execution_allowed"
+  ],
+  "additionalProperties": false
+}

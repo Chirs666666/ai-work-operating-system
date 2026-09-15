@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "database": {
+      "type": "string"
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "snapshot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparable": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "database",
+    "country",
+    "device",
+    "snapshot",
+    "comparison_database",
+    "comparison_device",
+    "comparable"
+  ],
+  "additionalProperties": false
+}

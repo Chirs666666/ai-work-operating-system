@@ -1,0 +1,9 @@
+conflicts:
+- conflict_id: C1
+  type: OWNERSHIP_OVERRIDE
+  severity: BLOCKING
+  affected_page_ids:
+  - P-ROBOT
+  description: Proposed architecture conflicts with Skill 25 ownership.
+  responsible_skill: 25-keyword-page-mapping
+  resolution_state: RETURNED

@@ -1,0 +1,6 @@
+sources:
+- source_id: IMG-001
+  source_type: USER_IMAGE
+  method: USER_DATA
+  reference: attached product image
+  notes: []

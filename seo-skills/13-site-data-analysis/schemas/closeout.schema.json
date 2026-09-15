@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "SITE_OVERVIEW",
+        "SEARCH_PERFORMANCE",
+        "PAGE_PERFORMANCE",
+        "QUERY_PAGE_ANALYSIS",
+        "PERIOD_COMPARISON",
+        "COMPETITOR_VISIBILITY",
+        "CAMPAIGN_REVIEW",
+        "ANOMALY_DIAGNOSIS"
+      ]
+    },
+    "g13": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handoffs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g13",
+    "final_status",
+    "warnings",
+    "blockers",
+    "handoffs"
+  ],
+  "additionalProperties": false
+}

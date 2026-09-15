@@ -1,0 +1,10 @@
+skill: 25-keyword-page-mapping
+version: 1.0.0
+mode: EXISTING_SITE
+market: United States
+language: English
+generated_at: '2026-09-14'
+source_methods:
+- USER_DATA
+- API_DATA
+- PUBLIC_RESEARCH

@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "foundation_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "component_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "section_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "section_id",
+          "rule"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "foundation_ref",
+    "component_ref",
+    "section_rules",
+    "status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

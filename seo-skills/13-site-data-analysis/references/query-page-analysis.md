@@ -1,0 +1,2 @@
+# Query Page Analysis
+Map queries to ranking/landing URLs, detect wrong-page ranking, overlap, lost query visibility and page opportunity. 13 detects; 25 decides final ownership/cannibalization resolution.

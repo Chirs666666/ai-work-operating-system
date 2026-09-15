@@ -1,0 +1,16 @@
+items:
+- prospect_id: P5
+  dimensions:
+    topical_relevance: PASS
+    audience_relevance: PASS
+    organic_legitimacy: PASS
+    editorial_quality: PASS
+    market_fit: PASS
+    placement_fit: WARN
+    target_page_fit: PASS
+    spam_risk: PASS
+    contactability: PASS
+    relationship_duplication: PASS
+  outcome: QUALIFIED_MEDIUM
+  priority: PRIORITY_MEDIUM
+  reason: Evidence-backed qualification

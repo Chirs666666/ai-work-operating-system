@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action": {
+      "enum": [
+        "MONITOR",
+        "RECHECK_INDEX",
+        "REVIEW_OWNERSHIP",
+        "OPTIMIZE_INFORMATIONAL",
+        "OPTIMIZE_COMMERCIAL",
+        "ADD_INTERNAL_LINKS",
+        "REVIEW_AUTHORITY",
+        "DEEP_ANALYSIS",
+        "NO_ACTION",
+        "UNKNOWN"
+      ]
+    },
+    "route_skill": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "recheck_after": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "action",
+    "route_skill",
+    "reason",
+    "recheck_after"
+  ],
+  "additionalProperties": false
+}

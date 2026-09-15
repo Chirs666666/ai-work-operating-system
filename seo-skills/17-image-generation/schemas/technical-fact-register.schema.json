@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "facts": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "fact_type": {
+            "enum": [
+              "DIMENSION",
+              "TOLERANCE",
+              "PERFORMANCE",
+              "CERTIFICATION",
+              "PRODUCT_FEATURE",
+              "CUSTOMER",
+              "PROCESS_VALUE",
+              "OTHER"
+            ]
+          },
+          "value": {
+            "type": "string"
+          },
+          "evidence_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "approved_for_image": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "fact_id",
+          "fact_type",
+          "value",
+          "evidence_ref",
+          "approved_for_image"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "facts"
+  ],
+  "additionalProperties": false
+}

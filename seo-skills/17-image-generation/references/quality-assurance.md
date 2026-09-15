@@ -1,0 +1,2 @@
+# Quality Assurance
+Review composition, clarity, cropping, artifacts, distorted geometry, unwanted text, factual labels, product fidelity, visual hierarchy, requested dimensions and truth/provenance alignment before PASS.

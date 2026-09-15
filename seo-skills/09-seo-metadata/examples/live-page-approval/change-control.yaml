@@ -1,0 +1,12 @@
+risk_class: LIVE_PERFORMANCE_SENSITIVE
+approval_required: true
+before:
+  seo_title: Existing High-Performing Title
+after:
+  seo_title: Proposed Major Rewrite
+why: Query alignment opportunity
+evidence:
+- GSC performance window
+- SERP research
+expected_effect: Improve query-message alignment
+risk: May reduce established clicks

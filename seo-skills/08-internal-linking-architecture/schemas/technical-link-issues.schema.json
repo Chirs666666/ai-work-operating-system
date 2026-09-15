@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "issues",
+    "handoff_owner"
+  ],
+  "properties": {
+    "issues": {
+      "type": "array"
+    },
+    "handoff_owner": {
+      "const": "12-technical-seo-audit-fix"
+    }
+  },
+  "additionalProperties": false
+}

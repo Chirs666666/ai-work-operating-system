@@ -1,0 +1,4 @@
+gaps:
+- field: redirect_execution
+  status: WAITING_APPROVAL
+  impact: Live consolidation must not execute until explicitly approved.

@@ -1,0 +1,7 @@
+gate: G04
+status: BLOCK
+rationale: No page data populated in template.
+allowed_handoffs: []
+blocked_handoffs: []
+warnings: []
+return_to: []

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "operation",
+    "target_page_id",
+    "current_status",
+    "risk",
+    "approval_required",
+    "approval_status",
+    "approved_scope",
+    "recovery_available",
+    "drift_state",
+    "change_diff"
+  ],
+  "properties": {
+    "operation": {
+      "enum": [
+        "CREATE_DRAFT",
+        "UPDATE_DRAFT",
+        "REBUILD_DRAFT",
+        "VERIFY",
+        "PUBLISH",
+        "LIVE_UPDATE",
+        "DELETE",
+        "BULK_CHANGE"
+      ]
+    },
+    "target_page_id": {
+      "type": "string"
+    },
+    "current_status": {
+      "type": "string"
+    },
+    "risk": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "approval_status": {
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "APPROVED",
+        "REJECTED"
+      ]
+    },
+    "approved_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prior_revision": {
+      "type": "string"
+    },
+    "recovery_available": {
+      "type": "boolean"
+    },
+    "drift_state": {
+      "enum": [
+        "NO_MATERIAL_DRIFT",
+        "SAFE_MANUAL_DRIFT",
+        "CONFLICTING_DRIFT",
+        "UNKNOWN"
+      ]
+    },
+    "change_diff": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

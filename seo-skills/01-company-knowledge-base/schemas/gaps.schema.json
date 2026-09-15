@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "gaps"
+  ],
+  "properties": {
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gap_id",
+          "entity",
+          "missing_field",
+          "severity",
+          "blocking",
+          "not_blocking",
+          "status"
+        ],
+        "properties": {
+          "gap_id": {},
+          "entity": {
+            "type": "object"
+          },
+          "missing_field": {},
+          "why_needed": {},
+          "needed_for": {
+            "type": "array"
+          },
+          "severity": {
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          },
+          "blocking": {
+            "type": "array"
+          },
+          "not_blocking": {
+            "type": "array"
+          },
+          "required_source": {
+            "type": "array"
+          },
+          "status": {
+            "enum": [
+              "open",
+              "resolved",
+              "accepted"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+state: CTR_WEAK
+primary_cause: CTR
+confidence: MEDIUM
+evidence_refs:
+- GSC
+reasoning: Impressions/positions are stable while CTR weakened.

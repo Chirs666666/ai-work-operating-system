@@ -1,0 +1,5 @@
+items:
+- prospect_id: P1
+  priority: PRIORITY_HIGH
+  state: READY
+  approval_required: false

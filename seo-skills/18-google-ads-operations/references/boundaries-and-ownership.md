@@ -1,0 +1,2 @@
+# Boundaries
+18 owns paid-search operations. 03 owns SEO/market keyword research; 25 owns SEO URL ownership; 04 owns page architecture; 13 owns broader site-data analysis. 18 may request landing-page changes but does not publish them.

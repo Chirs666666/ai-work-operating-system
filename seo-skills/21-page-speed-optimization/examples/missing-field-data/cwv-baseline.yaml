@@ -1,0 +1,18 @@
+field_data_available: false
+lcp:
+  value: null
+  unit: ms
+  status: UNKNOWN
+  source_ref: null
+inp:
+  value: null
+  unit: ms
+  status: UNKNOWN
+  source_ref: null
+cls:
+  value: null
+  unit: score
+  status: UNKNOWN
+  source_ref: null
+field_cwv_status: UNKNOWN
+source_window: null

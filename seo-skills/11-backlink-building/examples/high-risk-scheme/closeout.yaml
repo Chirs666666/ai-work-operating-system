@@ -1,0 +1,6 @@
+mode: QUALIFY_PROSPECTS
+g11: BLOCK
+final_status: BLOCKED
+warnings: []
+blockers:
+- High-risk link scheme

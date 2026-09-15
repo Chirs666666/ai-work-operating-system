@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "claims",
+    "evidence_context"
+  ],
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "strength": {
+            "enum": [
+              "C1",
+              "C2",
+              "C3",
+              "C4"
+            ]
+          }
+        }
+      }
+    },
+    "evidence_context": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Claim Register"
+}

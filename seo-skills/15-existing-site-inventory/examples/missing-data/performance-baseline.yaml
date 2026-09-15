@@ -1,0 +1,11 @@
+items:
+- url: https://example.com/unknown/
+  gsc_clicks: null
+  gsc_impressions: null
+  gsc_ctr: null
+  gsc_position: null
+  ga4_sessions: null
+  ga4_conversions: null
+  provider_estimated_traffic: null
+  provider: null
+  period: null

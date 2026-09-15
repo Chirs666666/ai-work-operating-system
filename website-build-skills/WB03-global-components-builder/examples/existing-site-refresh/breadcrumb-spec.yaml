@@ -1,0 +1,8 @@
+component_id: breadcrumb
+source_hierarchy: WB01/hierarchy-map.yaml
+alignment: ALIGNED
+enabled_families:
+- PRODUCT
+- APPLICATION
+- ARTICLE
+notes: []

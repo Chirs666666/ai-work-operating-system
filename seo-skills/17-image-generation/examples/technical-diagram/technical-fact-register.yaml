@@ -1,0 +1,11 @@
+facts:
+- fact_id: F1
+  fact_type: DIMENSION
+  value: Centerline radius R = 60 mm
+  evidence_ref: DOC-1
+  approved_for_image: true
+- fact_id: F2
+  fact_type: PROCESS_VALUE
+  value: Bend angle = 90°
+  evidence_ref: DOC-1
+  approved_for_image: true

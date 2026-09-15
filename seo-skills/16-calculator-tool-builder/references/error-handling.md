@@ -1,0 +1,2 @@
+# Error Handling
+Errors should identify the field/condition and how to correct it. Distinguish validation errors, unsupported-domain errors, calculation errors and warnings. Never replace an invalid engineering input with a silent default that materially changes the result.

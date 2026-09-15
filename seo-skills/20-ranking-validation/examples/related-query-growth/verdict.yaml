@@ -1,0 +1,6 @@
+state: RELATED_QUERY_STARTED
+target_query_detected: false
+relevant_query_growth: GROWING
+ranking_established: false
+confidence: MEDIUM
+summary: Related query space is appearing, but the target query is not yet detected.

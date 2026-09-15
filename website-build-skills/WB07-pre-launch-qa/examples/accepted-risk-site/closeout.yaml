@@ -1,0 +1,8 @@
+gate: WARN
+qa_state: READY_FOR_LAUNCH_APPROVAL
+ready_for_wb08: true
+warnings:
+- 1 ACCEPTED_RISK
+blockers: []
+next_skills:
+- WB08-deployment-launch

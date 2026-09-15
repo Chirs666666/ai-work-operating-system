@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "site": {
+      "type": "string"
+    },
+    "environment": {
+      "enum": [
+        "PRODUCTION",
+        "STAGING",
+        "UNKNOWN"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "FULL_SITE",
+        "SUBDIRECTORY",
+        "URL_SET"
+      ]
+    },
+    "included_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "site",
+    "environment",
+    "scope",
+    "included_urls",
+    "excluded_patterns"
+  ],
+  "additionalProperties": false
+}

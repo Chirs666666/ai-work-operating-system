@@ -1,0 +1,10 @@
+links:
+- issue_id: BL-01
+  source_url: https://example.com/service/
+  target_url: https://example.com/old-page/
+  link_scope: INTERNAL
+  status: 404
+  anchor_text: old service
+  probable_cause: Target removed
+  recommended_action: INVESTIGATE
+  replacement_url: null

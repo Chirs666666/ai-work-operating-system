@@ -1,0 +1,46 @@
+claims:
+- id: CLM-001
+  text: The fictional system supports payloads up to 25 kg.
+  strength: C1
+  evidence_ids:
+  - EV-001
+  status: APPROVED
+- id: CLM-002
+  text: Its ±0.03 mm repeatability helps you evaluate positioning consistency for
+    repeated cycles.
+  strength: C2
+  evidence_ids:
+  - EV-002
+  status: APPROVED
+- id: CLM-003
+  text: For applications within the declared load and process limits, it can support
+    a repeatable automated welding workflow.
+  strength: C3
+  evidence_ids:
+  - EV-001
+  - EV-003
+  conditions:
+  - Application stays within declared load and process limits.
+  status: APPROVED
+evidence_context:
+- id: EV-001
+  type: SPECIFICATION
+  fact: 'Fictional payload specification: 25 kg.'
+  status: AVAILABLE
+- id: EV-002
+  type: SPECIFICATION
+  fact: 'Fictional repeatability specification: ±0.03 mm.'
+  status: AVAILABLE
+- id: EV-003
+  type: TECHNICAL_DOCUMENT
+  fact: 'Fictional supported process description: programmable automated welding workflow.'
+  status: AVAILABLE
+- id: EV-004
+  type: TEST_DATA
+  fact: Fictional internal test confirms the declared repeatability under the example
+    test conditions.
+  status: AVAILABLE
+- id: EV-005
+  type: PROCESS_IMAGE
+  fact: Fictional approved process image is available for the proof section.
+  status: AVAILABLE

@@ -1,0 +1,20 @@
+inputs:
+- radius
+- angle_deg
+unit_selectors:
+- length_unit
+actions:
+- Calculate
+- Reset
+results:
+- bend_allowance
+states:
+- idle
+- valid
+- error
+accessibility_requirements:
+- Associate labels with inputs
+- Keyboard-operable controls
+responsive_requirements:
+- Single-column mobile layout
+formula_disclosure: true

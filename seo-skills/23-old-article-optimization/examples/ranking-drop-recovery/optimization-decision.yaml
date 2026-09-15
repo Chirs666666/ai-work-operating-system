@@ -1,0 +1,6 @@
+action: REFRESH
+evidence_refs:
+- E1
+reason: Formerly strong page has a recoverable ranking decline after diagnosis.
+merge_or_url_change: false
+ownership_confirmation_required: false

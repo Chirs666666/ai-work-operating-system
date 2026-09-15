@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "properties": {
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "STAGING",
+              "PRODUCTION"
+            ]
+          },
+          "action": {
+            "type": "string"
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "backup_required": {
+            "type": "boolean"
+          },
+          "rollback_required": {
+            "type": "boolean"
+          },
+          "approval_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "WAITING_APPROVAL",
+              "APPROVED",
+              "BLOCKED",
+              "DONE"
+            ]
+          }
+        },
+        "required": [
+          "change_id",
+          "domain",
+          "environment",
+          "action",
+          "risk",
+          "backup_required",
+          "rollback_required",
+          "approval_id",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

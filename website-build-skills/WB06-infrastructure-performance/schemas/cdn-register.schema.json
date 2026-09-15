@@ -1,0 +1,69 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "proxy_mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "origin_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cache_role": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_CONFIGURED",
+        "CONFIGURED",
+        "DETECTED",
+        "READY",
+        "VERIFIED",
+        "WARN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "enabled",
+    "provider",
+    "owner",
+    "proxy_mode",
+    "origin_ref",
+    "cache_role",
+    "state",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

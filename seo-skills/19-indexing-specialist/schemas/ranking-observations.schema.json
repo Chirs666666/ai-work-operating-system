@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "visibility_state": {
+      "enum": [
+        "NO_DATA",
+        "NO_IMPRESSIONS",
+        "IMPRESSION_DETECTED",
+        "QUERY_DETECTED",
+        "TARGET_QUERY_DETECTED",
+        "NON_TARGET_QUERY_DETECTED",
+        "RANKING_DETECTED",
+        "RANKING_IMPROVING",
+        "RANKING_DECLINING",
+        "CLICK_DETECTED"
+      ]
+    },
+    "date_range": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "best_position": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "trend": {
+      "enum": [
+        "IMPROVING",
+        "STABLE",
+        "DECLINING",
+        "UNKNOWN"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "visibility_state",
+    "date_range",
+    "best_position",
+    "trend",
+    "source_ref"
+  ],
+  "additionalProperties": false
+}

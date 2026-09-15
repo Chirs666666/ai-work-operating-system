@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "AUDIT_PAGE",
+        "OPTIMIZE_PAGE",
+        "REFRESH_PAGE",
+        "REWRITE_PAGE",
+        "BATCH_AUDIT",
+        "VERIFY"
+      ]
+    },
+    "g10": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "eval": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "action": {
+      "enum": [
+        "KEEP",
+        "MINOR_OPTIMIZE",
+        "SECTION_OPTIMIZE",
+        "STRUCTURAL_REFRESH",
+        "REWRITE",
+        "HOLD",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "evidence": {
+      "enum": [
+        "VERIFIED",
+        "OBSERVED",
+        "INFERRED",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    },
+    "claim": {
+      "enum": [
+        "SUPPORTED",
+        "CONDITIONAL",
+        "UNSUPPORTED",
+        "CONFLICTING"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "PRIORITY_HIGH",
+        "PRIORITY_MEDIUM",
+        "PRIORITY_LOW",
+        "HOLD",
+        "REUSE",
+        "SKIP"
+      ]
+    }
+  }
+}

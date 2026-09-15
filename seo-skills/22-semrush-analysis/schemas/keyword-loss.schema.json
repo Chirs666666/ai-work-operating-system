@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "keywords": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "previous_position": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "current_position": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "relevance": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "keyword",
+          "url",
+          "previous_position",
+          "current_position",
+          "relevance"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "keywords"
+  ],
+  "additionalProperties": false
+}

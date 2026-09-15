@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "brand_colors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visual_style": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lighting": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "finish_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prohibited_brand_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "brand_colors",
+    "visual_style",
+    "lighting",
+    "finish_preferences",
+    "prohibited_brand_elements"
+  ],
+  "additionalProperties": false
+}

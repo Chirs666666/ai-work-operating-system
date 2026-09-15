@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "current_start": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_end": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_start": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "comparison_end": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timezone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "equivalent_periods": {
+      "type": "boolean"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "current_start",
+    "current_end",
+    "comparison_start",
+    "comparison_end",
+    "equivalent_periods",
+    "warnings"
+  ],
+  "additionalProperties": false
+}

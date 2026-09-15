@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "action": {
+      "enum": [
+        "KEEP",
+        "MONITOR",
+        "REFRESH",
+        "EXPAND",
+        "REWRITE",
+        "MERGE",
+        "REPOSITION",
+        "UPDATE_METADATA",
+        "ADD_INTERNAL_LINKS",
+        "ADD_EVIDENCE",
+        "REVIEW_AUTHORITY",
+        "TECHNICAL_FIX"
+      ]
+    },
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "GROWING",
+        "STABLE",
+        "DECLINING",
+        "STAGNANT",
+        "OUTDATED",
+        "THIN",
+        "INTENT_MISMATCH",
+        "KEYWORD_DRIFT",
+        "CANNIBALIZED",
+        "CTR_WEAK",
+        "AUTHORITY_WEAK",
+        "CONVERSION_WEAK",
+        "TECHNICAL_BLOCKED",
+        "INSUFFICIENT_DATA"
+      ]
+    },
+    "gate": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

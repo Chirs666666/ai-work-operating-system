@@ -1,0 +1,15 @@
+changes:
+- change_id: CH-001
+  change_class: REPLACE
+  scope: SINGLE_PAGE
+  before:
+    target_url: /old-product/
+  after:
+    target_url: /collaborative-welding-robot/
+  reason: 25 ownership changed and existing live link points to obsolete target.
+  evidence:
+  - state: VERIFIED
+    source: 25-keyword-page-mapping
+  risk: Live-page mutation
+  approval_required: true
+  approval_state: WAITING_APPROVAL

@@ -1,0 +1,12 @@
+required_sections:
+- How it works
+- Formula
+- Variables
+- Worked example
+- Assumptions
+- Limitations
+worked_example_required: true
+limitations_required: true
+faq_topics:
+- How accurate is the result?
+handoff_to_06: true

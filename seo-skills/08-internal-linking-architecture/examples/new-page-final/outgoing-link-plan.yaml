@@ -1,0 +1,6 @@
+direction: OUTGOING
+links:
+- link_id: IL-002
+  source_url: /collaborative-welding-robot/
+  target_url: /applications/automotive-welding/
+  priority: PRIORITY_HIGH

@@ -1,0 +1,13 @@
+page:
+  type: PRODUCT
+  url: null
+  action: CREATE
+seo:
+  primary_keyword: null
+  secondary_keywords: []
+intent:
+  search_intent: UNKNOWN
+  buyer_stage: UNKNOWN
+ownership:
+  source_skill: 25-keyword-page-mapping
+  status: CONFIRMED

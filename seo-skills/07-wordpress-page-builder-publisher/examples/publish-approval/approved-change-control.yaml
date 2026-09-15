@@ -1,0 +1,14 @@
+operation: PUBLISH
+target_page_id: "7301"
+current_status: draft
+risk: HIGH
+approval_required: true
+approval_status: APPROVED
+approved_scope: [publish_page_7301]
+prior_revision: rev-40
+recovery_available: true
+drift_state: NO_MATERIAL_DRIFT
+change_diff:
+  - path: post_status
+    before: draft
+    after: publish

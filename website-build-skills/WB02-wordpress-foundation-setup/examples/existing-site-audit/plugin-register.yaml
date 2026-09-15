@@ -1,0 +1,32 @@
+plugins:
+- plugin_id: seo
+  name: Rank Math
+  status: PLANNED
+  capabilities:
+  - seo_metadata
+  - canonical
+  - sitemap
+  - schema
+  capability_owner: true
+  environment: BOTH
+  evidence_status: PROVISIONAL
+  notes: []
+- plugin_id: cache
+  name: Cache Layer
+  status: PLANNED
+  capabilities:
+  - page_cache
+  - minification
+  capability_owner: true
+  environment: BOTH
+  evidence_status: PROVISIONAL
+  notes: []
+- plugin_id: backup
+  name: Backup Layer
+  status: PLANNED
+  capabilities:
+  - backup
+  capability_owner: true
+  environment: BOTH
+  evidence_status: PROVISIONAL
+  notes: []

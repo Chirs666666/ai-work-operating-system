@@ -1,0 +1,9 @@
+mappings:
+- pain: manual loading creates unattended production gaps
+  classification: INFERENCE
+  requirement: repeatable automated loading
+  capability: machine-tending workcell
+  buyer_value: more consistent machine utilization
+  value_classification: INFERENCE
+  proof_needed:
+  - cycle study at customer process

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "CONFIRMED",
+        "CONFLICT",
+        "UNMAPPED",
+        "UNKNOWN"
+      ]
+    },
+    "expected_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "competing_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "expected_url",
+    "competing_urls",
+    "evidence_refs"
+  ],
+  "additionalProperties": false
+}

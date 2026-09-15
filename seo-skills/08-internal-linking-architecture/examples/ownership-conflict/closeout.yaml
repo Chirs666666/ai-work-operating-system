@@ -1,0 +1,8 @@
+g08_status: BLOCK
+warnings: []
+blockers:
+- 'OWNERSHIP_CONFLICT: bend allowance'
+handoffs:
+- 25-keyword-page-mapping
+generated_artifacts:
+- ownership-conflicts.yaml

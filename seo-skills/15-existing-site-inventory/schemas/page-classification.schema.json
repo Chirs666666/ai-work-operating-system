@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "page_type": {
+            "enum": [
+              "HOME",
+              "CATEGORY",
+              "PRODUCT",
+              "APPLICATION",
+              "INDUSTRY",
+              "SERVICE",
+              "CAPABILITY",
+              "BLOG",
+              "GUIDE",
+              "COMPARISON",
+              "FAQ",
+              "SUPPORT",
+              "CASE_STUDY",
+              "CALCULATOR_TOOL",
+              "LANDING_PAGE",
+              "OTHER",
+              "UNKNOWN"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "url",
+          "page_type",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "pages"
+  ],
+  "additionalProperties": false
+}

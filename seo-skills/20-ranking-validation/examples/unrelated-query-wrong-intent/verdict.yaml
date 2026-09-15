@@ -1,0 +1,6 @@
+state: WRONG_INTENT
+target_query_detected: false
+relevant_query_growth: NONE
+ranking_established: false
+confidence: MEDIUM
+summary: Observed query intent does not align with the commercial target.

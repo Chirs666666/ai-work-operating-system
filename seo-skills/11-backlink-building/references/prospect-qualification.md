@@ -1,0 +1,2 @@
+# Prospect Qualification
+Dimensions: topical relevance, audience/buyer relevance, organic legitimacy, editorial/site quality, geographic/market fit, placement fit, target-page fit, spam/manipulation risk, contactability, relationship/duplication. States PASS/WARN/FAIL/UNKNOWN. Outcomes QUALIFIED_HIGH/MEDIUM/LOW/HOLD/REJECT. No fake composite score.

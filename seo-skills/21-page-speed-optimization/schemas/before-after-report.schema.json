@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "baseline_available": {
+      "type": "boolean"
+    },
+    "same_url": {
+      "type": "boolean"
+    },
+    "same_test_type": {
+      "type": "boolean"
+    },
+    "same_device_profile": {
+      "type": "boolean"
+    },
+    "comparable_location_network": {
+      "type": "boolean"
+    },
+    "comparable": {
+      "type": "boolean"
+    },
+    "lab_result": {
+      "enum": [
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "UNKNOWN"
+      ]
+    },
+    "field_result": {
+      "enum": [
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "PENDING",
+        "UNKNOWN"
+      ]
+    },
+    "functionality_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NOT_TESTED",
+        "UNKNOWN"
+      ]
+    },
+    "overall_verdict": {
+      "enum": [
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "INCONCLUSIVE",
+        "FAIL"
+      ]
+    }
+  },
+  "required": [
+    "baseline_available",
+    "same_url",
+    "same_test_type",
+    "same_device_profile",
+    "comparable_location_network",
+    "comparable",
+    "lab_result",
+    "field_result",
+    "functionality_status",
+    "overall_verdict"
+  ],
+  "additionalProperties": false
+}

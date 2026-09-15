@@ -1,0 +1,2 @@
+# Canonical Outputs
+24 outputs: manifest, geo-brief, source-register, entity-register, entity-relationship, topic-intent, answerability-audit, extractability-audit, claim-register, evidence-register, claim-evidence-map, attribution-audit, technical-fact-audit, content-structure-audit, citation-readiness, brand-topic-association, structured-data-alignment, ai-query-set, ai-visibility-observations, geo-gap-register, geo-priority-plan, cross-skill-handoffs, verification-plan, closeout.

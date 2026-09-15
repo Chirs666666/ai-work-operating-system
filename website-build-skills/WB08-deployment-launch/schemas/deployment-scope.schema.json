@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "properties": {
+    "scope_id": {
+      "type": "string"
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "FULL_SITE",
+        "INCREMENTAL",
+        "PAGE_ONLY",
+        "CONFIG_ONLY",
+        "DNS_CUTOVER",
+        "MIGRATION",
+        "HOTFIX"
+      ]
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "database_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "config_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dns_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "redirect_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tracking_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "scope_id",
+    "strategy",
+    "pages",
+    "files",
+    "database_changes",
+    "config_changes",
+    "dns_changes",
+    "redirect_changes",
+    "tracking_changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

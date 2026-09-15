@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "retest_completed": {
+      "type": "boolean"
+    },
+    "lab_retest_status": {
+      "enum": [
+        "NOT_RUN",
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "UNKNOWN"
+      ]
+    },
+    "field_retest_status": {
+      "enum": [
+        "NOT_AVAILABLE_YET",
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "UNKNOWN"
+      ]
+    },
+    "functionality_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NOT_TESTED",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "retest_completed",
+    "lab_retest_status",
+    "field_retest_status",
+    "functionality_status",
+    "notes"
+  ],
+  "additionalProperties": false
+}

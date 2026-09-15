@@ -1,0 +1,2 @@
+# Metric Semantics
+Semrush traffic is modeled/estimated and is not GA4 sessions/users. Semrush position is not GSC Average Position. Authority Score is a provider metric, not universal backlink quality.

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "TRACKING_UNVERIFIED",
+        "TRACKING_VERIFIED",
+        "TRACKING_PARTIAL",
+        "TRACKING_BROKEN"
+      ]
+    },
+    "conversion_events_verified": {
+      "type": "boolean"
+    },
+    "test_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "conversion_events_verified",
+    "test_evidence",
+    "notes"
+  ],
+  "additionalProperties": false
+}

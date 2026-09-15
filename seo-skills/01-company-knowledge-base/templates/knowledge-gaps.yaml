@@ -1,0 +1,13 @@
+gaps:
+- gap_id: null
+  entity:
+    type: null
+    id: null
+  missing_field: null
+  why_needed: null
+  needed_for: []
+  severity: medium
+  blocking: []
+  not_blocking: []
+  required_source: []
+  status: open

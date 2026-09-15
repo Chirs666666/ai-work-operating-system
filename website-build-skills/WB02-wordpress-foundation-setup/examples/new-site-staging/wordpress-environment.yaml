@@ -1,0 +1,12 @@
+wordpress_version: 6.x
+php_version: 8.x
+hosting_provider: managed-host
+environment: STAGING
+site_url: https://staging.example.com
+home_url: https://staging.example.com
+language: en
+timezone: UTC
+https_verified: true
+evidence_status: VERIFIED
+source_refs:
+- staging-inspection

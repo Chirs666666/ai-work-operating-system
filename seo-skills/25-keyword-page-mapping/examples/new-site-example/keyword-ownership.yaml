@@ -1,0 +1,15 @@
+ownership:
+- primary_url: /collaborative-welding-robot/
+  cluster_id: cl-001
+  primary_keyword: collaborative welding robot
+  secondary_keywords:
+  - cobot welding robot
+  - collaborative robot for welding
+  supporting_keywords:
+  - collaborative robotic welding
+  - cobot welder
+- primary_url: /guides/program-collaborative-welding-robot/
+  cluster_id: cl-002
+  primary_keyword: how to program a collaborative welding robot
+  secondary_keywords: []
+  supporting_keywords: []

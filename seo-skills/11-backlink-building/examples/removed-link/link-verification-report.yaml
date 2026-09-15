@@ -1,0 +1,6 @@
+items:
+- prospect_id: P8
+  status: REMOVED
+  evidence:
+  - Previously recorded link no longer present at last check
+  warnings: []

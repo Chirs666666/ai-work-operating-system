@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "test_sent": {
+      "type": "boolean"
+    },
+    "delivered": {
+      "type": "boolean"
+    },
+    "destination_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "delivery_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_TESTED",
+        "SENT",
+        "DELIVERED",
+        "VERIFIED",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "test_sent",
+    "delivered",
+    "destination_type",
+    "delivery_evidence",
+    "state"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

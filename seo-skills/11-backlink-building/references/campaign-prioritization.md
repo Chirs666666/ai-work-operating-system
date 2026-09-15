@@ -1,0 +1,2 @@
+# Campaign Prioritization
+PRIORITY_HIGH/MEDIUM/LOW/HOLD/REJECT. Consider relevance, target fit, legitimacy, realistic opportunity, effort, relationship value and risk. No fabricated ROI/link-value score.

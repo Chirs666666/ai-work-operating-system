@@ -1,0 +1,8 @@
+normalized_internal_system: SI
+conversions:
+- conversion_id: in-to-mm
+  from_unit: in
+  to_unit: mm
+  expression: mm = in * 25.4
+  source_ref: SRC-U-1
+  tested: true

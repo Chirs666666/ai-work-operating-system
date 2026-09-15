@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "target": {
+      "type": "string"
+    },
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "topic": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "seo_preservation_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "target",
+    "brand",
+    "topic",
+    "goal",
+    "seo_preservation_required"
+  ],
+  "additionalProperties": false
+}

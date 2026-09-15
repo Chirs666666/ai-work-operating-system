@@ -1,0 +1,20 @@
+skill: 02-business-model-analysis
+version: 1.0.0
+mode: CREATE
+generated_at: '2026-09-14'
+upstream_truth_ref: fictional-01-kb
+source_methods:
+- USER_DATA
+- PUBLIC_RESEARCH
+artifacts:
+- manifest.yaml
+- business-model.yaml
+- product-portfolio.yaml
+- icp.yaml
+- buyer-personas.yaml
+- buying-journey.yaml
+- pain-value-map.yaml
+- commercial-priority.yaml
+- competitor-positioning.yaml
+- knowledge-gaps.yaml
+- closeout.yaml

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "project_id",
+    "environment",
+    "wordpress",
+    "builder",
+    "profile_status",
+    "observed_at"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environment": {
+      "enum": [
+        "STAGING",
+        "PRODUCTION",
+        "UNKNOWN"
+      ]
+    },
+    "wordpress": {
+      "type": "object",
+      "required": [
+        "version"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "child_theme": {
+          "type": "string"
+        },
+        "seo_plugin": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "builder": {
+      "type": "object",
+      "required": [
+        "build_mode"
+      ],
+      "properties": {
+        "build_mode": {
+          "enum": [
+            "BLOCK_EDITOR",
+            "ELEMENTOR"
+          ]
+        },
+        "gutenberg": {
+          "type": "string"
+        },
+        "greenshift": {
+          "type": "string"
+        },
+        "elementor": {
+          "type": "string"
+        },
+        "elementor_pro": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "design_system": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "reusable_assets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profile_status": {
+      "enum": [
+        "CURRENT",
+        "PROFILE_STALE",
+        "UNKNOWN"
+      ]
+    },
+    "observed_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

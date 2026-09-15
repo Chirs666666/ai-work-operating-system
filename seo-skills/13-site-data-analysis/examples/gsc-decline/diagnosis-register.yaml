@@ -1,0 +1,7 @@
+items:
+- diagnosis_id: D2
+  observation: Clicks declined while average position also weakened.
+  potential_cause: Ranking/visibility decline
+  confidence: SUPPORTED
+  evidence:
+  - Equivalent GSC comparison

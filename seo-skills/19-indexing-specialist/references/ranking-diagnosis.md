@@ -1,0 +1,2 @@
+# Ranking Diagnosis
+After index health, evaluate target-query match, intent/page ownership, content adequacy, authority and SERP competition. Route ownership to 25 and content/commercial work to 06/10.

@@ -1,0 +1,13 @@
+source_asset_id: IMG-COLOR
+preserve:
+- geometry
+- details
+- background perspective
+modify:
+- specified product body color
+remove: []
+add: []
+prohibited_changes:
+- geometry changes
+- new labels
+factual_interpretation_risk: MEDIUM

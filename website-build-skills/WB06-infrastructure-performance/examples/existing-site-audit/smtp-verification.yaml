@@ -1,0 +1,6 @@
+test_sent: true
+delivered: true
+destination_type: test inbox
+delivery_evidence:
+- received message
+state: VERIFIED

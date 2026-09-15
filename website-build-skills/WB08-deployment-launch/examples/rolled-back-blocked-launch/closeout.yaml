@@ -1,0 +1,9 @@
+gate: ROLLBACK_VERIFIED
+launch_state: ROLLBACK_VERIFIED
+production_verified: false
+indexing_handoff_ready: false
+warnings: []
+blockers:
+- deployment rolled back
+next_skills:
+- WB07-pre-launch-qa

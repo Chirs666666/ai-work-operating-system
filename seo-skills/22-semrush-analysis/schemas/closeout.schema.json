@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "DOMAIN_ANALYSIS",
+        "URL_ANALYSIS",
+        "ORGANIC_RESEARCH",
+        "POSITION_CHANGES",
+        "TOP_PAGES",
+        "KEYWORD_GAP",
+        "COMPETITOR_ANALYSIS",
+        "BACKLINK_ANALYSIS",
+        "BACKLINK_GAP",
+        "TRAFFIC_TREND",
+        "SERP_FEATURES",
+        "INTENT_ANALYSIS",
+        "OPPORTUNITY_REVIEW",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g22": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g22",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

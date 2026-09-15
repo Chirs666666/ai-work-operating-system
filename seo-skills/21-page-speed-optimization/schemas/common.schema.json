@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "PERFORMANCE_AUDIT",
+        "CWV_BASELINE",
+        "LCP_DIAGNOSIS",
+        "INP_DIAGNOSIS",
+        "CLS_DIAGNOSIS",
+        "TTFB_DIAGNOSIS",
+        "IMAGE_AUDIT",
+        "JS_AUDIT",
+        "CSS_AUDIT",
+        "FONT_AUDIT",
+        "CACHE_AUDIT",
+        "THIRD_PARTY_AUDIT",
+        "OPTIMIZATION_PLAN",
+        "PRE_CHANGE_CHECK",
+        "POST_CHANGE_RETEST",
+        "BEFORE_AFTER_COMPARE",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "quality": {
+      "enum": [
+        "GOOD",
+        "NEEDS_IMPROVEMENT",
+        "POOR",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_layer": {
+      "enum": [
+        "FIELD_DATA",
+        "LAB_DATA",
+        "SERVER_NETWORK",
+        "FRONTEND"
+      ]
+    },
+    "gate": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    }
+  }
+}

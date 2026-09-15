@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "PLAN_CAMPAIGN",
+        "DISCOVER_PROSPECTS",
+        "QUALIFY_PROSPECTS",
+        "BUILD_OUTREACH_QUEUE",
+        "VERIFY_LINKS",
+        "AUDIT_CAMPAIGN"
+      ]
+    },
+    "g11": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "eval": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "qual": {
+      "enum": [
+        "QUALIFIED_HIGH",
+        "QUALIFIED_MEDIUM",
+        "QUALIFIED_LOW",
+        "HOLD",
+        "REJECT"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "PRIORITY_HIGH",
+        "PRIORITY_MEDIUM",
+        "PRIORITY_LOW",
+        "HOLD",
+        "REJECT"
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "competitors": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "competition_level": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "common_keywords": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "organic_keywords": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "type": {
+            "enum": [
+              "SERP_COMPETITOR",
+              "BUSINESS_COMPETITOR",
+              "BOTH",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "domain",
+          "competition_level",
+          "common_keywords",
+          "organic_keywords",
+          "type"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "competitors"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "type": "string"
+    },
+    "inspection_type": {
+      "enum": [
+        "FIRST_PARTY_URL_INSPECTION",
+        "GSC_PERFORMANCE",
+        "THIRD_PARTY_RANK_TRACKER",
+        "PUBLIC_SITE_QUERY",
+        "TECHNICAL_FETCH",
+        "OTHER"
+      ]
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "result": {
+      "type": "string"
+    },
+    "authoritative_for_index_status": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "provider",
+    "inspection_type",
+    "observed_at",
+    "result",
+    "authoritative_for_index_status"
+  ],
+  "additionalProperties": false
+}

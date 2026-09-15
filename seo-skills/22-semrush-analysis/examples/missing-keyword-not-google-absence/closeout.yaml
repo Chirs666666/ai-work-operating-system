@@ -1,0 +1,6 @@
+mode: ORGANIC_RESEARCH
+g22: WARN
+final_status: PARTIAL
+warnings:
+- Semrush did not surface the target keyword; this does not prove absence from Google/GSC.
+blockers: []

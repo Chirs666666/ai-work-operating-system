@@ -1,0 +1,10 @@
+component_id: mobile-nav
+desktop_navigation_id: primary-nav
+architecture_consistency: PASS
+destinations:
+- /products/
+- /applications/
+- /resources/
+- /contact/
+interaction: drawer
+notes: []

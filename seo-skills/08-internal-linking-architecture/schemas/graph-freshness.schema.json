@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "state",
+    "recommended_operation"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "CURRENT",
+        "PARTIALLY_STALE",
+        "STALE",
+        "UNKNOWN"
+      ]
+    },
+    "recommended_operation": {
+      "enum": [
+        "FULL_BUILD",
+        "FULL_REFRESH",
+        "INCREMENTAL_UPDATE",
+        "REUSE"
+      ]
+    },
+    "reasons": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

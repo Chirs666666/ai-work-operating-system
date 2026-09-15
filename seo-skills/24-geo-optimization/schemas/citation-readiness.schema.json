@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "READY",
+        "PARTIAL",
+        "NOT_READY",
+        "UNKNOWN"
+      ]
+    },
+    "claim_clarity": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_proximity": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "context_completeness": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "attribution": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "guarantees_ai_citation": {
+      "const": false
+    }
+  },
+  "required": [
+    "score",
+    "status",
+    "claim_clarity",
+    "evidence_proximity",
+    "context_completeness",
+    "attribution",
+    "guarantees_ai_citation"
+  ],
+  "additionalProperties": false
+}

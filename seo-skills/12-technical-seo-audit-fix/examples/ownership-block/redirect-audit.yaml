@@ -1,0 +1,7 @@
+redirects:
+- issue_id: RD-03
+  source_url: https://example.com/old-product/
+  hops: []
+  loop: false
+  recommended_action: BLOCK_FOR_OWNERSHIP
+  ownership_status: CONFLICTING

@@ -1,0 +1,14 @@
+source_asset_id: IMG-BG
+preserve:
+- machine subject
+- machine geometry
+modify:
+- background
+remove:
+- original background
+add:
+- conceptual clean factory environment
+prohibited_changes:
+- customer logos
+- fake certification signs
+factual_interpretation_risk: MEDIUM

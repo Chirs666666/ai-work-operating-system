@@ -1,0 +1,5 @@
+handoffs:
+- url: https://example.com/page/
+  target_skill: 12-technical-seo-audit-fix
+  reason: Technical signals need root-cause audit and remediation.
+  blocking: true

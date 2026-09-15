@@ -1,0 +1,2 @@
+# Canonical Outputs
+24 outputs: manifest, optimization-brief, source-register, article-baseline, historical-performance, query-performance, keyword-ownership, serp-intent, freshness-audit, content-gap, technical-depth, trust-evidence, internal-link-audit, backlink-equity, conversion-audit, cannibalization-check, preservation-register, change-register, article-diagnosis, priority-score, optimization-decision, cross-skill-handoffs, verification-plan, closeout.

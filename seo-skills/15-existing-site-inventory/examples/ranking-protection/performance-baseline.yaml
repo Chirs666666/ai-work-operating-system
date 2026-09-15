@@ -1,0 +1,11 @@
+items:
+- url: https://example.com/guide/
+  gsc_clicks: 380
+  gsc_impressions: 12500
+  gsc_ctr: 0.0304
+  gsc_position: 6.8
+  ga4_sessions: 420
+  ga4_conversions: 3
+  provider_estimated_traffic: null
+  provider: null
+  period: 2026-08

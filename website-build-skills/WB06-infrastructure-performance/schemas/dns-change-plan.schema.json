@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "properties": {
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "record_id": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "STAGING",
+              "PRODUCTION"
+            ]
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "requires_approval": {
+            "type": "boolean"
+          },
+          "approval_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "backup_ready": {
+            "type": "boolean"
+          },
+          "rollback_ready": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "WAITING_APPROVAL",
+              "APPROVED",
+              "BLOCKED",
+              "DONE"
+            ]
+          }
+        },
+        "required": [
+          "change_id",
+          "record_id",
+          "environment",
+          "risk",
+          "requires_approval",
+          "approval_id",
+          "backup_ready",
+          "rollback_ready",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

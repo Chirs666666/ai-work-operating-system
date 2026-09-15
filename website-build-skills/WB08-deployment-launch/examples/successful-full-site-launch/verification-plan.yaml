@@ -1,0 +1,6 @@
+checks:
+- check_id: V1
+  description: launch state consistency
+  status: PASS
+  evidence:
+  - launch-gate

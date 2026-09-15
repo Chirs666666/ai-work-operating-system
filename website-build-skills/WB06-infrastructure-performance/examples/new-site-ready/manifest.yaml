@@ -1,0 +1,5 @@
+skill: WB06-infrastructure-performance
+version: 1.0.0
+mode: SETUP
+site: example.com
+project_id: WB06-READY

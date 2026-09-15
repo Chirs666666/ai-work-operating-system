@@ -1,0 +1,25 @@
+sources:
+- source_skill: WB05-tracking-search-setup
+  artifact_ref: WB05/closeout.yaml
+  required: true
+  state: PASS
+  evidence:
+  - tracking ready
+- source_skill: WB06-infrastructure-performance
+  artifact_ref: WB06/closeout.yaml
+  required: true
+  state: PASS
+  evidence:
+  - infrastructure ready
+- source_skill: 12-technical-seo-audit-fix
+  artifact_ref: 12/verification.yaml
+  required: true
+  state: PASS
+  evidence:
+  - technical SEO verified
+- source_skill: 21-page-speed-optimization
+  artifact_ref: 21/verification.yaml
+  required: true
+  state: PASS
+  evidence:
+  - performance validation

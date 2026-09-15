@@ -1,0 +1,9 @@
+status: BOTTLENECK_CONFIRMED
+observed_value: 420
+unit: ms
+root_causes:
+- Long main-thread tasks
+- Third-party chat script
+evidence_refs:
+- DEVTOOLS-1
+notes: []

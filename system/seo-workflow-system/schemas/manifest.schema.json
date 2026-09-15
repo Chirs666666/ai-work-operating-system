@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "system": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "workflow_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "system",
+    "version",
+    "project_id",
+    "workflow_id"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

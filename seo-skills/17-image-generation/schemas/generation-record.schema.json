@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "generated": {
+      "type": "boolean"
+    },
+    "generator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "asset_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "truth_class": {
+      "enum": [
+        "SOURCE_PRESERVED",
+        "SOURCE_DERIVED",
+        "CONCEPTUAL",
+        "VERIFIED_TECHNICAL",
+        "UNKNOWN"
+      ]
+    },
+    "generation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "generated",
+    "generator",
+    "asset_reference",
+    "truth_class",
+    "generation_notes"
+  ],
+  "additionalProperties": false
+}

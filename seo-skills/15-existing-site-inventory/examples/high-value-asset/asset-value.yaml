@@ -1,0 +1,8 @@
+items:
+- url: https://example.com/core-product/
+  asset_class: CRITICAL_ASSET
+  business_value: HIGH
+  evidence:
+  - Strong GSC visibility
+  - Existing conversions
+  - Relevant referring domains

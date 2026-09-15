@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "indexable": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "meta_robots": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "x_robots": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "indexable",
+    "meta_robots",
+    "x_robots",
+    "reason",
+    "status"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+tasks:
+- task_id: K
+  node: '03'
+  capability: keyword_research
+  action: RUN
+  artifact_id: null
+  scope: site
+  rationale: new site
+- task_id: QA
+  node: WB07
+  capability: prelaunch_qa
+  action: RUN
+  artifact_id: null
+  scope: site
+  rationale: launch gate
+- task_id: DEP
+  node: WB08
+  capability: production_deployment
+  action: RUN
+  artifact_id: AW7
+  scope: site
+  rationale: approved production launch
+- task_id: IDX
+  node: '19'
+  capability: indexing
+  action: VERIFY
+  artifact_id: null
+  scope: site
+  rationale: actual indexing after launch

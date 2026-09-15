@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "source_environment": {
+      "type": "string"
+    },
+    "target_environment": {
+      "type": "string",
+      "enum": [
+        "PRODUCTION"
+      ]
+    },
+    "production_url": {
+      "type": "string"
+    },
+    "release_version": {
+      "type": "string"
+    },
+    "launch_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_environment",
+    "target_environment",
+    "production_url",
+    "release_version",
+    "launch_window"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

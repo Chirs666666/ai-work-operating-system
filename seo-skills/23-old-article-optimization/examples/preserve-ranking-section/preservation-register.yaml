@@ -1,0 +1,7 @@
+items:
+- asset: How to calculate bend allowance
+  asset_type: SECTION
+  decision: KEEP
+  proven_equity: true
+  evidence_refs:
+  - GSC-QUERY

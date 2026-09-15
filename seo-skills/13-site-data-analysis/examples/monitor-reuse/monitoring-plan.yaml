@@ -1,0 +1,6 @@
+items:
+- metric: organic clicks
+  source: GSC
+  cadence: WEEKLY
+  condition: Alert only on meaningful sustained deviation after accounting for seasonality.
+  owner: 13-site-data-analysis

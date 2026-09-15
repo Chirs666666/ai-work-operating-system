@@ -1,0 +1,2 @@
+# Product Accuracy Policy
+Preserve known geometry, interfaces, tooling, components and distinguishing features when a visual represents a real product. Do not add plausible-looking but unverified hardware or capabilities.

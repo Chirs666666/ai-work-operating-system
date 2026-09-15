@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "string"
+          },
+          "evidence_layer": {
+            "enum": [
+              "FIELD_DATA",
+              "LAB_DATA",
+              "SERVER_NETWORK",
+              "FRONTEND"
+            ]
+          },
+          "test_type": {
+            "type": "string"
+          },
+          "collected_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "source_id",
+          "provider",
+          "evidence_layer",
+          "test_type"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sources"
+  ],
+  "additionalProperties": false
+}

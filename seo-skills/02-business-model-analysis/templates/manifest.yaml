@@ -1,0 +1,8 @@
+skill: 02-business-model-analysis
+version: 1.0.0
+mode: CREATE
+generated_at: null
+upstream_truth_ref: NOT_PROVIDED
+source_methods:
+- USER_DATA
+artifacts: []

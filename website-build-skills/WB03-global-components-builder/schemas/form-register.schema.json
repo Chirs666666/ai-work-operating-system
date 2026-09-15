@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "properties": {
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "form_id": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "success_state": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "error_state": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "delivery_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "privacy_consent_decision": {
+            "type": "string",
+            "enum": [
+              "REQUIRED",
+              "NOT_REQUIRED",
+              "UNKNOWN"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "GLOBAL",
+              "CONDITIONAL_GLOBAL"
+            ]
+          }
+        },
+        "required": [
+          "form_id",
+          "purpose",
+          "fields",
+          "success_state",
+          "error_state",
+          "delivery_owner",
+          "privacy_consent_decision",
+          "scope"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "forms"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

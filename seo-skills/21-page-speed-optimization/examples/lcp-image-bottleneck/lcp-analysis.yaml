@@ -1,0 +1,10 @@
+status: BOTTLENECK_CONFIRMED
+observed_value: 5100
+unit: ms
+root_causes:
+- Oversized hero image
+- Late discovery of LCP resource
+evidence_refs:
+- LH-LCP
+- WATERFALL-1
+notes: []

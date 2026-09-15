@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "previous_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "impressions_trend": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "STABLE",
+        "UNKNOWN"
+      ]
+    },
+    "position_trend": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "STABLE",
+        "UNKNOWN"
+      ]
+    },
+    "clicks_trend": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "STABLE",
+        "UNKNOWN"
+      ]
+    },
+    "ctr_trend": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "STABLE",
+        "UNKNOWN"
+      ]
+    },
+    "demand_or_seasonality": {
+      "enum": [
+        "UP",
+        "DOWN",
+        "STABLE",
+        "SEASONAL",
+        "UNKNOWN"
+      ]
+    },
+    "comparable": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "previous_window",
+    "current_window",
+    "impressions_trend",
+    "position_trend",
+    "clicks_trend",
+    "ctr_trend",
+    "demand_or_seasonality",
+    "comparable"
+  ],
+  "additionalProperties": false
+}

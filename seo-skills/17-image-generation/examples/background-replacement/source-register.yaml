@@ -1,0 +1,6 @@
+sources:
+- source_id: IMG-BG
+  source_type: USER_IMAGE
+  method: USER_DATA
+  reference: source machine image
+  notes: []

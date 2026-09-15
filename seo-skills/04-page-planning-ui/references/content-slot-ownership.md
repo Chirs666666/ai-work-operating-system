@@ -1,0 +1,2 @@
+# Content Slot Ownership
+01 owns company/product truth and evidence. 02 owns ICP, buyer pains, journey, commercial context. 03 owns keyword/search evidence. 25 owns page type, URL and keyword ownership. 04 defines required slots and layout. 05 owns commercial/product copy. 06 owns informational copy. 17 owns image production. 07 owns WordPress construction/publishing. Conflicts return to the source owner; 04 never silently overwrites them.

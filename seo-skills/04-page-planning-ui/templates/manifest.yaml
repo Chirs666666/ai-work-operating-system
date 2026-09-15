@@ -1,0 +1,12 @@
+skill: 04-page-planning-ui
+version: 1.0.0
+planning_depth: STANDARD
+work_mode: NEW_PAGE
+source:
+  method: USER_DATA
+  source_name: null
+  provider: null
+  url: null
+  collected_at: null
+  market: null
+  language: null

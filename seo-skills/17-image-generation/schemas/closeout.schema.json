@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "GENERATE",
+        "EDIT",
+        "ENHANCE",
+        "RESIZE",
+        "CROP",
+        "BACKGROUND_REPLACE",
+        "COLOR_VARIATION",
+        "DIAGRAM",
+        "PROCESS_VISUAL",
+        "PRODUCT_VISUAL",
+        "ARTICLE_HERO",
+        "BANNER",
+        "THUMBNAIL",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g17": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g17",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

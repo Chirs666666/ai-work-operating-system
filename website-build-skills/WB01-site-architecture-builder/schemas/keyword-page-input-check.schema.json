@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill_25_available": {
+      "type": "boolean"
+    },
+    "ownership_artifact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alignment_status": {
+      "type": "string",
+      "enum": [
+        "ALIGNED",
+        "PARTIAL",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    },
+    "unresolved_ownership_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "skill_25_available",
+    "ownership_artifact",
+    "alignment_status",
+    "unresolved_ownership_keys",
+    "notes"
+  ],
+  "additionalProperties": false
+}

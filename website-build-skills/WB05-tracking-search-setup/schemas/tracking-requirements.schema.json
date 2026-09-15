@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "goal_id": {
+            "type": "string"
+          },
+          "business_goal": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "event_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "goal_id",
+          "business_goal",
+          "required",
+          "event_name"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "goals"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

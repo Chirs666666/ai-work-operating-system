@@ -1,0 +1,4 @@
+action: OPTIMIZE_INFORMATIONAL
+route_skill: 06-content-writing-optimization
+reason: Example routed diagnosis.
+recheck_after: null

@@ -1,0 +1,18 @@
+evidence:
+- evidence_id: null
+  entity:
+    type: null
+    id: null
+  claim:
+    field: null
+    value: null
+  source:
+    source_id: null
+    name: null
+    category: UNKNOWN
+    location: null
+  evidence_level: E5
+  verification_status: unverified
+  allowed_use: []
+  notes: null
+  last_verified: null

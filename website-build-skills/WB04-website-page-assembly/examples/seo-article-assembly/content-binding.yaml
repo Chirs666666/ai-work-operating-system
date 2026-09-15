@@ -1,0 +1,5 @@
+bindings:
+- section_id: body
+  artifact_ref: 06/article.md
+  binding_key: article_body
+  status: BOUND

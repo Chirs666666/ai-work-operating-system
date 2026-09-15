@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "required": {
+      "type": "boolean"
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schedule": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retention": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "restore_method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "required",
+    "scope",
+    "schedule",
+    "retention",
+    "storage",
+    "restore_method"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

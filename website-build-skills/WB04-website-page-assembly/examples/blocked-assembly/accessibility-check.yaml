@@ -1,0 +1,5 @@
+checks:
+- target: hero
+  requirement: semantic heading and alt responsibility
+  status: PASS
+overall: PASS

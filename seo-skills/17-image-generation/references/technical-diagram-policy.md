@@ -1,0 +1,2 @@
+# Technical Diagram Policy
+Exact dimensions, tolerances, process values, labels and performance numbers require evidence. If evidence is unavailable, omit exact values or use clearly conceptual/unlabeled geometry rather than invented numbers.

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "KEEP",
+        "NEW_BLOCK_THEME",
+        "NEW_CLASSIC_THEME",
+        "CHILD_THEME",
+        "CUSTOM",
+        "UNKNOWN"
+      ]
+    },
+    "theme_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "production_change_required": {
+      "type": "boolean"
+    },
+    "compatibility_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "strategy",
+    "theme_name",
+    "production_change_required",
+    "compatibility_status",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

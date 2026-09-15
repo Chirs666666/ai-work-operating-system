@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "products"
+  ],
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "product_id",
+          "preferred_name",
+          "specs",
+          "unknown_fields"
+        ],
+        "properties": {
+          "product_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "preferred_name": {
+            "type": "object"
+          },
+          "aliases": {
+            "type": "array"
+          },
+          "family": {},
+          "category": {
+            "type": "array"
+          },
+          "models": {
+            "type": "array"
+          },
+          "applications": {
+            "type": "array"
+          },
+          "supported_processes": {
+            "type": "array"
+          },
+          "materials": {
+            "type": "array"
+          },
+          "specs": {
+            "type": "object"
+          },
+          "options": {
+            "type": "array"
+          },
+          "boundaries": {
+            "type": "array"
+          },
+          "evidence_refs": {
+            "type": "array"
+          },
+          "unknown_fields": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+handoffs:
+- target_skill: 04-page-planning-ui
+  reason: Calculator needs a broader commercial page blueprint around the tool.
+  blocking: false
+- target_skill: 25-keyword-page-mapping
+  reason: Confirm CALCULATOR_TOOL ownership and target URL.
+  blocking: true

@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "layer_id": {
+            "type": "string"
+          },
+          "layer_type": {
+            "type": "string",
+            "enum": [
+              "BROWSER",
+              "SERVER",
+              "PAGE",
+              "OBJECT",
+              "CDN",
+              "PLUGIN"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "purge_method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "compatibility_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "layer_id",
+          "layer_type",
+          "owner",
+          "active",
+          "purpose",
+          "purge_method",
+          "compatibility_ref"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "layers"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

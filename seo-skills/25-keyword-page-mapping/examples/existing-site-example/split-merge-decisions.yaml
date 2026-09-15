@@ -1,0 +1,12 @@
+decisions:
+- urls:
+  - /collaborative-welding-robot/
+  - /cobot-welding/
+  decision: MERGE
+  primary_url: /collaborative-welding-robot/
+  reason:
+  - same dominant commercial intent
+  - high content overlap
+  - fictional ranking URL switching
+  - primary URL carries stronger historical evidence
+  confidence: HIGH

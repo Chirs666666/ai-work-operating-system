@@ -1,0 +1,4 @@
+handoffs:
+- target_skill: 16-calculator-tool-builder
+  reason: Use only validated calculator variables/formula facts in the visual.
+  blocking: true

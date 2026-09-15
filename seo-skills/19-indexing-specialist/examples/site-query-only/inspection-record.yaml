@@ -1,0 +1,5 @@
+provider: Google public search
+inspection_type: PUBLIC_SITE_QUERY
+observed_at: '2026-09-14'
+result: URL appeared in site query
+authoritative_for_index_status: false

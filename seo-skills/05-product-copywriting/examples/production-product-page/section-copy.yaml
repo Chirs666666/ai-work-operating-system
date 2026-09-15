@@ -1,0 +1,34 @@
+sections:
+- id: hero
+  purpose: Hero
+  slot_ids:
+  - hero_h1
+  - hero_support
+- id: product-value
+  purpose: Product Value
+  slot_ids:
+  - value_intro
+- id: core-features
+  purpose: Core Features
+  slot_ids:
+  - feature_repeatability
+- id: technical-specifications
+  purpose: Technical Specifications
+  slot_ids:
+  - spec_intro
+- id: applications
+  purpose: Applications
+  slot_ids:
+  - applications_copy
+- id: proof
+  purpose: Proof
+  slot_ids:
+  - proof_copy
+- id: faq
+  purpose: Faq
+  slot_ids:
+  - faq_copy
+- id: final-cta
+  purpose: Final Cta
+  slot_ids:
+  - final_cta

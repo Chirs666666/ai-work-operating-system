@@ -1,0 +1,32 @@
+products:
+- product_id: exa-h20
+  preferred_name:
+    en: Example H20 Handling Cell (fictional)
+  aliases:
+  - H20 cell
+  family: handling automation
+  category:
+  - robotic handling cell
+  models:
+  - H20
+  applications:
+  - machine tending
+  supported_processes:
+  - pick and place
+  materials: []
+  specs:
+    nominal_payload:
+      value: 20
+      unit: kg
+      notation: 20 kg
+      evidence_refs:
+      - EV-001
+      status: verified_for_example
+  options:
+  - vision option
+  boundaries: []
+  evidence_refs:
+  - EV-001
+  - EV-002
+  unknown_fields:
+  - maximum_reach

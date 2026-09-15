@@ -1,0 +1,2 @@
+# Calculator Opportunity
+A calculator is justified when it answers a repeated user decision with deterministic or bounded inputs and produces a useful result. Validate search/buyer need, decision value, formula availability, risk, maintainability, and whether a calculator is better than static content. Avoid building a tool solely because a keyword contains "calculator".

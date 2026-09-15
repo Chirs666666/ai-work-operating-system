@@ -1,0 +1,13 @@
+candidates:
+- url: /collaborative-welding-robot/
+  cluster_id: cl-001
+  intent_fit: HIGH
+  ranking_evidence: Meaningful fictional GSC clicks and stable query relevance.
+  backlink_evidence: Fictional external links observed.
+  protection: PROTECT
+- url: /cobot-welding/
+  cluster_id: cl-001
+  intent_fit: HIGH
+  ranking_evidence: Same fictional query family also ranks here intermittently.
+  backlink_evidence: UNKNOWN
+  protection: REVIEW

@@ -1,0 +1,2 @@
+# Cache and CDN
+Evaluate HTML caching, browser cache, CDN hit/miss behavior, compression and cache invalidation. Cache/CDN rule changes can affect freshness and functionality and require controlled rollout.

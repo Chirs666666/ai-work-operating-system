@@ -1,0 +1,22 @@
+tests:
+- test_id: U-1
+  test_type: UNIT_CONVERSION
+  formula_id: null
+  inputs:
+    value: 1
+    unit: in
+  expected:
+    value: 25.4
+    unit: mm
+  tolerance: 0
+  source_ref: SRC-U-1
+- test_id: U-2
+  test_type: CROSS_UNIT_EQUIVALENCE
+  formula_id: null
+  inputs:
+    mm: 25.4
+    in: 1
+  expected:
+    equivalent: true
+  tolerance: 1.0e-12
+  source_ref: SRC-U-1

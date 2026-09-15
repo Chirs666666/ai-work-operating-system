@@ -1,0 +1,10 @@
+page_id: "7001"
+g07: PASS
+connection_status: CONNECTED
+task_goal: DRAFT
+draft_ready: true
+high_impact_action: false
+approval_status: NOT_REQUIRED
+post_write_readback_complete: true
+done: true
+handoff: Ready for user review or approved publish workflow.

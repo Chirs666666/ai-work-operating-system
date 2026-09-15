@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scope": {
+      "enum": [
+        "DOMAIN",
+        "URL",
+        "COMPETITOR_SET",
+        "OTHER"
+      ]
+    },
+    "target": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "scope",
+    "target",
+    "goal"
+  ],
+  "additionalProperties": false
+}

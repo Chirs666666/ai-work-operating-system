@@ -1,0 +1,3 @@
+# Canonical Outputs
+The 16 outputs are manifest, page-context, metadata-inventory, existing-metadata-audit, performance-diagnosis, serp-research, claim-register, metadata-diagnosis, metadata-candidates, candidate-evaluation, recommended-metadata, h1-alignment-review, site-metadata-audit, change-control, execution-handoff, closeout.
+GENERATE normally uses context/research/claims/candidates/evaluation/recommendation/H1/handoff/closeout. SITE_AUDIT emphasizes inventory/audit/performance/change-control/closeout. VERIFY emphasizes approved handoff versus configured read-back. Not every mode emits every artifact.

@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "workstreams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "workstream": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "READY",
+              "RUNNING",
+              "WAITING_DEPENDENCY",
+              "WAITING_APPROVAL",
+              "PASS",
+              "WARN",
+              "BLOCKED",
+              "FAILED",
+              "REUSE",
+              "SKIPPED",
+              "DONE"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "blockers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "workstream",
+          "state",
+          "owner",
+          "blockers"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "workstreams"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

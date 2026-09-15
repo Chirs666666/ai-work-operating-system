@@ -1,0 +1,22 @@
+requirements:
+- section_id: hero
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: product-value
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: technical-specifications
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: applications
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: proof
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: faq
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.
+- section_id: final-cta
+  owner: 05-product-copywriting
+  requirement: Write from approved example facts only.

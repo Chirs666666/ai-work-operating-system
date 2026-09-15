@@ -1,0 +1,6 @@
+state: RANKING_IMPROVING
+target_query_detected: true
+relevant_query_growth: GROWING
+ranking_established: true
+confidence: HIGH
+summary: Target-query visibility is established and improving.

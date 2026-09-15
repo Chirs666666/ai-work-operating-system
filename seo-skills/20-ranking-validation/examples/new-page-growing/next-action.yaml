@@ -1,0 +1,4 @@
+action: MONITOR
+route_skill: null
+reason: Signals are growing and evidence is still early.
+recheck_after: project-configured interval

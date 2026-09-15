@@ -1,0 +1,16 @@
+links:
+- link_id: IL-V1
+  source_url: /guide/robotic-welding/
+  target_url: /collaborative-welding-robot/
+  action: ADD_NEW
+  priority: PRIORITY_HIGH
+  relationship:
+    type: COMMERCIAL_SUPPORT
+  anchor:
+    preferred_text: collaborative welding robot
+    anchor_type: EXACT_DESCRIPTIVE
+  placement:
+    section: Automation Options
+    section_id: automation-options
+    placement_type: BODY_CONTEXTUAL
+  execution_owner: 07-wordpress-page-builder-publisher

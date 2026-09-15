@@ -1,0 +1,8 @@
+sections:
+- section_id: hero
+  section_type: HERO
+  required: true
+  order: 1
+  source_owner: null
+  source_artifact: null
+  status: MISSING

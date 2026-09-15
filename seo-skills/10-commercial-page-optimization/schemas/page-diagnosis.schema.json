@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "url_ownership_alignment": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "search_intent_alignment": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "business_icp_alignment": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "page_type_fit": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "offer_clarity": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "content_coverage": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "technical_buyer_specificity": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "evidence_trust": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "differentiation": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "conversion_path": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "information_architecture": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "performance_preservation_risk": {
+          "enum": [
+            "PASS",
+            "WARN",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "required": [
+        "url_ownership_alignment",
+        "search_intent_alignment",
+        "business_icp_alignment",
+        "page_type_fit",
+        "offer_clarity",
+        "content_coverage",
+        "technical_buyer_specificity",
+        "evidence_trust",
+        "differentiation",
+        "conversion_path",
+        "information_architecture",
+        "performance_preservation_risk"
+      ],
+      "additionalProperties": false
+    },
+    "overall": {
+      "enum": [
+        "HEALTHY",
+        "NEEDS_MINOR_WORK",
+        "NEEDS_SECTION_WORK",
+        "NEEDS_STRUCTURAL_REFRESH",
+        "NEEDS_REWRITE",
+        "OWNERSHIP_CONFLICT",
+        "INSUFFICIENT_DATA"
+      ]
+    },
+    "recommended_action": {
+      "enum": [
+        "KEEP",
+        "MINOR_OPTIMIZE",
+        "SECTION_OPTIMIZE",
+        "STRUCTURAL_REFRESH",
+        "REWRITE",
+        "HOLD",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    }
+  },
+  "required": [
+    "dimensions",
+    "overall",
+    "recommended_action"
+  ],
+  "additionalProperties": false
+}

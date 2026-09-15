@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "release_state": {
+      "enum": [
+        "DRAFT",
+        "READY_FOR_IMPLEMENTATION",
+        "BLOCKED",
+        "REUSE",
+        "VERIFIED"
+      ]
+    },
+    "target_executor": {
+      "enum": [
+        "07-wordpress-page-builder-publisher",
+        "CODE_IMPLEMENTATION",
+        "OTHER",
+        "NONE"
+      ]
+    },
+    "formula_contract_complete": {
+      "type": "boolean"
+    },
+    "tests_passed": {
+      "type": "boolean"
+    },
+    "frontend_contract_complete": {
+      "type": "boolean"
+    },
+    "production_formula_allowed": {
+      "type": "boolean"
+    },
+    "implementation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "release_state",
+    "target_executor",
+    "formula_contract_complete",
+    "tests_passed",
+    "frontend_contract_complete",
+    "production_formula_allowed",
+    "implementation_notes"
+  ],
+  "additionalProperties": false
+}

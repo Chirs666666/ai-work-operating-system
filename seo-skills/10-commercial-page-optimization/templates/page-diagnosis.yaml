@@ -1,0 +1,15 @@
+dimensions:
+  url_ownership_alignment: UNKNOWN
+  search_intent_alignment: UNKNOWN
+  business_icp_alignment: UNKNOWN
+  page_type_fit: UNKNOWN
+  offer_clarity: UNKNOWN
+  content_coverage: UNKNOWN
+  technical_buyer_specificity: UNKNOWN
+  evidence_trust: UNKNOWN
+  differentiation: UNKNOWN
+  conversion_path: UNKNOWN
+  information_architecture: UNKNOWN
+  performance_preservation_risk: UNKNOWN
+overall: INSUFFICIENT_DATA
+recommended_action: HOLD

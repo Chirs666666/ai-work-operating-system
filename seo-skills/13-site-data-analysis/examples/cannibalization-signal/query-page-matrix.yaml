@@ -1,0 +1,11 @@
+items:
+- query: cnc machining services
+  url: https://example.com/cnc-service/
+  relationship: CANNIBALIZATION_SIGNAL
+  evidence:
+  - Two URLs share sustained impressions for same intent
+- query: cnc machining services
+  url: https://example.com/cnc-machining/
+  relationship: CANNIBALIZATION_SIGNAL
+  evidence:
+  - Two URLs share sustained impressions for same intent

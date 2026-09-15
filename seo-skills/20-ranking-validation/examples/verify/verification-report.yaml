@@ -1,0 +1,6 @@
+provider_semantics: PASS
+target_matching: PASS
+trend_windows: PASS
+maturity_logic: PASS
+overall: PASS
+notes: []

@@ -1,0 +1,6 @@
+environment: STAGING
+site_url: https://staging.example.com
+hosting_ref: hosting-baseline.yaml
+separation_verified: true
+evidence:
+- environment confirmed

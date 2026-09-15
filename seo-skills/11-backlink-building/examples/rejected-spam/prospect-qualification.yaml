@@ -1,0 +1,16 @@
+items:
+- prospect_id: P3
+  dimensions:
+    topical_relevance: PASS
+    audience_relevance: PASS
+    organic_legitimacy: FAIL
+    editorial_quality: FAIL
+    market_fit: PASS
+    placement_fit: PASS
+    target_page_fit: PASS
+    spam_risk: FAIL
+    contactability: PASS
+    relationship_duplication: PASS
+  outcome: REJECT
+  priority: REJECT
+  reason: Evidence-backed qualification

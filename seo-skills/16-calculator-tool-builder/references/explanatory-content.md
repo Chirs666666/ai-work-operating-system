@@ -1,0 +1,2 @@
+# Explanatory Content
+The tool page should explain what is calculated, variables, formula or method, worked example, assumptions, limitations, how to interpret results, and related guidance. Longer educational coverage may be handed to 06.

@@ -1,0 +1,2 @@
+# Accessibility and ALT Text
+ALT should convey the image's purpose/content when meaningful. Decorative images may use empty ALT at implementation. Do not repeat adjacent text mechanically. 07 applies final WordPress ALT.

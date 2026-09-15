@@ -1,0 +1,11 @@
+defects:
+- defect_id: D1
+  domain: responsive
+  target: minor footer spacing
+  severity: FAIL
+  description: Minor visual defect accepted for launch
+  owner: WB04
+  state: ACCEPTED_RISK
+  evidence:
+  - screenshot
+  template_level: false

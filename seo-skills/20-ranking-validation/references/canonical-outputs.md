@@ -1,0 +1,2 @@
+# Canonical Outputs
+22 outputs: manifest, validation-brief, source-register, url-baseline, gsc-query-page, ranking-keywords, target-query-map, related-query-clusters, serp-validation, position-baseline, impression-trend, query-growth, keyword-growth, ranking-trend, intent-alignment, time-maturity, ranking-diagnosis, verdict, next-action, cross-skill-handoffs, verification-report, closeout.

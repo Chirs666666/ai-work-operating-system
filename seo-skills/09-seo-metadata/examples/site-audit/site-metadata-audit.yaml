@@ -1,0 +1,19 @@
+items:
+- url: /core-product/
+  priority: PRIORITY_HIGH
+  action: OPTIMIZE
+- url: /guide/
+  priority: PRIORITY_MEDIUM
+  action: OPTIMIZE
+- url: /old/
+  priority: PRIORITY_LOW
+  action: KEEP
+- url: /conflict/
+  priority: HOLD
+  action: BLOCK_FOR_OWNERSHIP
+- url: /healthy/
+  priority: REUSE
+  action: REUSE
+- url: /tag/
+  priority: SKIP
+  action: SKIP

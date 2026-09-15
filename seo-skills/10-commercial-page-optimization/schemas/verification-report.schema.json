@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "overall": {
+      "enum": [
+        "VERIFIED",
+        "PARTIAL",
+        "MISMATCH",
+        "MISSING",
+        "CONFLICT"
+      ]
+    },
+    "checked_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mismatches": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "overall",
+    "checked_elements",
+    "mismatches"
+  ],
+  "additionalProperties": false
+}

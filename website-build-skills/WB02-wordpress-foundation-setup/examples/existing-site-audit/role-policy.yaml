@@ -1,0 +1,10 @@
+roles:
+- role: Administrator
+  purpose: site administration
+  least_privilege: true
+  production_change_required: false
+- role: Editor
+  purpose: content operations
+  least_privilege: true
+  production_change_required: false
+notes: []

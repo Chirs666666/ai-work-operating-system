@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "GEO_AUDIT",
+        "ENTITY_AUDIT",
+        "CLAIM_EVIDENCE_AUDIT",
+        "CITATION_READINESS",
+        "AI_VISIBILITY",
+        "OPTIMIZATION_PLAN",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "gate": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "claim_type": {
+      "enum": [
+        "FACT",
+        "SPECIFICATION",
+        "CASE_RESULT",
+        "COMPARISON",
+        "OPINION",
+        "ESTIMATE",
+        "MARKETING_CLAIM",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_type": {
+      "enum": [
+        "FIRST_PARTY",
+        "TEST_DATA",
+        "CASE",
+        "STANDARD",
+        "CERTIFICATE",
+        "AUTHORITATIVE_SOURCE",
+        "PUBLIC_SOURCE",
+        "NONE"
+      ]
+    },
+    "visibility": {
+      "enum": [
+        "NOT_TESTED",
+        "NO_OBSERVATION",
+        "BRAND_MENTIONED",
+        "PRODUCT_MENTIONED",
+        "SOURCE_CITED",
+        "RECOMMENDED",
+        "COMPETITOR_DOMINANT",
+        "INCONSISTENT",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

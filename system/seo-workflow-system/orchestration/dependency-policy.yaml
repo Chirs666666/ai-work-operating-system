@@ -1,0 +1,4 @@
+rules:
+- critical upstream BLOCK/FAILED/UNKNOWN cannot be bypassed
+- WB08 RUN requires WB07 readiness
+- dependencies are capability/artifact edges, not numeric order

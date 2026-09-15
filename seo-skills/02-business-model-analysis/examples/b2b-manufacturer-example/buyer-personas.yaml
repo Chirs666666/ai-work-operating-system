@@ -1,0 +1,10 @@
+buyer_roles:
+- role: Production Manager
+  classification: INFERENCE
+  concerns:
+  - uptime
+  - changeover
+  - integration risk
+  source:
+    method: USER_DATA
+    source_name: Fictional inquiry summary

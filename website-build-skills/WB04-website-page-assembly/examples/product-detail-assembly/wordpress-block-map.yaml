@@ -1,0 +1,9 @@
+mappings:
+- section_id: hero
+  primitive: PATTERN
+  component_ref: null
+  notes: []
+- section_id: specs
+  primitive: CORE_BLOCK
+  component_ref: null
+  notes: []

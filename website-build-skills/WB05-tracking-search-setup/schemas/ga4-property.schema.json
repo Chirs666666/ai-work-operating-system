@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "measurement_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "installation_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_CONFIGURED",
+        "CONFIGURED",
+        "INSTALLED",
+        "DETECTED",
+        "FIRING",
+        "RECEIVING_DATA",
+        "VERIFIED",
+        "WARN",
+        "FAILED",
+        "UNKNOWN"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "measurement_id",
+    "installation_owner",
+    "state",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

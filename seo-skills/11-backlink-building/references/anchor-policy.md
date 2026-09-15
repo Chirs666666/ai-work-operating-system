@@ -1,0 +1,2 @@
+# Anchor Policy
+Types: BRAND, URL, PRODUCT_ENTITY, PARTIAL_DESCRIPTIVE, EXACT_DESCRIPTIVE, GENERIC, OTHER. Prefer natural editorial anchors. No fixed exact-match ratio. Attributes: FOLLOW, NOFOLLOW, SPONSORED, UGC, UNKNOWN. Relevant nofollow links can still be useful.

@@ -1,0 +1,7 @@
+g08_status: WARN
+warnings:
+- Sitemap-only URL has no crawlable HTML internal entry path.
+blockers: []
+handoffs: []
+generated_artifacts:
+- orphan-underlinked-report.yaml

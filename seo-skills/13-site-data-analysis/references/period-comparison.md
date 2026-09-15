@@ -1,0 +1,2 @@
+# Period Comparison
+Record current/comparison date ranges, timezone, market, device, search type, property/view and filters. Warn when periods are non-equivalent. Seasonality and tracking changes are possible confounders.

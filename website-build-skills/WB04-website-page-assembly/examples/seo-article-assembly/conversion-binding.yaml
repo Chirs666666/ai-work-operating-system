@@ -1,0 +1,6 @@
+ctas:
+- cta_id: quote
+  source: WB03/global-cta-register.yaml
+  action_type: LINK
+  destination: /contact/
+  status: BOUND

@@ -1,0 +1,6 @@
+mappings:
+- intent: robotic palletizer manufacturer
+  landing_page: /collaborative-welding-robot/
+  alignment: FAIL
+  notes:
+  - Product/intent mismatch

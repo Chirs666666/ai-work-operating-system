@@ -1,0 +1,7 @@
+priorities:
+- keyword_id: kw-001
+  overall: HIGH
+  rationale: Verified demand plus strong product and buyer fit.
+- keyword_id: kw-003
+  overall: VALIDATE
+  rationale: Relevant use case but demand is unverified.

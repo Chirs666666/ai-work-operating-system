@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "company_id",
+    "identity",
+    "facts"
+  ],
+  "properties": {
+    "company_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "identity": {
+      "type": "object"
+    },
+    "business_scope": {
+      "type": "array"
+    },
+    "locations": {
+      "type": "array"
+    },
+    "industries": {
+      "type": "array"
+    },
+    "capabilities": {
+      "type": "array"
+    },
+    "certifications": {
+      "type": "array"
+    },
+    "facts": {
+      "type": "array"
+    }
+  }
+}

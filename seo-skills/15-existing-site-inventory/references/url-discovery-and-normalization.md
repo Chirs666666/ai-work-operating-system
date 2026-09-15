@@ -1,0 +1,2 @@
+# URL Discovery and Normalization
+Discover from sitemap, CMS, crawler, analytics/search data and known links. Track raw URL, normalized URL, protocol, host, path, query, fragment, canonical, status, redirect target, source and variant relationship. Normalization identifies duplicates; it does not merge or delete them.

@@ -1,0 +1,13 @@
+dependencies:
+- dependency_id: D1
+  upstream: WB01
+  downstream: WB04
+  critical: true
+  state: PASS
+  artifact_id: A1
+- dependency_id: D2
+  upstream: WB07
+  downstream: WB08
+  critical: true
+  state: PASS
+  artifact_id: A7

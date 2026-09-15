@@ -1,0 +1,8 @@
+calculator_name: CNC Cycle Time Calculator
+purpose: Estimate deterministic machine cycle components from explicit timing inputs.
+user_decision: Compare process-time scenarios.
+page_type: CALCULATOR_TOOL
+target_url: null
+risk_level: MEDIUM
+notes:
+- Machine behavior and non-cutting delays vary; model boundaries must be explicit.

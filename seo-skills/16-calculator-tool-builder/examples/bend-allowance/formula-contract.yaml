@@ -1,0 +1,21 @@
+formulas:
+- formula_id: ba-arc-length
+  name: Centerline Arc Length
+  expression_or_algorithm: BA = pi * R * theta / 180
+  formula_state: VERIFIED
+  input_ids:
+  - radius
+  - angle_deg
+  output_ids:
+  - bend_allowance
+  evidence_refs:
+  - SRC-BA-1
+  assumptions:
+  - R is the specified centerline radius.
+  limitations:
+  - Does not model material springback or empirical tooling corrections.
+  invalid_conditions:
+  - radius <= 0
+  - angle_deg <= 0
+  rounding_rule: round result for display after full-precision calculation
+  precision_rule: internal double precision

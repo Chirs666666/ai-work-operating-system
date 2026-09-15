@@ -1,0 +1,2 @@
+# Canonical Outputs
+24 outputs: manifest, analysis-brief, source-register, semrush-snapshot, organic-keywords, position-changes, keyword-growth, keyword-loss, top-pages, page-opportunities, organic-competitors, competitor-gap, keyword-gap, backlink-overview, backlink-gap, traffic-trend, serp-feature-opportunities, intent-analysis, country-device-context, opportunity-register, risk-register, priority-plan, cross-skill-handoffs, closeout.

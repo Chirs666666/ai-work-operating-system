@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "FULL_INVENTORY",
+        "URL_INVENTORY",
+        "PERFORMANCE_ENRICHMENT",
+        "ASSET_CLASSIFICATION",
+        "ACTION_CLASSIFICATION",
+        "REFRESH",
+        "VERIFY"
+      ]
+    },
+    "g15": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "asset": {
+      "enum": [
+        "CRITICAL_ASSET",
+        "HIGH_VALUE",
+        "MEDIUM_VALUE",
+        "LOW_VALUE",
+        "UNKNOWN"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "P1_HIGH",
+        "P2_MEDIUM",
+        "P3_LOW",
+        "HOLD",
+        "REUSE"
+      ]
+    },
+    "action": {
+      "enum": [
+        "KEEP",
+        "UPDATE",
+        "REWRITE",
+        "MERGE",
+        "REDIRECT",
+        "NOINDEX",
+        "REMOVE",
+        "REASSIGN",
+        "HOLD"
+      ]
+    }
+  }
+}

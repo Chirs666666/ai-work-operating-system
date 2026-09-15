@@ -1,0 +1,2 @@
+# Canonical Outputs
+21 outputs: manifest, campaign-brief, target-page-readiness, prospect-source-register, prospect-inventory, prospect-qualification, competitor-link-opportunities, link-opportunity-map, anchor-target-plan, contact-register, outreach-strategy, outreach-drafts, outreach-queue, paid-placement-review, risk-register, live-link-register, link-verification-report, campaign-performance, cross-skill-handoffs, change-control, closeout.

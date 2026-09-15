@@ -1,0 +1,11 @@
+defects:
+- defect_id: D1
+  domain: technical-seo
+  target: sitewide
+  severity: BLOCK
+  description: Production noindex active
+  owner: 12-technical-seo-audit-fix
+  state: OPEN
+  evidence:
+  - noindex detected
+  template_level: false

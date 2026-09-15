@@ -1,0 +1,6 @@
+items:
+- failure_id: F1
+  correction_skill: WB04
+  rerun_gate: WB07
+  resume_checkpoint: WB07
+  state: PLANNED

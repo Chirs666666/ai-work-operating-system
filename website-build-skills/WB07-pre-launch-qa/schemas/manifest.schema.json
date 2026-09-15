@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "skill": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "QA",
+        "RETEST",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "site": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "site",
+    "project_id"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

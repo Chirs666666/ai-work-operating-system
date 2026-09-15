@@ -1,0 +1,3 @@
+# Strategy Policy
+
+Supported strategies are FULL_SITE, INCREMENTAL, PAGE_ONLY, CONFIG_ONLY, DNS_CUTOVER, MIGRATION and HOTFIX.

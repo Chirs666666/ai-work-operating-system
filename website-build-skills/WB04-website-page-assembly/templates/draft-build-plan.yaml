@@ -1,0 +1,6 @@
+target_environment: STAGING
+execution_skill: 07-wordpress-page-builder-publisher
+mode: DRAFT_ONLY
+requires_approval: false
+approval_id: null
+status: PLANNED

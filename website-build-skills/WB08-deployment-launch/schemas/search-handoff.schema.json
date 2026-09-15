@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "properties": {
+    "production_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "new_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "changed_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "removed_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sitemap_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "robots_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "redirect_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gsc_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bing_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "indexnow_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "launch_timestamp": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "production_urls",
+    "new_urls",
+    "changed_urls",
+    "removed_urls",
+    "sitemap_ref",
+    "robots_state",
+    "canonical_state",
+    "redirect_state",
+    "gsc_state",
+    "bing_state",
+    "indexnow_state",
+    "launch_timestamp"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,6 @@
+state: IMPRESSION_STARTED
+target_query_detected: false
+relevant_query_growth: UNKNOWN
+ranking_established: false
+confidence: LOW
+summary: One observed impression is an early signal, not established ranking.

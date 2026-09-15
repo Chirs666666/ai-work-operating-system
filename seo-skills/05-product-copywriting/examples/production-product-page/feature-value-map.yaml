@@ -1,0 +1,17 @@
+items:
+- id: FV-001
+  fact: 25 kg payload
+  feature: 25 kg payload capacity
+  function: Supports workpieces/tooling within the declared load envelope.
+  buyer_requirement: Qualify part/load fit.
+  buyer_value: Helps you screen whether the system is suitable before configuration.
+  evidence_ids:
+  - EV-001
+- id: FV-002
+  fact: ±0.03 mm repeatability
+  feature: Declared repeatability
+  function: Supports consistent programmed positioning under the specified conditions.
+  buyer_requirement: Evaluate repeat-cycle positioning.
+  buyer_value: Provides a measurable input for technical qualification.
+  evidence_ids:
+  - EV-002

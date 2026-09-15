@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "index_status": {
+      "enum": [
+        "INDEXED",
+        "INDEX_UNKNOWN",
+        "NOT_INDEXED",
+        "OTHER"
+      ]
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "word_count": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "url",
+    "published_at",
+    "updated_at",
+    "index_status",
+    "canonical_url",
+    "word_count"
+  ],
+  "additionalProperties": false
+}

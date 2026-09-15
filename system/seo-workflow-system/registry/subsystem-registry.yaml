@@ -1,0 +1,15 @@
+version: 1.1.0
+subsystems:
+- subsystem_id: website-build-layer
+  kind: SUBSYSTEM
+  status: ACTIVE
+  version: 1.0.0
+  members:
+  - WB01
+  - WB02
+  - WB03
+  - WB04
+  - WB05
+  - WB06
+  - WB07
+  - WB08

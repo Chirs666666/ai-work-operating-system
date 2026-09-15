@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "GENERATE",
+        "AUDIT_PAGE",
+        "OPTIMIZE",
+        "PERFORMANCE_DIAGNOSIS",
+        "SITE_AUDIT",
+        "VERIFY"
+      ]
+    },
+    "g09": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "evidence": {
+      "enum": [
+        "VERIFIED",
+        "OBSERVED",
+        "INFERRED",
+        "UNKNOWN",
+        "CONFLICTING"
+      ]
+    },
+    "eval": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "action": {
+      "enum": [
+        "KEEP",
+        "OPTIMIZE",
+        "REWRITE",
+        "TEST",
+        "REUSE",
+        "INSUFFICIENT_DATA",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "length": {
+      "enum": [
+        "TOO_SHORT",
+        "HEALTHY",
+        "TRUNCATION_RISK",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

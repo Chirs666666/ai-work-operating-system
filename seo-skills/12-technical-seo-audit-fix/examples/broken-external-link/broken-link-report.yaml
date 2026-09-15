@@ -1,0 +1,10 @@
+links:
+- issue_id: BL-02
+  source_url: https://example.com/guide/
+  target_url: https://external.example/dead
+  link_scope: EXTERNAL
+  status: 404
+  anchor_text: industry reference
+  probable_cause: External resource removed
+  recommended_action: REMOVE_LINK
+  replacement_url: null

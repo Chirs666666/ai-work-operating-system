@@ -1,0 +1,12 @@
+scope_id: S1
+strategy: FULL_SITE
+pages:
+- /
+- /contact/
+files:
+- release
+database_changes: []
+config_changes: []
+dns_changes: []
+redirect_changes: []
+tracking_changes: []

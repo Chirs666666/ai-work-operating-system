@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "page_id",
+    "matches",
+    "compatibility_outcome"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "compatibility_outcome": {
+      "enum": [
+        "COMPATIBLE",
+        "PARTIAL",
+        "CUSTOM_COMPONENT_REQUIRED",
+        "CONFLICT",
+        "BLOCKED"
+      ]
+    },
+    "matches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "section_id",
+          "component_type",
+          "match_status"
+        ],
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "component_type": {
+            "type": "string"
+          },
+          "component_id": {
+            "type": "string"
+          },
+          "component_state": {
+            "enum": [
+              "VERIFIED",
+              "AVAILABLE",
+              "CUSTOM_REQUIRED",
+              "DEPRECATED"
+            ]
+          },
+          "match_status": {
+            "enum": [
+              "MATCHED",
+              "WARNING",
+              "NO_MATCH",
+              "CONFLICT",
+              "BLOCKED"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,6 @@
+staging_available: 'NO'
+staging_required_for_current_plan: true
+isolated_from_indexing: UNKNOWN
+sync_strategy: []
+notes:
+- High-risk change requires staging or explicit exception.

@@ -1,0 +1,6 @@
+state: THIN
+primary_cause: CONTENT
+confidence: HIGH
+evidence_refs:
+- AUDIT
+reasoning: Core intent is not adequately answered.

@@ -1,0 +1,7 @@
+changes:
+- keyword: robotic palletizer
+  url: https://example.com/palletizer/
+  previous_position: 8
+  current_position: 22
+  change_type: DECLINED
+  comparable: true

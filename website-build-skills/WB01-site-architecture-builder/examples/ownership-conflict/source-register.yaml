@@ -1,0 +1,7 @@
+sources:
+- source_id: S1
+  source_type: UPSTREAM_SKILL
+  reference: 25-keyword-page-mapping
+  provenance: Skill 25 output
+  freshness: null
+  status: VALID

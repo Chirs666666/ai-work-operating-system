@@ -1,0 +1,9 @@
+action: MINOR_OPTIMIZE
+goal: Improve offer clarity and CTA wording while preserving proven sections.
+preserve_first: true
+change_scope:
+- hero supporting line
+- primary CTA
+excluded_scope:
+- URL
+- SEO metadata

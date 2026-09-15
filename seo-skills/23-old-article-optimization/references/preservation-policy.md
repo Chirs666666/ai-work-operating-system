@@ -1,0 +1,2 @@
+# Preservation
+Register KEEP/UPDATE/ADD/REMOVE/MERGE at section/asset level. Default to KEEP for proven ranking sections, unique evidence, useful media, backlinks and conversion assets until contrary evidence exists.

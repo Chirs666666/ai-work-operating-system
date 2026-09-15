@@ -1,0 +1,3 @@
+handoffs:
+- target_skill: 20-ranking-validation
+  reason: Validate actual query/ranking development with ranking evidence.

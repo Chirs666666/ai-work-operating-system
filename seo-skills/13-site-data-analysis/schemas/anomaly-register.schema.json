@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "anomaly_id": {
+            "type": "string"
+          },
+          "metric": {
+            "type": "string"
+          },
+          "observation": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cause_confirmed": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "anomaly_id",
+          "metric",
+          "observation",
+          "source_ids",
+          "cause_confirmed"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

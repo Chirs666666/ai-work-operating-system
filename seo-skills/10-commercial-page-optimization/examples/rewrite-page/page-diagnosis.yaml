@@ -1,0 +1,15 @@
+dimensions:
+  url_ownership_alignment: PASS
+  search_intent_alignment: FAIL
+  business_icp_alignment: PASS
+  page_type_fit: PASS
+  offer_clarity: FAIL
+  content_coverage: FAIL
+  technical_buyer_specificity: PASS
+  evidence_trust: PASS
+  differentiation: FAIL
+  conversion_path: PASS
+  information_architecture: PASS
+  performance_preservation_risk: PASS
+overall: NEEDS_REWRITE
+recommended_action: REWRITE

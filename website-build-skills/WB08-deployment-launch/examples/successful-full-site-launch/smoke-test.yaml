@@ -1,0 +1,20 @@
+checks:
+- check_id: home
+  area: homepage
+  critical: true
+  result: PASS
+  evidence:
+  - HTTP 200
+- check_id: form
+  area: contact form/email
+  critical: true
+  result: PASS
+  evidence:
+  - submission delivered
+- check_id: noindex
+  area: technical SEO
+  critical: true
+  result: PASS
+  evidence:
+  - indexable production
+overall: PASS

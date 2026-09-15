@@ -1,0 +1,9 @@
+g08_status: WARN
+warnings:
+- 07 read-back anchor was "click here", not the approved descriptive anchor.
+blockers: []
+handoffs:
+- 07-wordpress-page-builder-publisher
+generated_artifacts:
+- anchor-placement-plan.yaml
+verification_result: MISMATCH

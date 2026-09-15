@@ -1,0 +1,11 @@
+gate: BLOCK
+build_state: BLOCKED
+production_state: NOT_DEPLOYED
+indexing_claimed: false
+ranking_claimed: false
+blockers:
+- WB07 form defect
+warnings: []
+next_skills:
+- WB04
+- WB07

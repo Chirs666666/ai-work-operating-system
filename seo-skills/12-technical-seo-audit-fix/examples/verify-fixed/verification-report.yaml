@@ -1,0 +1,6 @@
+items:
+- issue_id: BL-03
+  state: VERIFIED_FIXED
+  verification_method: Read-back plus target fetch
+  evidence:
+  - Staging page now links to a 200 replacement URL.

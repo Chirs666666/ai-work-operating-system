@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "redirects": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "hops": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "loop": {
+            "type": "boolean"
+          },
+          "recommended_action": {
+            "enum": [
+              "KEEP",
+              "CREATE_301",
+              "CREATE_302",
+              "UPDATE_EXISTING",
+              "REMOVE_REDIRECT",
+              "FLATTEN_CHAIN",
+              "BLOCK_FOR_OWNERSHIP",
+              "INVESTIGATE"
+            ]
+          },
+          "ownership_status": {
+            "enum": [
+              "VERIFIED",
+              "UNKNOWN",
+              "CONFLICTING"
+            ]
+          }
+        },
+        "required": [
+          "issue_id",
+          "source_url",
+          "hops",
+          "loop",
+          "recommended_action",
+          "ownership_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "redirects"
+  ],
+  "additionalProperties": false
+}

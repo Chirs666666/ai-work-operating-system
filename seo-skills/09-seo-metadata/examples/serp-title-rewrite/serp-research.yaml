@@ -1,0 +1,6 @@
+level: STANDARD
+availability: AVAILABLE
+dominant_intent: COMMERCIAL
+patterns:
+- service term
+serp_rewrite_observed: true

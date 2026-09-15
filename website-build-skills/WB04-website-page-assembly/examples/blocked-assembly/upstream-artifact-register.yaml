@@ -1,0 +1,26 @@
+artifacts:
+- artifact_id: plan
+  skill_owner: 04-page-planning-ui
+  artifact_ref: 04/page-plan.yaml
+  role: section plan
+  status: AVAILABLE
+- artifact_id: copy
+  skill_owner: 05-product-copywriting
+  artifact_ref: 05/product-copy.md
+  role: product content
+  status: AVAILABLE
+- artifact_id: seo
+  skill_owner: 09-seo-metadata
+  artifact_ref: 09/metadata.yaml
+  role: SEO metadata
+  status: AVAILABLE
+- artifact_id: img
+  skill_owner: 17-image-generation
+  artifact_ref: 17/hero-image.webp
+  role: hero media
+  status: AVAILABLE
+- artifact_id: components
+  skill_owner: WB03-global-components-builder
+  artifact_ref: WB03/component-inventory.yaml
+  role: global components
+  status: AVAILABLE

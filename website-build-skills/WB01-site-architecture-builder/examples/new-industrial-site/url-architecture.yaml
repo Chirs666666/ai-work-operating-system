@@ -1,0 +1,41 @@
+rules:
+- lowercase
+- trailing slash
+- stable product hierarchy
+urls:
+- page_id: P-HOME
+  proposed_url: /
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-PROD
+  proposed_url: /products/
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-ROBOT
+  proposed_url: /products/collaborative-palletizing-robot/
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-APP
+  proposed_url: /applications/
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-RES
+  proposed_url: /resources/
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null
+- page_id: P-CON
+  proposed_url: /contact/
+  existing_live_url: null
+  change_type: NEW
+  live_change_approved: null
+  migration_rationale: null

@@ -1,0 +1,9 @@
+page_id: NEW
+operations:
+  - operation_id: op-001
+    section_id: HERO_01
+    action: create_component
+    execution_capability: wordpress_draft_create
+    risk: LOW
+    expected_result: HERO_PRODUCT_01 persisted in Draft
+    approval_required: false

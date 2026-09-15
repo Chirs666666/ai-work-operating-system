@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action": {
+      "enum": [
+        "KEEP",
+        "MONITOR",
+        "REFRESH",
+        "EXPAND",
+        "REWRITE",
+        "MERGE",
+        "REPOSITION",
+        "UPDATE_METADATA",
+        "ADD_INTERNAL_LINKS",
+        "ADD_EVIDENCE",
+        "REVIEW_AUTHORITY",
+        "TECHNICAL_FIX"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reason": {
+      "type": "string"
+    },
+    "merge_or_url_change": {
+      "type": "boolean"
+    },
+    "ownership_confirmation_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "action",
+    "evidence_refs",
+    "reason",
+    "merge_or_url_change",
+    "ownership_confirmation_required"
+  ],
+  "additionalProperties": false
+}

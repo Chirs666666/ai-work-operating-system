@@ -1,0 +1,8 @@
+gate: BLOCK
+component_state: BLOCKED
+ready_for_assembly: false
+warnings: []
+blockers:
+- Resolve WB01 navigation conflict.
+next_skills:
+- WB01-site-architecture-builder

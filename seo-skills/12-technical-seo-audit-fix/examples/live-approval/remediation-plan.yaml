@@ -1,0 +1,10 @@
+items:
+- issue_id: RD-04
+  action: CREATE_301
+  scope:
+  - https://example.com/old/
+  confidence: HIGH
+  risk_class: URL_OWNERSHIP_CHANGE
+  approval_required: true
+  rollback: Remove the new redirect rule
+  verification_method: Fetch source URL and confirm one-hop 301 to approved target

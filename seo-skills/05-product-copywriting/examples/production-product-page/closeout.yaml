@@ -1,0 +1,10 @@
+gate: G05
+status: PASS
+rationale: PRODUCTION copy fills required slots with declared fictional evidence and
+  passes copy QA.
+allowed_handoffs:
+- 09-seo-metadata
+- 17-image-generation
+- 07-wordpress-page-builder
+blocked_handoffs: []
+return_to: []

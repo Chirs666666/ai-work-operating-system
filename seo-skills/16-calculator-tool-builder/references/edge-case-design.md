@@ -1,0 +1,2 @@
+# Edge Case Design
+Review empty values, non-numeric values, zero, negatives, division by zero, impossible geometry, incompatible input combinations, extreme magnitudes, precision behavior, missing optional inputs and unit mismatch. Define both validation message and calculation behavior.

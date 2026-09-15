@@ -1,0 +1,9 @@
+journeys:
+- icp_id: icp-cnc
+  classification: HYPOTHESIS
+  stages:
+  - stage: technical evaluation
+    questions:
+    - Can it handle our part mix?
+    proof_needed:
+    - payload and gripper compatibility

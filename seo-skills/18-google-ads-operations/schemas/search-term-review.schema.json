@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "terms": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "search_term": {
+            "type": "string"
+          },
+          "relevance": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "commercial_intent": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNKNOWN"
+            ]
+          },
+          "spend": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "conversions": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "action": {
+            "enum": [
+              "KEEP",
+              "ADD_AS_KEYWORD",
+              "ADD_NEGATIVE",
+              "CHANGE_MATCH_TYPE",
+              "MOVE_AD_GROUP",
+              "CREATE_NEW_LANDING_PAGE",
+              "WATCH",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "search_term",
+          "relevance",
+          "commercial_intent",
+          "spend",
+          "conversions",
+          "action"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "terms"
+  ],
+  "additionalProperties": false
+}

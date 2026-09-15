@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "AUDIT_PAGE",
+        "OPTIMIZE_PAGE",
+        "REFRESH_PAGE",
+        "REWRITE_PAGE",
+        "BATCH_AUDIT",
+        "VERIFY"
+      ]
+    },
+    "final_action": {
+      "enum": [
+        "KEEP",
+        "MINOR_OPTIMIZE",
+        "SECTION_OPTIMIZE",
+        "STRUCTURAL_REFRESH",
+        "REWRITE",
+        "HOLD",
+        "BLOCK_FOR_OWNERSHIP"
+      ]
+    },
+    "g10": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approval_pending": {
+      "type": "boolean"
+    },
+    "downstream_handoffs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "final_action",
+    "g10",
+    "warnings",
+    "blockers",
+    "approval_pending",
+    "downstream_handoffs"
+  ],
+  "additionalProperties": false
+}

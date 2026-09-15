@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "risk_class": {
+      "enum": [
+        "SAFE_DRAFT_CHANGE",
+        "LIVE_LOW_RISK_RECOMMENDATION",
+        "LIVE_PERFORMANCE_SENSITIVE",
+        "HIGH_RISK_REWRITE"
+      ]
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "before": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "after": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "why": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_effect": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "risk_class",
+    "approval_required"
+  ],
+  "additionalProperties": false
+}

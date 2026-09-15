@@ -1,0 +1,10 @@
+mode: DRAFT
+checks:
+  claim_evidence: PASS
+  keyword_naturalness: PASS
+  repetition: PASS
+  cta_alignment: PASS
+  style_readability: PASS
+  blueprint_slots: WARN
+issues:
+- Proof slot has a non-critical evidence gap.

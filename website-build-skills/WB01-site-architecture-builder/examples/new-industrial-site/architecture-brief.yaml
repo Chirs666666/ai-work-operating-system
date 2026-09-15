@@ -1,0 +1,13 @@
+goal: Plan a new industrial B2B site
+audience:
+- engineers
+- buyers
+markets:
+- global
+business_scope:
+- collaborative robots
+architecture_state: READY_FOR_BUILD
+constraints: []
+success_criteria:
+- clear product hierarchy
+- no ownership conflicts

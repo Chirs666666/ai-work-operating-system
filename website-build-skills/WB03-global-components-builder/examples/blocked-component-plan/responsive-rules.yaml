@@ -1,0 +1,6 @@
+breakpoints_source: WB02/global-design-tokens.yaml
+rules:
+- component_id: header
+  breakpoint: mobile
+  behavior: Use mobile navigation interaction
+status: PASS

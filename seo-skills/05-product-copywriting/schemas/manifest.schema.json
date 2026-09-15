@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "skill",
+    "version",
+    "mode",
+    "page_type",
+    "source",
+    "upstream"
+  ],
+  "properties": {
+    "skill": {
+      "const": "05-product-copywriting"
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "mode": {
+      "enum": [
+        "DRAFT",
+        "PRODUCTION"
+      ]
+    },
+    "page_type": {
+      "const": "PRODUCT"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "USER_DATA",
+            "API_DATA",
+            "PUBLIC_RESEARCH"
+          ]
+        }
+      }
+    },
+    "upstream": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Manifest"
+}

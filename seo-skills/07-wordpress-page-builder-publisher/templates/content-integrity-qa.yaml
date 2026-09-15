@@ -1,0 +1,10 @@
+page_id: "123"
+qa_type: CONTENT_INTEGRITY
+status: PASS
+checks:
+  - check_id: heading-integrity
+    severity: HIGH
+    expected: Example product heading
+    actual: Example product heading
+    status: PASS
+    evidence: source artifact vs read-back

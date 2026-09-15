@@ -1,0 +1,7 @@
+formulas:
+- formula_id: ba-arc-length
+  formula_state: VERIFIED
+  evidence_refs:
+  - SRC-BA-1
+  conflict_notes: []
+  production_allowed: true

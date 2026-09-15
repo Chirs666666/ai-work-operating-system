@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "opportunity_id": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "P1_HIGH",
+              "P2_MEDIUM",
+              "P3_LOW",
+              "HOLD",
+              "REUSE"
+            ]
+          },
+          "action": {
+            "type": "string"
+          },
+          "owner_skill": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "opportunity_id",
+          "priority",
+          "action",
+          "owner_skill"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

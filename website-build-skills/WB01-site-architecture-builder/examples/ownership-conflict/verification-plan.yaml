@@ -1,0 +1,11 @@
+checks:
+- check_id: V1
+  description: URLs unique
+  status: PASS
+  evidence:
+  - url-architecture.yaml
+- check_id: V2
+  description: Ownership aligned
+  status: PASS
+  evidence:
+  - keyword-page-input-check.yaml

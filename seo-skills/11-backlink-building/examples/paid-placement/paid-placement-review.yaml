@@ -1,0 +1,8 @@
+items:
+- prospect_id: P6
+  paid: true
+  price: 250
+  currency: USD
+  source: Publisher quote
+  approval_required: true
+  approved: false

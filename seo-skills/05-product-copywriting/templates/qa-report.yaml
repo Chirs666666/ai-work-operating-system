@@ -1,0 +1,9 @@
+mode: DRAFT
+checks:
+  claim_evidence: NOT_RUN
+  keyword_naturalness: NOT_RUN
+  repetition: NOT_RUN
+  cta_alignment: NOT_RUN
+  style_readability: NOT_RUN
+  blueprint_slots: NOT_RUN
+issues: []

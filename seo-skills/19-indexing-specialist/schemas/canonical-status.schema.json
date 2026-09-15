@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "declared_canonical": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "selected_canonical": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intended_canonical": {
+      "type": "string"
+    },
+    "alignment": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "required": [
+    "declared_canonical",
+    "selected_canonical",
+    "intended_canonical",
+    "alignment"
+  ],
+  "additionalProperties": false
+}

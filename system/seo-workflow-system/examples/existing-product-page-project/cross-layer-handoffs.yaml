@@ -1,0 +1,6 @@
+handoffs:
+- from_node: WB08
+  to_node: '19'
+  artifact_id: AW7
+  purpose: verify actual indexing
+  state: READY

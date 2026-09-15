@@ -1,0 +1,10 @@
+page_id: "123"
+qa_type: STRUCTURE
+status: PASS
+checks:
+  - check_id: required-sections
+    severity: HIGH
+    expected: [HERO_01]
+    actual: [HERO_01]
+    status: PASS
+    evidence: persisted read-back

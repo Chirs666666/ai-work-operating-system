@@ -1,0 +1,21 @@
+evaluations:
+- candidate_id: META-C01
+  search_intent_alignment: PASS
+  primary_topic_alignment: PASS
+  url_ownership_alignment: PASS
+  accuracy_evidence: PASS
+  differentiation: PASS
+  search_appeal: PASS
+  readability_naturalness: PASS
+  serp_display_risk: PASS
+  outcome: RECOMMENDED
+- candidate_id: META-C02
+  search_intent_alignment: PASS
+  primary_topic_alignment: PASS
+  url_ownership_alignment: PASS
+  accuracy_evidence: PASS
+  differentiation: PASS
+  search_appeal: PASS
+  readability_naturalness: PASS
+  serp_display_risk: PASS
+  outcome: ACCEPTABLE

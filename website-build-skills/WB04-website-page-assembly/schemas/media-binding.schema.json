@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "asset_id": {
+            "type": "string"
+          },
+          "artifact_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "alt_text_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "BOUND",
+              "MISSING",
+              "UNKNOWN",
+              "NOT_REQUIRED"
+            ]
+          }
+        },
+        "required": [
+          "section_id",
+          "asset_id",
+          "artifact_ref",
+          "alt_text_owner",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "bindings"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,13 @@
+sections:
+- section_id: capabilities
+  action: REWRITE_SECTION
+  reason: Current section is generic and lacks verified process detail.
+  approval_required: true
+- section_id: proof
+  action: ADD_SECTION
+  reason: Add approved evidence from 01.
+  approval_required: true
+- section_id: faq
+  action: KEEP
+  reason: Already answers buyer questions.
+  approval_required: false

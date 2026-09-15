@@ -1,0 +1,11 @@
+approvals:
+- approval_id: AP1
+  requested_by: WB08
+  action: PRODUCTION_DEPLOYMENT
+  scope: site
+  environment: PRODUCTION
+  risk: HIGH
+  state: APPROVED
+  evidence_ref: explicit-user-approval
+  consumed_by:
+  - WB08

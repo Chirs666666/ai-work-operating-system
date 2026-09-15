@@ -1,0 +1,2 @@
+# Provider Semantics
+GSC average position, Semrush/Ahrefs tracked/estimated position, DataForSEO SERP observations and live Google spot checks are different observations. Never silently merge or relabel them.

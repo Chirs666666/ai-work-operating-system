@@ -1,0 +1,2 @@
+# SEO Tool Page
+Treat the tool as CALCULATOR_TOOL when 25 confirms ownership. The page must satisfy the calculation task first; SEO content supports rather than obstructs the tool. Avoid formula pages that bury the interactive calculator below generic filler. 09 owns Title/Meta.

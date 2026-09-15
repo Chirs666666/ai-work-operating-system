@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "change-log",
+  "type": "object",
+  "required": [
+    "applicable",
+    "changes",
+    "summary"
+  ],
+  "properties": {
+    "applicable": {
+      "type": "boolean"
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "section",
+          "action",
+          "reason"
+        ],
+        "properties": {
+          "section": {
+            "type": "string"
+          },
+          "action": {
+            "enum": [
+              "PRESERVE",
+              "UPDATE",
+              "EXPAND",
+              "REWRITE",
+              "REMOVE",
+              "ADD"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "summary": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

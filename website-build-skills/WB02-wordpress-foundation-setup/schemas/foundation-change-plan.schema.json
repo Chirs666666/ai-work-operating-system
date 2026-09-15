@@ -1,0 +1,94 @@
+{
+  "type": "object",
+  "properties": {
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "PLUGIN_INSTALL",
+              "PLUGIN_ACTIVATE",
+              "PLUGIN_DEACTIVATE",
+              "THEME_CHANGE",
+              "PERMALINK_CHANGE",
+              "SITE_URL_CHANGE",
+              "CACHE_CONFIG_CHANGE",
+              "SECURITY_CONFIG_CHANGE",
+              "ROLE_PERMISSION_CHANGE",
+              "SITE_SETTING_CHANGE",
+              "OTHER"
+            ]
+          },
+          "environment": {
+            "type": "string",
+            "enum": [
+              "STAGING",
+              "PRODUCTION"
+            ]
+          },
+          "risk": {
+            "type": "string",
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "requires_approval": {
+            "type": "boolean"
+          },
+          "approval_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "requires_backup": {
+            "type": "boolean"
+          },
+          "rollback_plan": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "WAITING_APPROVAL",
+              "APPROVED",
+              "BLOCKED",
+              "DONE",
+              "SKIPPED"
+            ]
+          }
+        },
+        "required": [
+          "change_id",
+          "action",
+          "environment",
+          "risk",
+          "requires_approval",
+          "approval_id",
+          "requires_backup",
+          "rollback_plan",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "changes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,7 @@
+required: true
+trigger: critical production failure
+method: restore SNAP-1
+owner: deployment owner
+ready: true
+evidence:
+- restore method confirmed

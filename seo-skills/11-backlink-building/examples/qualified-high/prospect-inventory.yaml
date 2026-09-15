@@ -1,0 +1,11 @@
+prospects:
+- prospect_id: P1
+  domain: industry-example.org
+  url: https://industry-example.org/resources
+  country: US
+  dr: 52
+  da: null
+  authority_score: null
+  organic_traffic: 12500
+  source_ids:
+  - S1

@@ -1,0 +1,9 @@
+classifications:
+- keyword_id: kw-001
+  intent: COMMERCIAL
+  buyer_stage: SOLUTION_RESEARCH
+  evidence: Fictional SERP shows product/category-heavy results.
+- keyword_id: kw-003
+  intent: UNKNOWN
+  buyer_stage: UNKNOWN
+  evidence: null

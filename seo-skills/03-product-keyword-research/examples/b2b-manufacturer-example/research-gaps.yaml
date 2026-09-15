@@ -1,0 +1,5 @@
+gaps:
+- keyword_id: kw-003
+  field: search_demand
+  status: UNKNOWN
+  action: Validate with a keyword metrics source before treating demand as verified.

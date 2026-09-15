@@ -1,0 +1,2 @@
+# Tracking Readiness
+Statuses: TRACKING_UNVERIFIED, TRACKING_VERIFIED, TRACKING_PARTIAL, TRACKING_BROKEN. Do not interpret observed zero conversions as poor campaign performance when tracking is broken/unverified.

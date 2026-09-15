@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "READY_FOR_APPROVAL",
+        "WAITING_APPROVAL",
+        "APPROVED",
+        "PRE_DEPLOYMENT_READY",
+        "DEPLOYING",
+        "DEPLOYED",
+        "SMOKE_TEST_PASSED",
+        "PRODUCTION_VERIFIED",
+        "LAUNCH_VERIFIED",
+        "ROLLBACK_REQUIRED",
+        "ROLLING_BACK",
+        "ROLLBACK_VERIFIED",
+        "BLOCKED"
+      ]
+    },
+    "launch_verified": {
+      "type": "boolean"
+    },
+    "handoff_to_19_ready": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "state",
+    "launch_verified",
+    "handoff_to_19_ready",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

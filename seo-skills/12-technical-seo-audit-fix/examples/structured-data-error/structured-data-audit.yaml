@@ -1,0 +1,7 @@
+items:
+- url: https://example.com/product/
+  schema_type: Product
+  status: ERROR
+  errors:
+  - Invalid existing Product markup property value
+  warnings: []

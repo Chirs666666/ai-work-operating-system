@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "source_type": {
+            "enum": [
+              "USER_IMAGE",
+              "COMPANY_ASSET",
+              "PUBLIC_REFERENCE",
+              "TECHNICAL_DOCUMENT",
+              "GENERATED_ASSET",
+              "OTHER"
+            ]
+          },
+          "method": {
+            "enum": [
+              "USER_DATA",
+              "API_DATA",
+              "PUBLIC_RESEARCH",
+              "GENERATED"
+            ]
+          },
+          "reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "source_id",
+          "source_type",
+          "method"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sources"
+  ],
+  "additionalProperties": false
+}

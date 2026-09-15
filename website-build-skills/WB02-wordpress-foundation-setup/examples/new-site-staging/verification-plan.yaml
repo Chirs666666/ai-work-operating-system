@@ -1,0 +1,11 @@
+checks:
+- check_id: V1
+  description: WB01 permalink alignment
+  status: PASS
+  evidence:
+  - permalink-baseline.yaml
+- check_id: V2
+  description: SEO capability ownership
+  status: PASS
+  evidence:
+  - seo-compatibility.yaml

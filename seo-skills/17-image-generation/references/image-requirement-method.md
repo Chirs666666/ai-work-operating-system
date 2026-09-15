@@ -1,0 +1,2 @@
+# Image Requirement Method
+Define purpose, page role, image type, target subject, target audience, source requirement, dimensions, aspect ratio, composition, text/data needs, truth class and acceptance criteria before production.

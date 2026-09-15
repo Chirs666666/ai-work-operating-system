@@ -1,0 +1,7 @@
+items:
+- opportunity_id: O12
+  type: QUICK_WIN
+  url: https://example.com/product/
+  priority: P1_HIGH
+  reason: High impressions, positions 4-10, low click capture relative to current
+    query mix; validate snippet/content fit.

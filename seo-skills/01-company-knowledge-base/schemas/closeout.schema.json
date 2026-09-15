@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "mode",
+    "status",
+    "gate",
+    "files_written",
+    "downstream_ready",
+    "downstream_blocked"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "VERIFY",
+        "REFRESH",
+        "MERGE",
+        "AUDIT"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "gate": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "summary": {},
+    "files_written": {
+      "type": "array"
+    },
+    "unresolved_conflicts": {
+      "type": "array"
+    },
+    "open_gaps": {
+      "type": "array"
+    },
+    "downstream_ready": {
+      "type": "array"
+    },
+    "downstream_blocked": {
+      "type": "array"
+    },
+    "next_action": {}
+  }
+}

@@ -1,0 +1,9 @@
+items:
+- url: https://example.com/core-product/
+  preservation_risk: CRITICAL
+  ranking_value: true
+  traffic_value: true
+  conversion_value: true
+  backlink_value: true
+  notes:
+  - Do not replace URL or rewrite blindly.

@@ -1,0 +1,7 @@
+schema_present: true
+page_aligned: true
+types:
+- Organization
+guarantees_ai_citation: false
+findings:
+- Schema supports alignment but does not guarantee AI citation.

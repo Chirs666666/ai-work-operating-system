@@ -1,0 +1,4 @@
+state: STALE
+recommended_operation: INCREMENTAL_UPDATE
+reasons:
+- Sitemap added new product URLs and ownership changed for one cluster.

@@ -1,0 +1,14 @@
+risk_class: LOW_RISK_CONTENT_CHANGE
+approval_required: true
+before:
+  cta: Contact Us
+after:
+  cta: Request a Machining Review
+why: More specific next step
+evidence:
+- buyer journey
+preserved_elements:
+- H1
+- proof section
+expected_effect: Clearer commercial next step
+risk: Low content risk; live execution still requires approval

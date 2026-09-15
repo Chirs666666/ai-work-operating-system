@@ -1,0 +1,4 @@
+handoffs:
+- target_skill: 06-content-writing-optimization
+  reason: Indexed informational page lacks relevant target-query visibility.
+  blocking: false

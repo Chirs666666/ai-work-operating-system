@@ -1,0 +1,11 @@
+handoffs:
+- to_skill: 21-page-speed-optimization
+  artifact: performance-foundation.yaml
+  purpose: measured performance validation
+  gate: PASS
+  notes: []
+- to_skill: WB07-pre-launch-qa
+  artifact: closeout.yaml
+  purpose: pre-launch infrastructure gate
+  gate: PASS
+  notes: []

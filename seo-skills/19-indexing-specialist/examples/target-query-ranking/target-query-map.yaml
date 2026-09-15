@@ -1,0 +1,6 @@
+targets:
+- target_query: collaborative welding robot
+  observed_matches:
+  - collaborative welding robot
+  best_match_class: TARGET_MATCH
+  status: DETECTED

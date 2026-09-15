@@ -1,0 +1,2 @@
+# site: Query Limitations
+A Google `site:` query is an auxiliary public signal. Presence/absence is not a reliable substitute for Search Console/URL Inspection and must not become definitive proof by itself.

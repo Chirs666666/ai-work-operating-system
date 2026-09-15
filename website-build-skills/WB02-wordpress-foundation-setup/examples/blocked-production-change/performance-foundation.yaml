@@ -1,0 +1,8 @@
+cache_owner: cache
+cdn_owner: hosting/CDN
+image_optimization_owner: media pipeline
+minification_owner: cache
+object_cache_owner: null
+production_change_required: false
+compatibility_status: PASS
+notes: []

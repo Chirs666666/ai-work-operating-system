@@ -1,0 +1,5 @@
+components:
+- component_id: '404'
+  type: '404'
+  purpose: Recover navigation
+  owner: WB03

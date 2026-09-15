@@ -1,0 +1,5 @@
+claims:
+- claim_id: C2
+  text: Tolerance down to ±0.01 mm on qualified parts
+  state: CONDITIONAL
+  qualifier: on qualified parts

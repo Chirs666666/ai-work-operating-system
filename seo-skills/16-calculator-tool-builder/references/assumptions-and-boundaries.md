@@ -1,0 +1,2 @@
+# Assumptions and Boundaries
+State what the model includes and excludes. Separate ideal geometry, material behavior, machine-specific correction, empirical factors, and user-configured factors. Limits that are not evidence-backed remain null/UNKNOWN. A simplified model is acceptable only when the simplification is visible to the user.

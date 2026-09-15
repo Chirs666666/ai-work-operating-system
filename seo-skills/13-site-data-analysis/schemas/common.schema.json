@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "SITE_OVERVIEW",
+        "SEARCH_PERFORMANCE",
+        "PAGE_PERFORMANCE",
+        "QUERY_PAGE_ANALYSIS",
+        "PERIOD_COMPARISON",
+        "COMPETITOR_VISIBILITY",
+        "CAMPAIGN_REVIEW",
+        "ANOMALY_DIAGNOSIS"
+      ]
+    },
+    "g13": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "source_quality": {
+      "enum": [
+        "VERIFIED",
+        "PARTIAL",
+        "STALE",
+        "CONFLICTING",
+        "UNKNOWN"
+      ]
+    },
+    "change": {
+      "enum": [
+        "GROWTH",
+        "DECLINE",
+        "MIXED",
+        "STABLE",
+        "INSUFFICIENT_DATA",
+        "CONFLICTING_DATA"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "CONFIRMED",
+        "SUPPORTED",
+        "PLAUSIBLE",
+        "UNVERIFIED",
+        "REJECTED"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "P1_HIGH",
+        "P2_MEDIUM",
+        "P3_LOW",
+        "HOLD",
+        "REUSE"
+      ]
+    }
+  }
+}

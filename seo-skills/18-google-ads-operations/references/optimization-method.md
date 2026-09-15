@@ -1,0 +1,2 @@
+# Optimization
+Diagnose before changing. Separate tracking problems, traffic-quality problems, ad-message problems, landing-page problems and bidding/budget constraints. Recommendations are not live actions.

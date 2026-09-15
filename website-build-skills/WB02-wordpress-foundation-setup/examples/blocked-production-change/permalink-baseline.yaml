@@ -1,0 +1,9 @@
+wb01_artifact: WB01/url-architecture.yaml
+wb01_alignment: ALIGNED
+post_structure: /resources/%postname%/
+product_structure: /products/%postname%/
+category_base: category
+tag_base: tag
+production_permalink_change_required: false
+migration_required: false
+notes: []

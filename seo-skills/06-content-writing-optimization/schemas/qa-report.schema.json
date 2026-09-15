@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "qa-report",
+  "type": "object",
+  "required": [
+    "checks",
+    "overall",
+    "critical_issues",
+    "warnings"
+  ],
+  "properties": {
+    "checks": {
+      "type": "array"
+    },
+    "overall": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "UNKNOWN"
+      ]
+    },
+    "critical_issues": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

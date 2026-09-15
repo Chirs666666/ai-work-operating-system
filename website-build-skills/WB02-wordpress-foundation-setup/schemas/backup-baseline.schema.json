@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "backup_available": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "last_backup_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "restore_tested": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "rollback_ready": {
+      "type": "boolean"
+    },
+    "backup_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "backup_available",
+    "last_backup_at",
+    "restore_tested",
+    "rollback_ready",
+    "backup_owner",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

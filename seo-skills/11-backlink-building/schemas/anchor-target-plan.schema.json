@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "anchor_type": {
+            "enum": [
+              "BRAND",
+              "URL",
+              "PRODUCT_ENTITY",
+              "PARTIAL_DESCRIPTIVE",
+              "EXACT_DESCRIPTIVE",
+              "GENERIC",
+              "OTHER"
+            ]
+          },
+          "anchor_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "editorial_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "prospect_id",
+          "target_url",
+          "anchor_type"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

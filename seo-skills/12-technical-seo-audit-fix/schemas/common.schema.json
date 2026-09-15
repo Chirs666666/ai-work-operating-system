@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "mode": {
+      "enum": [
+        "FULL_AUDIT",
+        "TARGETED_AUDIT",
+        "BROKEN_LINK_AUDIT",
+        "REMEDIATION_PLAN",
+        "EXECUTE_SAFE_FIXES",
+        "VERIFY_FIXES"
+      ]
+    },
+    "g12": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "CRITICAL",
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INFO",
+        "UNKNOWN"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "P0_BLOCKING",
+        "P1_HIGH",
+        "P2_MEDIUM",
+        "P3_LOW",
+        "HOLD",
+        "REUSE"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "verify": {
+      "enum": [
+        "VERIFIED_FIXED",
+        "PARTIAL",
+        "NOT_FIXED",
+        "REGRESSION",
+        "UNKNOWN"
+      ]
+    },
+    "risk": {
+      "enum": [
+        "SAFE_READ_ONLY",
+        "SAFE_REVERSIBLE_FIX",
+        "LIVE_PAGE_TECHNICAL_CHANGE",
+        "SITEWIDE_CONFIGURATION_CHANGE",
+        "URL_OWNERSHIP_CHANGE",
+        "SERVER_OR_CDN_CHANGE"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+items:
+- issue_id: RB-02
+  url: https://example.com/service/
+  robots_txt: BLOCKED
+  meta_robots: INDEX
+  x_robots: UNKNOWN
+  intended_indexability: INDEX
+  status: CONFLICT

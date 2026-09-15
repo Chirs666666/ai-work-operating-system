@@ -1,0 +1,10 @@
+items:
+- actions:
+  - MERGE
+  - REDIRECT
+  affected_urls:
+  - /cobot-welding/
+  destination_url: /collaborative-welding-robot/
+  execution_allowed: false
+  status: WAITING_APPROVAL
+  approval_required: true

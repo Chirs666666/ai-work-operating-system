@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "retests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "retest_id": {
+            "type": "string"
+          },
+          "defect_id": {
+            "type": "string"
+          },
+          "performed": {
+            "type": "boolean"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "retest_id",
+          "defect_id",
+          "performed",
+          "result",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "retests"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

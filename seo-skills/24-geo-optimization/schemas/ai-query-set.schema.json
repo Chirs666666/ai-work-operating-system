@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "queries": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "query_id": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "intent": {
+            "type": "string"
+          },
+          "target_entity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "query_id",
+          "query",
+          "intent",
+          "target_entity"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "queries"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "page_type": {
+      "const": "CALCULATOR_TOOL"
+    },
+    "primary_task": {
+      "type": "string"
+    },
+    "keyword_input_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ownership_confirmed_by_25": {
+      "type": "boolean"
+    },
+    "metadata_owned_by_09": {
+      "const": true
+    },
+    "tool_above_generic_filler": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "page_type",
+    "primary_task",
+    "keyword_input_refs",
+    "ownership_confirmed_by_25",
+    "metadata_owned_by_09",
+    "tool_above_generic_filler"
+  ],
+  "additionalProperties": false
+}

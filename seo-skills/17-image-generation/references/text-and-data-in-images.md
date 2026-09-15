@@ -1,0 +1,2 @@
+# Text and Data in Images
+Every technical number, dimension, tolerance, performance value, certification or customer name shown inside an image requires evidence. Prefer keeping long explanatory copy in HTML rather than rasterized into images.

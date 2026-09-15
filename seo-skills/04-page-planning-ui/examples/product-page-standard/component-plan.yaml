@@ -1,0 +1,14 @@
+components:
+- id: product-hero
+  used_by:
+  - hero
+  reusable: true
+- id: section-shell
+  used_by:
+  - product-value
+  - technical-specifications
+  - applications
+  - proof
+  - faq
+  - final-cta
+  reusable: true

@@ -1,0 +1,6 @@
+action: ADD_INTERNAL_LINKS
+evidence_refs:
+- E1
+reason: Route to specialist.
+merge_or_url_change: false
+ownership_confirmation_required: false

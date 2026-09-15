@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "variables": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "variable_id": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "INPUT",
+              "OUTPUT",
+              "INTERMEDIATE"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "quantity_type": {
+            "type": "string"
+          },
+          "base_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "accepted_units": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "default_value": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "default_justification": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "minimum": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "maximum": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ui_input_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "variable_id",
+          "role",
+          "label",
+          "description",
+          "quantity_type",
+          "base_unit",
+          "accepted_units",
+          "required",
+          "default_value",
+          "default_justification"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "variables"
+  ],
+  "additionalProperties": false
+}

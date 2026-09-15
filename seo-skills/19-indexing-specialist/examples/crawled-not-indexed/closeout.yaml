@@ -1,0 +1,6 @@
+mode: INDEXING_DIAGNOSIS
+g19: WARN
+final_status: PARTIAL
+warnings:
+- CRAWLED_NOT_INDEXED
+blockers: []

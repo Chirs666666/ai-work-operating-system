@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "hypothesis": {
+      "type": "string"
+    },
+    "variable": {
+      "type": "string"
+    },
+    "primary_metric": {
+      "type": "string"
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stop_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "live_delivery_change": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "hypothesis",
+    "variable",
+    "primary_metric",
+    "guardrails",
+    "stop_criteria",
+    "live_delivery_change"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+checks:
+- check_id: infra
+  target: site
+  severity: BLOCK
+  result: PASS
+  evidence:
+  - verified
+  defect_id: null
+overall: PASS

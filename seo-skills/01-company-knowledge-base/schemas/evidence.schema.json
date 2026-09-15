@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "evidence"
+  ],
+  "properties": {
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "entity",
+          "claim",
+          "source",
+          "evidence_level",
+          "verification_status",
+          "allowed_use"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entity": {
+            "type": "object"
+          },
+          "claim": {
+            "type": "object"
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "enum": [
+                  "USER_PROVIDED",
+                  "COMPANY_OFFICIAL",
+                  "EXTERNAL_PRIMARY",
+                  "EXTERNAL_SECONDARY",
+                  "INFERRED",
+                  "UNKNOWN"
+                ]
+              }
+            }
+          },
+          "evidence_level": {
+            "enum": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
+          },
+          "verification_status": {
+            "type": "string"
+          },
+          "allowed_use": {
+            "type": "array"
+          },
+          "notes": {},
+          "last_verified": {}
+        }
+      }
+    }
+  }
+}

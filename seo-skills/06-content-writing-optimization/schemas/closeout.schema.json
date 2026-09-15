@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "closeout",
+  "type": "object",
+  "required": [
+    "mode",
+    "g06",
+    "rationale",
+    "handoffs",
+    "open_gaps"
+  ],
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "REFRESH",
+        "REWRITE"
+      ]
+    },
+    "g06": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "handoffs": {
+      "type": "array"
+    },
+    "open_gaps": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

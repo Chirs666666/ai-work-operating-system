@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "section_type": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_artifact": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "BOUND",
+              "MISSING",
+              "BLOCKED",
+              "REUSE"
+            ]
+          }
+        },
+        "required": [
+          "section_id",
+          "section_type",
+          "required",
+          "order",
+          "source_owner",
+          "source_artifact",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sections"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

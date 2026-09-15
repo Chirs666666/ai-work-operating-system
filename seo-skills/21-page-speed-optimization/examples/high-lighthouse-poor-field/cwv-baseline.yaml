@@ -1,0 +1,18 @@
+field_data_available: true
+lcp:
+  value: 4100
+  unit: ms
+  status: POOR
+  source_ref: CRUX-2
+inp:
+  value: 180
+  unit: ms
+  status: GOOD
+  source_ref: CRUX-2
+cls:
+  value: 0.08
+  unit: score
+  status: GOOD
+  source_ref: CRUX-2
+field_cwv_status: POOR
+source_window: rolling field window

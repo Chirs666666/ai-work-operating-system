@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "calculator_name": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "user_decision": {
+      "type": "string"
+    },
+    "page_type": {
+      "const": "CALCULATOR_TOOL"
+    },
+    "target_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk_level": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "calculator_name",
+    "purpose",
+    "user_decision",
+    "page_type",
+    "risk_level",
+    "notes"
+  ],
+  "additionalProperties": false
+}

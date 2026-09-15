@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "PLAN_CAMPAIGN",
+        "DISCOVER_PROSPECTS",
+        "QUALIFY_PROSPECTS",
+        "BUILD_OUTREACH_QUEUE",
+        "VERIFY_LINKS",
+        "AUDIT_CAMPAIGN"
+      ]
+    },
+    "g11": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "READY",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL",
+        "DONE"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g11",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

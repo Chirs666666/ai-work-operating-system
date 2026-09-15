@@ -1,0 +1,10 @@
+workflow_id: NEW_SITE_BUILD
+tasks:
+- task_id: T1
+  skill: WB01
+  action: RUN
+  state: PASS
+- task_id: T2
+  skill: WB08
+  action: RUN
+  state: DONE

@@ -1,0 +1,10 @@
+page_id: "123"
+connection_status: CONNECTED
+operations:
+  - operation_id: op-001
+    action: create_component
+    write_performed: true
+    result_status: SUCCESS
+    channel: WORDPRESS_API
+    readback_id: rb-001
+    notes: write requires persisted-state verification

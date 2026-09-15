@@ -1,0 +1,2 @@
+# Dynamic Adaptation Rules
+Adapt using search intent, buyer stage, commercial goal, ICP, pain/requirements, complexity, available proof, SERP patterns, existing architecture, information gain, conversion friction, and responsive usability. SERP prevalence is evidence of expectations, not a mandatory template. Add or remove sections only with a stated rationale.

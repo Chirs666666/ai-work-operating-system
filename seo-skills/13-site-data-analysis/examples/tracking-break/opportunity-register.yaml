@@ -1,0 +1,6 @@
+items:
+- opportunity_id: O11
+  type: TRACKING_FIX
+  url: null
+  priority: P1_HIGH
+  reason: Conversion data is incomplete after tracking configuration change.

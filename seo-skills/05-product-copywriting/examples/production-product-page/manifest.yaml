@@ -1,0 +1,16 @@
+skill: 05-product-copywriting
+version: 1.0.0
+mode: PRODUCTION
+page_type: PRODUCT
+source:
+  method: USER_DATA
+  source_name: fictional-example-dataset
+  provider: null
+  url: null
+  collected_at: '2026-09-14'
+  market: Example Market
+  language: en
+upstream:
+  G25: PASS
+  G04: PASS
+fictional_example: true

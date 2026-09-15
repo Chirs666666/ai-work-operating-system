@@ -1,0 +1,25 @@
+items:
+- url: /core-product/
+  priority: PRIORITY_HIGH
+  recommended_action: SECTION_OPTIMIZE
+  reason: Core commercial page with material content/evidence gaps
+- url: /service/
+  priority: PRIORITY_MEDIUM
+  recommended_action: MINOR_OPTIMIZE
+  reason: Offer clarity gap
+- url: /older-capability/
+  priority: PRIORITY_LOW
+  recommended_action: KEEP
+  reason: Low urgency and acceptable fit
+- url: /conflict/
+  priority: HOLD
+  recommended_action: BLOCK_FOR_OWNERSHIP
+  reason: Resolve URL ownership first
+- url: /healthy/
+  priority: REUSE
+  recommended_action: KEEP
+  reason: Healthy and aligned
+- url: /archive/
+  priority: SKIP
+  recommended_action: HOLD
+  reason: Not a target commercial page

@@ -1,0 +1,6 @@
+opportunities:
+- target_topic: related technical capability
+  anchor_concept: engineering validation
+  reason: Useful next step after the reader understands the concept.
+  priority: MEDIUM
+execution_owner: 08-internal-linking

@@ -1,0 +1,5 @@
+required: true
+provider: null
+state: UNKNOWN
+secret_ref: null
+evidence: []

@@ -1,0 +1,2 @@
+# Action Routing
+Technical issue → 12; discovery/internal links → 08; ownership/cannibalization → 25; informational content → 06; commercial page → 10; broad trend analysis → 13. 19 verifies after remediation.

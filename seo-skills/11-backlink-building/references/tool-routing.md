@@ -1,0 +1,2 @@
+# Tool Routing
+Capabilities may include backlink_data, website_research, serp_search, website_crawl, search_console, web_analytics, contact_data, email_or_crm, and public_page_research. Research may use USER_DATA/API_DATA/PUBLIC_RESEARCH. Sending/submission is a separate authorized action. Secrets stay in runtime configuration.

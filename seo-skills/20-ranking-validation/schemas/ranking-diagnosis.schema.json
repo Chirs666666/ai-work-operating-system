@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "primary_issue": {
+      "enum": [
+        "NONE",
+        "INSUFFICIENT_DATA",
+        "INSUFFICIENT_TIME",
+        "WRONG_INTENT",
+        "OWNERSHIP",
+        "CONTENT_GAP",
+        "COMMERCIAL_PAGE_GAP",
+        "INTERNAL_LINKS",
+        "AUTHORITY",
+        "COMPETITION",
+        "INDEX_HEALTH",
+        "UNKNOWN"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INSUFFICIENT"
+      ]
+    },
+    "reasoning": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "primary_issue",
+    "evidence_refs",
+    "confidence",
+    "reasoning"
+  ],
+  "additionalProperties": false
+}

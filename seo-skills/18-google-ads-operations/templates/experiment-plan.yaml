@@ -1,0 +1,6 @@
+hypothesis: ''
+variable: ''
+primary_metric: ''
+guardrails: []
+stop_criteria: []
+live_delivery_change: false

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "opportunity_id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "QUICK_WIN",
+              "CONTENT_UPDATE",
+              "COMMERCIAL_PAGE_OPTIMIZATION",
+              "METADATA_OPPORTUNITY",
+              "INTERNAL_LINK_OPPORTUNITY",
+              "NEW_PAGE_OPPORTUNITY",
+              "OWNERSHIP_REVIEW",
+              "BACKLINK_OPPORTUNITY",
+              "TECHNICAL_FIX",
+              "INDEXING_REVIEW",
+              "PAGE_SPEED_REVIEW",
+              "GEO_OPPORTUNITY",
+              "TRACKING_FIX",
+              "MONITOR_ONLY"
+            ]
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "priority": {
+            "enum": [
+              "P1_HIGH",
+              "P2_MEDIUM",
+              "P3_LOW",
+              "HOLD",
+              "REUSE"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "opportunity_id",
+          "type",
+          "priority",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+component_id: footer
+navigation_groups:
+- name: Products
+  destinations:
+  - /products/
+- name: Resources
+  destinations:
+  - /resources/
+contact_items:
+- /contact/
+legal_items:
+- /privacy/
+notes: []

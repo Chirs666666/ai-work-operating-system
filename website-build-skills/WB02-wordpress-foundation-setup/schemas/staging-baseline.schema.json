@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "staging_available": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "staging_required_for_current_plan": {
+      "type": "boolean"
+    },
+    "isolated_from_indexing": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "sync_strategy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "staging_available",
+    "staging_required_for_current_plan",
+    "isolated_from_indexing",
+    "sync_strategy",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

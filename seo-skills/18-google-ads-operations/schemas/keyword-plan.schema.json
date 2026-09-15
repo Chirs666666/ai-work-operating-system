@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "keywords": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string"
+          },
+          "intent": {
+            "enum": [
+              "HIGH_COMMERCIAL",
+              "COMMERCIAL",
+              "MIXED",
+              "INFORMATIONAL",
+              "UNKNOWN"
+            ]
+          },
+          "match_type": {
+            "enum": [
+              "EXACT",
+              "PHRASE",
+              "BROAD",
+              "UNKNOWN"
+            ]
+          },
+          "landing_page": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cpc": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "cpc_status": {
+            "enum": [
+              "OBSERVED",
+              "ESTIMATED_WITH_SOURCE",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "keyword",
+          "intent",
+          "match_type",
+          "landing_page",
+          "cpc",
+          "cpc_status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "keywords"
+  ],
+  "additionalProperties": false
+}

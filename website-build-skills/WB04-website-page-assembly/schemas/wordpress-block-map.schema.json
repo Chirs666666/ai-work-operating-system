@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "primitive": {
+            "type": "string",
+            "enum": [
+              "CORE_BLOCK",
+              "PATTERN",
+              "TEMPLATE_PART",
+              "CUSTOM_BLOCK",
+              "PLUGIN_BLOCK",
+              "OTHER",
+              "UNKNOWN"
+            ]
+          },
+          "component_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "section_id",
+          "primitive",
+          "component_ref",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mappings"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

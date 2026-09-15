@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "artifact_id": {
+            "type": "string"
+          },
+          "producer": {
+            "type": "string"
+          },
+          "artifact_type": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "fresh": {
+            "type": "boolean"
+          },
+          "provenance_valid": {
+            "type": "boolean"
+          },
+          "assumptions_compatible": {
+            "type": "boolean"
+          },
+          "prior_gate": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "WARN",
+              "REUSE",
+              "FAIL",
+              "BLOCK",
+              "UNKNOWN"
+            ]
+          },
+          "ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "consumers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "artifact_id",
+          "producer",
+          "artifact_type",
+          "scope",
+          "version",
+          "fresh",
+          "provenance_valid",
+          "assumptions_compatible",
+          "prior_gate",
+          "ref",
+          "consumers"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "artifacts"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

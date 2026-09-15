@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "changes"
+  ],
+  "properties": {
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "change_id",
+          "change_class",
+          "scope",
+          "approval_required"
+        ],
+        "properties": {
+          "change_id": {
+            "type": "string"
+          },
+          "change_class": {
+            "enum": [
+              "KEEP",
+              "IMPROVE",
+              "REPLACE",
+              "REMOVE_RECOMMENDATION",
+              "TECHNICAL_ISSUE"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "SINGLE_PAGE",
+              "SMALL_BATCH",
+              "BULK",
+              "SITEWIDE"
+            ]
+          },
+          "before": {},
+          "after": {},
+          "reason": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array"
+          },
+          "risk": {
+            "type": "string"
+          },
+          "approval_required": {
+            "type": "boolean"
+          },
+          "approval_state": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

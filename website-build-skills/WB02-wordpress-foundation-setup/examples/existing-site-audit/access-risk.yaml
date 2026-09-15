@@ -1,0 +1,6 @@
+wp_admin_access: AVAILABLE
+hosting_access: AVAILABLE
+sftp_ssh_access: UNKNOWN
+change_risk: LOW
+execution_allowed: false
+blockers: []

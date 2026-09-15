@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "pages": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "page_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "family_id": {
+            "type": "string"
+          },
+          "page_type": {
+            "type": "string"
+          },
+          "parent_page_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "root": {
+            "type": "boolean"
+          },
+          "proposed_url": {
+            "type": "string"
+          },
+          "existing_live_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "primary_intent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownership_source": {
+            "type": "string",
+            "enum": [
+              "SKILL_25",
+              "USER",
+              "WB01_PROVISIONAL",
+              "UNKNOWN"
+            ]
+          },
+          "ownership_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "differentiation_rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "navigation_visibility": {
+            "type": "string",
+            "enum": [
+              "PRIMARY",
+              "SECONDARY",
+              "FOOTER",
+              "UTILITY",
+              "CONTEXTUAL",
+              "NONE"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "EXISTING",
+              "RETAIN",
+              "NEW",
+              "REVIEW",
+              "BLOCKED"
+            ]
+          }
+        },
+        "required": [
+          "page_id",
+          "title",
+          "family_id",
+          "page_type",
+          "parent_page_id",
+          "root",
+          "proposed_url",
+          "existing_live_url",
+          "primary_intent",
+          "ownership_source",
+          "ownership_key",
+          "differentiation_rationale",
+          "navigation_visibility",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "pages"
+  ],
+  "additionalProperties": false
+}

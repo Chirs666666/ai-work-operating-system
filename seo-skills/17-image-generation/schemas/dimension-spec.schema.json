@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "width_px": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "height_px": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "aspect_ratio": {
+      "type": "string"
+    },
+    "crop_allowed": {
+      "type": "boolean"
+    },
+    "text_safe_area_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "width_px",
+    "height_px",
+    "aspect_ratio",
+    "crop_allowed",
+    "text_safe_area_required"
+  ],
+  "additionalProperties": false
+}

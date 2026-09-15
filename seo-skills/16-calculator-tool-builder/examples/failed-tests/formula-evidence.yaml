@@ -1,0 +1,7 @@
+formulas:
+- formula_id: f1
+  formula_state: VERIFIED
+  evidence_refs:
+  - SRC-F1
+  conflict_notes: []
+  production_allowed: true

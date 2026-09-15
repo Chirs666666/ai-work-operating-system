@@ -1,0 +1,5 @@
+wb01_navigation_artifact: WB01/navigation-map.yaml
+wb01_hierarchy_artifact: WB01/hierarchy-map.yaml
+alignment: CONFLICT
+conflicts:
+- Primary navigation differs from WB01.

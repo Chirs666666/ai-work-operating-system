@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "cache_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cdn_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "image_optimization_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "minification_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "object_cache_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "production_change_required": {
+      "type": "boolean"
+    },
+    "compatibility_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "cache_owner",
+    "cdn_owner",
+    "image_optimization_owner",
+    "minification_owner",
+    "object_cache_owner",
+    "production_change_required",
+    "compatibility_status",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,48 @@
+page:
+  page_id: NEW
+  page_type: PRODUCT
+  build_mode: ELEMENTOR
+  target_status: draft
+  source_builder: NOT_PROVIDED
+  target_slug: collaborative-welding-robot-elementor
+sections:
+  - section_id: HERO_01
+    component:
+      type: PRODUCT_HERO
+      component_id: HERO_PRODUCT_EL_01
+      state: VERIFIED
+    content:
+      heading:
+        value: Collaborative Welding Robot
+        source: 05-product-copywriting
+      repeatability:
+        value: "±0.02 mm"
+        source: 05-product-copywriting
+      primary_cta:
+        value: Request a Welding Review
+        source: 04-page-planning-ui
+    assets:
+      hero_image:
+        value: collaborative-welding-robot-hero.jpg
+        source: 17-image-generation
+    links:
+      primary_cta:
+        value: /contact/
+        source: 04-page-planning-ui
+      contextual_link:
+        value: /welding-robots/
+        anchor: welding robots
+        source: 08-internal-linking
+    layout:
+      desktop: two_column
+      tablet: two_column
+      mobile: stacked
+provenance:
+  - path: sections.HERO_01.content.heading
+    source: 05-product-copywriting
+  - path: sections.HERO_01.content.repeatability
+    source: 05-product-copywriting
+  - path: sections.HERO_01.assets.hero_image
+    source: 17-image-generation
+  - path: sections.HERO_01.links.contextual_link
+    source: 08-internal-linking

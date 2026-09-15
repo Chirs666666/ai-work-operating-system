@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "prospect_id": {
+            "type": "string"
+          },
+          "opportunity_type": {
+            "enum": [
+              "EDITORIAL_MENTION",
+              "RESOURCE_PAGE",
+              "MANUFACTURER_SUPPLIER_LISTING",
+              "COMPANY_PROFILE",
+              "INDUSTRY_DIRECTORY",
+              "PROJECT_LISTING",
+              "GUEST_CONTRIBUTION",
+              "PARTNER_SUPPLIER_LINK",
+              "CASE_STUDY_MENTION",
+              "BROKEN_LINK_REPLACEMENT",
+              "UNLINKED_BRAND_MENTION",
+              "OTHER"
+            ]
+          },
+          "target_url": {
+            "type": "string"
+          },
+          "fit": {
+            "enum": [
+              "PASS",
+              "WARN",
+              "FAIL",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "prospect_id",
+          "opportunity_type",
+          "target_url",
+          "fit"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false
+}

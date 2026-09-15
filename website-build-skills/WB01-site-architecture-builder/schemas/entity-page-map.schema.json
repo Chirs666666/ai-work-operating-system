@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "entity": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string",
+            "enum": [
+              "COMPANY",
+              "PRODUCT",
+              "SERVICE",
+              "APPLICATION",
+              "INDUSTRY",
+              "RESOURCE",
+              "OTHER"
+            ]
+          },
+          "primary_page_id": {
+            "type": "string"
+          },
+          "supporting_page_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "entity",
+          "entity_type",
+          "primary_page_id",
+          "supporting_page_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "mappings"
+  ],
+  "additionalProperties": false
+}

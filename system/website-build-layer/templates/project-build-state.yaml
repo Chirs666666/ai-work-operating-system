@@ -1,0 +1,9 @@
+project_id: ''
+site: ''
+environment: ''
+build_mode: ''
+skill_states: {}
+current_gate: null
+blockers: []
+warnings: []
+next_actions: []

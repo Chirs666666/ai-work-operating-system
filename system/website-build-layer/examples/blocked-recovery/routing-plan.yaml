@@ -1,0 +1,19 @@
+tasks:
+- task_id: FIX
+  skill: WB04
+  capability: page_assembly
+  action: RUN
+  artifact_id: null
+  rationale: fix form defect
+- task_id: QA
+  skill: WB07
+  capability: prelaunch_qa
+  action: VERIFY
+  artifact_id: null
+  rationale: retest affected gate
+- task_id: DEP
+  skill: WB08
+  capability: deployment_launch
+  action: SKIP
+  artifact_id: null
+  rationale: blocked dependency

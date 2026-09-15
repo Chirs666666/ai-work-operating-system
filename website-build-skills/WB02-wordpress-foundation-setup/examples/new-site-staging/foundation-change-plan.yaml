@@ -1,0 +1,10 @@
+changes:
+- change_id: C1
+  action: PLUGIN_INSTALL
+  environment: STAGING
+  risk: LOW
+  requires_approval: false
+  approval_id: null
+  requires_backup: false
+  rollback_plan: Deactivate/remove on staging
+  status: PLANNED

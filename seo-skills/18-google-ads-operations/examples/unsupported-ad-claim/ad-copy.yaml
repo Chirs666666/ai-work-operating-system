@@ -1,0 +1,12 @@
+ads:
+- ad_id: BAD1
+  headlines:
+  - '#1 Welding Robot Manufacturer'
+  descriptions:
+  - Guaranteed 50% cost reduction.
+  landing_page: /welding/
+  claim_refs: []
+  unsupported_claims:
+  - '#1'
+  - Guaranteed 50% cost reduction
+  publish_requested: false

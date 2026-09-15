@@ -1,0 +1,17 @@
+title: 'Fictional Process Allowance: Calculation Limits and Validation'
+sections:
+- id: SEC-01
+  heading: What the concept means
+  purpose: Direct answer
+  evidence_ids:
+  - SRC-001
+- id: SEC-02
+  heading: Variables and boundary conditions
+  purpose: Explain where simplified reasoning changes
+  evidence_ids:
+  - SRC-001
+- id: SEC-03
+  heading: How to validate the result
+  purpose: Provide decision-useful workflow
+  evidence_ids:
+  - SRC-002

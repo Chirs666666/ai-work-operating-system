@@ -1,0 +1,5 @@
+approvals:
+- approval_id: A1
+  action: DNS cutover
+  state: PENDING
+  evidence_ref: null

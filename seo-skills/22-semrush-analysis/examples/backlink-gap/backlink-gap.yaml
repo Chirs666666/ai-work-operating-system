@@ -1,0 +1,8 @@
+prospects:
+- domain: industry.example
+  authority_score: 61
+  relevance: HIGH
+  quality_decision: REVIEW
+  decision_basis:
+  - Industry relevance
+  - Requires placement/traffic/risk review

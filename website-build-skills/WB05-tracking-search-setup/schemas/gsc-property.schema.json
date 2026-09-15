@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "property_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "DOMAIN",
+        "URL_PREFIX",
+        "UNKNOWN"
+      ]
+    },
+    "required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "property_id",
+    "property_type",
+    "required"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

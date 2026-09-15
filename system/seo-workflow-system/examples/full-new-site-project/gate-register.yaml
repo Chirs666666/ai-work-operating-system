@@ -1,0 +1,14 @@
+gates:
+- gate_id: G7
+  owner: WB07
+  required_dependencies: []
+  state: PASS
+  evidence:
+  - WB07 gate
+- gate_id: G8
+  owner: WB08
+  required_dependencies:
+  - D78
+  state: PASS
+  evidence:
+  - production verified

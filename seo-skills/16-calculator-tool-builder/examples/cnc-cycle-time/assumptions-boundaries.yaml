@@ -1,0 +1,9 @@
+assumptions:
+- Only explicitly entered time components are included.
+included_effects:
+- entered cutting time
+- entered tool-change time
+excluded_effects:
+- queue time
+- operator delays unless entered
+boundaries: []

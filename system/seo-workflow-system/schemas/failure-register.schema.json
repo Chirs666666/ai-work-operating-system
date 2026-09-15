@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "failure_id": {
+            "type": "string"
+          },
+          "failed_gate": {
+            "type": "string"
+          },
+          "responsible_node": {
+            "type": "string"
+          },
+          "affected_artifacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dependent_tasks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "OPEN",
+              "FIXING",
+              "RETEST",
+              "RESOLVED",
+              "BLOCKED"
+            ]
+          }
+        },
+        "required": [
+          "failure_id",
+          "failed_gate",
+          "responsible_node",
+          "affected_artifacts",
+          "dependent_tasks",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "failures"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,46 @@
+version: 1.0.0
+capabilities:
+- capability: site_architecture
+  owner: WB01
+  aliases:
+  - architecture
+- capability: wordpress_foundation
+  owner: WB02
+  aliases:
+  - foundation
+- capability: global_components
+  owner: WB03
+  aliases:
+  - components
+- capability: page_assembly
+  owner: WB04
+  aliases:
+  - page_spec
+- capability: tracking_search
+  owner: WB05
+  aliases:
+  - tracking_evidence
+- capability: infrastructure
+  owner: WB06
+  aliases:
+  - infrastructure_evidence
+- capability: prelaunch_qa
+  owner: WB07
+  aliases:
+  - launch_gate
+- capability: deployment_launch
+  owner: WB08
+  aliases:
+  - production_launch
+- capability: technical_seo
+  owner: '12'
+  aliases:
+  - technical_seo_audit_fix
+- capability: indexing
+  owner: '19'
+  aliases:
+  - indexing_state
+- capability: ranking_validation
+  owner: '20'
+  aliases:
+  - ranking_state

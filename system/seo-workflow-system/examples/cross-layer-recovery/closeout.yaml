@@ -1,0 +1,12 @@
+gate: BLOCK
+project_state: BLOCKED
+production_state: NOT_DEPLOYED
+indexing_claimed: false
+ranking_claimed: false
+unknown_metrics_preserved: true
+blockers:
+- WB07 canonical defect
+warnings: []
+next_nodes:
+- '12'
+- WB07

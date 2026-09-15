@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "owner": {
+      "const": "07-wordpress-page-builder-publisher"
+    },
+    "target": {
+      "type": "string"
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "verification_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "owner",
+    "target",
+    "approval_required",
+    "verification_required"
+  ],
+  "additionalProperties": false
+}

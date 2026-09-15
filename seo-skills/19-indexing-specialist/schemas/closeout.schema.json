@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "enum": [
+        "INDEX_CHECK",
+        "INDEXABILITY_AUDIT",
+        "SITEMAP_CHECK",
+        "DISCOVERY_CHECK",
+        "URL_INSPECTION",
+        "QUERY_VALIDATION",
+        "KEYWORD_VALIDATION",
+        "RANKING_CHECK",
+        "POST_PUBLISH_VERIFY",
+        "INDEXING_DIAGNOSIS",
+        "RANKING_DIAGNOSIS",
+        "REFRESH",
+        "VERIFY",
+        "REUSE"
+      ]
+    },
+    "g19": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "BLOCK",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "DONE",
+        "PARTIAL",
+        "BLOCKED",
+        "REUSE",
+        "WAITING_APPROVAL"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "mode",
+    "g19",
+    "final_status",
+    "warnings",
+    "blockers"
+  ],
+  "additionalProperties": false
+}
