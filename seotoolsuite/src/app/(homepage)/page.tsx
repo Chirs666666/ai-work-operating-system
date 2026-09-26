@@ -1,0 +1,712 @@
+import {
+  BinocularsIcon,
+  BookOpenTextIcon,
+  DatabaseZapIcon,
+  InfinityIcon,
+  LinkIcon,
+  LoaderPinwheelIcon,
+  LockIcon,
+  ScaleIcon,
+  SmilePlusIcon,
+  StarIcon,
+  TelescopeIcon,
+  TextSearchIcon,
+  WalletIcon,
+} from "lucide-react";
+import Link from "next/link";
+import type { Metadata } from "next";
+import Image from "next/image";
+import HomeHeader from "@/components/HomeHeader";
+import { HomeFooter } from "@/components/HomeFooter";
+
+export const metadata: Metadata = {
+  title: "SEOToolSuite | Open Source SEO Tools For Everyone",
+  description:
+    "Open source SEO tools for everyone. Keyword research, competitive research, and backlink research, powered by DataForSEO.",
+  openGraph: {
+    type: "website",
+    title: "SEOToolSuite | Open Source SEO Tools For Everyone",
+    description:
+      "Open source SEO tools for everyone. Keyword research, competitive research, and backlink research, powered by DataForSEO.",
+    images: [
+      {
+        url: "/assets/images/seotoolsuite-homepage-screenshot.png",
+      },
+    ],
+  },
+};
+
+export default function HomePage() {
+  return (
+    <div className="homepage relative flex w-full flex-col">
+      <HomeHeader />
+      <section className="hero w-full border-b-2 border-slate-200 bg-[url('/assets/images/papyrus.png')] bg-repeat px-4 lg:px-0">
+        <div className="mx-auto flex w-full max-w-350 flex-col items-center pt-8 lg:pt-14">
+          <h1 className="bg-linear-to-r from-sky-950 to-sky-700 bg-clip-text text-center text-4xl font-semibold text-pretty text-transparent capitalize lg:text-6xl">
+            SEO Tools For Everyone
+          </h1>
+          <p className="mt-4 max-w-200 text-center text-base font-medium text-balance text-black/60 lg:text-xl">
+            SEOToolSuite provides{" "}
+            <b className="font-semibold text-sky-950">open-source</b> SEO tools
+            for everyone.
+            <span className="mt-1 hidden lg:block"></span>
+            <span className="ml-1 lg:ml-0">
+              Pay only for{" "}
+              <b className="font-semibold text-sky-950">what you use</b>, with{" "}
+              <b className="font-semibold text-sky-950">unrestricted access</b>{" "}
+              to SEO data.
+            </span>
+            <span className="mt-1 hidden lg:block"></span>
+            <span className="ml-1 lg:ml-0">
+              Stop <b className="font-semibold text-sky-950">overpaying</b> for
+              SEO tools{" "}
+              <b className="font-semibold text-sky-950">every month</b>. Only
+              pay for <b className="font-semibold text-sky-950">what you use</b>
+              .
+            </span>
+          </p>
+        </div>
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-2 px-4">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
+              <TelescopeIcon size={20} className="text-sky-950" />
+            </div>
+            <span className="text-sm font-medium text-sky-950 md:text-base">
+              Keyword Research
+            </span>
+          </div>
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
+              <BinocularsIcon size={20} className="text-sky-950" />
+            </div>
+            <span className="text-sm font-medium text-sky-950 md:text-base">
+              Competitive Research
+            </span>
+          </div>
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
+              <LinkIcon size={20} className="text-sky-950" />
+            </div>
+            <span className="text-sm font-medium text-sky-950 md:text-base">
+              Backlink Research
+            </span>
+          </div>
+        </div>
+        <div className="mt-6 flex items-center justify-center gap-3">
+          <Link
+            href="/tools"
+            className="flex items-center gap-1 rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+          >
+            Get Started
+          </Link>
+          <Link
+            href="https://github.com/nitishkgupta/seotoolsuite"
+            target="_blank"
+            className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+          >
+            <Image
+              src="/assets/images/github-icon.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              quality={100}
+            />
+            GitHub
+          </Link>
+        </div>
+        <div className="relative mx-auto mt-8 w-fit rounded-t-md border-t-2 border-r-2 border-l-2 border-slate-200 bg-slate-100 px-4 pt-4">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="mx-auto w-full max-w-300 rounded-t-md border-t-2 border-r-2 border-l-2 border-slate-200"
+          >
+            <source
+              src="/assets/videos/tools-recording.webm"
+              type="video/webm"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+      <section className="w-full border-b-2 border-slate-200 bg-white py-8">
+        <div className="mx-auto flex w-full max-w-358 flex-col items-start px-4">
+          <h2 className="text-3xl font-semibold text-sky-950 lg:text-4xl">
+            Why Use SEOToolSuite?
+          </h2>
+          <p className="mt-3 max-w-225 text-base font-medium text-pretty text-black/60 lg:text-lg">
+            An <b className="font-semibold">open-source alternative</b> to
+            Ahrefs, SEMrush, and others. Pay only for{" "}
+            <b className="font-semibold">what you use</b>, no{" "}
+            <b className="font-semibold">extra or hidden charges</b>. Get access
+            to SEO data with <b className="font-semibold">no limits</b>. Get
+            started with a{" "}
+            <b className="font-semibold">free DataForSEO account</b> with{" "}
+            <b className="font-semibold">1$ credits</b>.
+          </p>
+          <div className="mt-6 grid w-full grid-cols-1 items-stretch justify-start gap-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <WalletIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <h3 className="text-base font-semibold lg:text-xl">
+                  Pay-Per-Use Model
+                </h3>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                Pay only for your API usage, based on credits. No extra or
+                hidden charges. Credits never expire.
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <InfinityIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <h3 className="text-base font-semibold lg:text-xl">
+                  Unrestricted Data Access
+                </h3>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                Get access to SEO data with no limits. No limit on the number of
+                rows you can access.
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <DatabaseZapIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <h3 className="text-base font-semibold lg:text-xl">
+                  Caching Supported
+                </h3>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                Cache results to save costs and get faster responses.
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <ScaleIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <h3 className="text-base font-semibold lg:text-xl">
+                  100% Open Source
+                </h3>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                Codebase completely open-sourced under the MIT license.
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <SmilePlusIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <h3 className="text-base font-semibold lg:text-xl">
+                  Clean & Responsive UI
+                </h3>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                Clean and responsive user interface for accessing data with
+                meaningful charts.
+              </div>
+            </div>
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+              <div className="flex w-full items-center gap-2 text-black/80">
+                <div className="rounded-md bg-sky-950 p-2.5 text-white">
+                  <LockIcon
+                    size={24}
+                    className="shrink-0 scale-80 lg:scale-100"
+                  />
+                </div>
+                <span className="text-base font-semibold lg:text-xl">
+                  Completely Secured
+                </span>
+              </div>
+              <div className="text-base text-pretty text-black/80">
+                All DataForSEO API requests made from the browser.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full border-b-2 border-slate-200 bg-white py-8">
+        <div className="mx-auto flex w-full max-w-358 flex-col items-start px-4">
+          <h2 className="text-3xl font-semibold text-sky-950 lg:text-4xl">
+            Powered by DataForSEO
+          </h2>
+          <p className="mt-3 max-w-225 text-base font-medium text-pretty text-black/60 lg:text-lg">
+            DataForSEO is the leading provider of SEO data and APIs. With over{" "}
+            <b className="font-semibold">7 billion</b> keywords in the database,
+            it is one of the best openly available SEO data provider.
+          </p>
+          <div className="mt-6 grid w-full grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-3">
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
+              <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
+                Google Keywords
+              </div>
+              <div className="p-4 text-lg font-semibold lg:text-2xl">
+                7,694,038,302
+              </div>
+            </div>
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
+              <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
+                Bing Keywords
+              </div>
+              <div className="p-4 text-lg font-semibold lg:text-2xl">
+                4,229,969,701
+              </div>
+            </div>
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
+              <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
+                Google SERPs
+              </div>
+              <div className="p-4 text-lg font-semibold lg:text-2xl">
+                592,764,792
+              </div>
+            </div>
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
+              <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
+                Bing SERPs
+              </div>
+              <div className="p-4 text-lg font-semibold lg:text-2xl">
+                51,266,713
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full border-b-2 border-slate-200 bg-white py-10">
+        <div className="mx-auto flex w-full max-w-358 flex-col items-start px-4">
+          <h2 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-4xl">
+            <TelescopeIcon
+              size={52}
+              className="rounded-md bg-sky-950 p-3 text-white"
+            />
+            Keyword Research Tools
+          </h2>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <BookOpenTextIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Keyword Overview
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Keyword Overview tool gives a quick snapshot of a keyword’s
+                performance, including search volume, intent, CPC, competition,
+                trends, and audience insights - helping you evaluate keyword
+                potential and plan your SEO strategy faster.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - DataForSEO API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/keyword-research/overview"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/keyword-overview"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/keyword-overview-screenshot.png"
+                alt="Keyword Overview Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-1500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto mt-12 h-0.5 w-3/4 rounded-md bg-slate-200"></div>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <TextSearchIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Keyword Suggestions
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Keyword Suggestions tool generates a large list of relevant
+                keyword ideas based on your seed keyword. It provides key
+                metrics like search volume, intent, CPC, competition, and
+                difficulty, helping you discover new keyword opportunities and
+                expand your SEO strategy.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - DataForSEO API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/keyword-research/suggestions"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/keyword-suggestions"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/keyword-suggestions-screenshot.png"
+                alt="Keyword Suggestions Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3000 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto mt-12 h-0.5 w-3/4 rounded-md bg-slate-200"></div>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <LoaderPinwheelIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Keyword Autocomplete
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Keyword Autocomplete tool generates long-tail keyword ideas
+                using Google autocomplete data. It helps you discover real
+                search queries, identify content opportunities, and expand your
+                keyword research quickly.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - Free To Use, No API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/keyword-research/autocomplete"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/keyword-autocomplete"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/keyword-autocomplete-screenshot.png"
+                alt="Keyword Autocomplete Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full border-b-2 border-slate-200 bg-white py-10">
+        <div className="mx-auto flex w-full max-w-358 flex-col items-start px-4">
+          <h2 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-4xl">
+            <BinocularsIcon
+              size={52}
+              className="rounded-md bg-sky-950 p-3 text-white"
+            />
+            Competitive Research Tools
+          </h2>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <BookOpenTextIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Traffic Overview
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Traffic Overview tool analyzes a website’s organic and paid
+                search performance. It provides insights such as estimated
+                traffic, ranked keywords, traffic cost, ranking changes, and
+                historical trends - helping you understand competitor
+                performance and identify SEO opportunities.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - DataForSEO API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/competitive-research/overview"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/traffic-overview"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/traffic-overview-screenshot.png"
+                alt="Traffic Overview Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3000 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto mt-12 h-0.5 w-3/4 rounded-md bg-slate-200"></div>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <TextSearchIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Ranked Keywords
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Ranked Keywords tool shows the keywords a domain or page
+                ranks for in search results. It provides insights such as
+                rankings, search volume, estimated traffic, CPC, competition,
+                and keyword difficulty - helping you analyze competitor SEO
+                performance and discover ranking opportunities.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - DataForSEO API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/competitive-research/keywords"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/ranked-keywords"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/ranked-keywords-screenshot.png"
+                alt="Ranked Keywords Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full border-b-2 border-slate-200 bg-white py-10">
+        <div className="mx-auto flex w-full max-w-358 flex-col items-start px-4">
+          <h2 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-4xl">
+            <LinkIcon
+              size={52}
+              className="rounded-md bg-sky-950 p-3 text-white"
+            />
+            Backlink Research Tools
+          </h2>
+          <div className="mt-12 flex w-full flex-col items-start justify-between gap-8 px-4 lg:flex-row lg:gap-0">
+            <div className="order-2 lg:order-1 lg:pt-12">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-sky-950 lg:text-3xl">
+                <StarIcon
+                  size={48}
+                  className="rounded-md bg-sky-950 p-3 text-white"
+                />
+                Bulk DR Checker
+              </h3>
+              <p className="mt-4 block max-w-125 p-2 text-base text-black/80 lg:text-lg">
+                The Bulk DR Checker tool lets you check the Ahrefs Domain Rating
+                (DR) of multiple domains in a single request. It's ideal for
+                evaluating backlink prospects, analyzing competitors, and
+                assessing domain authority at scale.
+              </p>
+              <div className="mt-1 mb-2 px-2 text-sm font-semibold text-black/70">
+                - Free To Use, No API Required.
+              </div>
+              <div className="mt-0 flex items-center gap-3 p-2">
+                <Link
+                  href="/tool/backlink-research/bulk-dr-checker"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                >
+                  Access Tool
+                </Link>
+                <Link
+                  href="/features/bulk-dr-checker"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+              <Image
+                src="/assets/images/bulk-dr-checker-screenshot.png"
+                alt="Bulk DR Checker Tool"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                width={1200}
+                height={1164}
+                quality={100}
+              />
+              <div className="absolute bottom-0 left-0 z-20 flex h-12.5 w-full items-end justify-center bg-linear-to-t from-black/20 to-transparent pb-1 text-black transition-all duration-300 group-hover:opacity-0 has-[.tool-card-arrow:focus]:opacity-0 lg:pb-2">
+                <button className="tool-card-arrow flex h-8 w-8 scale-80 animate-bounce items-center justify-center rounded-full bg-white text-black md:scale-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <HomeFooter />
+    </div>
+  );
+}

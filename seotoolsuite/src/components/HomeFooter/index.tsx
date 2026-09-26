@@ -1,0 +1,47 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export const HomeFooter = () => {
+  return (
+    <footer className="flex flex-col items-center bg-gray-100 pt-4 text-base lg:text-lg">
+      <span>© 2026 SEOToolSuite.</span>
+      <div className="mt-1 text-center">
+        Made with ❤️ in{" "}
+        <Image
+          src="https://flagcdn.com/in.svg"
+          className="mx-0.5 inline-block -translate-y-0.5"
+          width={22}
+          height={22}
+          alt="India"
+        ></Image>{" "}
+        by{" "}
+        <Link
+          href="https://github.com/nitishkgupta"
+          target="_blank"
+          className="underline"
+        >
+          nitishkgupta
+        </Link>
+        .
+      </div>
+      <div className="mt-4 w-full border-t-2 border-slate-200 py-3 text-center text-base">
+        Powered by{" "}
+        <Link
+          href="https://dataforseo.com/?aff=44560"
+          rel="nofollow"
+          target="_blank"
+          className="underline"
+        >
+          <Image
+            src="/assets/images/dataforseo-logo.png"
+            alt="DataForSEO"
+            className="inline-block w-28 -translate-y-0.5"
+            width={429}
+            height={63}
+            quality={100}
+          />
+        </Link>
+      </div>
+    </footer>
+  );
+};

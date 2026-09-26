@@ -1,0 +1,458 @@
+import axios from "axios";
+import UpstashRedis from "@/services/UpstashRedis";
+
+/**
+ * DataForSEO service.
+ */
+class DataForSEO {
+  /**
+   * DataForSEO API URL.
+   */
+  private API_BASE_URL: string;
+
+  /**
+   * DataForSEO API username.
+   */
+  private USERNAME: string;
+
+  /**
+   * DataForSEO API password.
+   */
+  private PASSWORD: string;
+
+  /**
+   * Sandbox mode.
+   */
+  private sandboxEnabled: boolean;
+
+  /**
+   * Enable caching.
+   */
+  private enableCaching: boolean;
+
+  /**
+   * Default caching duration (in days).
+   */
+  private defaultCachingDuration: number;
+
+  /**
+   * Upstash Redis instance.
+   */
+  private upstashRedis?: UpstashRedis;
+
+  /**
+   * Constructor.
+   * @param isSandbox - Whether to use the sandbox version of the API.
+   */
+  constructor(
+    username: string,
+    password: string,
+    isSandbox: boolean = false,
+    enableCaching: boolean = false,
+  ) {
+    this.API_BASE_URL = isSandbox
+      ? "https://sandbox.dataforseo.com/v3"
+      : "https://api.dataforseo.com/v3";
+
+    this.USERNAME = username;
+    this.PASSWORD = password;
+    this.sandboxEnabled = isSandbox;
+    this.enableCaching = enableCaching;
+    this.defaultCachingDuration = 30;
+
+    if (!this.sandboxEnabled && enableCaching) {
+      this.upstashRedis = new UpstashRedis();
+    }
+  }
+
+  /**
+   * Get user data.
+   */
+  async getUserData() {
+    try {
+      const apiResponse = await axios.get(
+        `${this.API_BASE_URL}/appendix/user_data`,
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      return apiResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * Get account balance.
+   */
+  async getAccountBalance(): Promise<number | null> {
+    try {
+      const apiResponse = await axios.get(
+        `${this.API_BASE_URL}/appendix/user_data`,
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      return apiResponse.data?.tasks[0]?.result?.[0]?.money?.balance ?? null;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * Get keyword suggestions.
+   */
+  async getKeywordSuggestions(
+    keyword: string,
+    location_code: number,
+    language_code: string = "any",
+    filters: Array<any> = [],
+    limit: number = 50,
+    offset: number = 0,
+    cachingDuration: number = this.defaultCachingDuration,
+    refreshData: boolean = false,
+  ) {
+    if (
+      !this.sandboxEnabled &&
+      this.enableCaching &&
+      this.upstashRedis &&
+      !refreshData
+    ) {
+      let cachedData;
+      try {
+        cachedData = await this.upstashRedis.getData(
+          btoa(
+            `keyword-suggestions-${keyword}-${location_code}-${language_code}-${JSON.stringify(filters)}-${limit}-${offset}`,
+          ),
+        );
+      } catch (error) {
+        console.error(error);
+      }
+
+      if (cachedData) {
+        cachedData = JSON.parse(cachedData);
+        cachedData.isCachedData = true;
+        return cachedData;
+      }
+    }
+
+    try {
+      const apiResponse = await axios.post(
+        `${this.API_BASE_URL}/dataforseo_labs/google/keyword_suggestions/live`,
+        [
+          {
+            keyword,
+            location_code,
+            ...(language_code !== "any" ? { language_code } : {}),
+            ...(filters && filters.length > 0 ? { filters } : {}),
+            limit,
+            offset,
+            order_by: ["keyword_info.search_volume,desc"],
+          },
+        ],
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      const taskStatusCode = apiResponse?.data?.tasks[0]?.status_code ?? null;
+
+      if (
+        !this.sandboxEnabled &&
+        this.enableCaching &&
+        this.upstashRedis &&
+        cachingDuration > 0 &&
+        taskStatusCode === 20000
+      ) {
+        try {
+          this.upstashRedis.setData(
+            btoa(
+              `keyword-suggestions-${keyword}-${location_code}-${language_code}-${JSON.stringify(filters)}-${limit}-${offset}`,
+            ),
+            JSON.stringify(apiResponse.data),
+            60 * 60 * 24 * cachingDuration,
+          );
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      return apiResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * Get keywords overview.
+   */
+  async getKeywordsOverview(
+    keywords: string[],
+    location_code: number,
+    language_code: string = "en",
+    include_clickstream_data: boolean = false,
+    cachingDuration: number = this.defaultCachingDuration,
+    refreshData: boolean = false,
+  ) {
+    if (
+      !this.sandboxEnabled &&
+      this.enableCaching &&
+      this.upstashRedis &&
+      !refreshData
+    ) {
+      let cachedData;
+      try {
+        cachedData = await this.upstashRedis.getData(
+          btoa(
+            `keywords-overview-${JSON.stringify(keywords)}-${location_code}-${language_code}-${include_clickstream_data}`,
+          ),
+        );
+      } catch (error) {
+        console.error(error);
+      }
+
+      if (cachedData) {
+        cachedData = JSON.parse(cachedData);
+        cachedData.isCachedData = true;
+        return cachedData;
+      }
+    }
+
+    try {
+      const apiResponse = await axios.post(
+        `${this.API_BASE_URL}/dataforseo_labs/google/keyword_overview/live`,
+        [
+          {
+            keywords,
+            location_code,
+            language_code,
+            include_clickstream_data,
+          },
+        ],
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      const taskStatusCode = apiResponse?.data?.tasks[0]?.status_code ?? null;
+
+      if (
+        !this.sandboxEnabled &&
+        this.enableCaching &&
+        this.upstashRedis &&
+        cachingDuration > 0 &&
+        taskStatusCode === 20000
+      ) {
+        try {
+          this.upstashRedis.setData(
+            btoa(
+              `keywords-overview-${JSON.stringify(keywords)}-${location_code}-${language_code}-${include_clickstream_data}`,
+            ),
+            JSON.stringify(apiResponse.data),
+            60 * 60 * 24 * cachingDuration,
+          );
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      return apiResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * Get historical rank overview.
+   */
+  async getHistoricalRankOverview(
+    domain: string,
+    location_code: number,
+    language_code: string = "en",
+    date_from: string,
+    include_clickstream_data: boolean = false,
+    cachingDuration: number = this.defaultCachingDuration,
+    refreshData: boolean = false,
+  ) {
+    if (
+      !this.sandboxEnabled &&
+      this.enableCaching &&
+      this.upstashRedis &&
+      !refreshData
+    ) {
+      let cachedData;
+      try {
+        cachedData = await this.upstashRedis.getData(
+          btoa(
+            `historical-rank-overview-${domain}-${location_code}-${language_code}-${date_from}-${include_clickstream_data}`,
+          ),
+        );
+      } catch (error) {
+        console.error(error);
+      }
+
+      if (cachedData) {
+        cachedData = JSON.parse(cachedData);
+        cachedData.isCachedData = true;
+        return cachedData;
+      }
+    }
+
+    try {
+      const apiResponse = await axios.post(
+        `${this.API_BASE_URL}/dataforseo_labs/google/historical_rank_overview/live`,
+        [
+          {
+            target: domain,
+            location_code,
+            language_code,
+            date_from,
+            include_clickstream_data,
+          },
+        ],
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      const taskStatusCode = apiResponse?.data?.tasks[0]?.status_code ?? null;
+
+      if (
+        !this.sandboxEnabled &&
+        this.enableCaching &&
+        this.upstashRedis &&
+        cachingDuration > 0 &&
+        taskStatusCode === 20000
+      ) {
+        try {
+          this.upstashRedis.setData(
+            btoa(
+              `historical-rank-overview-${domain}-${location_code}-${language_code}-${date_from}-${include_clickstream_data}`,
+            ),
+            JSON.stringify(apiResponse.data),
+            60 * 60 * 24 * cachingDuration,
+          );
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      return apiResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  /**
+   * Get ranked keywords.
+   */
+  async getRankedKeywords(
+    target: string,
+    location_code: number,
+    language_code: string = "en",
+    filters: Array<any> = [],
+    limit: number = 50,
+    offset: number = 0,
+    cachingDuration: number = this.defaultCachingDuration,
+    refreshData: boolean = false,
+  ) {
+    if (
+      !this.sandboxEnabled &&
+      this.enableCaching &&
+      this.upstashRedis &&
+      !refreshData
+    ) {
+      let cachedData;
+      try {
+        cachedData = await this.upstashRedis.getData(
+          btoa(
+            `ranked-keywords-${target}-${location_code}-${language_code}-${JSON.stringify(filters)}-${limit}-${offset}`,
+          ),
+        );
+      } catch (error) {
+        console.error(error);
+      }
+
+      if (cachedData) {
+        cachedData = JSON.parse(cachedData);
+        cachedData.isCachedData = true;
+        return cachedData;
+      }
+    }
+
+    try {
+      const apiResponse = await axios.post(
+        `${this.API_BASE_URL}/dataforseo_labs/google/ranked_keywords/live`,
+        [
+          {
+            target,
+            location_code,
+            language_code,
+            item_types: ["organic"],
+            ...(filters && filters.length > 0 ? { filters } : {}),
+            limit,
+            offset,
+            order_by: ["ranked_serp_element.serp_item.etv,desc"],
+          },
+        ],
+        {
+          headers: {
+            Authorization: `Basic ${Buffer.from(
+              `${this.USERNAME}:${this.PASSWORD}`,
+            ).toString("base64")}`,
+          },
+        },
+      );
+
+      const taskStatusCode = apiResponse?.data?.tasks[0]?.status_code ?? null;
+
+      if (
+        !this.sandboxEnabled &&
+        this.enableCaching &&
+        this.upstashRedis &&
+        cachingDuration > 0 &&
+        taskStatusCode === 20000
+      ) {
+        try {
+          this.upstashRedis.setData(
+            btoa(
+              `ranked-keywords-${target}-${location_code}-${language_code}-${JSON.stringify(filters)}-${limit}-${offset}`,
+            ),
+            JSON.stringify(apiResponse.data),
+            60 * 60 * 24 * cachingDuration,
+          );
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      return apiResponse.data;
+    } catch (error) {
+      throw error;
+    }
+  }
+}
+
+export default DataForSEO;

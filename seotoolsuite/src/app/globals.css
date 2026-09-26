@@ -1,0 +1,72 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* HeroUI */
+@plugin "../heroui.ts";
+@source "../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
+
+/* Root */
+:root {
+  interpolate-size: allow-keywords;
+  --default-transition-duration: 0.3s;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: "Poppins";
+  @apply min-h-screen;
+}
+
+body:has(.seotoolsuite-tool),
+body:has(.seotoolsuite-account),
+body:has(.seotoolsuite-tools) {
+  @apply bg-gray-100;
+}
+
+/* Scrollbar */
+body,
+body * {
+  scrollbar-color: #052f4a transparent;
+}
+
+/* DataGrid styles */
+.datagrid-cell-p0 {
+  padding: 0 !important;
+}
+
+/* HeroUI Tooltip */
+div[role="tooltip"] > div {
+  border-radius: 6px !important;
+}
+
+/* DataGrid */
+.tool-results-table-container .MuiDataGrid-toolbarContainer {
+  padding: 8px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.tool-results-table-container .MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+
+.tool-results-table-container .Mui-selected .search-intent-badge {
+  background-color: #fff;
+}
+
+.tool-results-table-container .MuiDataGrid-row:hover .search-intent-badge {
+  background-color: #fff;
+}
+
+/* Width Animation */
+.scale-x-anim {
+  transform-origin: left;
+  animation: scalexanim 0.5s ease;
+}
+
+@keyframes scalexanim {
+  0% {
+    transform: scaleX(0);
+  }
+}
