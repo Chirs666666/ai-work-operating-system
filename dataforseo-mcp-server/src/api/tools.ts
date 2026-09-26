@@ -1,0 +1,146 @@
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
+import { DataForSeoClient, DataForSeoModuleNotEnabledError } from "./client.js";
+
+// Global tool registry - stores both metadata and handler functions
+export const toolRegistry: Map<string, any> = new Map();
+
+// Parse ENABLED_TOOLS from environment once at startup
+// Format: ENABLED_TOOLS="serp_google_maps_live,business_data_google_my_business_info"
+const enabledToolsEnv = process.env.ENABLED_TOOLS;
+const enabledTools = enabledToolsEnv
+  ? new Set(enabledToolsEnv.split(',').map(t => t.trim().toLowerCase()))
+  : null; // null means all enabled
+
+function isToolEnabled(name: string): boolean {
+  if (!enabledTools) return true; // No filter = all enabled
+  return enabledTools.has(name.toLowerCase());
+}
+
+/**
+ * Base helper function to register an MCP tool for DataForSEO API
+ */
+export function registerTool<T extends z.ZodRawShape>(
+  server: McpServer,
+  name: string,
+  schema: z.ZodObject<T> | T,
+  handler: (params: z.infer<z.ZodObject<T>>, client: DataForSeoClient) => Promise<any>,
+  client: DataForSeoClient
+) {
+  // Skip if tool not in ENABLED_TOOLS list
+  if (!isToolEnabled(name)) {
+    return;
+  }
+
+  // Extract the shape from ZodObject if needed
+  const shape = schema instanceof z.ZodObject ? schema.shape : schema;
+
+  // Create the tool handler wrapper
+  const toolHandler = async (params: any, _context: any) => {
+    try {
+      // We get the apiClient from the closure
+      const result = await handler(params as z.infer<z.ZodObject<T>>, client);
+
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify(result, null, 2)
+          }
+        ]
+      };
+    } catch (error) {
+      console.error(`Error in ${name} tool:`, error);
+
+      if (error instanceof DataForSeoModuleNotEnabledError) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify({
+                error: error.message,
+                code: "module_not_enabled"
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      if (error instanceof Error) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify({
+                error: error.message
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify({
+              error: "Unknown error occurred",
+              details: error
+            }, null, 2)
+          }
+        ]
+      };
+    }
+  };
+
+  // Store in registry for tools/list AND HTTP bridge calls
+  toolRegistry.set(name, {
+    name,
+    description: '', // Will be set by individual registrations
+    inputSchema: schema instanceof z.ZodObject ? schema : z.object(schema as any),
+    handler: toolHandler // Store the handler for HTTP bridge
+  });
+
+  // Register the handler with the MCP server
+  (server.tool as any)(name, shape, toolHandler);
+}
+
+/**
+ * Helper for registering a task-based tool (POST, READY, GET pattern)
+ */
+export function registerTaskTool<PostT extends z.ZodRawShape>(
+  server: McpServer,
+  baseName: string,
+  postSchema: z.ZodObject<PostT> | PostT,
+  postHandler: (params: z.infer<z.ZodObject<PostT>>, client: DataForSeoClient) => Promise<any>,
+  readyHandler: (client: DataForSeoClient) => Promise<any>,
+  getHandler: (id: string, client: DataForSeoClient) => Promise<any>,
+  client: DataForSeoClient
+) {
+  // Register POST tool
+  registerTool(
+    server,
+    `${baseName}_post`,
+    postSchema,
+    postHandler,
+    client
+  );
+
+  // Register READY tool
+  registerTool(
+    server,
+    `${baseName}_ready`,
+    {},
+    (_params, client) => readyHandler(client),
+    client
+  );
+
+  // Register GET tool
+  registerTool(
+    server,
+    `${baseName}_get`,
+    { id: z.string() },
+    (params, client) => getHandler(params.id, client),
+    client
+  );
+}
